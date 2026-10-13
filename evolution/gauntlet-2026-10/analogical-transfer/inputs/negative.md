@@ -1,0 +1,1 @@
+Quick one for our theatre's members' newsletter: I want one plain sentence that compares house seats (the few seats we hold back for each show and release to the public 48 hours before curtain) to something people already know. Just the sentence, please.

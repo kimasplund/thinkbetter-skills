@@ -1,0 +1,38 @@
+{
+  "D9X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "they would fill Friday and Saturday seats before full-price buyers do",
+      "k2": "almost every member admission would count as complimentary. The cap would then limit you",
+      "k3": "Add a late-cancellation rule, because your no-show rate on free tickets is 14%",
+      "k4": "Your 1,800 frequent attenders... Unlimited at €180 a year brings that to €324,000"
+    }
+  },
+  "B6S": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Every member seat on those nights displaces a full-price sale.",
+      "k2": "The cap blocks the model at about 20 member seats a night",
+      "k3": "Complimentary tickets also no-show at 14%, against 3% for paid ones.",
+      "k4": "Your best customers would trade down."
+    }
+  },
+  "K8K": {
+    "k1": "✓", "k2": "✓", "k3": "✗", "k4": "✓",
+    "evidence": {
+      "k1": "a member in a Saturday seat displaces a €34 buyer",
+      "k2": "Complimentary admissions are capped at 4% of the house, which is about 20 seats",
+      "k3": "paid member seats will behave far better. Track this.",
+      "k4": "Cannibalisation is the main financial risk."
+    }
+  },
+  "N7Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A member on a Saturday takes a seat you would otherwise sell for €34",
+      "k2": "Complimentary admissions are capped at 4% of the house, or 20 seats per performance",
+      "k3": "Release unclaimed member seats a couple of hours before curtain, and give a strike or fee",
+      "k4": "The 1,800 people who bought four or more productions last season are the obvious buyers."
+    }
+  }
+}

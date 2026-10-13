@@ -1,0 +1,38 @@
+{
+  "E3H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A 400 m ring covers a fraction of one flight.",
+      "k2": "the 140 symptomatic trees show where the disease was about two years ago",
+      "k3": "A firebreak removes fuel. This operation adds it.",
+      "k4": "Stop cutting and selling beech firewood from the Tallis Ford area."
+    }
+  },
+  "L7J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A 400 m ring is about an eighth of that distance, so it is not a barrier",
+      "k2": "Symptoms take 18 to 24 months to appear, so the 140 symptomatic trees show where",
+      "k3": "In effect the plan builds a beetle nursery next to the outbreak.",
+      "k4": "Infested logs travelling that way can start new outbreaks far beyond any ring."
+    }
+  },
+  "Y1U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A 400 m ring is well inside its range, so the beetle crosses it easily.",
+      "k2": "Delimit the outbreak first (now to February). Survey and sample well beyond the visible patch",
+      "k3": "Clear-felling a ring this winter produces a large amount of ideal breeding material.",
+      "k4": "This is a long-distance pathway that no ring can address"
+    }
+  },
+  "H4J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A 400 m ring is well inside one flight.",
+      "k2": "The real edge of the outbreak is unknown and is probably well beyond the 140 symptomatic trees",
+      "k3": "In fire terms, you would be piling fuel beside the fire and calling it a break.",
+      "k4": "the camp is a long-distance spreading mechanism."
+    }
+  }
+}

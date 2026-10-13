@@ -1,0 +1,38 @@
+{
+  "K9A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That isn't insurable risk, it's a known cash-flow pattern. It needs savings or smoothing",
+      "k2": "Measure over a rolling quarter instead of one month, so deferring an invoice doesn't move the result.",
+      "k3": "A structural shift is not insurable. It needs a different response: renegotiating, diversifying clients",
+      "k4": "A waiting period (say 6 months from joining, 3 months of contributions paid) before first claim."
+    }
+  },
+  "G2G": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Seasonal dips are also predictable, so they are a cash-flow timing problem and not an insurable risk.",
+      "k2": "Compare the last 3 months with the same 3 months... makes one-month invoice timing pointless.",
+      "k3": "A fund that props up income at the old level through a permanent shift will drain and then collapse.",
+      "k4": "Hold enrolment windows once or twice a year, with a 6 to 12 month wait before first claim"
+    }
+  },
+  "F2O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a seasonal smoothing problem, which is best done with buffer accounts",
+      "k2": "someone can decline work or delay invoicing at month-end and still qualify.",
+      "k3": "the fund would pay out while the baseline catches up, then stop",
+      "k4": "Require a waiting period (for example 6 months of contributions before the first claim)."
+    }
+  },
+  "T0U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "It is their own money, so there is no pooling, no moral hazard, and no cross-subsidy.",
+      "k2": "Delaying an invoice into a bad month earns a top-up.",
+      "k3": "Say plainly in the rules that a client-wide rate or method change is outside the hardship fund.",
+      "k4": "Open enrolment twice a year. A 3-month wait before claims."
+    }
+  }
+}

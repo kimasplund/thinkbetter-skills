@@ -1,0 +1,114 @@
+[
+ {
+  "cell": "brief-1--u1--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "u1",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--u1--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "u1",
+  "run": 2
+ },
+ {
+  "cell": "brief-1--b8--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "b8",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--b8--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "b8",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--u1--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "u1",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--u1--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "u1",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--b8--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "b8",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--b8--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "b8",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--u1--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "u1",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--u1--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "u1",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--b8--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "b8",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--b8--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "b8",
+  "run": 2
+ },
+ {
+  "cell": "framing-hype--u1--r1",
+  "kind": "framing",
+  "input": "pack/framing-hype.md",
+  "arm": "u1",
+  "run": 1
+ },
+ {
+  "cell": "framing-skeptical--u1--r1",
+  "kind": "framing",
+  "input": "pack/framing-skeptical.md",
+  "arm": "u1",
+  "run": 1
+ },
+ {
+  "cell": "negative--u1--r1",
+  "kind": "negative",
+  "input": "pack/negative.md",
+  "arm": "u1",
+  "run": 1
+ },
+ {
+  "cell": "negative--b8--r1",
+  "kind": "negative",
+  "input": "pack/negative.md",
+  "arm": "b8",
+  "run": 1
+ }
+]
