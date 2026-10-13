@@ -1,0 +1,38 @@
+{
+  "R0P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Unplug the NAS's network cable now, or power it off.",
+      "k2": "Pause or disconnect Kelpie sync on the server.",
+      "k3": "ask him to hold off on the wipe until the insurer has been spoken to",
+      "k4": "You have 72 hours... contact the tax authority."
+    }
+  },
+  "M1N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Unplug the NAS's network cable now.",
+      "k2": "Don't delete anything in Kelpie, and don't \"clean up\" space.",
+      "k3": "do not wipe or reinstall anything tonight until the insurer has agreed",
+      "k4": "ask the insurer and your clients about late-filing options"
+    }
+  },
+  "L4K": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "If it looks clean, unplug its network cable and power it off",
+      "k2": "Do not delete anything. Do not \"free up space\".",
+      "k3": "Ask him not to wipe or reinstall anything until the insurer has approved it.",
+      "k4": "You have 72 hours, so there is no need to decide tonight."
+    }
+  },
+  "P1V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Don't power it back on or connect it to anything until Dean",
+      "k2": "Unplug the server's network cable. Leave the server powered on",
+      "k3": "Wiping destroys the evidence of how they got in.",
+      "k4": "nothing is lost by waiting until tomorrow to decide"
+    }
+  }
+}

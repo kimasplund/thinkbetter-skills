@@ -15,7 +15,7 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | 9 | adversarial-reasoning | applied | NOT VALIDATED | - |  | ~1.53M (extended) |
 | 10 | dialectical-reasoning | applied | NOT VALIDATED | - |  | ~1.26M (extended) |
 | 11 | analogical-transfer | applied | NOT VALIDATED | - |  | ~0.76M |
-| 12 | rapid-triage-reasoning | pending | | | | |
+| 12 | rapid-triage-reasoning | applied | NOT VALIDATED | - |  | ~0.69M |
 | 13 | negotiated-decision-framework | pending | | | | |
 | 14 | option-synthesis | pending | | | | |
 | 15 | skill-gauntlet | pending | | | | |

@@ -1,0 +1,38 @@
+{
+  "R2Q": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you pay for the whole 26,000-litre load plus a penalty",
+      "k2": "It also gives you the lab result your insurance needs.",
+      "k3": "Don't pour it down the yard drain to the beck.",
+      "k4": "Clean and sanitise the old 6,000-litre tank, and put the afternoon milk in that."
+    }
+  },
+  "W7D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Even 5,000 ppb diluted 575 times is about 9 ppb.",
+      "k2": "If you dump before there is a lab result, you lose the insurance claim",
+      "k3": "Don't use the beck. Milk with antibiotic in it is a pollutant",
+      "k4": "Put cow 274 on the dump line and mark her with a new band"
+    }
+  },
+  "E6S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you pay for roughly 26,000 litres from four farms plus the penalty",
+      "k2": "Dumping it also destroys your insurance claim, because the policy needs a lab result",
+      "k3": "Tipping milk into the beck is a pollution incident.",
+      "k4": "Use the old 6,000-litre tank for the 16:00 milking (clean and sanitise it this morning"
+    }
+  },
+  "M2L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Don't load it and hope the plant misses it.",
+      "k2": "It also destroys your insurance claim, because you'd have no lab result",
+      "k3": "Running milk into the drain and beck is a pollution incident.",
+      "k4": "give it a full wash and sanitise now, check that it cools below about 4 degrees"
+    }
+  }
+}

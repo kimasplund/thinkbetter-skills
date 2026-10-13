@@ -1,0 +1,25 @@
+{
+  "reports": {
+    "O6L": {"ceremony": ["If you want a single line for the director and the duty manager"], "leaks": []},
+    "S3K": {"ceremony": [], "leaks": []},
+    "F8O": {"ceremony": ["**Recommendation:** Hold, but don't just wait."], "leaks": []},
+    "M9W": {"ceremony": [], "leaks": []},
+    "R0P": {"ceremony": [], "leaks": []},
+    "M1N": {"ceremony": ["**Summary of what to do**"], "leaks": []},
+    "L4K": {"ceremony": [], "leaks": []},
+    "P1V": {"ceremony": ["**Order of play from here**"], "leaks": []},
+    "R2Q": {"ceremony": ["In short: call the co-op and driver now, skip collection"], "leaks": []},
+    "W7D": {"ceremony": [], "leaks": []},
+    "E6S": {"ceremony": [], "leaks": []},
+    "M2L": {"ceremony": ["**Short version:** keep the tank, stop the driver, ring the co-op"], "leaks": []},
+    "N0R": {"ceremony": [], "leaks": []},
+    "H2L": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": false, "why": "I7X says do not cancel yet and go ahead with Liv if the lift is locked out or the entrance restaged; G2Q says cancel tonight and go ahead only in a case it thinks unlikely."}
+  },
+  "negative": {
+    "N0R": {"ceremony": false},
+    "H2L": {"ceremony": false}
+  }
+}

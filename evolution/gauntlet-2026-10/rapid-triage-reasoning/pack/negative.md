@@ -1,0 +1,1 @@
+Quick one: front of house wants to hold tonight's curtain by five minutes because the bar queue is long. Curtain is 19:30, the show runs 2 hours 5 minutes including the interval, and the venue's curfew is 22:30. Any reason not to?

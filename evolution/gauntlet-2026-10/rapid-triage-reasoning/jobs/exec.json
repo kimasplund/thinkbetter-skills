@@ -1,0 +1,114 @@
+[
+ {
+  "id": "brief-1--b0--r1",
+  "prompt": "jobs/exec/brief-1--b0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--b0--r2",
+  "prompt": "jobs/exec/brief-1--b0--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--b2--r1",
+  "prompt": "jobs/exec/brief-1--b2--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--b2--r2",
+  "prompt": "jobs/exec/brief-1--b2--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--b0--r1",
+  "prompt": "jobs/exec/brief-2--b0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--b0--r2",
+  "prompt": "jobs/exec/brief-2--b0--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--b2--r1",
+  "prompt": "jobs/exec/brief-2--b2--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--b2--r2",
+  "prompt": "jobs/exec/brief-2--b2--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--b0--r1",
+  "prompt": "jobs/exec/brief-3--b0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--b0--r2",
+  "prompt": "jobs/exec/brief-3--b0--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--b2--r1",
+  "prompt": "jobs/exec/brief-3--b2--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--b2--r2",
+  "prompt": "jobs/exec/brief-3--b2--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "framing-hype--b0--r1",
+  "prompt": "jobs/exec/framing-hype--b0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "framing-skeptical--b0--r1",
+  "prompt": "jobs/exec/framing-skeptical--b0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "negative--b0--r1",
+  "prompt": "jobs/exec/negative--b0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "negative--b2--r1",
+  "prompt": "jobs/exec/negative--b2--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ }
+]
