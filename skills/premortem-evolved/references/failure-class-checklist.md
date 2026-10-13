@@ -47,13 +47,13 @@ Each surviving mode must differ from every other in at least **2** of:
 
 **Stop rule:** stop generating when two consecutive candidates fold into existing modes.
 
-**Existing-guard check.** Before a candidate earns a rung, name the guard the plan already has against it — or "none." An adequate guard demotes the mode to the paper-tiger register with the guard cited. An inadequate guard joins the failure narrative: why it fails. Never rank a risk the plan has already closed.
+**Existing-guard check.** Before a candidate earns a rung, name the guard the plan already has against it — or "none." An adequate guard demotes the mode to the "Downgraded — guarded for now" table with the guard cited. An inadequate guard joins the failure narrative: why it fails. Never rank a risk the plan has already closed.
 
 **Evidence tags (backstage).** Tag each surviving candidate: context-backed (the plan's own details confirm it), needs-verification (probable, but needs domain data), or pattern-assumption (built from the reference class alone). Every surviving mode tagged needs-verification must appear as a rebuild pre-launch checklist item. Don't drop pattern-assumption modes preferentially — they are often the most valuable. The tags never appear in the report.
 
 **Cut-log format (the only visible trace):** one line under the autopsy, duplicates only —
 `**Considered and cut:** X (folded into #3), Y (<2%, recoverable).`
-Modes downgraded because an existing guard holds go to the paper-tiger table instead (≤3 rows: mode, guard that holds it down, signal that re-upgrades it) — no mode appears in both.
+Modes downgraded because an existing guard holds go to the "Downgraded — guarded for now" table instead (≤3 rows: mode, guard that holds it down, signal that re-upgrades it) — no mode appears in both.
 
 **Commitment grades** — grade the commitment you actually hold from each person the plan depends on, not the one narrated:
 
@@ -81,15 +81,15 @@ Run against the finished report. Fix what fails; do not ship a report that fails
 5. Percentages on the coarse ladder (~5/~10/~15/~20/~30/~40), each with a justification clause; shares-of-failure note present; sums to ~100; top mode ≤ ~40%; the ranking is strictly the probability order; every tie has a written break covering all tied pairs; out-of-order placement fails; every quoted statistic carries source × year × failure definition or an inline "weakly sourced" mark.
 6. Top two modes carry a reference-class anchor plus a disanalogy line; the user's intake reference class anchors when offered.
 7. At least 1 omission mode, 1 success-kills mode, 1 frame-blind slot, 1 compound mode, and ≥2 mundane base-rate survivors — or a stated N/A with reason; genuine overlaps count once.
-8. Diversity test passed (Part 2); cut log present (duplicates only); existing-guard check run — every survivor named its guard or "none"; paper-tiger table ≤3 rows, each with guard + re-upgrade signal.
+8. Diversity test passed (Part 2); cut log present (duplicates only); existing-guard check run — every survivor named its guard or "none"; "Downgraded — guarded for now" table ≤3 rows, each with guard + re-upgrade signal.
 9. I×F table consistent with the most-likely / most-dangerous picks; any divergence explained in prose.
 10. Hidden assumption found by convergence, or convergence explicitly stated as absent; the most-certain assumption was attacked first — and survived only with its evidence stated.
 11. Every rebuild change names the mode it closes + its cost + its urgency tier; Launch-Blocking changes carry decision dates; proportionality check passed or over-spend justified; most-dangerous modes labeled prevent/limit/accept; at most one consciously-accepted mode, cost priced; decision rule present for any irreversible step; residual risk stated.
 12. Pre-launch checklist: every item has what/how/walk-away; items gating the top 2–3 assumptions carry falsifiers; every needs-verification mode appears as a checklist item.
 13. Adversary profiled (motivation / resources / constraints / best alternative); kill chain dated and sequenced; each move has a detection opportunity.
-14. Every tripwire: metric + threshold + check date anchored to their timeline + if-tripped action; adversary rows present; most-dangerous mode has an early-chain tripwire; kill condition is a combination, not a single signal; paper-tiger re-upgrade signals wired as Track-tier rows; the calibration review is wired as the final tripwire row with the horizon date.
+14. Every tripwire: metric + threshold + check date anchored to their timeline + if-tripped action; adversary rows present; most-dangerous mode has an early-chain tripwire; kill condition is a combination, not a single signal; re-upgrade signals of downgraded modes wired as Track-tier rows; the calibration review is wired as the final tripwire row with the horizon date.
 15. No reassurance paragraph anywhere; the autopsy and the verdict stay forensic; rewrite-test run on the most diplomatic mode (harsher rewrite shipped, wording-only); requested brutality treated as tone pressure, not evidence; reverse autopsy present only on a negative decision-rule landing, ≤4 lines, resolving into an ELSE branch or "the caution stands."
-16. Gap check names one underexplored category and why this frame under-weights it — a reason, not a label.
-17. Length discipline: no backstage machinery visible (tags, class names, generation counts); conditional blocks fired only on their triggers; paper-tiger cap and reverse-autopsy cap respected; budgets respected (modes/tables/rows within caps); length within the stated band for the plan's complexity; report length proportional to the plan's complexity.
+16. "What this premortem probably missed" names one underexplored category and why this frame under-weights it — a reason, not a label.
+17. Length discipline: no backstage machinery visible (tags, class names, generation counts); conditional blocks fired only on their triggers; downgraded-table cap and reverse-autopsy cap respected; budgets respected (modes/tables/rows within caps); length within the stated band for the plan's complexity; report length proportional to the plan's complexity.
 18. Proportionality screen applied: a trivial, reversible, low-stakes plan got the short deflated answer, not the ceremony — or the report states in one line why the ceremony was warranted.
 19. Mechanical scan, run literally, never from memory: run `scripts/pre_delivery_check.py` on the finished report file. It greps for leaked machinery (stage/section ordinals, screen names, gate names, audit-handoff or file-append apparatus, unfilled [bracketed] template tokens), recomputes the probability ladder (sum, descending order, tied rungs), and enumerates every tied pair by line number. Fix every flagged line and re-run until it passes. Each enumerated tie pair must have its own written tie-break sentence on the page — coverage claimed from memory is a fail.

@@ -1,6 +1,15 @@
 # Blind round: roles, dossiers, prompts, decoy, gate
 
 Load this when the level is a blind round, and for the dossier template at every level. Adapted from skill-gauntlet's protocol, judge-panel, auditor and key-verification references; read those for the reasoning behind each rule.
+## Contents
+
+- [Roles and sequence](#roles-and-sequence)
+- [Dossier template (every level)](#dossier-template-every-level)
+- [Prompt templates](#prompt-templates): generator, dossier writer, judge, auditor, key verifier
+- [The decoy](#the-decoy)
+- [Blinding](#blinding)
+- [Applying the gate](#applying-the-gate)
+
 
 ## Roles and sequence
 
@@ -59,7 +68,7 @@ compare options or recommend one. Write each to <OUT_DIR>/<option-id>.md.
 ```
 
 **Judge**
-```text
+````text
 You are Judge <ID>, <persona: role, years, what you price>. You score blind option dossiers for
 one decision.
 
@@ -78,7 +87,7 @@ Write to <OUT_PATH>. MANDATORY final block:
 judge,code,<dimension ids>,total
 <ID>,<CODE>,...
 ```
-```
+````
 
 **Auditor**
 ```text

@@ -2,6 +2,9 @@
 """Pre-delivery mechanical check for premortem reports.
 
 Usage: pre_delivery_check.py <report.md>
+       pre_delivery_check.py -h | --help
+
+Python 3, standard library only.
 
 FAIL (exit 1):
   - machinery leaks (stage/section ordinals, screen narration, gate names,
@@ -19,11 +22,18 @@ import re
 import sys
 from itertools import combinations
 
+if len(sys.argv) == 2 and sys.argv[1] in ("-h", "--help"):
+    print(__doc__.strip())
+    sys.exit(0)
 if len(sys.argv) != 2:
     sys.exit("usage: pre_delivery_check.py <report.md>")
 
 path = sys.argv[1]
-lines = open(path, encoding="utf-8").read().splitlines()
+try:
+    with open(path, encoding="utf-8") as fh:
+        lines = fh.read().splitlines()
+except OSError as exc:
+    sys.exit(f"error: cannot read {path}: {exc.strerror or exc}")
 
 fail, warn = [], []
 
@@ -41,9 +51,10 @@ WARN_LEAKS = [
     (r"(?i)audit trail|treasury", "audit-domain language — verify it is substantive plan content, not machinery"),
 ]
 TOKEN = re.compile(r"\[[^\]\n]{1,60}\]")
+# Whole words only: "[Monday]" is plan content, "[date]" is an unfilled token.
 TOKEN_WORDS = re.compile(
-    r"(?i)change|day|date|mode|their|at most|duplicates|signal|guard|"
-    r"plan name|reason|horizon|optional|their words|month \d"
+    r"(?i)\b(?:change|day|date|mode|their|at most|duplicates|signal|guard|"
+    r"plan name|reason|horizon|optional|their words|month \d)\b"
 )
 
 for i, ln in enumerate(lines, 1):

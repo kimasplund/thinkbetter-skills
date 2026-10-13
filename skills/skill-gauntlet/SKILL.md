@@ -1,21 +1,9 @@
 ---
 name: skill-gauntlet
-description: >
-  Regression-guarded blind A/B evaluation for skills, prompts, and agent
-  configurations. Use when a candidate revision of a skill (or system prompt,
-  rubric, or agent config) must prove it beats the current champion WITHOUT
-  regressing guard dimensions before adoption — champion/challenger testing,
-  pre-registered conjunctive adoption gates, blind persona-diverse judge
-  panels, cross-check auditors, planted-flaw key verification, framing
-  fixtures, negative fixtures, and generic controls. Triggers: "A/B test this
-  skill", "extreme testing", "make sure we're not regressing", "test before
-  adopting", "compare these two prompts/skills rigorously", "champion vs
-  challenger", evolving an installed skill where a silent regression would be
-  costly. Do NOT use for: simple factual QA, one-shot content generation, or
-  evals where a single automated metric fully defines quality (use a test
-  suite instead).
+description: >-
+  Runs a regression-guarded blind A/B evaluation of a candidate skill, prompt, rubric, or agent configuration against the current champion, and adopts it only if it wins on value dimensions without regressing on guard dimensions. Use when a revision must prove itself before adoption: champion vs challenger testing, pre-registered conjunctive adoption gates, blind persona-diverse judge panels, cross-check auditors, planted-flaw key verification, framing and negative fixtures, generic controls. Triggers: "A/B test this skill", "extreme testing", "make sure we're not regressing", "test before adopting", "compare these two prompts/skills rigorously", "champion vs challenger", evolving an installed skill where a silent regression would be costly. Do NOT use for: simple factual QA, one-shot content generation, or evals where a single automated metric fully defines quality (use a test suite instead).
 metadata:
-  version: "1.1.0"
+  version: "1.1.1"
 ---
 
 # Skill Gauntlet — regression-guarded A/B evaluation
@@ -81,7 +69,6 @@ Compute margins per dimension, check every conjunctive condition, write the verd
 - **Do not chase a specific key.** If every arm misses the same planted flaw the same way across builds, document it as a hard cell; tuning the skill to that cell teaches to the test and corrupts the harness.
 - **Margins are not decision-grade without uncertainty.** With the small N these rounds run, pre-register an INCONCLUSIVE verdict (collect more cells) alongside PASS/FAIL, and treat any margin inside the noise band as "not yet evidence." Details in [references/protocol.md](references/protocol.md).
 - **Split the key matrix into held-in and held-out.** Held-out keys are planted after the candidate's design is frozen and sealed from the proposer; the split label lives in the sealed key matrix and nowhere else. A round whose proposer has seen prior keys is a held-in-only round — and a held-in-only round cannot pass the key gate: no held-out evidence means the round returns INCONCLUSIVE (or its design fails by construction). See [references/key-verification.md](references/key-verification.md).
-- **A deferred panel never waives a guard.** Mechanical instruments are decisive on their own; the panel's absence converts ADOPT to INCONCLUSIVE, not to a skipped check.
 - **Guard dims include operational ones when the artifact ships to production** — cost, latency, output-schema compatibility. A candidate that triples cost or breaks downstream consumers must fail the gate even when quality dims pass.
 - **Delete subagents after their results arrive; never spawn judges who can see each other's scores.**
 - **Normalize format tells in the blinder.** When arms differ in template format (numbered vs unnumbered headers), every judge can identify the arm at a glance. Strip the tell from ALL blind copies (`normalize.py --strip-h2-ordinals`) while leaving prose leaks intact — those are auditor evidence.
