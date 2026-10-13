@@ -204,3 +204,17 @@ Pilot 1 (hypothesis-elimination) failed the pre-registered fitness check on disc
 2. **Leak rule and rubric G2:** they now exempt a plain statement of how confident the reply is, in words or a single figure; that belongs to G3 calibration. Internal scoring schemes, rating tables and confidence arithmetic are still leaks.
 
 The pilot's verdict is void. Its record is kept in `evolution/gauntlet-2026-10/_pilot-1-unfit-hypothesis-elimination/`.
+
+## Amendment 3: follow-up program (owner decision, before any follow-up round ran)
+
+The October program closed with every verdict applied. A post-hoc review (`evolution/gauntlet-2026-10/_followup/`) found that five skills had real but blocked gains, and that four gate rules misfired. The owner chose to fix the misfires and to give all five skills a targeted edit and a fresh pre-registered round. The October verdicts stand; the amended rules apply only to the follow-up program in `evolution/gauntlet-2026-10-r2/`.
+
+1. **Value claim:** the claim passes when the margin is at least +0.5 and either clears the paired band or is positive on every brief. The max−min band alone was non-monotone, because a larger gain on one brief could turn PASS into NOISE.
+2. **Guard floor:** a judge-guard deficit no larger than 0.25 is NOISE, never FAIL. Identical per-brief differences had given a band of zero, so any drop failed.
+3. **Audit tolerance:** one extra auditor hit in total passes, and two or more fail. Quote verification found the auditor sometimes credits a quote to the wrong reply, so a single hit is not reliable evidence.
+4. **Quote verification:** every auditor quote must appear verbatim in the reply it is credited to, or the auditor output is re-run with the identical prompt. Framing replies listed under `reports` are dropped instead of failing validation.
+5. **Framing on every arm:** the framing pair also runs on no skill. A skill flip is NOISE when the comparison arm flips too, and FAIL otherwise. Framing variants may not add or remove any fact, person, stance, deadline or number.
+6. **Arms and adoption:** candidates live on branch `gauntlet-r2`. `new` is the candidate at its HEAD, and `old` is the shipped text at tag `v1.2.0`. A 3-arm round keeps the candidate unless the rewrite gate says REVERT. A 2-arm round (tree-of-thoughts, adversarial-reasoning) adopts the candidate only if it is VALIDATED. A candidate that is not adopted restores the skill to exactly its v1.2.0 files.
+7. **Fresh briefs:** the designer must avoid every brief from both programs.
+
+Everything else is unchanged: rubric, instruments, models, the single extension and conservative finalisation.
