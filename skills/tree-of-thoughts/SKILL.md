@@ -2,7 +2,7 @@
 name: tree-of-thoughts
 description: "Finds the single best option among several fundamentally different approaches by exploring 5 or more branches, scoring each against explicit criteria, and recursively deepening the winner for at least four levels. Use for questions like which architecture to pick, REST vs GraphQL vs gRPC, what the best strategy is, or any optimization or strategic-planning decision with real trade-offs. Not for obvious single-path problems, time-critical calls (use rapid-triage-reasoning), mapping every possible option (use breadth-of-thought), or reconciling two valid opposites (use dialectical-reasoning)."
 metadata:
-  version: "2.4.0"
+  version: "2.3.1"
 ---
 
 ## Effort & Thinking Budget
@@ -233,7 +233,7 @@ Level 3: "OR-Set optimizations" (5 variants)
 - [Assumption 2]
 ```
 
-**Deliverable**: Synthesis with traced path and confidence score. This template is your working record; the user-facing answer follows the answer-shape rule at the end.
+**Deliverable**: Comprehensive synthesis with traced path and confidence score
 
 ---
 
@@ -384,10 +384,8 @@ Tree of Thoughts is a **systematic methodology** for exploring complex problem s
 
 Use it for strategic decisions, architectural choices, and optimization problems where systematic exploration yields better outcomes than intuition alone.
 
-**Remember**: Quality over speed in the thinking, not in the answer. ToT trades time for rigor; the reply itself stays as short as the decision allows.
+**Remember**: Quality over speed. ToT trades time for rigor. The goal is high-confidence optimal solutions, not quick answers.
 
 ## Backstage rule — the method never appears in the answer
 
 This methodology is scaffolding, not content. In the user-facing answer: no method names ("Tree of Thoughts", "ToT", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
-
-**Answer shape.** Lead with the recommendation. Give each rejected option its deciding reason once, and don't walk through the rejected options again in the plan. Then give the steps for the chosen option. End with the assumptions that matter, what would change the recommendation, and the cheapest check for each. Say each fact once: no closing summary or bottom line that repeats earlier sections. If you state confidence, use one sentence that names the deciding unknown rather than restating the reasons.

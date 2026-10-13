@@ -1,0 +1,38 @@
+{
+  "B9N": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "An April race wouldn't give qualifying times. (no May alternative offered)",
+      "k2": "Most of them couldn't reach a 06:00 start... anything much before 07:30",
+      "k3": "The city only allows full road closures on Sunday mornings, 05:00 to 14:30.",
+      "k4": "The path is 2.5 m wide, and the navigation trust caps even a 5k"
+    }
+  },
+  "L8D": {
+    "k1": "~", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "It falls outside the 1 May to 30 September qualifying window. (no May option)",
+      "k2": "the earliest start most people can make is about 07:15 to 07:30",
+      "k3": "the city allows full road closures only on Sunday mornings",
+      "k4": "It cannot carry 8,400 marathoners"
+    }
+  },
+  "A3S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Pick a Sunday in May... keeps qualifying status and is much cooler than late June.",
+      "k2": "most of your field can't be at a 6:00 start",
+      "k3": "City policy allows full road closures only on Sunday mornings, 05:00-14:30.",
+      "k4": "The path is 2.5 m wide and the navigation trust caps a 5k there at 500 runners."
+    }
+  },
+  "T8B": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Any date from 1 May onward keeps that draw.",
+      "k2": "They would miss the start unless the rail operator adds early services",
+      "k3": "the city allows full road closures only on Sunday mornings.",
+      "k4": "the path is 2.5 m wide and the navigation trust caps the Saturday 5k at 500 runners"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+"H6O": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Pulling 420 TB back over 2 Gbps takes about 19 days at full line rate", "k2": "Brisewood supports its software only on its own certified appliances, so you can't run the archive in Nimbara's cloud", "k3": "A flood or a regional power loss would very likely take out both sites together"}},
+"J1K": {"k1": "~", "k2": "~", "k3": "✓", "evidence": {"k1": "pulling 420 TB home takes about three weeks. Even restoring only ... 110 TB takes around 5 hours", "k2": "you would also have to buy and install matched servers to restore onto", "k3": "shares the river and the Wharf Road substation with you ... may fail at the same moment"}},
+"V8Q": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Pulling 420 TB back takes around 20 days, against an 8-hour target", "k2": "The obvious workaround is to run the archive in the cloud. Brisewood supports its software only on its own certified appliances", "k3": "a flood that takes your basement can plausibly take the sister site too"}},
+"D1O": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Pulling 420 TB back over a 2 Gbps line takes roughly 19 days at full line rate", "k2": "Cloud could only work if Brisewood certifies running the archive inside Nimbara", "k3": "A flood that takes the basement could take the plant room"}}
+}

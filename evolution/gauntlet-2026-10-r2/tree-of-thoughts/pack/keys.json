@@ -1,0 +1,18 @@
+{
+  "brief-1": [
+    {"id": "k1", "text": "Rejects the mid-April move: the federation's qualifying window opens on 1 May, and most of the marathon's growth comes from club runners chasing a qualifying time, so an April race would lose its main draw. A strong reply sees that a date from early May onward keeps qualifying status and is still cooler than late June.", "split": "held-out"},
+    {"id": "k2", "text": "Rejects the 6:00 start: about three-quarters of runners arrive by train, and the first Sunday train reaches Aldmere Central at 06:50, ten minutes' walk from the start. A 6:00 start is impossible for most of the field, so the earliest realistic start is around 07:30.", "split": "held-out"},
+    {"id": "k3", "text": "Rejects the Saturday-evening race: the city allows full road closures only on Sunday mornings (05:00 to 14:30), so a 19:00 Saturday start with a six-hour cut-off cannot get a closure.", "split": "held-out"},
+    {"id": "k4", "text": "Rejects the towpath reroute: the path is 2.5 m wide and the navigation trust caps even the 5k there at 500 runners, so it cannot carry a marathon field of 8,400.", "split": "held-out"}
+  ],
+  "brief-2": [
+    {"id": "k1", "text": "Treats demolition and replacement as doubtful, not as the cheap option: the bridge has been on the national heritage register since 1971, so demolishing it needs heritage consent that is uncertain and slow. The EUR 1.3M council share assumes a demolition that may never be permitted.", "split": "held-out"},
+    {"id": "k2", "text": "Rejects the permanent 7.5-tonne limit: the two double-decker school buses weigh well over 7.5 tonnes, so they would lose the bridge, and they cannot take the Cott Lane diversion because a double-decker (about 4.3 to 4.4 m) will not fit under the 4.0 m railway arch. The quarry tippers using Cott Lane without trouble is not evidence that the buses can.", "split": "held-out"},
+    {"id": "k3", "text": "Sees that the replacement cannot meet the fund deadline: it needs two summers of in-river work, in-channel work is allowed only from July to September, and with a December 2026 decision the earliest two summers are 2027 and 2028. The second falls after the March 2028 spending deadline, so the 75% grant, and with it the EUR 1.3M figure, is not secure (the same applies to the Holm Ford crossing).", "split": "held-out"}
+  ],
+  "brief-3": [
+    {"id": "k1", "text": "Rejects cloud replication as the restore source: pulling 420 TB back over a 2 Gbps line takes about 19 to 21 days at full line rate, and even one year of studies (about 55 TB) takes around 2.5 days, nowhere near the 8-hour target. That the line is plenty for keeping the replica in step says nothing about restore time.", "split": "held-out"},
+    {"id": "k2", "text": "Recognises that Brisewood supports the archive software only on its own certified appliances, so the obvious fix for k1, running the archive from the cloud copy instead of restoring it, is ruled out. Any standby must run on those appliances, and the hosted option has to confirm it can house them.", "split": "held-out"},
+    {"id": "k3", "text": "Rejects St Brennan's as the standby site: it is on the same stretch of river and lost power in the same 2024 substation flood, so a flood that takes out the main data centre would probably take out the standby too. That is the exact scenario the board asked to survive.", "split": "held-out"}
+  ]
+}
