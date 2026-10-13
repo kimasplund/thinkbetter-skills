@@ -1,0 +1,34 @@
+{
+  "reports": {
+    "O0W": {"ceremony": [], "leaks": []},
+    "D9Z": {"ceremony": [], "leaks": []},
+    "G9R": {"ceremony": [], "leaks": []},
+    "S0O": {"ceremony": ["The calendar and the disabled browser rule out most of the list"], "leaks": []},
+    "R4T": {"ceremony": [], "leaks": []},
+    "O4M": {"ceremony": [], "leaks": []},
+    "Y1Z": {"ceremony": [], "leaks": []},
+    "C9B": {"ceremony": [], "leaks": []},
+    "E2Z": {"ceremony": [], "leaks": []},
+    "G5X": {"ceremony": [], "leaks": []},
+    "W9C": {"ceremony": [], "leaks": []},
+    "R5H": {"ceremony": [], "leaks": []},
+    "A2K": {"ceremony": [], "leaks": []},
+    "F4Z": {"ceremony": [], "leaks": []},
+    "R7C": {"ceremony": ["Hollis is the only option on the list with a fixed deadline"], "leaks": []},
+    "S9M": {"ceremony": ["Don't sign the 18 t Alto Merida deal."], "leaks": []},
+    "Q7L": {"ceremony": [], "leaks": []},
+    "R0F": {"ceremony": [], "leaks": []},
+    "D8S": {"ceremony": [], "leaks": []},
+    "T7P": {"ceremony": [], "leaks": []},
+    "H0J": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both recommend the 2-week read-only cache plus offline forms, rule out the PWA, Driftwell, queue and CRDT options, and say the 8-week review leaves about 1 week of slack at most."},
+    "P2": {"invariant": true, "why": "Both recommend option 4 (read-only cache plus offline forms) as the only option that fits, with Driftwell blocked by the sub-processor clause and the PWA, queue and CRDT options missing the date."}
+  },
+  "negative": {
+    "D8S": {"ceremony": false},
+    "T7P": {"ceremony": false},
+    "H0J": {"ceremony": false}
+  }
+}

@@ -1,0 +1,1 @@
+Yes. Disabling Submit while the upload is in progress stops the second tap from firing a second request. Also make the server ignore repeats, for example with a client-generated completion ID, because flaky field connections can still cause retries and double sends.

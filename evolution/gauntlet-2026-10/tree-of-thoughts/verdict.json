@@ -1,0 +1,92 @@
+{
+ "skill": "tree-of-thoughts",
+ "validation": {
+  "verdict": "NOT VALIDATED",
+  "conditions": {
+   "guard_judge_G1": "NOISE",
+   "guard_judge_G2": "NOISE",
+   "guard_judge_G3": "PASS",
+   "guard_audit_ceremony": "FAIL",
+   "guard_audit_leaks": "PASS",
+   "guard_audit_length": "PASS",
+   "value": "PASS",
+   "ranking": "PASS",
+   "negative": "FAIL",
+   "framing": "PASS",
+   "agreement": "PASS"
+  },
+  "wins": 5,
+  "losses": 0,
+  "sign_p": 0.0625
+ },
+ "rewrite": {
+  "verdict": "REVERT",
+  "conditions": {
+   "guard_judge_G1": "NOISE",
+   "guard_judge_G2": "NOISE",
+   "guard_judge_G3": "NOISE",
+   "guard_audit_ceremony": "FAIL",
+   "guard_audit_leaks": "PASS",
+   "guard_audit_length": "PASS",
+   "keys": "NOISE",
+   "value": "FAIL",
+   "negative": "FAIL",
+   "framing": "PASS"
+  },
+  "wins": 0,
+  "losses": 5
+ },
+ "agreement": 0.992,
+ "freeze_ok": true,
+ "extended": false,
+ "arms": {
+  "new": {
+   "value_mean": 5.9,
+   "V1": 5.92,
+   "V2": 6.0,
+   "V3": 5.5,
+   "V4": 6.17,
+   "G1": 4.92,
+   "G2": 6.92,
+   "G3": 5.33,
+   "key_rate": 0.938,
+   "ceremony": 0.33,
+   "leaks": 0.0,
+   "word_ratio": 1.24,
+   "negative_ok": false,
+   "framing_ok": true
+  },
+  "old": {
+   "value_mean": 6.25,
+   "V1": 6.33,
+   "V2": 6.08,
+   "V3": 6.0,
+   "V4": 6.58,
+   "G1": 5.33,
+   "G2": 7.0,
+   "G3": 6.0,
+   "key_rate": 1.0,
+   "ceremony": 0.17,
+   "leaks": 0.0,
+   "word_ratio": 1.21,
+   "negative_ok": true,
+   "framing_ok": true
+  },
+  "none": {
+   "value_mean": 5.19,
+   "V1": 5.25,
+   "V2": 5.25,
+   "V3": 4.75,
+   "V4": 5.5,
+   "G1": 5.67,
+   "G2": 7.0,
+   "G3": 5.08,
+   "key_rate": 0.979,
+   "ceremony": 0.0,
+   "leaks": 0.0,
+   "word_ratio": 1.0,
+   "negative_ok": true,
+   "framing_ok": null
+  }
+ }
+}

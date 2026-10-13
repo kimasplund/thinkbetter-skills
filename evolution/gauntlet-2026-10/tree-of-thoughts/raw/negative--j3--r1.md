@@ -1,0 +1,1 @@
+Yes. Disabling the button while the upload is in progress stops the second tap from sending a duplicate request. Also make the server idempotent, for example with a client-generated completion ID, because a disabled button won't protect you from retries or flaky connections.

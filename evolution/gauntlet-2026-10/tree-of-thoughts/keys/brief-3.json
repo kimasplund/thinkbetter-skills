@@ -1,0 +1,32 @@
+{
+"A2K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+ "k1": "Order it in November and it arrives in June, so a February start can't be met in-house.",
+ "k2": "The cap allows about 1.3 tonnes of extra green, or roughly 1.1 tonnes of extra roasted coffee.",
+ "k3": "six Hollis stores are in the county. A private label with the same coffee inside it is very likely to count.",
+ "k4": "You'd need a certified organic roaster that your certifier accepts as an extension of your certificate."}},
+"F4Z": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Ordered today, it arrives about May, after the February start.",
+ "k2": "Even if you stopped supplying cafés entirely, the cap would only cover about 22 t roasted in total.",
+ "k3": "Signing would put you in breach with your core customers.",
+ "k4": "It also needs its own organic certification, and you lose some margin and control."}},
+"R7C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "with a seven-month lead time, an order placed today arrives around May. The deal starts in February.",
+ "k2": "the green coffee cap is your real ceiling.",
+ "k3": "a private-label bag of the same blend almost certainly counts.",
+ "k4": "Your organic certificate covers your unit only. Any contract roaster would need its own organic certification"}},
+"S9M": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+ "k1": "Hollis would add about 1,400 more, which takes you to about 3,050 and well past the ceiling.",
+ "k2": "Faster roasting doesn't fix this. Only a higher cap or a different coffee does.",
+ "k3": "A Hollis-labelled bag of the same blend is very likely a breach.",
+ "k4": "only if the roaster holds its own organic certification, or you extend your certificate"}},
+"Q7L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Ordered today, it would land around May, after the February start.",
+ "k2": "That is the real ceiling on Alto Merida growth.",
+ "k3": "Signing as offered would likely breach those agreements.",
+ "k4": "The certificate covers your unit. A contract roaster would need to be certified organic itself"}},
+"R0F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Ordered today (October), it arrives in May at the earliest, so it can't support a February start.",
+ "k2": "It fixes capacity but not the cap or the café promise.",
+ "k3": "Signing would breach those agreements, and those 40 cafés are your core business.",
+ "k4": "because your certificate covers only your unit. Check this before you rely on it."}}
+}

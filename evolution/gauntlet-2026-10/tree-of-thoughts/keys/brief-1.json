@@ -1,0 +1,56 @@
+{
+  "O0W": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Driftwell would be a new one. It needs Harrowgate's agreement and a contract amendment",
+      "k2": "the real build budget is roughly 3 weeks, with no slack at that figure",
+      "k3": "Upload \"used 2 of part X\", each with a unique ID, and have the server apply those as decrements",
+      "k4": "On reconnect they sign in again, and the app then uploads everything queued"
+    }
+  },
+  "D9Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "You would need Harrowgate to amend the schedule, which is a legal and procurement exercise",
+      "k2": "whatever you ship has to be built and submitted in about three weeks",
+      "k3": "Automatic merging will converge on a number, but it can't stop the count going negative",
+      "k4": "the server should attribute each item to the user who recorded it"
+    }
+  },
+  "G9R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "You would need a contract amendment from Harrowgate before you could ship it",
+      "k2": "a build has to be submitted by about week 3",
+      "k3": "Do not upload an absolute count like \"stock = 7\". Record each part as an event",
+      "k4": "attributed to the technician and device and carrying the offline timestamp"
+    }
+  },
+  "S0O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "You'd need a contract amendment and Harrowgate's sign-off, and that clock would run in parallel",
+      "k2": "the build must be finished and submitted about 3 weeks from now",
+      "k3": "each handset records \"used 2 × part X, job J, technician T, time, unique ID\"",
+      "k4": "record events under the identity that was signed in at the time"
+    }
+  },
+  "R4T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Driftwell is off the table for Harrowgate unless the contract changes",
+      "k2": "a build has to be submitted by about week 3 to be installed",
+      "k3": "Don't sync absolute counts. Log each part use as an event",
+      "k4": "Make sure the server accepts records created under an expired token once the user re-authenticates"
+    }
+  },
+  "O4M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That needs a contract amendment and probably a security review on their side",
+      "k2": "the latest submission date that still lands before storm season is about week 3",
+      "k3": "the second upload overwrites the first and the billing is wrong",
+      "k4": "records the original technician and timestamps"
+    }
+  }
+}
