@@ -1,0 +1,56 @@
+{
+  "O7K": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Pause stops the 15:00 widening to 50%... It costs nothing and is reversible.",
+      "k2": "Abort is not reversible and not free... could brick up to 21,000 locks.",
+      "k3": "Ask marketing to hold or cancel the email now.",
+      "k4": "Send to the ~21,000 owners on 6.0, by email and push"
+    }
+  },
+  "F9R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "stops the automatic widening to 50% at 15:00",
+      "k2": "Abort could turn about 21,000 locks... into 21,000 locks that won't boot.",
+      "k3": "Pause doesn't touch them. The 16:00 'Update now' button and the app's 'Check for update'",
+      "k4": "Send it by email or push to the owners on 6.0, about 21,000, not to all 210,000."
+    }
+  },
+  "Y8Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "This stops the 15:00 widening to 50%... it's reversible",
+      "k2": "You can't undo Abort. You can undo Pause.",
+      "k3": "Message Marketing: hold the 16:00 email... Pause doesn't stop those.",
+      "k4": "Send to the 6.0 cohort only, this evening"
+    }
+  },
+  "V3L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Press Pause. Confirm in the console that the 15:00 widening is cancelled.",
+      "k2": "Abort turns a 'door doesn't lock' problem into thousands of dead locks. You can't undo that.",
+      "k3": "Hold or pull the 16:00 marketing email.",
+      "k4": "A fleet-wide alert would flood support... Send it to them only."
+    }
+  },
+  "M2V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "press Pause. This stops the automatic widening to 50% at 15:00.",
+      "k2": "Abort could turn about 21,000 locks... into bricks, and you can't undo that",
+      "k3": "Pause does not stop 'Update now' or 'Check for update'... tell marketing to delay the 16:00 email.",
+      "k4": "only to the roughly 21,000 owners who have 6.0."
+    }
+  },
+  "A4Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "stops the automatic widening to 50% at 15:00... fully reversible",
+      "k2": "Abort is the one action here you can't undo, so it needs evidence first.",
+      "k3": "Tell Marketing to hold the 16:00 launch email, or at minimum remove the button.",
+      "k4": "Target the ~21,000 locks that took 6.0."
+    }
+  }
+}

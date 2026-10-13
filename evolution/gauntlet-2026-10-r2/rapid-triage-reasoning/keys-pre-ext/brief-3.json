@@ -1,0 +1,56 @@
+{
+  "Y6M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "swap the splash for the held-over feature and hold the story on every channel",
+      "k2": "Unschedule the web piece and cancel the 00:01 app alert",
+      "k3": "Message the three sister titles now, by phone as well as the wire",
+      "k4": "Do not send Vosk's lawyer your scan."
+    }
+  },
+  "T4M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "22:40 is the last moment the safe option still exists",
+      "k2": "unschedule the web post and the app alert",
+      "k3": "send the sister titles a short hold or kill note before 00:01",
+      "k4": "Reply to the lawyer, but don't send him our copy."
+    }
+  },
+  "Z7D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A held splash is recoverable. The story can run online and in print the next day",
+      "k2": "Pull the 00:01 web publication and the app alert to 70,000 readers.",
+      "k3": "Contact the three sister titles' night desks to say the 21:00 wire splash is withdrawn",
+      "k4": "Sending it to Vosk's lawyer would let him work out who leaked it."
+    }
+  },
+  "B5A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Holding is fully reversible. The story keeps and can run tomorrow",
+      "k2": "Take the 00:01 web publish and the 70,000-reader app alert off the schedule now.",
+      "k3": "Tell the three sister titles' night desks that the Larchmont story is on hold",
+      "k4": "If you send your scan, you hand over the routing stamp and officers' initials."
+    }
+  },
+  "C5Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "swap in the held-over feature if you can't. Holding one edition costs you far less",
+      "k2": "Unschedule it in the web system and confirm that it is off.",
+      "k3": "Send a written kill notice on the group wire and phone their night desks.",
+      "k4": "you'd be giving the other side the means to identify your source"
+    }
+  },
+  "Q0S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Swap in the held-over feature, keep the story alive for tomorrow",
+      "k2": "Unschedule the 00:01 web publication and the app alert to 70,000 readers.",
+      "k3": "Send a kill or hold notice on the group wire to all three sister titles",
+      "k4": "Do not send Vosk's lawyer the scan."
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "W0B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "stops the 15:00 widening to 50%... fully reversible",
+    "k2": "Abort could turn 160 locks with a stalled motor into thousands of dead locks",
+    "k3": "ask engineering whether 6.0 can be un-published, or the \"newest\" pointer moved back to 5.8",
+    "k4": "Warn only the roughly 21,000 owners on 6.0, not all 210,000"}},
+  "H0L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Pause is fully reversible. It stops the 15:00 widening",
+    "k2": "Abort is not reversible... wouldn't boot until it was opened and reflashed by cable",
+    "k3": "have 5.8 re-marked as the current published version, or have manual installs of 6.0 disabled",
+    "k4": "Send a targeted message to the 6.0 owners, and in-app if you can"}},
+  "L1O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "It's reversible and it stops the 15:00 jump to 50%",
+    "k2": "Abort could turn 160 locks that don't lock into up to 21,000 dead locks",
+    "k3": "whether the newest-published pointer can be set back to 5.8, or 6.0 unpublished",
+    "k4": "Send the warning to everyone on 6.0, not the whole fleet"}},
+  "V3L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Press Pause. Confirm in the console that the 15:00 widening is cancelled",
+    "k2": "Abort turns a \"door doesn't lock, thumb-turn works\" problem into thousands of dead locks",
+    "k3": "Ask Tomas whether you can unpublish it, or mark 5.8 as current for non-staged devices",
+    "k4": "Send it to them only."}},
+  "O7K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Pause stops the 15:00 widening to 50%... It costs nothing and is reversible",
+    "k2": "a mass Abort could brick up to 21,000 locks",
+    "k3": "whether you can unpublish 6.0 as \"latest\", or gate the manual update path",
+    "k4": "Send to the ~21,000 owners on 6.0, by email and push"}},
+  "C9I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Don't wait for 15:00. This stops the auto-widening to 50%... It's reversible",
+    "k2": "Abort would run that path on about 21,000 locks at once",
+    "k3": "unpublish 6.0 as \"latest\" or pin the latest to 5.8 for non-cohort locks",
+    "k4": "Do email or push-notify the roughly 21,000 on 6.0 tonight"}},
+  "Y8Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "This stops the 15:00 widening to 50%. Don't wait for anyone's agreement",
+    "k2": "You can't undo Abort. You can undo Pause.",
+    "k3": "can 6.0 be taken out of the \"newest published\" slot",
+    "k4": "Send to the 6.0 cohort only, this evening"}},
+  "F9R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "stops the automatic widening to 50% at 15:00... fully reversible",
+    "k2": "Abort could turn about 21,000 locks that currently lock by hand into locks that won't boot",
+    "k3": "unpublish 6.0 as the newest version, or mark it not-latest",
+    "k4": "to the owners on 6.0, about 21,000, not to all 210,000"}},
+  "M2V": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "press Pause... stops the automatic widening to 50% at 15:00",
+    "k2": "Abort could turn about 21,000 locks that mostly work into bricks",
+    "k3": "Make 5.8 the version those buttons install, or unpublish 6.0 as the latest",
+    "k4": "only to the roughly 21,000 owners who have 6.0"}},
+  "S5H": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Pause can. Pause costs you nothing except time... stops the automatic widening",
+    "k2": "exactly the downgrade Abort would run on about 21,000 locks",
+    "k3": "ask Tomas whether 6.0 can be un-published as \"latest\" so the app serves 5.8",
+    "k4": "only to the ~21,000 on 6.0 (target by firmware version)"}},
+  "A4Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "stops the automatic widening to 50% at 15:00... fully reversible",
+    "k2": "Abort is the one action here you can't undo, so it needs evidence first",
+    "k3": "whether 6.0 can be unpublished, or marked as not the latest",
+    "k4": "Target the ~21,000 locks that took 6.0"}},
+  "B2S": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "You can undo it with one click... stops the automatic widening to 50%",
+    "k2": "It can't be undone once it starts.",
+    "k3": "whether 6.0 can be un-published, or marked as not-latest",
+    "k4": "Send a push notification and email to the roughly 21,000 on 6.0"}}
+}

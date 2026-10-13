@@ -1,0 +1,32 @@
+{
+"U6A": {"k1": "~", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "Freezing is the standard way to stop mould and buy time.",
+ "k2": "Heat on stuck coated paper makes the damage permanent.",
+ "k3": "Tell the landlord's agent that nothing goes in the skip.",
+ "k4": "Get the circuit isolated at the consumer unit if you can."}},
+"G9M": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "You can't air-dry that volume in a hall by tonight",
+ "k2": "Coated paper dried wet fuses into a solid block",
+ "k3": "once it is in a skip it is gone, the claim gets harder to evidence",
+ "k4": "Turn off the strongroom lighting circuit at the consumer unit, not just the wall switch."}},
+"F3B": {"k1": "✓", "k2": "~", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "Freezing is cheap and can be undone, and it stops the damage.",
+ "k2": "Heat sets the coated paper. The hard edges on the catalogue stack are the early sign",
+ "k3": "If it's skipped before the loss adjuster sees it, you may weaken your claim.",
+ "k4": "isolate that circuit at the consumer unit and check it before anything is powered up"}},
+"N1L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Drying 60 soaked boxes by hand in a 22 °C, muggy building is not realistic.",
+ "k2": "Heat is what hardened the catalogue edges. Leave stuck stacks stuck. Freezer first",
+ "k3": "That decision can't be undone, and it would make your claim harder.",
+ "k4": "switch that lighting circuit off at the consumer unit, not just at the wall switch."}},
+"Y6K": {"k1": "~", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+ "k1": "It buys you time to dry the material properly later.",
+ "k2": "Glossy coated paper that dries while stuck together fuses permanently",
+ "k3": "Once they're destroyed, the claim and the records are both lost",
+ "k4": "Unplug both and don't run extension leads into the strongroom."}},
+"O5I": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "~", "evidence": {
+ "k1": "the aim is to stop the clock, not to dry things fast.",
+ "k2": "Heat is the wrong tool here. Your trial stack shows it",
+ "k3": "A skip makes the loss permanent. Ledgers and photographs from the Cobbold yard can't be replaced",
+ "k4": "treat the room's wiring as unsafe until an electrician has checked it."}}
+}

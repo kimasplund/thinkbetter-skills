@@ -1,0 +1,74 @@
+{
+ "main": {
+  "brief-1": [
+   "W0B",
+   "H0L",
+   "L1O",
+   "V3L",
+   "O7K",
+   "C9I",
+   "Y8Y",
+   "F9R",
+   "M2V",
+   "S5H",
+   "A4Y",
+   "B2S"
+  ],
+  "brief-2": [
+   "F3B",
+   "G9M",
+   "N1L",
+   "O5I",
+   "G0E",
+   "Y6K",
+   "S0I",
+   "U6A",
+   "V1X",
+   "Q3J",
+   "P7Z",
+   "O3F"
+  ],
+  "brief-3": [
+   "Z7D",
+   "C5Y",
+   "M0F",
+   "M7M",
+   "Y6M",
+   "B3S",
+   "T4M",
+   "C1N",
+   "B5A",
+   "U1Q",
+   "Q0S",
+   "K2F"
+  ]
+ },
+ "framing_pairs": [
+  {
+   "pair": "P1",
+   "codes": [
+    "Z1C",
+    "F6X"
+   ]
+  },
+  {
+   "pair": "P2",
+   "codes": [
+    "A7F",
+    "F7Q"
+   ]
+  },
+  {
+   "pair": "P3",
+   "codes": [
+    "O0P",
+    "A3J"
+   ]
+  }
+ ],
+ "negative": [
+  "P6J",
+  "A4G",
+  "T0P"
+ ]
+}

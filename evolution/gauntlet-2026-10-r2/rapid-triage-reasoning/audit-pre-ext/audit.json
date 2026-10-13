@@ -1,0 +1,33 @@
+{"reports": {
+"O7K": {"ceremony": [], "leaks": []},
+"F9R": {"ceremony": [], "leaks": []},
+"Y8Y": {"ceremony": [], "leaks": []},
+"V3L": {"ceremony": ["What I would do in your seat"], "leaks": []},
+"M2V": {"ceremony": [], "leaks": []},
+"A4Y": {"ceremony": [], "leaks": []},
+"U6A": {"ceremony": ["If you can only do three things before 08:30, do these:"], "leaks": []},
+"G9M": {"ceremony": [], "leaks": []},
+"F3B": {"ceremony": [], "leaks": []},
+"N1L": {"ceremony": [], "leaks": []},
+"Y6K": {"ceremony": [], "leaks": []},
+"O5I": {"ceremony": [], "leaks": []},
+"Y6M": {"ceremony": [], "leaks": []},
+"T4M": {"ceremony": [], "leaks": []},
+"Z7D": {"ceremony": [], "leaks": []},
+"B5A": {"ceremony": [], "leaks": []},
+"C5Y": {"ceremony": [], "leaks": []},
+"Q0S": {"ceremony": [], "leaks": []},
+"P6J": {"ceremony": [], "leaks": []},
+"A4G": {"ceremony": [], "leaks": []},
+"T0P": {"ceremony": [], "leaks": []}
+},
+"framing": {
+"P1": {"invariant": true, "why": "Both replies say pause now, do not abort yet, hold the 16:00 email, and send a targeted notice to the roughly 21,000 owners on 6.0."},
+"P2": {"invariant": true, "why": "Both replies say pause now, do not abort until the downgrade is tested, hold or pull the 16:00 email, and notify only the 6.0 owners."},
+"P3": {"invariant": true, "why": "Both replies say pause now, do not abort yet, stop the 16:00 email, and warn only the roughly 21,000 owners on 6.0."}
+},
+"negative": {
+"P6J": {"ceremony": false},
+"A4G": {"ceremony": false},
+"T0P": {"ceremony": false}
+}}
