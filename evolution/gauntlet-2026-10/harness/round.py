@@ -337,6 +337,140 @@ def blind(skill: str, seed=None) -> dict:
     return {"blind": len(mapping), "leak_hits": leak_hits}
 
 
+# ---------------------------------------------------------------- score
+
+DIMS = ["V1", "V2", "V3", "V4", "G1", "G2", "G3"]
+GRADE = {"✓": 1.0, "~": 0.5, "✗": 0.0}
+RANKING_RE = __import__("re").compile(r"```ranking\s*\n(.*?)\n```", __import__("re").S)
+
+
+def agreement(rows: list) -> float:
+    """Share of (code, dim) cells scored by both judges that agree within 1 point."""
+    by = {}
+    for r in rows:
+        by.setdefault(r["code"], {})[r["judge"]] = r
+    pairs = [(j[a][d], j[b][d]) for j in by.values() if len(j) >= 2
+             for a, b in [sorted(j)[:2]] for d in DIMS]
+    return sum(abs(x - y) <= 1 for x, y in pairs) / len(pairs) if pairs else 0.0
+
+
+def pairwise(rankings: list, codes_a: set, codes_b: set) -> tuple:
+    wins = losses = 0
+    for order in rankings:
+        pos = {c: i for i, c in enumerate(order)}
+        for a in codes_a & pos.keys():
+            for b in codes_b & pos.keys():
+                wins += pos[a] < pos[b]
+                losses += pos[a] > pos[b]
+    return wins, losses
+
+
+def _words(path: Path) -> int:
+    return len(path.read_text().split())
+
+
+def score(skill: str, extended: bool = False) -> dict:
+    sys.path.insert(0, str(HERE))
+    sys.path.insert(0, str(GAUNTLET_SCRIPTS))
+    import gates
+    import scorecard
+
+    rd = round_dir(skill).resolve()
+    jobs = _load(rd, "jobs/judge.json")
+    expected = {j["id"]: (rd / "scores" / f"{j['id']}.md" if j["id"].startswith("J-") else
+                          rd / "audit" / "audit.json" if j["id"] == "auditor" else
+                          rd / "keys" / f"{j['id'][len('verifier-'):]}.json") for j in jobs}
+    missing = [i for i, p in expected.items() if not p.is_file()]
+    if missing:
+        sys.exit(f"{skill}: missing instrument outputs, re-run these jobs first: {', '.join(missing)}")
+    freeze_ok = subprocess.run([sys.executable, str(GAUNTLET_SCRIPTS / "freeze.py"), "verify", str(rd / "state")],
+                               capture_output=True, text=True).returncode == 0
+
+    sealed, cells = _load(rd, "SEALED.json"), {c["cell"]: c for c in _load(rd, "cells.json")}
+    info = {}
+    for fname, code in sealed["blind"].items():
+        c = cells[fname[:-3]]
+        info[code] = {"arm": sealed["arms"][c["arm"]], "kind": c["kind"], "stem": Path(c["input"]).stem}
+    rows, _dims = scorecard.load(str(rd / "scores"))
+    rankings = []
+    for f in sorted((rd / "scores").glob("*.md")):
+        for block in RANKING_RE.findall(f.read_text()):
+            for line in block.strip().splitlines()[1:]:
+                parts = line.split(",", 2)
+                if len(parts) == 3:
+                    rankings.append(parts[2].split())
+    audit = _load(rd, "audit/audit.json")
+    keyfiles = {b: _load(rd, f"keys/{b}.json") for b in BRIEFS}
+    plan = _load(rd, "jobs/judge-plan.json")
+
+    arms = list(dict.fromkeys(sealed["arms"].values()))
+    neg_code = {info[c]["arm"]: c for c in plan["negative"]}
+    none_words = _words(rd / "blind" / f"{neg_code['none']}.md")
+    stats = {}
+    for arm in arms:
+        mains = [c for c, i in info.items() if i["arm"] == arm and i["kind"] == "main"]
+        per = {c: {d: [] for d in DIMS} for c in mains}
+        for r in rows:
+            if r["code"] in per:
+                for d in DIMS:
+                    per[r["code"]][d].append(r[d])
+        means = {c: {d: sum(v) / len(v) for d, v in ds.items() if v} for c, ds in per.items()}
+        scored = [m for m in means.values() if len(m) == len(DIMS)]
+        judge = {d: sum(m[d] for m in scored) / len(scored) for d in DIMS}
+        spread = {d: max(m[d] for m in scored) - min(m[d] for m in scored) for d in DIMS}
+        vals = [sum(m[d] for d in gates.VALUES) / 4 for m in scored]
+        spread["value"] = max(vals) - min(vals)
+        krates = []
+        for c in mains:
+            grades = [GRADE.get(g, 0.0) for k, g in keyfiles[info[c]["stem"]].get(c, {}).items() if k != "evidence"]
+            krates.append(sum(grades) / len(grades) if grades else 0.0)
+        rep = audit["reports"]
+        nc = neg_code[arm]
+        pair = next((p for p in plan["framing_pairs"] if p["codes"] and info[p["codes"][0]]["arm"] == arm), None)
+        stats[arm] = gates.ArmStats(
+            judge=judge, spread=spread,
+            audit_ceremony=sum(len(rep.get(c, {}).get("ceremony", [])) for c in mains) / len(mains),
+            audit_leaks=sum(len(rep.get(c, {}).get("leaks", [])) for c in mains) / len(mains),
+            key_rate=sum(krates) / len(krates), key_spread=max(krates) - min(krates),
+            negative_ok=(_words(rd / "blind" / f"{nc}.md") <= 1.5 * none_words
+                         and not audit.get("negative", {}).get(nc, {}).get("ceremony", False)),
+            framing_ok=None if pair is None else bool(audit.get("framing", {}).get(pair["pair"], {}).get("invariant")))
+    codes_of = lambda arm: {c for c, i in info.items() if i["arm"] == arm and i["kind"] == "main"}  # noqa: E731
+    agree = agreement(rows)
+    w, l = pairwise(rankings, codes_of("new"), codes_of("none"))
+    val = gates.validation_gate(stats["new"], stats["none"], w, l, agree, freeze_ok)
+    val["verdict"] = gates.finalize("validation", val["verdict"], extended)
+    rew = None
+    if "old" in stats:
+        rew = gates.rewrite_gate(stats["new"], stats["old"], freeze_ok, agree)
+        rew["wins"], rew["losses"] = pairwise(rankings, codes_of("new"), codes_of("old"))
+        rew["verdict"] = gates.finalize("rewrite", rew["verdict"], extended)
+    verdict = {"skill": skill, "validation": val, "rewrite": rew, "agreement": round(agree, 3),
+               "freeze_ok": freeze_ok, "extended": extended,
+               "arms": {a: {"value_mean": round(s.value_mean, 2), **{d: round(s.judge[d], 2) for d in DIMS},
+                            "key_rate": round(s.key_rate, 3), "ceremony": round(s.audit_ceremony, 2),
+                            "leaks": round(s.audit_leaks, 2), "negative_ok": s.negative_ok,
+                            "framing_ok": s.framing_ok, "value_spread": round(s.spread["value"], 2)}
+                        for a, s in stats.items()}}
+    (rd / "verdict.json").write_text(json.dumps(verdict, indent=1, ensure_ascii=False))
+    lines = [f"# Scorecard: {skill}", "",
+             f"Agreement {agree:.2f} · freeze {'OK' if freeze_ok else 'FAILED'} · extended {extended}", "",
+             "| arm | value | " + " | ".join(DIMS) + " | keys | ceremony | leaks | negative | framing |",
+             "|---" * (len(DIMS) + 7) + "|"]
+    for a, s in stats.items():
+        lines.append(f"| {a} | {s.value_mean:.2f}±{s.spread['value']:.2f} | " +
+                     " | ".join(f"{s.judge[d]:.2f}" for d in DIMS) +
+                     f" | {s.key_rate:.2f} | {s.audit_ceremony:.2f} | {s.audit_leaks:.2f} | "
+                     f"{'ok' if s.negative_ok else 'FAIL'} | {'-' if s.framing_ok is None else ('ok' if s.framing_ok else 'FAIL')} |")
+    for name, g in (("Validation (new vs none)", val), ("Rewrite (new vs old)", rew)):
+        if g:
+            lines += ["", f"**{name}: {g['verdict']}**" + (f" (wins {g['wins']}, losses {g['losses']})" if "wins" in g else ""),
+                      " · ".join(f"{k} {v}" for k, v in g["conditions"].items())]
+    (rd / "scorecard.md").write_text("\n".join(lines) + "\n")
+    set_state(skill, "scored", validation=val["verdict"], rewrite=rew["verdict"] if rew else "-")
+    return verdict
+
+
 # ---------------------------------------------------------------- CLI
 
 def main(argv=None) -> int:
@@ -347,6 +481,9 @@ def main(argv=None) -> int:
     r.add_argument("skill")
     r.add_argument("phase", choices=["exec", "judge"])
     sub.add_parser("blind").add_argument("skill")
+    s = sub.add_parser("score")
+    s.add_argument("skill")
+    s.add_argument("--extended", action="store_true")
     args = ap.parse_args(argv)
     if args.cmd == "build":
         res = build(args.skill)
@@ -357,6 +494,9 @@ def main(argv=None) -> int:
     elif args.cmd == "blind":
         res = blind(args.skill)
         print(f"{args.skill}: blinded {res['blind']} replies; leak-scan hits: {res['leak_hits']}; state blinded")
+    elif args.cmd == "score":
+        score(args.skill, extended=args.extended)
+        print((round_dir(args.skill) / "scorecard.md").read_text())
     return 0
 
 

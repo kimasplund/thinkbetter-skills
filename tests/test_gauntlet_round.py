@@ -177,5 +177,79 @@ class RenderBlindTest(RoundFixture):
         self.assertNotIn("## 1.", some.read_text())
 
 
+class ScoreTest(RenderBlindTest):
+    VALUES = {"new": 6, "old": 5, "none": 4}
+    GUARDS = {"new": 6, "old": 6, "none": 5}
+    KEYS_OK = {"new": "✓", "old": "~", "none": "✗"}
+
+    def staged(self, skill="demo-skill"):
+        rd = self.built(skill)
+        self.write_raw(rd, text="A short direct answer with the key points.\n")
+        gr.blind(skill, seed=6)
+        gr.render(skill, "judge")
+        return rd
+
+    def fake_instruments(self, rd, rank_order=("new", "old", "none")):
+        sealed = json.loads((rd / "SEALED.json").read_text())
+        cells = {c["cell"]: c for c in json.loads((rd / "cells.json").read_text())}
+        arm_of = {code: sealed["arms"][cells[f[:-3]]["arm"]] for f, code in sealed["blind"].items()}
+        plan = json.loads((rd / "jobs" / "judge-plan.json").read_text())
+        for jid in ("J-A", "J-B"):
+            for b, codes in plan["main"].items():
+                rows = []
+                for c in codes:
+                    a = arm_of[c]
+                    dims = [self.VALUES[a]] * 4 + [self.GUARDS[a]] * 3
+                    rows.append(f"{jid},{c}," + ",".join(map(str, dims)) + f",{sum(dims)}")
+                order = sorted(codes, key=lambda c: rank_order.index(arm_of[c]))
+                (rd / "scores" / f"{jid}-{b}.md").write_text(
+                    "```scores\njudge,code,V1,V2,V3,V4,G1,G2,G3,total\n" + "\n".join(rows) + "\n```\n\n"
+                    f"```ranking\njudge,brief,order\n{jid},{b},{' '.join(order)}\n```\n")
+        audit = {"reports": {c: {"ceremony": [], "leaks": []} for c in sum(plan["main"].values(), []) + plan["negative"]},
+                 "framing": {p["pair"]: {"invariant": True, "why": "same"} for p in plan["framing_pairs"]},
+                 "negative": {c: {"ceremony": False} for c in plan["negative"]}}
+        (rd / "audit" / "audit.json").write_text(json.dumps(audit))
+        for b, codes in plan["main"].items():
+            ids = [k["id"] for k in KEYS[b]]
+            (rd / "keys" / f"{b}.json").write_text(json.dumps(
+                {c: {**{i: self.KEYS_OK[arm_of[c]] for i in ids}, "evidence": {i: "q" for i in ids}} for c in codes}))
+
+    def test_score_validated_case(self):
+        rd = self.staged()
+        self.fake_instruments(rd)
+        v = gr.score("demo-skill")
+        self.assertEqual(v["validation"]["verdict"], "VALIDATED", v["validation"])
+        self.assertEqual(v["rewrite"]["verdict"], "KEEP", v["rewrite"])
+        self.assertTrue((rd / "scorecard.md").is_file())
+        self.assertLessEqual(len((rd / "scorecard.md").read_text().splitlines()), 40)
+
+    def test_score_refuses_missing_judge_file(self):
+        rd = self.staged()
+        self.fake_instruments(rd)
+        (rd / "scores" / "J-B-brief-2.md").unlink()
+        with self.assertRaises(SystemExit) as cm:
+            gr.score("demo-skill")
+        self.assertIn("J-B-brief-2", str(cm.exception))
+
+    def test_score_unseals_correct_arm(self):
+        rd = self.staged()
+        self.fake_instruments(rd)
+        sealed = json.loads((rd / "SEALED.json").read_text())
+        swap = {"new": "none", "none": "new", "old": "old"}
+        sealed["arms"] = {c: swap[a] for c, a in sealed["arms"].items()}
+        (rd / "SEALED.json").write_text(json.dumps(sealed))
+        self.assertEqual(gr.score("demo-skill")["validation"]["verdict"], "NOT VALIDATED")
+
+    def test_score_rewrite_gate_present_only_for_three_arm(self):
+        rd = self.staged("demo-two")
+        self.fake_instruments(rd, rank_order=("new", "none"))
+        self.assertIsNone(gr.score("demo-two")["rewrite"])
+
+    def test_agreement_computation(self):
+        rows = [{"judge": "J-A", "code": "A1B", **{d: 5.0 for d in ("V1", "V2", "V3", "V4", "G1", "G2", "G3")}},
+                {"judge": "J-B", "code": "A1B", **{d: 5.0 for d in ("V1", "V2", "V3", "V4", "G1", "G2")}, "G3": 3.0}]
+        self.assertAlmostEqual(gr.agreement(rows), 6 / 7)
+
+
 if __name__ == "__main__":
     unittest.main()
