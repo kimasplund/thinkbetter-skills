@@ -1,0 +1,38 @@
+{
+  "E3Y": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "600 at about 66% gives about 396, under 420 even with a good winter.",
+      "k2": "Hauling all 600 costs $37,800 up front against $15,000 of credit.",
+      "k3": "\"Holds about 500\" includes Agnete's 300, so about 200 spaces are free.",
+      "k4": "A $150 colony therefore nets you +$80, not -$40."
+    }
+  },
+  "N4O": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Outdoors alone leaves you short. 600 × 65% is about 390",
+      "k2": "For 600 colonies that is about $37,800 up front, and you have $15,000",
+      "k3": "may include Agnete's own 300, which would leave room for only about 200",
+      "k4": "+$40 instead of -$40, an $80 improvement per colony."
+    }
+  },
+  "M4V": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Winter the other 400 outdoors in wraps, about $1,200. Expect about 260 to grade.",
+      "k2": "$37,800 up front, against $15,000 of credit. The most you could send is about 220",
+      "k3": "\"Holds about 500\" may include Agnete's 300, which would leave only about 200 spare.",
+      "k4": "That nets you +$80 per colony compared with being short."
+    }
+  },
+  "V1H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "600 at your average loss is about 378 alive and about 330 graded, 90 short",
+      "k2": "600 colonies at $63 is $37,800 against a $15,000 line. The most you could send is about 185",
+      "k3": "room for about 200 more colonies (500 total, her 300 already inside)",
+      "k4": "every colony he covers also avoids your $40 shortfall charge, so each is worth about $80"
+    }
+  }
+}

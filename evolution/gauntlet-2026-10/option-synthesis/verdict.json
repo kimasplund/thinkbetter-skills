@@ -1,0 +1,60 @@
+{
+ "skill": "option-synthesis",
+ "validation": {
+  "verdict": "NOT VALIDATED",
+  "conditions": {
+   "guard_judge_G1": "FAIL",
+   "guard_judge_G2": "FAIL",
+   "guard_judge_G3": "NOISE",
+   "guard_audit_ceremony": "FAIL",
+   "guard_audit_leaks": "FAIL",
+   "guard_audit_length": "FAIL",
+   "value": "PASS",
+   "ranking": "NOISE",
+   "negative": "PASS",
+   "framing": "FAIL",
+   "agreement": "PASS"
+  },
+  "wins": 1,
+  "losses": 4,
+  "sign_p": 0.375
+ },
+ "rewrite": null,
+ "agreement": 0.988,
+ "freeze_ok": true,
+ "extended": false,
+ "arms": {
+  "new": {
+   "value_mean": 5.73,
+   "V1": 5.92,
+   "V2": 6.0,
+   "V3": 4.75,
+   "V4": 6.25,
+   "G1": 2.25,
+   "G2": 1.33,
+   "G3": 4.08,
+   "key_rate": 0.875,
+   "ceremony": 11.83,
+   "leaks": 4.67,
+   "word_ratio": 4.07,
+   "negative_ok": true,
+   "framing_ok": false
+  },
+  "none": {
+   "value_mean": 4.94,
+   "V1": 5.0,
+   "V2": 5.42,
+   "V3": 4.17,
+   "V4": 5.17,
+   "G1": 6.17,
+   "G2": 7.0,
+   "G3": 4.75,
+   "key_rate": 0.875,
+   "ceremony": 0.0,
+   "leaks": 0.0,
+   "word_ratio": 1.0,
+   "negative_ok": true,
+   "framing_ok": null
+  }
+ }
+}

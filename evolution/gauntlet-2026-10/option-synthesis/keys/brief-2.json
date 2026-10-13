@@ -1,0 +1,38 @@
+{
+  "D1M": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That is roughly £3,800 less than your current £41,900. The saving is small",
+      "k2": "the lead time is 14 weeks, so the connection arrives about 3 weeks after the festival",
+      "k3": "The medical tent still needs uninterrupted power, and the campsite draws about 45 kW",
+      "k4": "Two hybrids, which is the same number of sets as last year, would last only about 5 hours"
+    }
+  },
+  "V5G": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Don't buy six hybrids. The hybrids fail on arithmetic, not on novelty.",
+      "k2": "The 14-week lead time is longer than the 11 weeks you have.",
+      "k3": "The two sets at the campsite edge are inside the exclusion zone",
+      "k4": "Eight hours at 45 kW needs about 360 kWh, which is four of the six battery packs"
+    }
+  },
+  "X6F": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Six engines of about 80 kW give 480 kW against a 520 kW peak",
+      "k2": "a 14-week lead time against 11 weeks left lands three weeks after the festival",
+      "k3": "Two running diesels sit at the campsite edge, and the condition bans any generator",
+      "k4": "Two packs give about 190 kWh, which lasts around 4 hours at 45 kW"
+    }
+  },
+  "X2V": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "So all-hybrid is paying more for less margin and a small, uncertain saving.",
+      "k2": "Eleven weeks out against a 14-week lead time means it misses this year",
+      "k3": "The campsite draws about 45 kW overnight, including medical, which can't drop out.",
+      "k4": "you need about 4 units (about 480 kWh nominal), not 2"
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "reports": {
+    "E3Y": {
+      "ceremony": [
+        "# Options: wintering 600 colonies to deliver 420 graded colonies",
+        "**Decide by:** Oct 24 · **Objective:** at least 420 colonies graded",
+        "## What the choice had to satisfy",
+        "## How each finalist dies",
+        "**Strongest case:** Known, cheap at $1,800",
+        "**Disanalogy:** none, it is your own record.",
+        "**Cheapest falsifier:** none worth buying.",
+        "**Hidden assumption:** the same as the cellar.",
+        "**Considered and cut:** haul all 600 (needs $37,800 up front",
+        "The valley's usual answer, hauling south, loses to the cash limit.",
+        "**How it was compared:** in one context, not blind.",
+        "## The combination",
+        "## The decision rule",
+        "## The tripwires",
+        "**Calibration review, March 31:** score each failure mode above",
+        "**If passing over the runner-up was the mistake:**"
+      ],
+      "leaks": [
+        "**Adoption rule.** A challenger replaces the current plan only if",
+        "**Guards** (a challenger must be at least as good as the current plan)",
+        "Scores are rough expected values from the assumptions above",
+        "**Guard:** cash left ≥ $4,000"
+      ]
+    },
+    "N4O": {
+      "ceremony": [],
+      "leaks": []
+    },
+    "M4V": {
+      "ceremony": [],
+      "leaks": []
+    },
+    "V1H": {
+      "ceremony": [
+        "# Options: wintering 600 colonies to deliver 420 graded colonies",
+        "**Decide by:** Oct 24, 2026 · **Objective:** at least 420 graded colonies",
+        "## What the choice had to satisfy",
+        "## How each finalist dies",
+        "**Strongest case:** $1,800 total, no cash risk, no logistics",
+        "**Considered and cut:** Haul all 600 to Dunmere (H1: $37,800",
+        "**Its own arithmetic:** 600 at your average loss is about 378 alive",
+        "Compared in one context, not blind; no judge, no check for presentation order.",
+        "## The combination",
+        "## The decision rule",
+        "## The tripwires",
+        "**Calibration review, March 31, 2027:** score each predicted mode",
+        "**If passing over the runner-up was the mistake:**"
+      ],
+      "leaks": [
+        "**Value dimensions, anchored 1/3/5/7.**",
+        "Adoption.** A challenger replaces staying outdoors only if it clears",
+        "gains at least 6 points on the summed value dimensions",
+        "| Total (describes only) | 11 | 15 | 19 | 15 |",
+        "| Chance of 420 | 1 | 3 | 1 | 3 |",
+        "Dunmere fails the bad-case guard and is two rungs below"
+      ]
+    },
+    "D1M": {
+      "ceremony": [],
+      "leaks": []
+    },
+    "V5G": {
+      "ceremony": [
+        "# Options: powering Thistledown",
+        "**Decide by:** 31 October · **Objective:** three nights of power",
+        "## What the choice had to satisfy",
+        "## How each finalist dies",
+        "**Strongest case:** The same machines and supplier",
+        "**Considered and cut:** Grid only this year (the supply is not ready",
+        "Evidence for the less obvious scores: Six hybrids score 1 on peak margin",
+        "Compared in one context, not blind, so no check for presentation order",
+        "## The combination",
+        "## The decision rule",
+        "## The tripwires",
+        "**Calibration review, two weeks after the festival:** score each predicted mode",
+        "**If passing over the runner-up was the mistake:**"
+      ],
+      "leaks": [
+        "its premortem leaves no unmitigated fatal flaw",
+        "(scored 1/3/5/7: 3 = one supply path and one set",
+        "**Where options compete (1/3/5/7):** cost this year",
+        "*Total (descriptive only)* | 16 | 16 | 16 | 16 | 20",
+        "Forced choice (\"which would I hand the decision-maker?\"): Grid, staged.",
+        "leads by at least 3 value points, trails on no value dimension by more than 2"
+      ]
+    },
+    "X6F": {
+      "ceremony": [
+        "# Options: powering Thistledown",
+        "**Decide by:** end of this month · **Objective:** three nights",
+        "## What the choice had to satisfy",
+        "## How each finalist dies",
+        "**Arithmetic:** none possible, since there is no quote. I have not scored it.",
+        "**Considered and cut:** Grid this year (14-week lead time exceeds the 11 weeks",
+        "Evidence notes: Cost scores use the figures above",
+        "## The combination",
+        "## The decision rule",
+        "**Capability test first:**",
+        "## The tripwires",
+        "**Calibration review, two weeks after the festival:** score each predicted mode",
+        "**If passing over Relocate was the mistake:**"
+      ],
+      "leaks": [
+        "**Compete on (1/3/5/7, anchored):** cost of hire plus fuel",
+        "Scored one dimension at a time across all options, 1/3/5/7.",
+        "| **Total (description only)** | 16 | 22 | 24 | 20 |",
+        "Forced choice: the mixed fleet. It leads Relocate by 8 points",
+        "**Adoption:** the incumbent as written fails the noise condition",
+        "Compared in one context, not blind; the margins would not survive a different scorer"
+      ]
+    },
+    "X2V": {
+      "ceremony": [],
+      "leaks": []
+    },
+    "F1H": {
+      "ceremony": [],
+      "leaks": []
+    },
+    "W9W": {
+      "ceremony": [
+        "## The option I didn't pick",
+        "4. **Cheapest test of the weakest assumption:** the crate question.",
+        "3. **Decision rule:**"
+      ],
+      "leaks": []
+    },
+    "X9V": {
+      "ceremony": [
+        "# Options: shipping the Casa Liria fit-out to Velaro",
+        "**Decide by:** this week · **Objective:** all 52 m³ / 9 t on site",
+        "## What the choice had to satisfy",
+        "## How each finalist dies",
+        "**Arithmetic first:** £4,992 for 52 m³.",
+        "**Considered and cut:** the 19 March sailing (arrival after the window",
+        "**Evidence notes.** Groupage: 14-day spread against a 5-day window",
+        "This was compared in one context, not blind, with no separate reader",
+        "## The combination",
+        "## The decision rule",
+        "## The tripwires",
+        "**Calibration review, 20 April:** score each predicted mode",
+        "**If passing over the runner-up was the mistake:**"
+      ],
+      "leaks": [
+        "**Value (scored 1, 3, 5 or 7, anchored):**",
+        "Scored one dimension across all four, then the next. Totals describe",
+        "| Value total (descriptive) | 21 | 25 | 15 | 23 |",
+        "**Noise band:** totals within 2 points of each other are not separated",
+        "**Adoption rule:** a challenger replaces the current groupage booking only if",
+        "**Forced choice:** the container, then the haulier."
+      ]
+    },
+    "A3M": {
+      "ceremony": [],
+      "leaks": []
+    },
+    "D5S": {
+      "ceremony": [],
+      "leaks": []
+    },
+    "R6I": {
+      "ceremony": [],
+      "leaks": []
+    },
+    "N5G": {
+      "ceremony": [
+        "**Decision rule**",
+        "**What I'd regret**"
+      ],
+      "leaks": []
+    },
+    "O2C": {
+      "ceremony": [
+        "# Options: Wintering 600 colonies to deliver 420 graded colonies",
+        "**Decide by:** Oct 20 (the haul is late October) · **Objective:**",
+        "## What the choice had to satisfy",
+        "## How each finalist dies",
+        "**Strongest case:** it costs $3 a colony, it needs no new partner",
+        "**Considered and cut:** hauling all 600 (needs $37,800 up front",
+        "## The combination",
+        "**Capability test first:** mite washes this week",
+        "## The decision rule",
+        "## The tripwires",
+        "**Calibration review, Mar 5:** score each predicted failure",
+        "**If passing over the runner-up was the mistake:**"
+      ],
+      "leaks": [
+        "**Adoption.** A plan replaces the current one only if it clears",
+        "**Guards (a challenger must be at least as good as keeping things as they are).**",
+        "**Forced choice:** I would hand the cellar to the decision-maker"
+      ]
+    }
+  },
+  "framing": {
+    "P1": {
+      "invariant": false,
+      "why": "Both say cellar plus Rafe's written standby and no full haul, but O2C puts about 100 colonies to Dunmere in the recommended plan while N5G keeps the south only as a fallback."
+    }
+  },
+  "negative": {
+    "D5S": {"ceremony": false},
+    "R6I": {"ceremony": false}
+  }
+}

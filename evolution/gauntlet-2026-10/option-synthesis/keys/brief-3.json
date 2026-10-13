@@ -1,0 +1,38 @@
+{
+  "F1H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Costs more than the full container and has the widest timing spread.",
+      "k2": "5 March ... would also land as early as 2 April, which means about two weeks with nowhere to put it.",
+      "k3": "the container is unloaded at a depot outside the quarter and the crates go over the bridge in smaller vehicles",
+      "k4": "Crates built from offcuts almost certainly aren't stamped, and customs can reject or fumigate unstamped wood"
+    }
+  },
+  "W9W": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Groupage loses on both cost and timing. It costs about £840 more than the full container",
+      "k2": "Too early. You'd be paying for storage somewhere",
+      "k3": "The hotel needs a delivery plan with 7.5-tonne vehicles for the last leg",
+      "k4": "it applies to crates you built from offcuts. Customs can refuse or hold a container full of unstamped crates"
+    }
+  },
+  "X9V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Groupage has the wrong shape for this job ... It also costs more than the container",
+      "k2": "any early arrival held off site by the carrier; ... held until 14 April",
+      "k3": "the last leg must be done by 7.5 tonne or smaller vehicles, probably at least two loads",
+      "k4": "Crates you build from offcuts cannot carry that stamp."
+    }
+  },
+  "A3M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "it's cheaper and you get 15 m³ spare",
+      "k2": "The 5 March sailing (4 to 5 weeks) lands around 2 to 9 April, which is too early.",
+      "k3": "devan the container at a depot on the near side and shuttle the load over in 7.5 t or lighter vehicles",
+      "k4": "Crates built from offcuts almost certainly aren't. ... Unmarked crates can mean the shipment is refused, held"
+    }
+  }
+}

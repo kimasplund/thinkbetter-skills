@@ -17,7 +17,7 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | 11 | analogical-transfer | applied | NOT VALIDATED | - |  | ~0.76M |
 | 12 | rapid-triage-reasoning | applied | NOT VALIDATED | - |  | ~0.69M |
 | 13 | negotiated-decision-framework | applied | NOT VALIDATED | - |  | ~1.51M (extended) |
-| 14 | option-synthesis | pending | | | | |
+| 14 | option-synthesis | applied | NOT VALIDATED | - |  | ~1.30M |
 | 15 | skill-gauntlet | applied | NOT VALIDATED | - |  | ~0.59M |
 
 ## Amendments
@@ -28,3 +28,4 @@ States: pending → designed → frozen → ran → blinded → judged → score
 - **Ruling (round 5):** removed `context: fork` and `argument-hint` from breadth-of-thought's frontmatter after the mechanical revert. The restored v1.0.0 body has no `$ARGUMENTS` block, so a forked run would start without the problem. This is a frontmatter-only change, and the body remains exactly v1.0.0.
 
 - **Ruling (round 8):** premortem-evolved's mechanical revert restored the v1.0.0 SKILL.md body and `references/`, but `scripts/pre_delivery_check.py` was kept at its 1.1.0 version. Gauntlet workers have no Bash, so the script never ran in any cell and the verdict carries no evidence about it. Its 1.1.0 changes are mechanical bug fixes (whole-word token matching, template-token detection, `-h`, read errors) covered by `tests/test_skill_scripts.py`, and it doesn't depend on the 1.1.0 wording. Cost if wrong: one `git checkout v1.0.0 -- skills/premortem-evolved/scripts/` plus dropping the affected tests.
+- **Ruling (round 14):** the auditor failed strict validation three times with the identical prompt. Each time it also reported on the two framing-pair replies (N5G, O2C), on top of every main and negative reply. The prompt asks for "every main and negative code" without forbidding extras, so this is a prompt ambiguity, not corruption. The third output's two framing entries were removed from `reports`, after asserting that the extras were exactly the framing codes and nothing was missing. The unmodified output is kept as `option-synthesis/audit/audit.raw.json`. The scorer reads `reports` only for main replies and takes framing and negative results from their own sections, so no scored value changed. Fix after the program: make the auditor prompt exclude framing codes from `reports`, or make the validator ignore them. Cost if wrong: a fourth identical re-run.
