@@ -7,7 +7,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
 
-from build_zips import build_zip, strip_frontmatter  # noqa: E402
+from build_zips import build_zip, main, strip_frontmatter  # noqa: E402
 from validate_skills import parse_frontmatter  # noqa: E402
 
 SKILL_MD = """---
@@ -69,6 +69,17 @@ class BuildZipTest(unittest.TestCase):
     def test_overlay_excluded_by_default_included_with_flag(self):
         self.assertNotIn("demo-skill/references/private.md", self.names(False))
         self.assertIn("demo-skill/references/private.md", self.names(True))
+
+
+class MainGuardTest(unittest.TestCase):
+    def test_with_overlays_refuses_output_inside_repo(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(SystemExit) as cm:
+                main(["--with-overlays", "--out", str(Path(__file__).resolve().parent.parent / "dist"), "premortem-evolved"])
+            self.assertEqual(cm.exception.code, 2)
+            out = Path(tmp) / "personal"
+            self.assertEqual(main(["--with-overlays", "--out", str(out), "premortem-evolved"]), 0)
+            self.assertTrue((out / "premortem-evolved.zip").is_file())
 
 
 if __name__ == "__main__":

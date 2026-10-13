@@ -6,8 +6,9 @@ Usage: build_zips.py [--with-overlays] [--out DIR] [skill ...]
 Each zip has the skill folder at its root. SKILL.md frontmatter is reduced to the six
 Agent Skills spec keys, because claude.ai rejects Claude Code-only keys (model, context,
 agent, user-invocable, ...). Files come from `git ls-files`, so local overlays excluded
-via .gitignore or .git/info/exclude never ship; --with-overlays adds them back for a
-personal upload.
+via .gitignore or .git/info/exclude never ship. --with-overlays adds them back for a
+personal upload and requires an --out outside the repo, so an overlay zip can never
+join a release.
 """
 import argparse
 import subprocess
@@ -63,7 +64,10 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
     repo = Path(__file__).resolve().parent.parent
     skills = args.skills or sorted(p.name for p in (repo / "skills").iterdir() if p.is_dir())
-    out = args.out if args.out.is_absolute() else Path.cwd() / args.out
+    out = (args.out if args.out.is_absolute() else Path.cwd() / args.out).resolve()
+    if args.with_overlays and out.is_relative_to(repo):
+        # overlay zips carry private files; never let them land where a release upload globs dist/*.zip
+        ap.error("--with-overlays needs an --out directory outside the repo")
     for skill in skills:
         path = build_zip(repo, skill, out, args.with_overlays)
         print(f"{path} ({len(zipfile.ZipFile(path).namelist())} files)")
