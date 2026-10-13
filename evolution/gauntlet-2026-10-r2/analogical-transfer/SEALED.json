@@ -1,0 +1,36 @@
+{
+ "arms": {
+  "p5": "new",
+  "n6": "old",
+  "b3": "none"
+ },
+ "blind": {
+  "brief-1--p5--r1.md": "B1V",
+  "brief-1--p5--r2.md": "C0N",
+  "brief-1--n6--r1.md": "W4I",
+  "brief-1--n6--r2.md": "T1U",
+  "brief-1--b3--r1.md": "T1H",
+  "brief-1--b3--r2.md": "J1A",
+  "brief-2--p5--r1.md": "R0I",
+  "brief-2--p5--r2.md": "C2F",
+  "brief-2--n6--r1.md": "M6Q",
+  "brief-2--n6--r2.md": "L1I",
+  "brief-2--b3--r1.md": "I1T",
+  "brief-2--b3--r2.md": "P8D",
+  "brief-3--p5--r1.md": "Q0V",
+  "brief-3--p5--r2.md": "A0V",
+  "brief-3--n6--r1.md": "K9R",
+  "brief-3--n6--r2.md": "V9L",
+  "brief-3--b3--r1.md": "G7T",
+  "brief-3--b3--r2.md": "B5C",
+  "framing-hype--p5--r1.md": "M9G",
+  "framing-hype--n6--r1.md": "I8G",
+  "framing-hype--b3--r1.md": "D7K",
+  "framing-skeptical--p5--r1.md": "L7O",
+  "framing-skeptical--n6--r1.md": "G6N",
+  "framing-skeptical--b3--r1.md": "T7L",
+  "negative--p5--r1.md": "R9V",
+  "negative--n6--r1.md": "I6R",
+  "negative--b3--r1.md": "V0K"
+ }
+}

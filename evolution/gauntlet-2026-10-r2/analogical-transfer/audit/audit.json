@@ -1,0 +1,35 @@
+{
+  "reports": {
+    "J1A": {"ceremony": [], "leaks": []},
+    "T1U": {"ceremony": [], "leaks": []},
+    "W4I": {"ceremony": [], "leaks": []},
+    "T1H": {"ceremony": [], "leaks": []},
+    "C0N": {"ceremony": [], "leaks": []},
+    "B1V": {"ceremony": ["Analogies Investigated", "Transferable Principles", "Proposed Solutions", "Disanalogies and Risks"], "leaks": []},
+    "R0I": {"ceremony": [], "leaks": []},
+    "C2F": {"ceremony": [], "leaks": []},
+    "I1T": {"ceremony": ["The ED model is right that we should assess cases early"], "leaks": []},
+    "P8D": {"ceremony": ["build in guaranteed maximum waits, objective criteria, a randomized comparison, and pre-agreed"], "leaks": []},
+    "M6Q": {"ceremony": [], "leaks": []},
+    "L1I": {"ceremony": [], "leaks": []},
+    "Q0V": {"ceremony": ["Disanalogies and risks", "Keep Ines's membership structure, her instinct for fair access, and her drafting."], "leaks": []},
+    "B5C": {"ceremony": ["Replace the lend-and-return mechanics with portioning and a protected master."], "leaks": []},
+    "K9R": {"ceremony": ["The short version is to keep the library's good habits"], "leaks": []},
+    "G7T": {"ceremony": [], "leaks": []},
+    "V9L": {"ceremony": [], "leaks": []},
+    "A0V": {"ceremony": ["Analogies Investigated", "Transferable Principles", "Proposed Solutions", "Disanalogies and Risks", "Delete the overdue fee and the replacement charge."], "leaks": []},
+    "V0K": {"ceremony": [], "leaks": []},
+    "I6R": {"ceremony": [], "leaks": []},
+    "R9V": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both say not as proposed and recommend a capped pilot of pre-season option contracts with a fixed baseline, location weighting of about 0.6 for Upper Canal, no hourly price app, and a separate shortage-sharing rule."},
+    "P2": {"invariant": true, "why": "Both say the programme would not work as proposed but parts are worth keeping, and both recommend a small pre-season standby/option-contract pilot with a pre-season baseline, 5 to 7 day notice, and return-flow discounting."},
+    "P3": {"invariant": true, "why": "Both reject the programme as drafted, drop the hourly price and three-year baseline, and recommend a capped pilot of pre-season standby/option contracts priced by location, with a Lower Canal sharing rule."}
+  },
+  "negative": {
+    "V0K": {"ceremony": false},
+    "I6R": {"ceremony": false},
+    "R9V": {"ceremony": false}
+  }
+}

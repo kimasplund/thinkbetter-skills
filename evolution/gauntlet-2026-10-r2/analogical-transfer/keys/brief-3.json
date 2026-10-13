@@ -1,0 +1,56 @@
+{
+  "Q0V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Cap by production, not by queue. Decide how many portions Teodor can prepare per week",
+      "k2": "Nothing goes back on the shelf.",
+      "k3": "Tier 1 is the master line of each culture",
+      "k4": "Six hours a week at his limit is a single point of failure."
+    }
+  },
+  "B5C": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Prepare 80 portions across a few weeks instead of making Teodor feed 80 queue slots.",
+      "k2": "Returned jars should never go back on the shelf.",
+      "k3": "Split each culture into a protected master and a distribution line.",
+      "k4": "Add a second trained volunteer for the masters, so one person at his limit"
+    }
+  },
+  "K9R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The scarce thing is Teodor's time and the purity of the original line, not the jar.",
+      "k2": "Nothing from outside ever goes in, including volunteers' home grains.",
+      "k3": "Keep a sealed master line for each culture.",
+      "k4": "see how many portions Teodor can really make per week."
+    }
+  },
+  "G7T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "work grows with propagation, not with number of borrowers.",
+      "k2": "nothing that has left the building ever goes back into a stock jar.",
+      "k3": "Say plainly in the rules that the Commons keeps the reference line",
+      "k4": "Schedule distribution days, say two a month, with portions prepared the day before."
+    }
+  },
+  "V9L": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "about 18 months of waiting for the last person, and one jar can't serve it anyway.",
+      "k2": "It never goes back into a stock jar.",
+      "k3": "Treat the master and working stock as \"the line\" and say plainly that portions will diverge.",
+      "k4": "The workload then drops as you open, instead of rising."
+    }
+  },
+  "A0V": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Splitting portions turns it into a few batches.",
+      "k2": "nothing that has left the building ever goes back into a stock jar.",
+      "k3": "Treat the master as the reference, and expect copies to drift.",
+      "k4": "use it to reduce Teodor's feeding rounds."
+    }
+  }
+}

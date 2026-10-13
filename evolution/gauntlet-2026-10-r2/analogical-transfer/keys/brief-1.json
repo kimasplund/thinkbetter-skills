@@ -1,0 +1,56 @@
+{
+  "J1A": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "The grid's hourly price signal has no meaning on a five-day delay.",
+      "k2": "Paying for diverted volume therefore overstates the real benefit by roughly 1.7 times.",
+      "k3": "Payment should depend on location and timing, not just volume.",
+      "k4": "A cut at the wrong time costs a year or more of production in perennial trees."
+    }
+  },
+  "T1U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "An hourly price can't steer anything.",
+      "k2": "Paying a flat rate per cubic metre overpays Upper growers",
+      "k3": "Value reductions by where they land.",
+      "k4": "Orchard trees can't absorb that."
+    }
+  },
+  "W4I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Nobody can respond to an hourly price for a resource that moves at that speed.",
+      "k2": "The programme as written would pay Upper growers for X and deliver about 0.6X.",
+      "k3": "Your two canals are not interchangeable.",
+      "k4": "Trees are perennial and a bad summer carries over into next year's crop."
+    }
+  },
+  "T1H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Three to five days of lag makes an hourly price meaningless.",
+      "k2": "an upstream cut is worth only about 60% of its face value.",
+      "k3": "The payment rate needs a location factor (roughly 0.6 for Upper, 1.0 for Lower)",
+      "k4": "those growers will either decline to enrol or will demand very high prices."
+    }
+  },
+  "C0N": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "An hourly price is meaningless against that.",
+      "k2": "Payment should follow the net effect on the river, not the diverted volume.",
+      "k3": "only about 60% of the cut reaches the Lower Canal.",
+      "k4": "A fallowed or stressed orchard costs years, not one season"
+    }
+  },
+  "B1V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "so an hourly signal has nothing to act on.",
+      "k2": "would overpay for the 40% that was coming back anyway.",
+      "k3": "Credit factors by location. Pay on water credited at the Lower intake",
+      "k4": "Most of the demand you would be buying is not shiftable"
+    }
+  }
+}

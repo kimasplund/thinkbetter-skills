@@ -1,0 +1,36 @@
+**Short answer:** Half of it. Paying growers to use less water when the board calls a shortage is worth piloting, but not as proposed. The hourly price app won't help you, and "paid per cubic metre below your three-year average" would pay for the wrong thing and leave your tail-end problem where it is. I'd put a seasonal, pre-contracted version in front of the board, plus a separate look at how shortages are shared along the Lower Canal.
+
+## Where the grid playbook fits and where it doesn't
+
+Odile is right about the core idea. Paying people to cut use when supply is tight is cheaper than building supply, and it is well proven. Several things in your system differ from a grid, though, and each one changes the design.
+
+- **Your shortage is a volume problem, not a peak.** A grid peak lasts hours and the load is shifted or shed. Your shortfall runs through July and August, about 18% for weeks. An hourly price gives a grower nothing to respond to, because irrigation turns are set by canal schedules, not by the hour. What you need is a commitment made in advance to use less over a stretch of days or weeks.
+- **Your signal arrives late.** A release from Tarrow takes about three days to reach the Lower intake and up to five to reach the canal tail. A "shortage event" called today only helps the tail if the reduction was agreed and started about a week earlier. The call has to be based on reservoir level and forecast, not on today's gauge reading.
+- **A cubic metre not diverted is not a cubic metre saved.** About 40% of what the Upper Canal diverts comes back to the river above the Lower intake. If an orchard cuts its diversion by 100 m3, the Lower intake gains only about 60 m3 from it, because the 40 m3 of drainage it would have sent back disappears. Paying per diverted cubic metre overpays Upper reductions relative to what they do for the Lower Canal. Efficiency upgrades are worse: a grower who switches to drip diverts less, but uses the same water, and would be paid for it.
+- **The baseline is already contaminated.** You were short in two of the last three summers. A three-year average therefore already includes short-supply years. Tail-end farms, which took nearly all the shortfall, would be "below average" without doing anything, and would be paid for water they never received. Meanwhile a grower who inflated their diversion in a wet year gets an easy payment. Grid programmes know this problem well, and it is the usual reason they fix baselines in advance.
+- **The cheap water to give up and the valuable water are in different places.** Orchards are perennial. Cutting them hard in July risks damage that lasts several seasons, so I would expect Upper growers to enrol rarely or to price high. The cheapest reductions are likely in annual and forage ground on the Lower Canal, such as a late hay cut, grass seed after harvest, or a fallowed barley block. But those are the farms that are already short. I'd expect the programme as written to attract the wrong volunteers.
+
+## Precedents that match your problem better
+
+- **Dry-year option contracts and fallowing leases.** Irrigation districts and cities in dry regions (the Palo Verde fallowing arrangements in California are the best-known example) pay growers a retainer in spring to be on call, then a per-hectare or per-volume payment if the call is made. The retainer is what makes the water reliable, and the payment is tied to measured land and water use, not to a rolling average. This is the closest structural match to your situation, and I'd base the programme on it.
+- **Rotational, time-based delivery for sharing scarcity.** Systems in South Asia (warabandi) and many mountain communities share shortage by fixed turns or proportional shares, so that the tail gets its share by rule and not by what is left over. This addresses the problem you described, that the tail farms absorbed nearly all the shortfall. A price signal does not fix that, and can make it worse, since tail farms are the ones who can least afford to bid or be paid to stand aside.
+
+## What I would put in front of the board
+
+1. **A pilot, not a full launch.** Authorise a capped pilot for next summer, with a budget ceiling and an explicit review in the autumn. Five weeks is enough to approve a design and a cap. It is not enough to build, test and promote a market.
+2. **A spring option contract.** Growers enrol before the season. They are paid a modest retainer to be callable, and a larger payment per verified cut if the board calls an event. Require at least a week's notice, so reductions reach the tail in time.
+3. **A fixed baseline set in advance.** Use each farm's crop, area and a standard water allowance, agreed before the season, not a three-year average. Pay for reductions against that.
+4. **Pay for consumptive reduction, and weight by location.** Fallowing, skipped cuts and deferred or deficit irrigation count. Efficiency improvements that leave the water use unchanged do not. Count Upper reductions at about 0.6 for the benefit to the Lower Canal. For storage in Tarrow, count them at full value. That means the price you pay can differ depending on whether the goal is the reservoir or the tail.
+5. **Drop the hourly price app for now.** If the board wants something public, a daily or weekly reservoir and shortage-risk notice does the useful part of it for much less money.
+6. **A separate item on how shortages are shared.** If the tail takes nearly all of every shortfall, that is a rule about priority and delivery, not a shortage of willingness to save. Ask for a review of proportional sharing or rotation on the Lower Canal. Paying for reductions can supplement that. It cannot replace it.
+
+Before the vote, collect three numbers: the actual volume of the July and August shortfall, what it would cost growers in each crop to give up a late cut or a block of irrigation, and where the money will come from. Without those, the programme cannot be sized.
+
+## Where I could be wrong
+
+- I assumed the 40% return rate is roughly steady through the summer. If it drops in July and August, the Upper weighting falls and the case for paying Upper growers weakens further.
+- I assumed farm-level metering, or at least reliable canal-level measurement, is available or can be added. If not, a pay-per-metre scheme is hard to verify, and area-based fallowing payments become the better choice.
+- I assumed that skipping a late hay cut, finishing grass seed early or fallowing barley costs far less than a lost orchard season. That is from general knowledge of these crops, not from your growers' numbers, and the actual prices will decide whether the Lower Canal pool is large enough.
+- I have not checked your water rights. If not using an entitlement puts it at risk, growers will not enrol however well it pays, and the board may need a legal opinion or protection written into the contract.
+- The Palo Verde and warabandi examples are from memory. Look at their current terms before you quote figures from them.
+- If you find the shortage is mostly canal losses and delays on the Lower Canal and not the reservoir, then the answer shifts toward infrastructure and scheduling, and the programme becomes a smaller part of it.

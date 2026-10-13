@@ -8,10 +8,10 @@ A 2-arm round adopts the candidate only if it is VALIDATED; a 3-arm round keeps 
 | # | skill | state | validation | rewrite | commit | subagent tokens |
 |---|---|---|---|---|---|---|
 | 1 | tree-of-thoughts | pending | | | | |
-| 2 | adversarial-reasoning | pending | | | | |
-| 3 | analogical-transfer | pending | | | | |
-| 4 | negotiated-decision-framework | pending | | | | |
-| 5 | rapid-triage-reasoning | pending | | | | |
+| 2 | adversarial-reasoning | frozen |  |  |  |  |
+| 3 | analogical-transfer | applied | NOT VALIDATED | REVERT |  | ~1.03M |
+| 4 | negotiated-decision-framework | frozen |  |  |  |  |
+| 5 | rapid-triage-reasoning | scored | INCONCLUSIVE | KEEP |  |  |
 
 ## Amendments and rulings
 

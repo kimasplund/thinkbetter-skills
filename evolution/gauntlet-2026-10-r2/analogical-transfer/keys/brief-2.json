@@ -1,0 +1,56 @@
+{
+  "R0I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Expect category inflation unless criteria are tied to documents.",
+      "k2": "Parties settle when the date becomes real... early settlement conference with a firm date",
+      "k3": "Triage reorders a queue. It does not shrink one",
+      "k4": "Delay costs tenants and benefits holders, so the biggest lever is giving landlords a reason"
+    }
+  },
+  "C2F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The triage officer should score from verifiable facts on the file",
+      "k2": "Parties settle when a hearing date is near... set an early conference or a response deadline",
+      "k3": "Triage reorders a queue. It does not shrink it.",
+      "k4": "every month of delay benefits the landlord... gives them reason to stall"
+    }
+  },
+  "I1T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the categories need defined, checkable criteria, not a judgment of how compelling the story reads",
+      "k2": "Move the forcing event earlier... a nearer deadline should bring settlements forward",
+      "k3": "Any pilot that doesn't also address throughput or demand will show better numbers for the favored categories",
+      "k4": "Delay favors the party holding the deposit... quietly rewards landlords who wait."
+    }
+  },
+  "P8D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Use objective, checkable criteria instead of impressions",
+      "k2": "the hearing date is the first thing that forces parties to engage",
+      "k3": "To cut it you need more capacity, fewer cases reaching a hearing, or shorter hearings.",
+      "k4": "the longer the wait, the more pressure a tenant is under to settle for less"
+    }
+  },
+  "M6Q": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "using mostly objective fields... urgency grounds that need supporting evidence",
+      "k2": "Parties settle when a credible, near deadline arrives... moving the first deadline from month 13",
+      "k3": "Triage can't deliver that. Earlier settlements and fewer wasted slots could deliver much",
+      "k4": "Every extra month in a low category is a month of free use of the tenant's money."
+    }
+  },
+  "L1I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "each requiring a document or statement that can be checked",
+      "k2": "the hearing date is the first moment either side has a reason to compromise",
+      "k3": "Nothing in the proposal yet says what raises throughput.",
+      "k4": "waiting costs tenants and costs landlords nothing... rewards the holder of the money"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "brief-1": [
+    {
+      "id": "k1",
+      "text": "Transit lag breaks the real-time mechanism. Grid demand response works because a load cut balances the system instantly; here a release takes about three days to reach the Lower Canal intake and up to five to its tail, and water already released cannot be recalled. A strong reply says an hourly price signal acts on the wrong timescale and moves the scheme to forecast-based, days-ahead ordering or allocation (cuts committed before the release decision), not real-time pricing.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Return flows mean a diversion cut is not a saving. About 40% of what the Upper Canal diverts comes back to the river above the Lower Canal intake, so each cubic metre the orchards stop diverting adds only about 0.6 m3 at the Lower Canal intake. Paying per cubic metre of reduced diversion overpays upper-district cuts by roughly 40% and removes return flow the lower district already relies on; only consumptive use is truly saved. Electricity has no equivalent of a saved unit partly arriving downstream anyway. A strong reply catches this and pays on consumptive use or delivered water, not on diversion reductions.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Water only flows one way, so location sets the value of a saving. A kilowatt shed almost anywhere on the grid helps the whole system, but the shortage sits at the tail of the Lower Canal and water saved can only help users downstream of where it is saved. A strong reply rejects a single uniform price or payment across both districts and notes that savings in the lower district reach the tail sooner and in full, while upper-district savings arrive days later and reduced by the lost return flow.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Crop water cuts are not deferrable load, and their cost differs sharply by crop. Grid demand response leans on loads that can be shifted or shed for a few hours at little lasting cost; these shortfalls last weeks through July and August, water withheld at peak crop demand cannot be made up later, and for perennial apple and cherry orchards a deep cut can damage trees and yields for years, whereas barley, hay and grass seed can be cut off early or fallowed at a bounded one-season cost. A strong reply notes that orchards will be largely price-insensitive (an hourly price mostly moves money without moving water) and that the cheap, recoverable reductions come from the annual crops.",
+      "split": "held-out"
+    }
+  ],
+  "brief-2": [
+    {
+      "id": "k1",
+      "text": "Urgency is self-reported by an interested party, not observed by a clinician. ED triage works because staff assess observable clinical signs that patients cannot easily fake; here the category comes from a free-text box that about 70% of tenant filers already fill in, so categories will inflate and landlords will contest them. A strong reply says the triage criteria must be objective and verifiable (documented facts, not asserted hardship) or the top categories will flood.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "The hearing date is what makes most cases go away. Around 60% of cases settle or withdraw, and most of those settlements land in the four weeks before a scheduled hearing, so the dated hearing is the forcing deadline that clears the bulk of the caseload; an ED patient does not get better because an appointment is approaching. Giving category 5 no date ('as capacity allows') removes that deadline and can slow settlements and grow the effective backlog, and very short targets compress the settlement window for top categories. The adjudicators' 'wasted slots' complaint points the wrong way. A strong reply keeps firm dates for every case (for example early dated settlement or mediation deadlines, or listing more cases per slot to absorb predictable late settlements) rather than removing them.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Reordering a queue does not shrink it. ED triage is a safety tool for deciding who waits under fixed capacity, not a throughput tool; filings exceed resolutions by about 50 a month, so triage alone changes who waits, not how many, and a category 5 'as capacity allows' in a growing backlog effectively means never. A strong reply separates the president's stated goal (backlog) from what triage can do, and says backlog reduction needs added capacity, fewer hearings per filing, or more early resolution.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Delay is not neutral between the parties. In an ED nobody benefits from a patient waiting; here the landlord holds the deposit until ruling or settlement, so every month a case waits transfers value to the respondent and pressures the tenant to settle for less. Assigning a low category therefore shapes outcomes, not just timing, and gives landlords a reason to argue cases down. A strong reply flags this asymmetry and its fairness and gaming consequences for the categorisation step.",
+      "split": "held-out"
+    }
+  ],
+  "brief-3": [
+    {
+      "id": "k1",
+      "text": "Cultures copy themselves; books do not. A living culture can be split indefinitely and a borrower can keep a portion forever, so loans, renewals, holds queues and due dates create artificial scarcity: 80 people waiting for one four-week rye jar would take years to clear. A strong reply drops lending in favour of giving out portions or splits, and identifies propagation and handling labour, not the number of copies, as the real limit.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Returns are the contamination route into the collection. A returned book cannot harm the books beside it; a returned culture can carry wild yeasts or other organisms back into stock. The kefir line lost last spring came from exactly this path, home-kept material reintroduced to the shelf jars, and Ines's rule that returned jars go back on the shelf would repeat it at scale. A strong reply makes the flow one-way: nothing that has left the building goes back into the stock that others receive.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "A culture's identity drifts in a new kitchen. A returned book is the same book; a culture kept for months under different flour, water and temperature becomes a different culture, as the volunteers' rye portions already show. With donors asking that their original lines be kept going, a strong reply calls for a protected reference stock that never circulates (with backups) from which all distributed portions are drawn, rather than a circulating copy that stands in for the original.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "A living collection has a per-item holding cost. A book on a shelf costs almost nothing to keep; every culture line needs feeding whether or not anyone borrows it, and the one feeder is already at his limit with 140 cultures in two jars each. Library-style circulation (tracking jars out, checking and handling returns, keeping extra circulating jars for popular cultures) adds to that load. A strong reply sizes the scheme to maintenance labour and designs to reduce it (for example batch splitting on fixed distribution days) instead of treating the collection as free to hold.",
+      "split": "held-out"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+In the power industry, "demand response" means getting customers to reduce or shift their electricity use in response to grid conditions, such as peak demand, high prices or supply shortfalls, rather than adding generation to meet the load. It is usually done through price signals (time-of-use or real-time rates) or paid programs where utilities or grid operators can ask participants, or automatically signal their equipment, to cut back during critical hours. In effect, flexible demand is treated as a resource that can be dispatched, much like a power plant.
+
+For your district, your chair is probably thinking of a similar idea: asking or paying water users to shift or trim deliveries during peak periods instead of building more capacity.
