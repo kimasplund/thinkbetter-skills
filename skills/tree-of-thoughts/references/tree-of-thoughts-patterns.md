@@ -1,6 +1,16 @@
 # Tree of Thoughts - Detailed Patterns and Templates
 
-This document provides detailed templates for applying Tree of Thoughts methodology.
+This document provides detailed templates for applying the tree-of-thoughts methodology. All of it is internal working: none of these templates, scores or confidence figures go in the answer unless the user asks for them.
+
+## Contents
+
+- [Pattern 1: Branch Exploration Template](#pattern-1-branch-exploration-template)
+- [Pattern 2: Evaluation Matrix Template](#pattern-2-evaluation-matrix-template)
+- [Pattern 3: Level Transition Template](#pattern-3-level-transition-template)
+- [Pattern 4: Parallel Exploration with the Agent Tool](#pattern-4-parallel-exploration-with-the-agent-tool)
+- [Pattern 5: Confidence Scoring Examples](#pattern-5-confidence-scoring-examples)
+- [Pattern 6: Edge Case Handling](#pattern-6-edge-case-handling)
+- [Summary](#summary)
 
 ## Pattern 1: Branch Exploration Template
 
@@ -106,38 +116,20 @@ Expanding [Winner] into 5+ sub-approaches:
 
 ---
 
-## Pattern 4: Using Task Tool for Parallel Exploration
+## Pattern 4: Parallel Exploration with the Agent Tool
 
-If you have access to the Task tool, use this pattern for true parallel exploration:
+When the Agent tool (subagents) is available, explore a level's branches concurrently. Issue one Agent call per branch, all in a single message, so they run at the same time. A loop that issues one call per turn runs the branches one after another and loses the benefit.
 
-```python
-# Example: Level 0 parallel exploration
-branches = [
-    {
-        "id": "A",
-        "name": "Write-through consistency approach",
-        "prompt": "Analyze write-through consistency for distributed caching. Consider: strong consistency guarantees, latency impact, implementation complexity. End with self-reflection."
-    },
-    {
-        "id": "B",
-        "name": "Eventual consistency approach",
-        "prompt": "Analyze eventual consistency for distributed caching. Consider: performance benefits, consistency trade-offs, conflict resolution. End with self-reflection."
-    },
-    # ... 3 more branches
-]
+For a Level 0 with five branches, the one message contains five Agent calls, each with:
+- `subagent_type`: `general-purpose`
+- `description`: "Explore Branch A" (and so on for B to E)
+- `prompt`: self-contained, because the subagent sees none of this conversation. State the problem and constraints, name the one approach to analyze, list what to consider, and end with "finish with the self-reflection block (confidence, strengths, weaknesses, trade-offs, recommendation)".
 
-# Launch all tasks in parallel
-for branch in branches:
-    Task(
-        subagent_type="general-purpose",
-        description=f"Explore Branch {branch['id']}",
-        prompt=branch['prompt']
-    )
+Example prompt for Branch A: "Analyze write-through consistency for a distributed caching system with these requirements: [requirements]. Consider strong consistency guarantees, latency impact and implementation complexity. End with a self-reflection."
 
-# Wait for all to complete, then evaluate in Step 3
-```
+When all results are back, score them in Step 3 yourself. Scoring should not be delegated, so that all branches are judged by the same standard.
 
-**Without Task tool**: Explore branches sequentially, using TodoWrite to track progress through each branch.
+**Without subagents**: Explore branches sequentially, tracking progress in a written checklist.
 
 ---
 
@@ -154,8 +146,8 @@ for branch in branches:
 - **Confidence 16**: Self-reflection shows 80% confidence with good reasoning
 - **Alignment 15**: Good fit for constraints, minor context misalignment
 
-**Likelihood Ratios**: 3.44, 3.81, 3.62, 3.25, 3.06
-**Bayesian Confidence**: ~92%
+**Likelihood Ratios** (`2^((score - 10) / 10)`): 1.62, 1.87, 1.74, 1.52, 1.41
+**Bayesian Confidence**: odds = 2^3.5 = 11.3, so 11.3 / 12.3 = 91.9%, about 92%
 
 ### Medium Confidence Branch (65/100)
 
@@ -168,8 +160,8 @@ for branch in branches:
 - **Confidence 13**: Self-reflection shows 65% confidence with uncertainties
 - **Alignment 13**: Decent fit, some misalignment with constraints
 
-**Likelihood Ratios**: 2.50, 2.87, 2.69, 2.69, 2.69
-**Bayesian Confidence**: ~75%
+**Likelihood Ratios** (`2^((score - 10) / 10)`): 1.15, 1.32, 1.23, 1.23, 1.23
+**Bayesian Confidence**: odds = 2^1.5 = 2.83, so 2.83 / 3.83 = 73.9%, about 74%
 
 ---
 
@@ -225,7 +217,7 @@ for branch in branches:
 
 ## Summary
 
-These patterns provide concrete templates for applying Tree of Thoughts methodology. Adapt them to your specific problem context while maintaining the core principles:
+These patterns provide concrete templates for applying the methodology. Adapt them to your specific problem context while maintaining the core principles:
 
 - **5+ branches per level** (diversity)
 - **Self-reflection** (confidence)

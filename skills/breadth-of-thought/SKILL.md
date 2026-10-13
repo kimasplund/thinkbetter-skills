@@ -1,46 +1,52 @@
 ---
 name: breadth-of-thought
-description: Exhaustive solution space exploration methodology. Use when solution space is unknown, you need multiple viable options (not just one best), or can't afford to miss alternatives. Explores 8-10 approaches in parallel at each level, prunes conservatively (keep above 40% confidence), returns 3-5 viable solutions. Example - data pipeline options - Apply BoT to explore all architectures exhaustively.
-model: opus
+description: "Maps the whole solution space by exploring 8-10 fundamentally different approaches, pruning only the clearly non-viable, and returning 3-5 viable options with their trade-offs instead of one winner. Use for what are all my options, I do not know what the possibilities are, compare every architecture, or any decision where missing a viable alternative would be costly. Not for picking the single best of known options (use tree-of-thoughts), tracing a long dependent chain of reasoning (use self-reflecting-chain), diagnosing a bug or incident (use hypothesis-elimination), or obvious one-path problems."
 context: fork
-agent: general-purpose
-user-invocable: true
+argument-hint: "[problem to explore]"
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
 ---
 
-## Effort & Thinking Budget
-- **Recommended effort**: high — exhaustive exploration needs depth to avoid shallow analysis
-- Include "ultrathink" in complex analysis phases to enable extended thinking
-- For time-constrained scenarios, use effort: medium with reduced branch count (5 approaches instead of 8-10)
-
-## Model Recommendation
-Best with Opus for maximum reasoning depth. On Sonnet, reduce to 5 approaches per level to maintain analysis quality.
+Works best with extended thinking for the hardest phases.
 
 # Breadth of Thought Reasoning Methodology
 
-**Purpose**: Exhaustive exploration of solution spaces through systematic parallel breadth-first reasoning. Maintains multiple hypotheses, explores diverse approaches, and returns 3-5 viable solutions instead of prematurely converging on one.
+## Backstage rule — the method never appears in the answer
+
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Breadth of Thought", "breadth-of-thought", or any other reasoning-method name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
+
+## The problem
+
+$ARGUMENTS
+
+If $ARGUMENTS is empty, the problem is whatever the invoking message describes. Ask nothing, and state the assumed problem in one line before starting.
+
+This skill runs in a forked context where subagents cannot be spawned. Explore the "parallel" approaches one after another, giving each the same depth, and keep a written checklist of which are done.
+
+## Purpose
+
+Exhaustive exploration of solution spaces through systematic parallel breadth-first reasoning. Maintains multiple hypotheses, explores diverse approaches, and returns 3-5 viable solutions instead of prematurely converging on one.
 
 ## When to Use Breadth of Thought
 
-**✅ Use BoT when:**
+**✅ Use it when:**
 - **Unknown solution space** (you don't know what you don't know)
 - **Multiple valid solutions needed** (need 3-5 good options, not just 1 best)
 - **High-stakes decisions** (can't afford to miss viable alternatives)
 - **Novel problems** (no clear best practice exists)
-- **Debugging complex issues** (multiple potential root causes)
 - **Comprehensive planning** (need to evaluate ALL options before deciding)
 
-**❌ Don't use BoT when:**
+**❌ Don't use it when:**
 - Clear evaluation criteria exist and you need THE single best solution → Use tree-of-thoughts
+- The task is finding THE cause of a bug or incident → Use hypothesis-elimination
 - Problem requires deep sequential reasoning with dependencies → Use self-reflecting-chain
 - Single obvious approach exists → Solve directly
-- Time-critical with simple trade-offs → Quick analysis sufficient
+- Time-critical with simple trade-offs → Use rapid-triage-reasoning
 
 **Examples**:
 - "Redesign data pipeline: batch, streaming, hybrid, or other?" (unknown space) ✅
-- "System crashes intermittently: network, DB, memory, race, or config?" (multiple causes) ✅
-- "Choose caching strategy: write-through, eventual, hybrid?" (clear criteria - use ToT) ❌
+- "Choose caching strategy: write-through, eventual, hybrid?" (clear criteria - use tree-of-thoughts) ❌
+- "System crashes intermittently, what is the cause?" (diagnosis - use hypothesis-elimination) ❌
 - "Fix syntax error" (obvious solution) ❌
 
 ---
@@ -54,7 +60,7 @@ Best with Opus for maximum reasoning depth. On Sonnet, reduce to 5 approaches pe
 | **Levels** | Shallow: 2-3 levels | Deep: 4-6 levels |
 | **Output** | 3-5 viable solutions | 1 optimal solution |
 | **Use when** | Solution space unknown | Evaluation criteria clear |
-| **Total exploration** | 50-100 branches | 25-40 branches |
+| **Total exploration** | 33-45 branches (up to 70 with Level 2) | 20-30 branches |
 | **Philosophy** | "Don't miss anything" | "Find the best" |
 
 ---
@@ -144,10 +150,7 @@ Best with Opus for maximum reasoning depth. On Sonnet, reduce to 5 approaches pe
 - [Assumption 2]
 ```
 
-**Execution Options**:
-- **With Task tool**: Spawn 8-10 parallel tasks for independent exploration
-- **Without Task tool**: Explore sequentially, using TodoWrite to track progress
-- **Hybrid**: Use Task for complex approaches, sequential for simpler ones
+**Execution**: Explore the approaches sequentially within this fork, tracking progress in a written checklist. If this methodology is ever run outside a fork where the Agent tool (subagents) is available, issue all 8-10 Agent calls in one message so they run concurrently.
 
 **Deliverable**: 8-10 explored approaches with confidence scores
 
@@ -201,7 +204,7 @@ Best with Opus for maximum reasoning depth. On Sonnet, reduce to 5 approaches pe
 2. For each approach, identify 5 sub-approaches (variations, implementations, configurations)
 3. Explore each sub-approach (same depth as Level 0)
 4. Evaluate and prune conservatively (keep >40%)
-5. **(Optional) Level 2**: If time allows and depth needed, repeat for top branches
+5. **(Optional) Level 2**: If more depth is needed, repeat for the top 5 branches (5 sub-approaches each, up to 25 more)
 
 **Level 1 Decomposition** (per retained approach):
 ```markdown
@@ -233,12 +236,14 @@ Approach 2: Real-time Streaming
 └─ 2.5: Redis Streams + Node.js workers
 ```
 
+**Branch count**: 8-10 at Level 0, plus 5-7 retained × 5 = 25-35 at Level 1, so 33-45 branches through Level 1. Level 2 adds at most 25 (top 5 × 5), for 70 at most.
+
 **Stopping Criteria**:
 - **After Level 1**: If you have 10-15 viable sub-approaches (sufficient breadth)
 - **Continue to Level 2**: If approaches still too abstract, need implementation details
-- **Maximum Depth**: 3 levels (breadth over depth philosophy)
+- **Maximum Depth**: 3 levels, Level 0 to Level 2 (breadth over depth philosophy)
 
-**Deliverable**: 10-20 viable solutions across all expanded approaches
+**Deliverable**: 10-15 viable solutions across all expanded approaches
 
 ---
 
@@ -258,15 +263,14 @@ Approach 2: Real-time Streaming
    - Best use case
    - Implementation considerations
 
-**Synthesis Template**:
+**Synthesis Template** (internal working, not for the answer). Write the answer itself as the viable options with trade-offs and a recommendation, in plain language, without confidence percentages or method names unless the user asked for them:
 ```markdown
-## Breadth of Thought Analysis Complete
+## Options Analysis
 
 ### Total Exploration
 - **Level 0**: 8 approaches explored → 6 retained
-- **Level 1**: 30 sub-approaches explored → 12 retained
-- **Total branches analyzed**: 38
-- **Time**: [X] minutes
+- **Level 1**: 30 sub-approaches explored (6 × 5) → 12 retained
+- **Total branches analyzed**: 38 (8 + 30)
 
 ### Top 5 Viable Solutions
 
@@ -304,7 +308,7 @@ Based on [stated priorities/constraints], I recommend:
 
 ### Branches Not Explored
 
-Due to time/scope constraints, the following were not explored:
+Due to scope constraints, the following were not explored:
 - [Potential approach 1]
 - [Potential approach 2]
 
@@ -317,19 +321,13 @@ These could be investigated if none of the top 5 solutions work out.
 
 ## Resource Management
 
-**Time Budget** (if resource-constrained):
-- Level 0: 15-20 minutes (8-10 approaches)
-- Level 1: 20-30 minutes (5-7 approaches × 5 sub-approaches)
-- Level 2: 15-20 minutes (optional, if time allows)
-- Total: 50-70 minutes maximum
+**Branch Budget**:
+- Level 0: 8-10 approaches
+- Level 1: 5-7 retained approaches × 5 sub-approaches = 25-35
+- Level 2: optional, top 5 branches × 5 sub-approaches = at most 25
+- Total: 33-45 branches through Level 1, at most 70 with Level 2
 
-**Batch Execution** (with Task tool):
-1. Spawn Level 0 tasks in single batch (8-10 tasks)
-2. Wait for completion, evaluate, prune
-3. Spawn Level 1 tasks in batches of 10-15
-4. Monitor time, stop spawning if approaching limit
-
-**Early Termination** (if time runs out):
+**Early Termination** (if the context budget runs out):
 - Evaluate completed branches only
 - Return partial results with note about incomplete exploration
 - State confidence level based on partial coverage
@@ -338,7 +336,7 @@ These could be investigated if none of the top 5 solutions work out.
 
 ## Self-Critique Checklist
 
-After applying BoT methodology, verify:
+After applying this methodology, verify:
 
 - [ ] **Sufficient Breadth**: Did I explore 8-10 approaches at Level 0?
 - [ ] **Approach Diversity**: Are approaches fundamentally different (not variations)?
@@ -356,46 +354,46 @@ After applying BoT methodology, verify:
 1. **Premature Pruning**: Cutting branches at 50-60% confidence instead of <40%
 2. **Depth Over Breadth**: Going 5 levels deep on 2 approaches instead of 2 levels on 8 approaches
 3. **Variation vs Diversity**: Exploring PostgreSQL, MySQL, MariaDB as "3 approaches" (all relational)
-4. **Single Winner**: Returning only 1 solution like ToT, defeating purpose of BoT
+4. **Single Winner**: Returning only 1 solution like tree-of-thoughts, defeating the purpose of breadth-of-thought
 5. **Shallow Exploration**: Brief 1-paragraph analyses instead of thorough investigation
 6. **Ignoring Unknown Unknowns**: Not exploring "wild card" unconventional approaches
-7. **Over-Execution**: Going to Level 3-4 when Level 2 already gave 20+ viable solutions
+7. **Over-Execution**: Going to Level 2 when Level 1 already gave 10-15 viable solutions
 
 ---
 
 ## Breadth-First vs Depth-First Decision Guide
 
-| Problem Characteristic | Use BoT (Breadth) | Use ToT (Depth) |
+| Problem Characteristic | Use breadth-of-thought | Use tree-of-thoughts |
 |------------------------|-------------------|-----------------|
 | **Solution space** | Unknown, unexplored | Well-understood |
 | **Output needed** | Multiple options | Single best |
 | **Evaluation criteria** | Unclear or multiple | Clear and agreed |
 | **Risk tolerance** | Can't miss alternatives | Can commit to best |
 | **Problem novelty** | Novel/unprecedented | Has precedents |
-| **Time available** | Moderate (1 hour) | Flexible (2+ hours) |
+| **Exploration budget** | Many branches, shallow | Few branches, deep |
 
 **Rule of thumb**:
-- If you're asking "What are ALL my options?", use **Breadth of Thought**
-- If you're asking "Which option is BEST?", use **Tree of Thoughts**
+- If you're asking "What are ALL my options?", use **breadth-of-thought**
+- If you're asking "Which option is BEST?", use **tree-of-thoughts**
 
 ---
 
 ## Reference Documentation
 
-**Detailed Templates**: [references/breadth-of-thought-advanced-patterns.md](references/breadth-of-thought-advanced-patterns.md)
-
-Includes:
-- Approach exploration template (deep-dive structure)
-- Conservative pruning guidelines (when to keep vs cut)
-- Level transition logic (when to go to Level 2)
-- Trade-off analysis framework
-- Edge case handling (convergence, insufficient diversity)
+Read [references/breadth-of-thought-advanced-patterns.md](references/breadth-of-thought-advanced-patterns.md) when you need:
+- the seven-dimension test for whether approaches are really distinct
+- the detailed pruning decision tree and keep/prune examples
+- cross-branch convergence detection (and how it feeds confidence)
+- how to construct a hybrid solution from two branches
+- the confidence aggregation formula with a worked example
+- anti-patterns (premature convergence, false diversity, ignored convergence)
+- a complete report template
 
 ---
 
 ## Summary
 
-Breadth of Thought is a **systematic methodology** for exhaustive solution space exploration through:
+This is a **systematic methodology** for exhaustive solution space exploration through:
 1. **Wide branching** (8-10 approaches per level)
 2. **Conservative pruning** (keep >40% confidence)
 3. **Shallow depth** (2-3 levels maximum)
@@ -404,8 +402,4 @@ Breadth of Thought is a **systematic methodology** for exhaustive solution space
 
 Use it when you need comprehensive exploration and can't afford to miss viable alternatives. The goal is thorough coverage of solution space, not finding a single optimal answer.
 
-**Remember**: Breadth of Thought trades depth for coverage. You'll explore more branches but less deeply than Tree of Thoughts. Perfect for "What are my options?" questions, not "Which option is best?" questions.
-
-## Backstage rule — the method never appears in the answer
-
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Breadth of Thought", "BoT", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
+**Remember**: This method trades depth for coverage. You'll explore more branches but less deeply than tree-of-thoughts. Perfect for "What are my options?" questions, not "Which option is best?" questions.
