@@ -1,0 +1,74 @@
+{
+  "P6X": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Reserves reach zero on January 31.",
+      "k2": "The new schools get roughly a quarter of the instructional time",
+      "k3": "your own four-school MOU took five months.",
+      "k4": "the entire tutor pipeline depends on one university's practicum office."
+    }
+  },
+  "M5G": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Your $150k reserve runs out around the end of January",
+      "k2": "Ask Arbelle to change the condition before you accept.",
+      "k3": "principal enthusiasm isn't the same as district approval",
+      "k4": "Harmon's spring semester starts January 20, but you plan to start tutoring on January 12."
+    }
+  },
+  "C2S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you will have spent roughly $225k (4.5 months), against $150k in reserves.",
+      "k2": "The year-two trigger is probably unreachable as designed",
+      "k3": "Principal enthusiasm doesn't count here. The district office decides",
+      "k4": "they come from one source: Harmon practicum students."
+    }
+  },
+  "J7A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "The reserves run out in February, and the first reimbursement arrives in mid-March.",
+      "k2": "Renegotiate the year-2 bar before the grant agreement is signed",
+      "k3": "that \"we know the people there now\" shortens the approval.",
+      "k4": "Harmon's spring semester starts January 20, eight days after the planned January 12 start"
+    }
+  },
+  "W9S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "It covers one quarter, not the 4.5 months between the first dollar spent",
+      "k2": "The bar in the grant letter exceeds your demonstrated effect.",
+      "k3": "A five-month review started in October ends in March.",
+      "k4": "Practicum credit does not start until January 20"
+    }
+  },
+  "S9R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That leaves you about $75k short at the moment of the first payment",
+      "k2": "Asking them for 15 points in that window means beating your proven result",
+      "k3": "The principals' enthusiasm doesn't count here, because the district office has to approve.",
+      "k4": "Harmon's spring semester starts January 20, which is eight days after your launch."
+    }
+  },
+  "Y3S": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That leaves a gap of roughly $50k before the first payment arrives",
+      "k2": "The $600k is gated on 15 points, which is higher than your current result",
+      "k3": "Get written sign-off from the district office, not from the principals.",
+      "k4": "Harmon's spring semester starts January 20, eight days after your January 12 launch."
+    }
+  },
+  "V6Q": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Costs through Jan 31 were $150k, the whole reserve.",
+      "k2": "Scaled by dose, 12 points becomes about 5 to 6.",
+      "k3": "From an Oct 8 vote, Jan 12 is about 14 weeks, against 21",
+      "k4": "a second feeder pool for about 40% of the gap"
+    }
+  }
+}

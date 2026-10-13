@@ -782,8 +782,12 @@ def _sanitize_round(rd: Path) -> None:
                 p.write_text(_sanitize_text(text))
 
 
-def apply(skill: str) -> dict:
-    """This program changes no skill and no README row: apply records the verdict and the research note."""
+def apply(skill: str, accept_inconclusive_uplift: str = None) -> dict:
+    """This program changes no skill and no README row: apply records the verdict and the research note.
+
+    An INCONCLUSIVE uplift comparison (hs vs hn, ss vs sn) is accepted only with a recorded reason, as a
+    disclosed ruling; an INCONCLUSIVE reaches verdict never is.
+    """
     rd = round_dir(skill)
     if get_state(skill) == "applied":
         sys.exit(f"{skill}: already applied; a verdict is applied exactly once")
@@ -791,7 +795,7 @@ def apply(skill: str) -> dict:
     verdicts = [v["reaches"]["verdict"], v["haiku_uplift"]["verdict"], v["sonnet_uplift"]["verdict"]]
     if "VOID" in verdicts:
         sys.exit(f"{skill}: verdict is VOID (freeze verify failed); the round must be re-run, not applied")
-    if "INCONCLUSIVE" in verdicts:
+    if verdicts[0] == "INCONCLUSIVE" or ("INCONCLUSIVE" in verdicts[1:] and not accept_inconclusive_uplift):
         sys.exit(f"{skill}: verdict is INCONCLUSIVE; run round.py extend and the extension cells first")
     if not (rd / "research-note.md").exists():
         note = [f"# Research note: {skill} (Haiku uplift)", "",
@@ -803,6 +807,9 @@ def apply(skill: str) -> dict:
         for a, s in v.get("arms", {}).items():
             note.append(f"- {a}: value {s.get('value_mean')}, keys {s.get('key_rate')}, ceremony {s.get('ceremony')}, "
                         f"leaks {s.get('leaks')}, length x{s.get('word_ratio')} of sn")
+        if accept_inconclusive_uplift and "INCONCLUSIVE" in verdicts[1:]:
+            note.append(f"- Ruling: an INCONCLUSIVE uplift comparison is reported as such, without an extension. "
+                        f"Reason: {accept_inconclusive_uplift}")
         note += ["", "## Autopsy", "", "(The coordinator writes 3 to 5 lines here from scorecard.md.)", ""]
         (rd / "research-note.md").write_text("\n".join(note))
     _sanitize_round(rd)
@@ -818,6 +825,9 @@ def main(argv=None) -> int:
     for name in ("build", "blind", "score", "apply", "render-designer", "extend"):
         sp = sub.add_parser(name)
         sp.add_argument("skill")
+        if name == "apply":
+            sp.add_argument("--accept-inconclusive-uplift", default=None,
+                            help="recorded reason for applying with an INCONCLUSIVE uplift comparison")
         if name == "blind":
             sp.add_argument("--ack-leaks", default=None, help="reason the leak-scan hits are harmless")
     r = sub.add_parser("render")
@@ -843,8 +853,8 @@ def main(argv=None) -> int:
         score(args.skill)
         print((round_dir(args.skill) / "scorecard.md").read_text())
     elif args.cmd == "apply":
-        res = apply(args.skill)
-        print(f"{args.skill}: applied; README -> {res['readme']}; reverted: {res['reverted']}")
+        res = apply(args.skill, accept_inconclusive_uplift=args.accept_inconclusive_uplift)
+        print(f"{args.skill}: applied; reaches sonnet: {res['reaches']}; haiku uplift: {res['haiku_uplift']}")
     elif args.cmd == "extend":
         print(f"{args.skill}: extension added {extend(args.skill)['added']} cells; state frozen")
     elif args.cmd == "mark":

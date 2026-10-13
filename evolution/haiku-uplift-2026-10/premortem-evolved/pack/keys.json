@@ -1,0 +1,68 @@
+{
+  "brief-1": [
+    {
+      "id": "k1",
+      "text": "Catches that the break-even claim compares a per-course number with a per-month number. $13,600 is revenue for one 8-week run (40 seats x $340), which is about $7,350 a month (13,600 x 4.33 / 8), below the $9,400 monthly fixed cost. Even at 100% fill with no gap weeks between runs, the space loses about $2,000 a month, so 'covering its own costs by Christmas' fails on the plan's own numbers.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Catches that the single new kiln cannot handle the firing load at full enrollment. About 140-180 pieces a week (60 member pieces plus 40 beginners x 2-3) each need a bisque and a glaze firing, roughly 280-360 piece-firings a week, against about 210 of capacity (3 firings x 70). Full classes build a growing backlog: students' work isn't back within their 8-week course and members' work is delayed. The plan working is what breaks it.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Catches the gas-line timing collision. Applying June 2 with a 10-14 week meter upgrade puts the kiln online around Aug 11 to Sep 8 at the earliest. That is after the Aug 4 course start and after the rent-free period ends in early August. Because the old kiln is dying and won't be replaced, there may be weeks with no working kiln at either site, for students or members.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Catches that the demand evidence is weak. 140 names from a free try-the-wheel fair booth are not paid intent, while the plan needs about 40 paying $340 seats every 8 weeks (roughly 240 a year). Demand should be tested with deposits or presales before signing the five-year, personally guaranteed lease.",
+      "split": "held-out"
+    }
+  ],
+  "brief-2": [
+    {
+      "id": "k1",
+      "text": "Catches the reimbursement cash gap. Costs start Nov 1 at about $50k a month, but the first Arbelle payment (for Nov-Jan) arrives about 45 days after Jan 31, around mid-March. That is about 4.5 months (~$225k) to front against $150k of reserves. The reserves run out around the end of January, right at launch, leaving a gap of about $75k and no cushion for the existing four schools. A bridge line or advance payment is needed before accepting.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Catches that the year-2 funding condition is essentially unreachable on the org's own data. A full October-April year at established schools gives about a 12-point advantage. The new schools get only about 13 weeks (Jan 12 to mid-April, minus breaks), with brand-new coordinators and tutors, yet must reach 15. The success definition fails before launch, so the metric or its timing must be renegotiated before the board accepts.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Catches the approval lead time. The district-office MOU for four schools took about 5 months, and only about 3 months separate the Oct 8 vote from the Jan 12 launch. Without the MOU the program can't use school space or student data, so the launch slips and the benchmark comparison needed for year-2 money may be impossible. The principals' enthusiasm is not the approving authority, and 'we know the people now' is an untested certainty.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Catches the tutor pipeline problem. About 175 new tutors (2.5x the current 70) must come from essentially one source, Harmon State practicum students. Harmon's spring semester starts Jan 20, after the Jan 12 launch and after the Nov-Dec recruiting and training window, so spring practicum students can't be recruited and trained in time. The single source has no fallback.",
+      "split": "held-out"
+    }
+  ],
+  "brief-3": [
+    {
+      "id": "k1",
+      "text": "Catches that the launch promotion loses money on every jar. Contribution is about $2.00 a jar ($5.40 - $3.10 co-pack - $0.30 freight), while funding 25% off the $8.99 shelf price costs about $2.25 a jar. Every unit sold in the first 8 weeks, the promoted and highest-volume period, is negative even before slotting and free fill are counted.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Catches the cash squeeze that hits if the buyer's velocity estimate is right. The first 15,000-jar run (~$46.5k plus ~$4.5k freight) uses most of the $60k. Deductions of $36k slotting (48 x 3 x $250) plus about $15.5k of promo billbacks roughly cancel the first ~11 weeks of invoices, and net-60 delays the rest, so little Calloway cash arrives before about mid-July. At about 864 jars a week the run sells through by about early July, so a second ~$46.5k run must be ordered around late May, before any meaningful cash arrives. Success is what causes the crunch.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Catches the minimum-run versus shelf-life trap on the downside. 5,000 jars per flavor take about 17 weeks to sell at the buyer's 6 per store per flavor per week. A 6-month life from production around mid-February leaves only about 23 weeks of selling time. At roughly half the estimate, which is typical once a new brand's promotion ends and likeliest for the weakest of the three flavors, a large share expires and is credited back against invoices.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Catches that the schedule has no room for the trial batch. Ordering in the first week of January, then 2-3 weeks for trial-batch sign-off, then the 6-week lead time gives finished goods around early to mid March, before freight. That misses the late-February warehouse delivery and the March 1 store date, which the plan treats as fixed.",
+      "split": "held-out"
+    }
+  ]
+}

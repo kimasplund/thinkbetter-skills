@@ -1,0 +1,42 @@
+{
+"P8H": {"k1": "~", "k2": "✗", "k3": "✓", "k4": "~", "evidence": {
+  "k1": "tell the owner by email when it happens",
+  "k2": "Fake votes can help reach 50% (206 units).",
+  "k3": "Anyone who can read the log can match a unit to its vote.",
+  "k4": "Say in the bylaws what happens if the owner then votes too."}},
+"W4F": {"k1": "✓", "k2": "✗", "k3": "✓", "k4": "~", "evidence": {
+  "k1": "a stolen link also lets someone overwrite a legitimate vote. The member would see nothing",
+  "k2": "request links for units they know won't vote",
+  "k3": "Anyone who can see the log can see how each unit voted.",
+  "k4": "lock the ballot once the grantor votes"}},
+"Y5T": {"k1": "✓", "k2": "✗", "k3": "✓", "k4": "~", "evidence": {
+  "k1": "if the real owner already voted, the thief's submission replaces it",
+  "k2": "the list of units that have not voted yet (that is what reminder calls need)",
+  "k3": "Varrow can map token to unit to person.",
+  "k4": "if a proxy and a direct vote both arrive. The rule should be written down"}},
+"B0G": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "a last-minute stolen link overwrite a legitimate vote on day 10",
+  "k2": "she can target reminders to supporters",
+  "k3": "Each token maps to a unit, and Varrow emailed it.",
+  "k4": "Does the unit lose its own link? Can both vote? Which wins?"}},
+"N1M": {"k1": "~", "k2": "✗", "k3": "✓", "k4": "~", "evidence": {
+  "k1": "The old link is deactivated, so the real owner may not notice.",
+  "k2": "Fake links, fake proxies and lost-link replacements all count toward it.",
+  "k3": "can match a unit to how it voted",
+  "k4": "what happens if they vote directly too?"}},
+"U0I": {"k1": "~", "k2": "✗", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Anyone who gets a fresh link can change a vote.",
+  "k2": "Running totals per question during voting let people react to early numbers",
+  "k3": "If token IDs map to units, then anyone with access to that log can see",
+  "k4": "Can the member also vote with their own link? If so, which vote counts?"}},
+"W3M": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "an attacker can also overwrite a vote that was already cast.",
+  "k2": "phone in for units that haven't voted, such as absent owners",
+  "k3": "Token ID maps to a unit, so the log is a list of who voted how.",
+  "k4": "does the grantor's own link stay active? If the grantor votes after the proxy, who wins?"}},
+"O2W": {"k1": "~", "k2": "✗", "k3": "✓", "k4": "~", "evidence": {
+  "k1": "Send an alert to the old address whenever a new link is issued.",
+  "k2": "If they do, fake proxies can manufacture quorum.",
+  "k3": "Anyone who can read that log, or the CSV, can tie a unit to how it voted.",
+  "k4": "overwritten by the owner's own later vote, or the reverse, with no rule stated"}}
+}

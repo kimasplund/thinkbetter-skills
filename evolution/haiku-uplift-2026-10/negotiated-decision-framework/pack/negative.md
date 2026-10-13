@@ -1,0 +1,1 @@
+Can you write me a two-sentence email to our two team leads, Bea and Tomas, saying I'll meet with both of them Thursday at 2pm to sort out who gets the large conference room on Tuesday mornings? Keep it neutral; I don't want either of them to think I've already decided.

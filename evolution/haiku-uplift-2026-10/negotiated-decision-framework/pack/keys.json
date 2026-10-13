@@ -1,0 +1,68 @@
+{
+  "brief-1": [
+    {
+      "id": "k1",
+      "text": "Catches that the 1958 Halloran gift was made 'for the education of the children of Brennock', wording that may restrict the land's use or make it revert, so the Halloran heirs (and possibly the charity regulator or a court) could block the sale or claim the land or its proceeds. A strong reply says the gift terms and title must be checked before the February 12 vote and before anyone counts on the $13.5M. Easy to miss because the quote is presented as heritage colour on a plaque.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Catches that the 2004 planning conditions include an enrolment ceiling set when the south campus had far fewer students, and that consolidation puts roughly 640 students there, very likely above it. Raising the ceiling reopens the planning board, where the Sycamore Lane neighbours who fought the gym (and who would now face K-5 drop-off traffic on top of the current load) can block the move. The consultant's 700 is physical capacity, not permitted capacity. Easy to miss because the user says space isn't the issue and the ceiling was never come close to.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Catches that the Ardelle Foundation's $2M pledge is restricted to a north-campus program, so closing the north campus may end the remaining $800k and could require redirecting or returning the $1.2M already paid. The foundation's agreement to redirect the gift is needed before the vote. Easy to miss because the pledge is offered as evidence that fundraising is healthy.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Catches that lower-school families hold the real veto through re-enrolment: the February 12 vote falls inside the January 10 to March 1 contract window, so a public closure decision mid-window can push returns below the 92% the budget assumes and deepen the deficit the plan is meant to fix. A strong reply sequences the decision and its announcement around re-enrolment and gives lower-school families concrete commitments before contracts are due, instead of treating parents only as people to persuade at the board vote.",
+      "split": "held-out"
+    }
+  ],
+  "brief-2": [
+    {
+      "id": "k1",
+      "text": "Catches that shutting the east lateral on August 1 ends the seepage that recharges Dunmere's wells, which the town pays for under the 1997 agreement. The town is a party whose rights the draft plan likely breaches and which can object, sue or bring in the regulator, so the early closure must be dropped or renegotiated with the town first. Easy to miss because the agreement appears only as a budget line, while the closure is framed as an efficiency gain.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Catches that Orrin, the board chair, plans to fallow half his alfalfa, which makes him a large seller of water under equal shares plus open trading at any price; his push for that design serves his interest in selling to orchard growers at drought prices. Whether orchard growers accept any plan depends on the trading rules (price limits, a district-run pool, caps) and on handling his conflict of interest as chair. Easy to miss because the remark is offhand and he frames his view as fairness.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Catches that because ratification is weighted by acreage owned, Quillon Land Partners, not Neil Benning, holds the vote for the 2,900 tomato acres (about 14% of the district). Benning's advocacy may not reflect what the landowner wants, so Quillon must be approached directly and the lease checked for who controls the water entitlement and the vote. Easy to miss because Benning is the visible voice at every meeting.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Catches that the orchard growers' real need is late-season water after harvest for bud set, not a larger annual share, and that the August 1 east-lateral closure cuts exactly that water for the many orchards on that canal. A plan that guarantees August-September delivery within equal shares (for example by letting orchards take less in spring) can meet their need without departing from equal shares, and so without a ratification vote.",
+      "split": "held-out"
+    }
+  ],
+  "brief-3": [
+    {
+      "id": "k1",
+      "text": "Catches that the 26 inline shops' grocery co-tenancy protections are likely to cut their rent or let them leave once no supermarket is operating, and that a gym and a clinic probably do not count as a grocery anchor. The inline tenants therefore hold leverage, and the 30% rent uplift must be netted against lost inline rent unless the clauses are renegotiated.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Catches that Harrowfield is not out of the picture when its lease ends: as owner of the fuel pad and a party to the recorded reciprocal easement, it likely has consent rights over changes to use, parking, access or common areas, so the gym-and-clinic re-let, with its heavier parking demand, may need Harrowfield's agreement. Easy to miss because the user states they need nothing from Harrowfield.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Catches Harrowfield's unstated interest: its fuel station depends on in-store grocery spend through the loyalty card, so losing the store hurts its fuel business. The 40% rent-cut demand is an opening ask; the real interest in keeping grocery traffic gives Harrowfield a motive to resist a non-grocery re-let and opens trades such as a smaller-format store sharing the box with the gym. Easy to miss because the loyalty-card detail reads as trivia.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Catches that Marchbank Life's sign-off is not routine this time: replacing the grocery anchor with a gym and clinic, plus any co-tenancy rent cuts, changes the centre's income and risk profile, so the lender may refuse or impose conditions and must be engaged before the investment committee commits. Easy to miss because the user says sign-off has always been routine.",
+      "split": "held-out"
+    }
+  ]
+}

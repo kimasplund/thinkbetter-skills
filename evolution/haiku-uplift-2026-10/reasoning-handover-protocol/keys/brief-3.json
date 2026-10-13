@@ -1,0 +1,74 @@
+{
+  "A8H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "no foliar applications of any kind after first fruit set. This rules out calcium sprays",
+      "k2": "Calcium is not short, so more will not help, and it adds to EC",
+      "k3": "why is compartment 3's EC 0.9-1.1 higher than the others?",
+      "k4": "Given the lead time, they would arrive late in the crop"
+    }
+  },
+  "G8Y": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "prohibits foliar applications of any kind after first fruit set",
+      "k2": "Feed calcium is already on target, and more calcium nitrate would push compartment 3's EC higher",
+      "k3": "Low night-time transpiration is the most likely cause.",
+      "k4": "Heating at night to lower humidity is only worth it within that allowance."
+    }
+  },
+  "L8Q": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "allows no foliar applications of any kind after first fruit set",
+      "k2": "Calcium in the feed and leaf is already on target.",
+      "k3": "We never established why compartment 3 is so much higher.",
+      "k4": "They look like a decision for the next crop"
+    }
+  },
+  "G3I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "allows no foliar applications of any kind. A spray risks the programme.",
+      "k2": "We have deliberately not done it. Don't revisit it unless new test results show a real calcium shortfall.",
+      "k3": "the EC gap is not explained anywhere in our notes. The humidity theory doesn't account for it.",
+      "k4": "That is probably too late to help this crop."
+    }
+  },
+  "R3J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "No foliar applications after first fruit set. Do not spend time on foliar calcium",
+      "k2": "Adding more calcium nitrate to the feed would not address the problem",
+      "k3": "the EC result could point to a separate root-zone problem",
+      "k4": "which leaves very little of the crop after installation"
+    }
+  },
+  "V7O": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "Grenmark's Clean Leaf programme bans foliar applications after first fruit set.",
+      "k2": "So the problem is getting calcium to the fruit, not supplying it",
+      "k3": "compartment 3 is likely taking up less water relative to nutrients",
+      "k4": "leaving roughly 6-8 weeks of crop before week 2. That is still worth something"
+    }
+  },
+  "W9A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Foliar calcium or any other foliar product. Clean Leaf forbids it.",
+      "k2": "The tank is already on target, so more calcium would not fix the transport problem.",
+      "k3": "This is a separate finding, not yet explained.",
+      "k4": "Order the compartment 3 vent motors now."
+    }
+  },
+  "N0W": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "no foliar applications of any kind after first fruit set.",
+      "k2": "More calcium nitrate would also raise EC, and compartment 3 EC is already high",
+      "k3": "I want to flag this plainly, because we may have under-weighted it.",
+      "k4": "They will therefore give little or no benefit this season."
+    }
+  }
+}

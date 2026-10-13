@@ -220,6 +220,31 @@ class ScoreApplyTest(UpliftFixture):
         self.assertEqual(ur.get_state("demo-skill"), "applied")
         self.assertIn("Haiku", (rd / "research-note.md").read_text())
 
+    def _set(self, rd, **verdicts):
+        v = json.loads((rd / "verdict.json").read_text())
+        for k, val in verdicts.items():
+            v[k]["verdict"] = val
+        (rd / "verdict.json").write_text(json.dumps(v))
+
+    def test_apply_accepts_inconclusive_uplift_only_with_a_recorded_reason(self):
+        rd = self.staged()
+        self.fake_instruments(rd, {"hs": 6, "hn": 4, "ss": 6, "sn": 6})
+        ur.score("demo-skill")
+        self._set(rd, haiku_uplift="INCONCLUSIVE")
+        with self.assertRaises(SystemExit):
+            ur.apply("demo-skill")
+        ur.apply("demo-skill", accept_inconclusive_uplift="owner ruling: only the reaches question was extended")
+        self.assertIn("owner ruling: only the reaches question was extended", (rd / "research-note.md").read_text())
+        self.assertEqual(ur.get_state("demo-skill"), "applied")
+
+    def test_an_inconclusive_reaches_verdict_is_never_accepted(self):
+        rd = self.staged()
+        self.fake_instruments(rd, {"hs": 6, "hn": 4, "ss": 6, "sn": 6})
+        ur.score("demo-skill")
+        self._set(rd, reaches="INCONCLUSIVE")
+        with self.assertRaises(SystemExit):
+            ur.apply("demo-skill", accept_inconclusive_uplift="any reason")
+
 
 if __name__ == "__main__":
     unittest.main()

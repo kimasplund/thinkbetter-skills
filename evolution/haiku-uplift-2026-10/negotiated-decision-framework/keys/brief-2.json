@@ -1,0 +1,42 @@
+{
+"H0A": {"k1": "~", "k2": "~", "k3": "~", "k4": "~", "evidence": {
+ "k1": "Closing the lateral early cuts that seepage. Read the agreement",
+ "k2": "open trading may benefit him more than anyone, and that should be disclosed",
+ "k3": "Acreage \"owned\" may now belong to Quillon, not to Neil Benning.",
+ "k4": "Add a small reserved post-harvest block for tree crops"}},
+"C6Y": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "Closing that canal on August 1 may breach the 1997 agreement",
+ "k2": "Open trading would let him sell water. Neil Benning has backed him",
+ "k3": "Quillon's vote may count there, not Neil's. Find out who holds the vote",
+ "k4": "This isn't priority. It is a scheduling choice open to every member."}},
+"Y3M": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "It may breach the 1997 Dunmere agreement... talk to Dunmere early.",
+ "k2": "he could have a lot of water to sell under the rule he's promoting",
+ "k3": "Quillon's vote, not Neil's, counts for that land. So find out what Quillon wants.",
+ "k4": "members can choose when to take it. Each farm splits its allocation"}},
+"V2A": {"k1": "~", "k2": "~", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "Closing the lateral early may reduce that seepage",
+ "k2": "open trading is worth real money to him",
+ "k3": "the owner of record, not the lessee, may be the one who votes",
+ "k4": "Give the orchards a written guarantee on the post-harvest delivery"}},
+"D1J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "The Dunmere agreement may limit the closure.",
+ "k2": "he stands to profit from selling water in a short year",
+ "k3": "Quillon, not Neil, may hold the vote on 2,900 acres.",
+ "k4": "Keep the lateral open on a reduced schedule for post-harvest irrigation"}},
+"C4G": {"k1": "~", "k2": "✗", "k3": "~", "k4": "~", "evidence": {
+ "k1": "could breach the agreement or put the payment at risk",
+ "k2": "That lowers his real water demand and may make him more willing to trade water.",
+ "k3": "Quillon, not Neil Benning, may hold the votes",
+ "k4": "Add a defined orchard protection, for example a fixed post-harvest reserve"}},
+"G5M": {"k1": "~", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "It also puts the Dunmere agreement at risk.",
+ "k2": "That is a personal financial interest in how trading is priced.",
+ "k3": "Quillon may hold the entitlement and the acreage-weighted vote.",
+ "k4": "Let each member schedule their allocation across the season"}},
+"E5N": {"k1": "✓", "k2": "✗", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "talk to Dunmere before you commit to the date.",
+ "k2": "Likely fallowing half his hay anyway, so he has water to sell",
+ "k3": "If Quillon holds the acreage, get its position in writing before the vote.",
+ "k4": "Protect a post-harvest window through scheduling, not allocation."}}
+}

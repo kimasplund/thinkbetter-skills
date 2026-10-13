@@ -1,0 +1,74 @@
+{
+  "A0O": {
+    "k1": "✓", "k2": "✓", "k3": "✗", "k4": "✓",
+    "evidence": {
+      "k1": "£4,992, which is £842 more than the container",
+      "k2": "Ask Quintell now whether the container can be held at the port",
+      "k3": "a 7.5 t van is at the limit of the harbour bridge",
+      "k4": "your own crates made from offcuts will need ISPM 15 treatment and stamping"
+    }
+  },
+  "Z2Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "your 52 m³ fits inside its 67 m³",
+      "k2": "arrives 2–9 April, before the floors are sealed, so you would pay to store it",
+      "k3": "A 40 ft container lorry will almost certainly not get through",
+      "k4": "it comes from your own offcut crates"
+    }
+  },
+  "N6S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That is £842 dearer than the container, and its arrival spreads over about two weeks",
+      "k2": "you need a holding place for a day or two",
+      "k3": "Ask Quintell to deliver to a yard outside the harbour quarter and transfer",
+      "k4": "Crates built from offcuts will not be accepted as they are"
+    }
+  },
+  "X0O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "it's cheaper and you get 15 m³ spare",
+      "k2": "you can't store anything before the 14th",
+      "k3": "unload (devan) the container at a depot on the near side",
+      "k4": "It probably applies to the vans on the ferry as well"
+    }
+  },
+  "E4Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Groupage loses on both cost and timing.",
+      "k2": "Too early. You'd be paying for storage somewhere",
+      "k3": "A 40 ft container lorry will be well over 7.5 tonnes",
+      "k4": "your crates would still have to be stamped"
+    }
+  },
+  "Z8F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Costs more than the full container and has the widest timing spread.",
+      "k2": "ask Quintell to hold the container at the port or depot",
+      "k3": "unloaded at a depot outside the quarter and the crates go over the bridge",
+      "k4": "This applies however the load travels, so it affects Joss's plan too."
+    }
+  },
+  "W8D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "£842 cheaper than groupage, a week or two faster, sole use",
+      "k2": "mostly a few days early, which is cheap to hold",
+      "k3": "the last leg must be done by 7.5 tonne or smaller vehicles",
+      "k4": "Every option carries them, and none of the quotes checks them."
+    }
+  },
+  "O0M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "is the cheapest and fastest option",
+      "k2": "Too early, and you have nowhere to store it before the 14th.",
+      "k3": "Plan for transfer at a staging point outside the quarter onto smaller vehicles",
+      "k4": "Offcut crates built in-house will not meet this unless the timber is treated"
+    }
+  }
+}

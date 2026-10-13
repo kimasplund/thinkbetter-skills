@@ -1,0 +1,50 @@
+{
+  "W5P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Don't remove them in this round, since the finding is about writes.",
+      "k2": "move routine support lookups to a read replica or a masked status view",
+      "k3": "the engineer needs no database grant",
+      "k4": "The on-call engineer self-approves while an incident is open"}},
+  "S9H": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Remove standing write by the deadline.",
+      "k2": "Reads stay as they are, or move to a read replica",
+      "k3": "run without anyone holding raw write access",
+      "k4": "self-approved by the on-call engineer during a declared incident"}},
+  "T4W": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Read access moves to a read replica or query tool",
+      "k2": "read access for support can move to a read replica or a logged query tool",
+      "k3": "needs no open SQL session and no open grant",
+      "k4": "Break-glass requires a second engineer or the incident commander to approve"}},
+  "T9N": {"k1": "✓", "k2": "✗", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Keep read-only access for support and on-call.",
+      "k2": "Make read-only access the default for everyone else.",
+      "k3": "granted per incident through the access proxy",
+      "k4": "the grant can be approved automatically"}},
+  "E3X": {"k1": "✓", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "read access can stay as it is",
+      "k2": "read access can stay as it is",
+      "k3": "No raw SQL needed for these.",
+      "k4": "Model this on the card-vault proxy and fix its 3 am speed."}},
+  "A8T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Removing that would hurt support for no audit gain.",
+      "k2": "give support a status lookup (a read replica, a masked view or a small internal tool)",
+      "k3": "can be packaged as named, parameterised, pre-reviewed operations",
+      "k4": "Make the grant automatic when the engineer is the acknowledged on-call"}},
+  "E8C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Keep broad read access through a replica or masked view.",
+      "k2": "Move support onto a read replica or a masked, read-only view",
+      "k3": "one command or button and no approval step in the on-call path",
+      "k4": "The on-call engineer self-approves during a declared incident"}},
+  "R0Y": {"k1": "✓", "k2": "✗", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Read-only access stays, which covers the 91% of sessions",
+      "k2": "Read-only access stays, which covers the 91% of sessions",
+      "k3": "run these directly with a time-limited, logged grant",
+      "k4": "Pre-approve the on-call rota for these actions, so the grant is issued on pager acknowledgement"}}
+}

@@ -1,0 +1,36 @@
+{
+ "main": {
+  "brief-1": [
+   "W2W",
+   "E0I",
+   "C0R",
+   "D6K",
+   "G9Y",
+   "K8B",
+   "O3M",
+   "I2Y"
+  ],
+  "brief-2": [
+   "L9S",
+   "A8R",
+   "P7W",
+   "E4F",
+   "L6Z",
+   "E3F",
+   "F3J",
+   "Z0E"
+  ],
+  "brief-3": [
+   "Z9J",
+   "X4N",
+   "H8P",
+   "W3O",
+   "X2H",
+   "I7T",
+   "O6U",
+   "C5C"
+  ]
+ },
+ "framing_pairs": [],
+ "negative": []
+}

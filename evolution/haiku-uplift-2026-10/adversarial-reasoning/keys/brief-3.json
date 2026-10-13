@@ -1,0 +1,74 @@
+{
+  "Y3Y": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "the assumption that money \"never goes to the employee\" fails because the charity can pay them back indirectly",
+      "k2": "Five colluding staff can each give $1 to a charity of their choice",
+      "k3": "A platform refund or chargeback arrives after the match has been paid.",
+      "k4": "The employee types in the charity contact's email, so they can enter an address they control."
+    }
+  },
+  "T9M": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "pays a salary, \"expenses\" or a consultancy fee to the insider",
+      "k2": "can each give a small amount to a favoured charity",
+      "k3": "refunded, charged back, or recalled after the match is approved",
+      "k4": "the \"confirmation\" can go to the employee's own second address, a friend"
+    }
+  },
+  "B1A": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "getting money into a charity the employee can influence",
+      "k2": "Five people who agree to give to the same charity in the same month each get 3:1.",
+      "k3": "If the donation is refunded or charged back after the match is paid, the employee keeps the match",
+      "k4": "An employee can enter their own address, a friend's, or a free webmail address they control"
+    }
+  },
+  "B1Y": {
+    "k1": "✓", "k2": "✓", "k3": "✗", "k4": "✓",
+    "evidence": {
+      "k1": "That charity returns $900 as a \"consulting fee\", \"expense refund\" or \"event payment\".",
+      "k2": "each give a small amount to a charity the group controls",
+      "k3": "no reversal or refund-after-approval path identified",
+      "k4": "an employee can enter their own address, or one they control, and confirm any number of hours"
+    }
+  },
+  "M4C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the charity pays the employee's salary, rent or \"expenses\"",
+      "k2": "Tiny donations ($5 each) count the same as $500 ones",
+      "k3": "Donate, claim the match, then reverse the card payment or request a platform refund.",
+      "k4": "The \"contact\" can be a friend, a relative, a personal alias"
+    }
+  },
+  "E3S": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "An employee (or a relative) starts a tiny registered charity, or sits on its board",
+      "k2": "a group of friends can steer a captured or related charity into 3:1 trivially",
+      "k3": "refunded donations, recurring gifts later cancelled, and chargebacks all leave a paid match",
+      "k4": "the employee can enter a friend's, a second address of their own"
+    }
+  },
+  "B3Y": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the charity pays something back: salary, \"expenses\", a grant, tuition, event tickets, or a kickback",
+      "k2": "ask for a minimum total from a minimum number of distinct donors",
+      "k3": "real donations that are later refunded or charged back, after the match is approved",
+      "k4": "That person can be a friend, a relative, a second email address the employee controls"
+    }
+  },
+  "L1M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Someone registers a small charity, uses it as the recipient of matches",
+      "k2": "Set a minimum donation size for counting toward the five.",
+      "k3": "Ask charities to confirm each match they receive, and to report refunds",
+      "k4": "They can enter an address they control, confirm their own hours"
+    }
+  }
+}

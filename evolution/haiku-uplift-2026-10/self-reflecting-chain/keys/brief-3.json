@@ -1,0 +1,42 @@
+{
+  "T3R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "pupils who score lowest tend to rise toward the average. The right comparison is therefore 10.4 − 8",
+    "k2": "(180 × 82 − 30 × 74) ÷ 150 = 83.6 in September",
+    "k3": "Equating should already remove the difficulty difference, so it is not a reason to expect the true gain",
+    "k4": "It assumes the extra pupils (ranks 15 to 30%, who are less far behind) respond as strongly"}},
+  "N8A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Pupils selected that way tend to bounce back somewhat even with no help",
+    "k2": "(180 x 82 - 30 x 74) / 150 = 12,540 / 150 = 83.6",
+    "k3": "adjusting again would count the same correction twice",
+    "k4": "The extra 15% are higher scorers, so they have less room to improve, and less natural bounce-back"}},
+  "V0U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "tend to gain more anyway, partly because of regression to the mean",
+    "k2": "(180 x 82 - 30 x 74) / 150 = 83.6 in September",
+    "k3": "Equating exists to remove the effect of form difficulty, so a Form B score is already adjusted",
+    "k4": "Doubling the coverage doubles the effect only if the next 15% of pupils benefit as much"}},
+  "E3T": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+    "k1": "Last year the bottom 15% gained 8 points with no Lantern, so that is the right baseline",
+    "k2": "(180 x 82 - 30 x 74) / 150 = 83.6",
+    "k3": "If Form B really is harder and the equating did not fully correct... true gain could therefore be larger",
+    "k4": "assumes the effect carries over to pupils who scored higher in September... Neither assumption is tested"}},
+  "J0Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Part of that is regression to the mean, because very low scores tend to drift up on retest",
+    "k2": "(180 x 82 - 30 x 74) / 150 = 12,540 / 150 = 83.6",
+    "k3": "Equating exists to adjust for form difficulty, so the harder questions should already be accounted for",
+    "k4": "less room to improve and less regression-to-the-mean effect to build on"}},
+  "H9E": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Last year... gained 8 points by June without Lantern... tend to rise anyway (regression to the mean)",
+    "k2": "The 12-point figure compares the finishers' June scores with all 180 pupils' September scores",
+    "k3": "If the equating works, a harder form should not bias the comparison",
+    "k4": "assumes that pupils ranked 15–30% respond as well as the bottom 15%"}},
+  "R0N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Those pupils start low, so they tend to rise anyway (regression to the mean)",
+    "k2": "Finishers' September total: (82 x 180) - (74 x 30)... average is 83.6",
+    "k3": "Scores are stated to be on the same equated scale, which should already adjust for form difficulty",
+    "k4": "The bottom 30% are less extreme than the bottom 15%, so their effect may be smaller still"}},
+  "S6Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Low scorers on a single test tend to bounce back somewhat on retest",
+    "k2": "(180 x 82 - 30 x 74) / 150 = 83.6... Their actual gain is 94 - 83.6 = 10.4",
+    "k3": "The June scores are already on the same equated scale... Adjusting again would double count",
+    "k4": "extra pupils... score higher and are less far behind... probably less, and have less room to gain"}}
+}

@@ -1,0 +1,170 @@
+[
+ {
+  "cell": "brief-1--i3--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "i3",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--i3--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "i3",
+  "run": 2
+ },
+ {
+  "cell": "brief-1--l8--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "l8",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--l8--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "l8",
+  "run": 2
+ },
+ {
+  "cell": "brief-1--n3--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "n3",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--n3--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "n3",
+  "run": 2
+ },
+ {
+  "cell": "brief-1--b3--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "b3",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--b3--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "b3",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--i3--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "i3",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--i3--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "i3",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--l8--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "l8",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--l8--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "l8",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--n3--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "n3",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--n3--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "n3",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--b3--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "b3",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--b3--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "b3",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--i3--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "i3",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--i3--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "i3",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--l8--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "l8",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--l8--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "l8",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--n3--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "n3",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--n3--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "n3",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--b3--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "b3",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--b3--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "b3",
+  "run": 2
+ }
+]

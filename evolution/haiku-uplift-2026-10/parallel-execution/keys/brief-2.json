@@ -1,0 +1,74 @@
+{
+  "L9S": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Expect the first failures to come from billing reading numeric values as strings",
+      "k2": "Depend on the Money contract and roundHalfEven from packages/pricing",
+      "k3": "migration 0042 adds `amount_minor bigint`, the backfill fills it (but Agent 1 prompt still says alter to bigint)",
+      "k4": "Pricing takes `0042`, billing takes `0043`."
+    }
+  },
+  "A8R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "`\"18.3350\" + 1` silently concatenates... the ORM upgrade merges first",
+      "k2": "pricing owns a single `roundHalfEven` helper with tests, the backfill imports it",
+      "k3": "\"alter first, backfill after\" loses the data.",
+      "k4": "All three will pick 0042... Fix: reserve numbers now."
+    }
+  },
+  "P7W": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "it's `\"18.3350\" + 1` is `\"18.33501\"`... Do it first",
+      "k2": "tasks 2 and 4 must call the shared helper and not write their own rounding",
+      "k3": "keeps the integer part of a value like 18.3350 as 18",
+      "k4": "All four branches would create `0042_*`. Reserve numbers up front"
+    }
+  },
+  "E4F": {
+    "k1": "~", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "pricing code that reads it will break under Kestrel 5 whether or not item 1 is done",
+      "k2": "using the shared roundHalfEven helper from packages/pricing. Do not reimplement it.",
+      "k3": "If the migration converts amount with a USING clause, the backfill has nothing left to do",
+      "k4": "Assign numbers up front: pricing gets 0042, billing gets 0043."
+    }
+  },
+  "L6Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Anything that does `row.amount * 100` becomes string coercion and works by accident",
+      "k2": "Use `toMinor`/`roundHalfEven` from packages/pricing (from Wave 0).",
+      "k3": "values have to be multiplied by 10^exponent first... Fix: expand/contract.",
+      "k4": "Pricing and billing will both take 0042... Pre-assign numbers"
+    }
+  },
+  "E3F": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Whatever parsing the pricing agent writes has to hold under both Kestrel versions.",
+      "k2": "The backfill agent will reuse it. (but backfill prompt specifies its own SQL rounding)",
+      "k3": "18.3350 becomes 18, not 1834.",
+      "k4": "Pricing and billing will both create 0042 on their own branches."
+    }
+  },
+  "F3J": {
+    "k1": "~", "k2": "✓", "k3": "✗", "k4": "✓",
+    "evidence": {
+      "k1": "Both will edit the same mapping and arithmetic code (merge order puts pricing before Kestrel)",
+      "k2": "Use `roundHalfToEven` from the pricing package. Do not reimplement rounding.",
+      "k3": "Write migration `0042` converting `quotes.amount` from `numeric(12,4)` to `bigint`",
+      "k4": "Both would claim `0042`."
+    }
+  },
+  "Z0E": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Merge C first, since it is mechanical and wide.",
+      "k2": "Use the Money helpers and roundHalfEven from packages/pricing.",
+      "k3": "it discards the decimals before the backfill can read them.",
+      "k4": "A duplicate number breaks the fresh-database CI build."
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Quick one. The system prompt for our bakery's order-confirmation assistant has a typo: "your pickup is recieved" should be "received". The last real change to that prompt went through a full side-by-side comparison with judges. Do I need to rerun all of that for a one-word spelling fix, or can I just push it?

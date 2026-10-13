@@ -5,21 +5,22 @@ Each skill reuses the sealed pack, and the Sonnet replies where the skill text i
 
 | # | skill | state | reaches sonnet | haiku uplift | commit | subagent tokens |
 |---|---|---|---|---|---|---|
-| 1 | hypothesis-elimination | pending | | | | |
-| 2 | reasoning-handover-protocol | pending | | | | |
-| 3 | integrated-reasoning | pending | | | | |
-| 4 | tree-of-thoughts | pending | | | | |
-| 5 | breadth-of-thought | pending | | | | |
-| 6 | self-reflecting-chain | pending | | | | |
-| 7 | parallel-execution | pending | | | | |
-| 8 | premortem-evolved | pending | | | | |
-| 9 | adversarial-reasoning | pending | | | | |
-| 10 | dialectical-reasoning | pending | | | | |
-| 11 | analogical-transfer | pending | | | | |
-| 12 | rapid-triage-reasoning | pending | | | | |
-| 13 | negotiated-decision-framework | pending | | | | |
-| 14 | option-synthesis | pending | | | | |
-| 15 | skill-gauntlet | pending | | | | |
+| 1 | hypothesis-elimination | applied | DOES NOT REACH | INCONCLUSIVE |  |  |
+| 2 | reasoning-handover-protocol | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 3 | integrated-reasoning | frozen | INCONCLUSIVE | INCONCLUSIVE |  |  |
+| 4 | tree-of-thoughts | frozen | INCONCLUSIVE | INCONCLUSIVE |  |  |
+| 5 | breadth-of-thought | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 6 | self-reflecting-chain | applied | DOES NOT REACH | INCONCLUSIVE |  |  |
+| 7 | parallel-execution | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 8 | premortem-evolved | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 9 | adversarial-reasoning | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 10 | dialectical-reasoning | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 11 | analogical-transfer | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 12 | rapid-triage-reasoning | applied | DOES NOT REACH | INCONCLUSIVE |  |  |
+| 13 | negotiated-decision-framework | applied | DOES NOT REACH | INCONCLUSIVE |  |  |
+| 14 | option-synthesis | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 15 | skill-gauntlet | applied | DOES NOT REACH | INCONCLUSIVE |  |  |
 
 ## Rulings
 
+- **Ruling (owner decision, after the first scoring):** the pre-registration gives every INCONCLUSIVE comparison an extension. The owner chose to extend only the two skills whose primary question was open (integrated-reasoning and tree-of-thoughts: Haiku with the skill vs Sonnet alone). The other skills keep their INCONCLUSIVE uplift comparisons (Haiku with vs without the skill, Sonnet with vs without), reported as INCONCLUSIVE without an extension. Nothing depends on those comparisons, and extending all twelve would have cost about 14M more subagent tokens. Each affected research note records the ruling.

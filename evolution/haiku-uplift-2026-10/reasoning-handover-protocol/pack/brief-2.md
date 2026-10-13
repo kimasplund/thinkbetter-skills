@@ -1,0 +1,7 @@
+I head planning at Saltmarsh Island Ferries. The MV Tamsin retires in April, leaving the MV Elder alone on the Vellmouth–Inch Harbour crossing (55 minutes each way; Vellmouth is the island side). Two analysts worked the timetable separately while I was away. I'm back for one week before the board decides, then on leave again. Please merge their work into one state-of-play I can pick up from, and give me an honest view of how sure we can be.
+
+**Priya's notes:** Considered seven timetable patterns, kept three. Best is Pattern C: near-hourly service, first sailing from Vellmouth at 05:15 so islanders make the 06:20 mainland train. Rejected chartering a second vessel: the only one available, the MV Dunlin, has a stern ramp that doesn't fit the Vellmouth linkspan. Harbour authority bylaw reminder: no vessel movements at Vellmouth between 23:00 and 05:30. Loadings based on our September 2024 passenger survey. Confidence in C: about 70%.
+
+**Owen's notes:** Stress-tested Pattern C on crew hours and fuel. It holds: crew stay within the 12-hour duty limit using a split shift, and fuel is up 4% on today. Loadings from the September 2024 survey. Charter is only out because of cost; if the board finds money, the Dunlin is back on. Confidence: about 80%.
+
+**Other background:** the Corran Bridge on the road route round the estuary was closed for repairs from March to November 2024. The council's new park-and-ride at Inch Harbour opened in January.

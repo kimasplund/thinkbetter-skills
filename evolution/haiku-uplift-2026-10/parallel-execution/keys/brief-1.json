@@ -1,0 +1,74 @@
+{
+  "W2W": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Freeze the card text, including the Exhaust/Rest changes and the two Relics",
+      "k2": "222 cards need 3 sheets per edition (12 total), not 2 per edition (8 total)",
+      "k3": "per-card character budget (English length × 1.3 for DE/PL/PT-BR",
+      "k4": "there is very little slack"
+    }
+  },
+  "E0I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Every card or rules passage that uses Exhaust would be translated twice",
+      "k2": "8 sheets versus 12 across four editions, a 50% jump",
+      "k3": "German, Polish and Portuguese usually run longer than English, so those layouts will overflow",
+      "k4": "files reach Casa in week 8 and approval finishes around week 10"
+    }
+  },
+  "C0R": {
+    "k1": "~", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "Send the English files Monday, but mark them as provisional.",
+      "k2": "222 needs 3 sheets per edition (12 total), so the quote should be for 888 cards",
+      "k3": "Four layouts from English, with the two Relic cards added to the template",
+      "k4": "Casa's approval is the most fragile link."
+    }
+  },
+  "D6K": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "start Monday on the stable material and send a change delta at the end of W2",
+      "k2": "3 sheets per edition instead of 2, which is 12 sheets across four editions instead of 8",
+      "k3": "Tomasz should not simply build four layouts from the English files and hope",
+      "k4": "zero to three days for Brazilian Portuguese"
+    }
+  },
+  "G9Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "ask Priya this week for a card-text freeze and a list of changed lines",
+      "k2": "222 needs three sheets per edition (12 sheets across four editions)",
+      "k3": "fix it in the template once, because a template change ripples into every edition",
+      "k4": "If Priya can't freeze the cards this week, the Portuguese edition will miss 7 Dec"
+    }
+  },
+  "K8B": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Send translators the current English cards and rulebook. Tell them Exhaust cards and rulebook wording may change",
+      "k2": "222 cards need 3 sheets per edition (12 sheets across four editions, not 8)",
+      "k3": "Decide by 6 Nov whether to reduce the font, enlarge the box or trim rules text",
+      "k4": "If Tomasz needs two full weeks for the Portuguese edition, approval lands on 11 Dec"
+    }
+  },
+  "O3M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Translators working from the current files would translate text that gets thrown away",
+      "k2": "220 cards is exactly 2 sheets per edition. 222 is 3 sheets",
+      "k3": "If Tomasz builds four layouts around English, you'll find the overflow after the translations arrive",
+      "k4": "If Priya actually finishes at the end of Week 2, the Portuguese schedule has no slack."
+    }
+  },
+  "I2Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Translators would work from files that are about to change.",
+      "k2": "which is 3 sheets per edition, or 12 sheets instead of 8",
+      "k3": "His first job should be to solve the text-fit problem.",
+      "k4": "the natural finish for Brazilian Portuguese is the end of week 7 at the earliest"
+    }
+  }
+}

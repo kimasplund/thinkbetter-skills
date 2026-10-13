@@ -1,0 +1,1 @@
+Quick one: I teach a Saturday morning wheel-throwing class at my studio, 8 students. Two of them asked whether we could start at 10:30 instead of 10:00 from next month. The studio's free either way. Any reason not to just do it?

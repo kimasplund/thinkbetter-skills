@@ -1,0 +1,74 @@
+{
+  "Z0V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "An attacker who knows they are being removed can simply stay out of sync.",
+      "k2": "A modified or offline app can drop or alter entries",
+      "k3": "any manager can generate a code for any unit... no reason recorded. That is an insider-theft path",
+      "k4": "about 1 in 900 random guesses hits a valid PIN"
+    }
+  },
+  "A8B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A tenant who understands this can stay in airplane mode.",
+      "k2": "force-quit the app, uninstall it before it uploads, or stay offline",
+      "k3": "One person with sole access can remove items before taking the photos.",
+      "k4": "The expected time to the first working PIN is around 15 hours."
+    }
+  },
+  "D0T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The revoked person can block their own revocation.",
+      "k2": "A modified app, or a user who deletes it... produces no record.",
+      "k3": "One person, no witness... your only record is the manager's.",
+      "k4": "roughly 1 guess in 900 hits a real tenant"
+    }
+  },
+  "C0F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A thief who once held a helper credential can use it indefinitely.",
+      "k2": "the tenant's own phone is the witness.",
+      "k3": "no tenant notice, no per-unit scoping, no reason code, and no second approver",
+      "k4": "Expected successful entries per day are about 1.6."
+    }
+  },
+  "U7S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A tenant who knows this can avoid syncing",
+      "k2": "A thief or dishonest tenant can stop the app from uploading",
+      "k3": "One manager opens the unit alone... This is a classic insider risk",
+      "k4": "any tenant will do... about 0.11%... expected number of hits is around 1.6"
+    }
+  },
+  "G2M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A tenant who wants to keep access can run a modified app that drops the revocation",
+      "k2": "the answer is the party it might incriminate.",
+      "k3": "One person therefore controls entry, the inventory record, and the sale.",
+      "k4": "roughly one to two valid PINs a day"
+    }
+  },
+  "J3G": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A basement lock with no signal may not see that change for weeks.",
+      "k2": "A tenant who controls their phone can delete or change records before upload.",
+      "k3": "For contents, the insider manager is the realistic threat.",
+      "k4": "roughly 0.11% of random guesses hit a real tenant"
+    }
+  },
+  "T5J": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a revoked credential can survive indefinitely because nothing newer pushes it out.",
+      "k2": "A lock that was used offline and never synced leaves no record.",
+      "k3": "A manager can open any unit at any time, and the tenant is not told.",
+      "k4": "each guess has about a 0.11% chance of hitting one"
+    }
+  }
+}

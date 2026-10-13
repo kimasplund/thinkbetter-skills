@@ -1,0 +1,42 @@
+{
+"D3Y": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+ "k1": "Aim for at least 12 living-composer works across the season",
+ "k2": "Turn the film and video-game concert into a repeated format",
+ "k3": "give them a clear role in the Unbound series",
+ "k4": "Keep the Friday subscription anchored in core repertoire"}},
+"E6C": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+ "k1": "The rest of the living-composer works can come from existing repertoire",
+ "k2": "A single themed Saturday concert of that kind",
+ "k3": "gives Ilse a place to develop and try new pieces",
+ "k4": "Saturdays need better programming, possibly a mixed or themed format"}},
+"Y7Y": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "You do not need to commission to hit 20%",
+ "k2": "Add 2 to 3 film/game or crossover programmes with living composers",
+ "k3": "Treat it as the pipeline for younger audiences",
+ "k4": "Saturdays (the problem slot): lead with recognisable repertoire"}},
+"N0J": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "A 10-minute piece by a living composer opening a Tchaikovsky concert counts",
+ "k2": "Keep one film-and-game programme, and consider a second",
+ "k3": "Use Unbound as a pipeline",
+ "k4": "Saturdays carry the draw."}},
+"H3D": {"k1": "✓", "k2": "~", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "One short living-composer piece on most programmes would meet the threshold",
+ "k2": "Include at least one film or game-score programme",
+ "k3": "Keep it and expand it modestly, for instance 8-10 nights",
+ "k4": "Make these the accessible, name-recognition programmes"}},
+"O7B": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+ "k1": "One living-composer work in each of 10 to 12 programmes would meet the target",
+ "k2": "Use the film and video-game model for a main-stage crossover",
+ "k3": "it keeps the players engaged",
+ "k4": "keeping the core classics on the subscription nights"}},
+"S4K": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "Existing living-composer works cost no commission",
+ "k2": "Add a second film or game-score concert",
+ "k3": "Protect and expand Unbound",
+ "k4": "Saturdays (the weak spot): anchor on recognisable titles"}},
+"N9R": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "~", "evidence": {
+ "k1": "one new work in 12 or more of the 16 concerts",
+ "k2": "Keep the film and video-game concert as a main-stage event",
+ "k3": "This is where the orchestra's artistic identity lives",
+ "k4": "Saturday single tickets are 48% full."}}
+}

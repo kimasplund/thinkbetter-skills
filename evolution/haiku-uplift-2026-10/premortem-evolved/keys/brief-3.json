@@ -1,0 +1,74 @@
+{
+  "S6T": {
+    "k1": "✗", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "If it is 25% of the $8.99 shelf price, it is $2.25/jar and everything below gets worse.",
+      "k2": "you must reorder in early May. That's another $23k deposit, when you have about $9k",
+      "k3": "If one flavor lags, you're stuck with 5,000 jars.",
+      "k4": "That puts finished goods in early-to-mid March, plus transit."
+    }
+  },
+  "G9S": {
+    "k1": "✗", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "roughly $9k to $16k depending on whether the 25% is taken off wholesale or shelf price",
+      "k2": "your first meaningful cash from Calloway is likely May at the earliest and more plausibly June or July",
+      "k3": "at 3/week, a 5,000-jar batch takes about 35 weeks to sell through, longer than the 6-month shelf life",
+      "k4": "moves finished goods to roughly March 2 to March 9"
+    }
+  },
+  "Y6H": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "if the discount is off the shelf price ($2.25/jar), you lose money on every jar sold",
+      "k2": "you must place order #2 around early May... another ~$23k deposit when you have about $9k left",
+      "k3": "5,000 jars per flavor is about 17 weeks of supply per flavor at forecast and far longer",
+      "k4": "Plus the 6-week lead time gives finished goods around Mar 2 to 9."
+    }
+  },
+  "W6P": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "If it's 25% off the $8.99 shelf price, it's $2.25 a jar, and the cash gap grows by about $5k.",
+      "k2": "The first run also sells out in mid-June, so a reorder has to be placed around early May",
+      "k3": "At 3 jars per store per flavor per week... leaves roughly 3,800 jars to expire.",
+      "k4": "Add the 2–3 week trial batch and you get Mar 2–9, before freight."
+    }
+  },
+  "F6A": {
+    "k1": "✗", "k2": "~", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "25% promo for 8 weeks: 6,912 jars x $1.35 (25% of wholesale) = about $9,300.",
+      "k2": "Net-60 means the first meaningful payment is around May or June.",
+      "k3": "the stock lasts about 7 months, which is longer than the 6-month shelf life.",
+      "k4": "Ordering in the first week of January gives finished goods around March 2-9, not late February."
+    }
+  },
+  "J6H": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The promo is 6,912 jars x $2.25 = $15,552.",
+      "k2": "the second order's $23,250 deposit is due around May 25... first net Calloway cash lands around Jul 30.",
+      "k3": "At 3 a week, about half the 15,000-jar run (roughly 7,500 jars) was still unsold.",
+      "k4": "puts finished jars at Halvard on Mar 2-9."
+    }
+  },
+  "S1A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the promotion sells at a loss of $0.25 a jar.",
+      "k2": "The next run needs a deposit in early May: $23,250. Cash: about −$14,250.",
+      "k3": "about 3,800 of the first run's 15,000 jars are unsold... credited back at $5.40 each",
+      "k4": "The trial batch adds two to three weeks, so finished goods arrive around March 2–9."
+    }
+  },
+  "H5A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "If it is 25% of the $8.99 shelf price ($2.25 a jar), the promo weeks lose money on every jar.",
+      "k2": "A six-week lead time put the reorder date in early to mid May. The deposit was $23,250 and the account held about $9k.",
+      "k3": "The weakest flavor ran about 2... About 3,700 jars were left, with five weeks of life.",
+      "k4": "January 4 plus the 2-3 week trial sign-off plus the 6-week lead time puts finished goods at Halvard between March 1 and March 8"
+    }
+  }
+}

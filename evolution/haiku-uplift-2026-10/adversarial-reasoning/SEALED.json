@@ -1,0 +1,34 @@
+{
+ "arms": {
+  "e3": "hs",
+  "b2": "hn",
+  "p7": "ss",
+  "g4": "sn"
+ },
+ "blind": {
+  "brief-1--e3--r1.md": "P8H",
+  "brief-1--e3--r2.md": "O2W",
+  "brief-1--b2--r1.md": "N1M",
+  "brief-1--b2--r2.md": "U0I",
+  "brief-1--p7--r1.md": "Y5T",
+  "brief-1--p7--r2.md": "B0G",
+  "brief-1--g4--r1.md": "W3M",
+  "brief-1--g4--r2.md": "W4F",
+  "brief-2--e3--r1.md": "G2M",
+  "brief-2--e3--r2.md": "J3G",
+  "brief-2--b2--r1.md": "C0F",
+  "brief-2--b2--r2.md": "T5J",
+  "brief-2--p7--r1.md": "A8B",
+  "brief-2--p7--r2.md": "D0T",
+  "brief-2--g4--r1.md": "Z0V",
+  "brief-2--g4--r2.md": "U7S",
+  "brief-3--e3--r1.md": "Y3Y",
+  "brief-3--e3--r2.md": "B1Y",
+  "brief-3--b2--r1.md": "B1A",
+  "brief-3--b2--r2.md": "L1M",
+  "brief-3--p7--r1.md": "T9M",
+  "brief-3--p7--r2.md": "B3Y",
+  "brief-3--g4--r1.md": "M4C",
+  "brief-3--g4--r2.md": "E3S"
+ }
+}

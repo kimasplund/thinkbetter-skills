@@ -1,0 +1,359 @@
+[
+ {
+  "order": 1,
+  "skill": "hypothesis-elimination",
+  "key_type": "the true cause plus 2 plausible red herrings, each supported by some evidence in the brief",
+  "source": "evolution/gauntlet-2026-10/hypothesis-elimination",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "new"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 2,
+  "skill": "reasoning-handover-protocol",
+  "key_type": "facts the next phase must carry forward: a binding constraint, a ruled-out option with its reason, and an open question",
+  "source": "evolution/gauntlet-2026-10/reasoning-handover-protocol",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "old"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 3,
+  "skill": "integrated-reasoning",
+  "key_type": "a routing trap: a problem that looks like one kind of reasoning task but actually needs another",
+  "source": "evolution/gauntlet-2026-10/integrated-reasoning",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 4,
+  "skill": "tree-of-thoughts",
+  "key_type": "a hidden hard constraint, stated only in passing, that rules out the obviously attractive option",
+  "source": "evolution/gauntlet-2026-10/tree-of-thoughts",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 5,
+  "skill": "breadth-of-thought",
+  "key_type": "a non-obvious but viable class of options that a narrow answer would miss",
+  "source": "evolution/gauntlet-2026-10/breadth-of-thought",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 6,
+  "skill": "self-reflecting-chain",
+  "key_type": "an invalid step planted inside an otherwise sound chain of reasoning",
+  "source": "evolution/gauntlet-2026-10/self-reflecting-chain",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "old"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 7,
+  "skill": "parallel-execution",
+  "key_type": "a hidden dependency between sub-tasks that makes naive fan-out produce wrong results",
+  "source": "evolution/gauntlet-2026-10/parallel-execution",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "old"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 8,
+  "skill": "premortem-evolved",
+  "key_type": "concrete plan flaws a rigorous premortem must surface",
+  "source": "evolution/gauntlet-2026-10/premortem-evolved",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "old"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 9,
+  "skill": "adversarial-reasoning",
+  "key_type": "planted vulnerabilities or abuse paths in the design",
+  "source": "evolution/gauntlet-2026-10/adversarial-reasoning",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "new"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 10,
+  "skill": "dialectical-reasoning",
+  "key_type": "a false dichotomy that hides a workable third option",
+  "source": "evolution/gauntlet-2026-10/dialectical-reasoning",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "new"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 11,
+  "skill": "analogical-transfer",
+  "key_type": "a disanalogy: a structural difference that breaks the most tempting surface analogy",
+  "source": "evolution/gauntlet-2026-10-r2/analogical-transfer",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "old"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 12,
+  "skill": "rapid-triage-reasoning",
+  "key_type": "an irreversible-action trap alongside a reversible option that buys time",
+  "source": "evolution/gauntlet-2026-10-r2/rapid-triage-reasoning",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "old"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 13,
+  "skill": "negotiated-decision-framework",
+  "key_type": "a hidden veto holder or an unstated interest that decides whether any agreement holds",
+  "source": "evolution/gauntlet-2026-10-r2/negotiated-decision-framework",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "old"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 14,
+  "skill": "option-synthesis",
+  "key_type": "a dominated incumbent option plus a hidden constraint the winning option must satisfy",
+  "source": "evolution/gauntlet-2026-10/option-synthesis",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "new"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ },
+ {
+  "order": 15,
+  "skill": "skill-gauntlet",
+  "key_type": "planted protocol violations in an evaluation scenario (goalpost movement, a burned fixture, an unblinded judge)",
+  "source": "evolution/gauntlet-2026-10/skill-gauntlet",
+  "arms": {
+   "hs": {
+    "model": "haiku",
+    "skill_ref": "HEAD"
+   },
+   "hn": {
+    "model": "haiku"
+   },
+   "ss": {
+    "model": "sonnet",
+    "skill_ref": "HEAD",
+    "reuse": "new"
+   },
+   "sn": {
+    "model": "sonnet",
+    "reuse": "none"
+   }
+  }
+ }
+]

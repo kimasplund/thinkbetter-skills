@@ -1,0 +1,74 @@
+{
+  "B9D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "60 × 9 = 540 a day, an increase of 108 loaves, not 216",
+      "k2": "each extra loaf contributes about €3.75, not €6.00",
+      "k3": "energy goes from €36.00 to €46.80, an increase of €10.80 a day",
+      "k4": "total repayments are about €62,640 and interest about €8,640"
+    }
+  },
+  "T9B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the realistic gain is 60 − 48 = 12 loaves per load, or 108 loaves a day",
+      "k2": "each extra loaf contributes about €3.75 before energy",
+      "k3": "Energy (wrong sign)... energy rises by about €10.80 a day",
+      "k4": "interest is about €8,640, not €16,200"
+    }
+  },
+  "E8N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the proofer caps each load at 60... up 108 from 432, not up 216",
+      "k2": "leaving about €3.75 contribution per loaf",
+      "k3": "energy costs about €10.80 a day more. The \"€7 a day saving\" is the wrong sign",
+      "k4": "about €62,640 in total, with about €8,640 of interest"
+    }
+  },
+  "H8N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "output tops out at 540/day, up 108, not 216",
+      "k2": "Contribution from 150 extra loaves is therefore about €563/day",
+      "k3": "an increase of about €10.80/day",
+      "k4": "about 159 days, roughly 6.1 months (fail)"
+    }
+  },
+  "G4U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "It does not cover the roughly 150 loaves a day you turn away. It covers 108",
+      "k2": "the margin is about €3.75 a loaf, before energy",
+      "k3": "That is €10.80 a day more, not €7 saved",
+      "k4": "Total repaid is about €62,600, so interest is about €8,600, not €16,200"
+    }
+  },
+  "E8G": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Realistic output is 60 x 9 = 540 a day, up 108",
+      "k2": "That leaves a margin of about €3.75 a loaf",
+      "k3": "Energy spend goes up from €36 to €46.80 a day, a cost of about €10.80",
+      "k4": "interest about €8,600, not €16,200... about 159 | about 6.1"
+    }
+  },
+  "A8J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Real output: 60 × 9 = 540 loaves a day, up 108 (not 216)",
+      "k2": "The contribution is about €3.75 a loaf",
+      "k3": "Total energy goes up by €1.20 a load × 9 loads = €10.80 a day extra cost",
+      "k4": "interest is about €8,600, not €16,200"
+    }
+  },
+  "H7F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "With the D9: 60 x 9 = 540 loaves/day, up 108, not 216",
+      "k2": "Margin is about €3.75 a loaf, before energy",
+      "k3": "Total energy spend rises... so +€10.80 a day",
+      "k4": "interest is about €8,600, not €16,200"
+    }
+  }
+}

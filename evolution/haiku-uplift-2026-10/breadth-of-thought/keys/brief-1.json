@@ -1,0 +1,74 @@
+{
+  "S8O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "roughly 63 m³ to store, against the 12 m³ tank you have now",
+      "k2": "close the showers, run composting or dry toilets for the late season",
+      "k3": "end the season on 31 August rather than 20 September",
+      "k4": "water must be pumped up... needs a written agreement with the farming family (no solar link)"
+    }
+  },
+  "N8L": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Covering the August dry spell means roughly 60 to 115 m³",
+      "k2": "Returning to dry or composting toilets, rationing showers",
+      "k3": "closing the hut from mid-August when the spring is low (only inside demand option)",
+      "k4": "Agree a supply arrangement with the family... Solar power could run the pump."
+    }
+  },
+  "A9H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Add storage to capture the June overflow and top it up through July",
+      "k2": "Return to dry or composting toilets, at least in part",
+      "k3": "You could plan an earlier close, for example around 31 August",
+      "k4": "Your spare solar capacity makes this plausible."
+    }
+  },
+  "U9G": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the option that matches the actual problem, which is timing rather than total volume",
+      "k2": "Go back to dry or composting toilets, at least in a drought mode",
+      "k3": "Make closure a planned, advertised decision with a water-level trigger",
+      "k4": "Your spare solar could drive that pump."
+    }
+  },
+  "M2Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Only about 63 to 114 m³ of storage is needed",
+      "k2": "switching the flush toilets off during a shortage",
+      "k3": "closing earlier (for example from late August) costs fewer bookings than it used to",
+      "k4": "which your spare solar capacity could probably supply"
+    }
+  },
+  "N9U": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Even a tank holding 40 to 60 m³ would cover most of a dry spell",
+      "k2": "Switching back to dry or composting toilets for the late-season months",
+      "k3": "if the tank drops below X m³, cap or close bookings",
+      "k4": "Your solar surplus could run a pump, and the lift is modest."
+    }
+  },
+  "E7U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Add a large buried or covered cistern... Fill it in June and July",
+      "k2": "Replace the flush toilets with dry or composting toilets",
+      "k3": "Set a lower bed cap in late season, or run a reduced service",
+      "k4": "your solar array has spare capacity. Energy is not the obstacle."
+    }
+  },
+  "E3B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Extra cisterns, say 20-30 m³, filled then and held for August",
+      "k2": "returning to dry toilets in the second half of the season",
+      "k3": "Closing about 10 September... would put the fewest guests in the driest weeks",
+      "k4": "your solar array has spare capacity... you would need a formal agreement"
+    }
+  }
+}

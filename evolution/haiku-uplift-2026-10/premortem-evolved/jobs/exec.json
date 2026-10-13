@@ -1,0 +1,86 @@
+[
+ {
+  "id": "brief-1--i3--r1",
+  "prompt": "jobs/exec/brief-1--i3--r1.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--i3--r2",
+  "prompt": "jobs/exec/brief-1--i3--r2.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--b7--r1",
+  "prompt": "jobs/exec/brief-1--b7--r1.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--b7--r2",
+  "prompt": "jobs/exec/brief-1--b7--r2.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--i3--r1",
+  "prompt": "jobs/exec/brief-2--i3--r1.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--i3--r2",
+  "prompt": "jobs/exec/brief-2--i3--r2.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--b7--r1",
+  "prompt": "jobs/exec/brief-2--b7--r1.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--b7--r2",
+  "prompt": "jobs/exec/brief-2--b7--r2.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--i3--r1",
+  "prompt": "jobs/exec/brief-3--i3--r1.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--i3--r2",
+  "prompt": "jobs/exec/brief-3--i3--r2.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--b7--r1",
+  "prompt": "jobs/exec/brief-3--b7--r1.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--b7--r2",
+  "prompt": "jobs/exec/brief-3--b7--r2.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ }
+]

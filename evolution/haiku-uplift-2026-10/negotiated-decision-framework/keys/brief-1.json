@@ -1,0 +1,74 @@
+{
+  "B9F": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Ask counsel whether that wording, or the deed itself, restricts sale or requires a reversion",
+      "k2": "The 700 ceiling is not the only condition.",
+      "k3": "If the campus closes, that money may be restricted to a use that no longer exists.",
+      "k4": "January 10: re-enrolment contracts go out, with the commitments above in writing."
+    }
+  },
+  "T0F": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a reverter or a charitable-purpose condition, then selling to a developer may need a court",
+      "k2": "Check the actual number. Moving 230 more students takes the south campus to 640",
+      "k3": "closing the north campus may let Ardelle stop paying or ask for a refund",
+      "k4": "Either way, tell families early and plainly, before January 10"
+    }
+  },
+  "N8I": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "a sale to a developer may need court approval or the attorney general's sign-off",
+      "k2": "\"700 students\" and \"enrolment ceiling\" are probably going to collide. Find the exact number.",
+      "k3": "closing the campus may let Ardelle redirect or stop the payments",
+      "k4": "Add a short extension for north-campus families only"
+    }
+  },
+  "C3Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Check for a restriction, a reverter or a right of enforcement.",
+      "k2": "Your consultant's 700-student figure is about physical capacity, not what is legally permitted.",
+      "k3": "Closing the north campus may breach the grant terms or end the foundation's willingness to pay.",
+      "k4": "Families would be signing without knowing whether their child's campus will exist"
+    }
+  },
+  "A5K": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "a reverter clause that returns the land to the family if it stops being used for education",
+      "k2": "Ask whether consolidating 640 students onto the south campus needs an amendment to the 2004 approval.",
+      "k3": "Ask the Foundation directly what happens to the remaining $800k if the campus closes.",
+      "k4": "Families will be asked to recommit to a school whose future isn't decided yet"
+    }
+  },
+  "D3L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "It may also be a deed restriction, a reverter clause or a charitable trust condition.",
+      "k2": "a physical capacity figure is not the same as the legal ceiling in the 2004 approval.",
+      "k3": "the foundation may be entitled to stop paying, and may ask for money back.",
+      "k4": "Announce the proposal and its timeline to all families before the contracts go out"
+    }
+  },
+  "M8Q": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "it may be a deed restriction or reverter clause... the Halloran family's heirs could have a claim",
+      "k2": "a physical capacity estimate, not a permitted one. You will probably need a planning amendment",
+      "k3": "closing the campus may cost you that money.",
+      "k4": "Announcing a closure while families are deciding whether to re-enrol risks losing exactly the families"
+    }
+  },
+  "A1H": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The deed may contain a restriction or reversion clause. Have counsel read the deed",
+      "k2": "Ask the planning office whether the existing conditions need an amendment",
+      "k3": "closing north may forfeit it or require the foundation's consent. Ask Ardelle in writing.",
+      "k4": "Tell families before January 10. Explain the options, the reasons, and the date of the decision."
+    }
+  }
+}

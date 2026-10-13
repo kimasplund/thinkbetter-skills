@@ -1,0 +1,42 @@
+{
+"O0C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "agents now have to ask for them on the call",
+ "k2": "If the new starters were the cause, tenured staff would be unaffected.",
+ "k3": "AHT for October 10–24 still matches October 3–9.",
+ "k4": "Motor-only calls rose by the same amount. This rules out the floods"}},
+"O3W": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "the work has moved. Before October 3 the caller's date of birth and postcode were captured in the IVR",
+ "k2": "18 agents out of 140 at about one extra minute would add only about 0.13 minutes",
+ "k3": "AHT for October 10–24 is the same as for October 3–9, so the patch changed nothing.",
+ "k4": "flood claims are only about 11% of calls"}},
+"A1S": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "the ID check didn't go away. It moved onto the agent's live time.",
+ "k2": "A new-starter effect would hit the new group harder.",
+ "k3": "The jump starts October 3, not October 2.",
+ "k4": "11% of calls can't produce a ~30% rise overall."}},
+"I4X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "moved identity verification onto the agents' calls",
+ "k2": "the same 1.7 to 1.9 minutes for tenured agents as for new ones",
+ "k3": "Hold and after-call work are flat, so screen waits would show up there.",
+ "k4": "Motor-only calls rose by the same amount, and flood claims are only about 11%"}},
+"E0R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Your agents are now collecting the date of birth and postcode by voice",
+ "k2": "New starters would show a bigger rise.",
+ "k3": "The October 9 patch changed nothing, because October 10-24 matches October 3-9.",
+ "k4": "Motor-only calls rose by the same amount, and floods are only about 11% of calls."}},
+"F8B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Those checks now happen on the agent's call, not in the IVR.",
+ "k2": "AHT rose by the same amount for tenured staff.",
+ "k3": "AHT did not drop after the patch",
+ "k4": "motor calls rose by the same amount, so floods are at most a minor contributor."}},
+"L8S": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "agents now run that verification themselves, live, at the start of every call.",
+ "k2": "The 18 new agents are also a small share of about 140",
+ "k3": "AHT did not recover on October 10 to 24, even though the CRM patch went in",
+ "k4": "Motor-only calls rose by the same amount as flood calls."}},
+"Z5S": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "The IVR used to collect date of birth and postcode before the call reached an agent.",
+ "k2": "New starters are not the cause, since tenured agents slowed by the same amount.",
+ "k3": "Jump starts Oct 3, and Oct 10–24 is the same as Oct 3–9",
+ "k4": "Harnley floods | Increase concentrated in flood calls | Motor-only calls rose by the same amount"}}
+}

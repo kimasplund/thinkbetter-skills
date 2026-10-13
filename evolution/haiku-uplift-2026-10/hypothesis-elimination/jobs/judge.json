@@ -1,0 +1,72 @@
+[
+ {
+  "id": "J-A-brief-1",
+  "prompt": "jobs/judge/J-A-brief-1.md",
+  "model": "opus",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "J-A-brief-2",
+  "prompt": "jobs/judge/J-A-brief-2.md",
+  "model": "opus",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "J-A-brief-3",
+  "prompt": "jobs/judge/J-A-brief-3.md",
+  "model": "opus",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "J-B-brief-1",
+  "prompt": "jobs/judge/J-B-brief-1.md",
+  "model": "opus",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "J-B-brief-2",
+  "prompt": "jobs/judge/J-B-brief-2.md",
+  "model": "opus",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "J-B-brief-3",
+  "prompt": "jobs/judge/J-B-brief-3.md",
+  "model": "opus",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "auditor",
+  "prompt": "jobs/judge/auditor.md",
+  "model": "sonnet",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "verifier-brief-1",
+  "prompt": "jobs/judge/verifier-brief-1.md",
+  "model": "sonnet",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "verifier-brief-2",
+  "prompt": "jobs/judge/verifier-brief-2.md",
+  "model": "sonnet",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "verifier-brief-3",
+  "prompt": "jobs/judge/verifier-brief-3.md",
+  "model": "sonnet",
+  "effort": "high",
+  "agent": "gauntlet-worker"
+ }
+]

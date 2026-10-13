@@ -1,0 +1,74 @@
+{
+  "O0K": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Any offsite vendor means removing items, so the 61 Brekke maps cannot go without written consent.",
+      "k2": "The new 30% discount changes the price, not the process.",
+      "k3": "All 212 maps: 212 x €38 + €420 = €8,476; €1,376 short",
+      "k4": "wants this check before we commit the rest."
+    }
+  },
+  "Q0P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Until consent arrives, the Brekke maps can only be air-dried onsite.",
+      "k2": "Do not reconsider Kestrel on price alone.",
+      "k3": "Even with the €1,100 budget added, it is about €1,376 short.",
+      "k4": "She wants a test run on two of the least significant maps first."
+    }
+  },
+  "U3G": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "The 61 Brekke maps cannot go offsite without the lender's written consent",
+      "k2": "The discount does not change the heat problem, so do not reopen this",
+      "k3": "This is still €158 over the cap.",
+      "k4": "Ask Pell to run the two-map freeze-drying test with Nordlicht."
+    }
+  },
+  "Y4M": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Do not move them until consent is in writing.",
+      "k2": "Do not reopen Kestrel on price.",
+      "k3": "Nordlicht for 151 comes to €6,158, which is €158 over the Valtera cap.",
+      "k4": "If the test passes, handle the 151 owned maps first."
+    }
+  },
+  "W3U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "none of the 61 can go to any offsite vendor until we hold written consent.",
+      "k2": "The objection is the heat damaging the media, not the price",
+      "k3": "EUR 1,376 more than the EUR 7,100 we can draw on.",
+      "k4": "Send them to Nordlicht first and have Pell assess the results"
+    }
+  },
+  "B8F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Any offsite drying of the 61 needs that written consent first.",
+      "k2": "the problem was never price. The process damages the colour media",
+      "k3": "Available funds: €7,100 maximum.",
+      "k4": "Check the verdigris and washes for bleeding or cockling before committing the rest."
+    }
+  },
+  "F5J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "legally cannot leave the building without written consent from the lender.",
+      "k2": "The 40-60 °C process is what damages the colours",
+      "k3": "Over the ceiling by about EUR 1,376, and needs Brekke consent.",
+      "k4": "If the test passes, contract Nordlicht for the 151 owned maps"
+    }
+  },
+  "V5Y": {
+    "k1": "✓", "k2": "✓", "k3": "✗", "k4": "~",
+    "evidence": {
+      "k1": "Without consent, those 61 maps can only be dried in-house or left frozen.",
+      "k2": "The discount does not change this.",
+      "k3": "That means negotiating about €158 off, or having Nordlicht absorb the transport.",
+      "k4": "She wants a test on two of the least significant maps first."
+    }
+  }
+}

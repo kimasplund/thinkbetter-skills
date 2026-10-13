@@ -1,0 +1,74 @@
+{
+  "G6W": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✗",
+    "evidence": {
+      "k1": "80 people in a queue with four-week loans is about six years",
+      "k2": "Make returns go to a quarantine fridge",
+      "k3": "Keep a small reference stock of each culture that never leaves the building",
+      "k4": "single change most likely to reduce Teodor's load over time"
+    }
+  },
+  "M1W": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "The 80 people who want the rye starter are a distribution problem, not a queue.",
+      "k2": "It never goes back into a stock jar.",
+      "k3": "Culture collections keep a protected master stock that is never used directly.",
+      "k4": "Under a seed-library model, each borrower feeds their own portion"
+    }
+  },
+  "N3X": {
+    "k1": "✗", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "What I would keep: one jar per borrower, the holds queue, and the four-week loan",
+      "k2": "checked, fed, and held for a short period in a quarantine shelf",
+      "k3": "keep a master stock of every line that is never lent",
+      "k4": "every quarantine check, master refresh, and returned-jar inspection adds work"
+    }
+  },
+  "A9K": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "the holds queue needs a real capacity plan (how many copies can be made per month",
+      "k2": "Put returns into quarantine, inspect them, and re-propagate from the master reserve",
+      "k3": "keep each line in a master reserve that is never lent",
+      "k4": "the board should decide who owns propagation and how many hours that costs"
+    }
+  },
+  "I4P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A culture is not scarce the way a book is.",
+      "k2": "nothing that has left the building ever goes back into a stock jar.",
+      "k3": "Master jars stay in the fridge and are only ever fed from their own line.",
+      "k4": "Schedule distribution days, say two a month, with portions prepared the day before."
+    }
+  },
+  "N4Q": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A starter can. Eighty people wanting the 1890s rye need 80 small portions",
+      "k2": "Make returns optional and one-directional... quarantine, never the shelf.",
+      "k3": "Keep a sealed master line for each culture... dried or frozen backup",
+      "k4": "the six weekly hours go to the masters only"
+    }
+  },
+  "R6R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Copies are cheap, so most of the queue disappears.",
+      "k2": "Never merge returns into the collection.",
+      "k3": "Split each culture into a protected master and a distribution line.",
+      "k4": "Add a second trained volunteer for the masters"
+    }
+  },
+  "Q5O": {
+    "k1": "✗", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "the four-week loan, the two renewals, and the holds queue are reasonable",
+      "k2": "Returned material never goes back into the shelf stock.",
+      "k3": "masters are never lent out",
+      "k4": "decide who does each of these tasks"
+    }
+  }
+}

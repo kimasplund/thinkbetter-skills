@@ -1,0 +1,74 @@
+{
+  "F2L": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Don't buy six hybrids.",
+      "k2": "The 14-week lead time is longer than the 11 weeks you have.",
+      "k3": "Eight hours at 45 kW needs about 360 kWh, which is four of the six battery packs",
+      "k4": "The campsite packs run flat before 07:00 and the engine either starts inside the zone"
+    }
+  },
+  "J1S": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Hire a mixed fleet: two of Gantry's hybrids at the campsite edge and four conventional sets",
+      "k2": "14-week lead time against 11 weeks left lands three weeks after the festival",
+      "k3": "Last year's setup breaks the new licence condition as it stands.",
+      "k4": "Two packs give about 190 kWh, which lasts around 4 hours at 45 kW."
+    }
+  },
+  "X6H": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "diesel as the base, with the generators moved more than 150 m from the campsite",
+      "k2": "The 14-week lead time runs past the festival.",
+      "k3": "Two of your six generators sit at the campsite edge ... cannot run under the new condition.",
+      "k4": "A battery of 120 kWh also runs the 45 kW overnight load for only about 2.5 hours."
+    }
+  },
+  "O8G": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the hybrid only wins if the fuel cut is above about 32%",
+      "k2": "it would arrive about three weeks after the festival",
+      "k3": "45 kW for 8 hours is about 360 kWh.",
+      "k4": "Two campsite-edge hybrids hold only 240 kWh nominal, so the overnight load needs three or more packs"
+    }
+  },
+  "X3A": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That is roughly £3,800 less than your current £41,900. The saving is small",
+      "k2": "the connection arrives about 3 weeks after the festival, even if you sign today",
+      "k3": "45 kW for 8 hours is about 360 kWh.",
+      "k4": "Two hybrids ... would last only about 5 hours. The sets would then have to restart"
+    }
+  },
+  "Y5H": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "hybrids only pay off if they cut fuel by at least about 32%",
+      "k2": "the connection would arrive about three weeks after the festival",
+      "k3": "Overnight the campsite needs about 45 kW for roughly 8 hours, which is about 360 kWh.",
+      "k4": "Two hybrid packs hold only 240 kWh, which is not enough. Three or four packs"
+    }
+  },
+  "G1S": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Don't sign for six hybrids on Gantry's word",
+      "k2": "the connection arrives about three weeks after the gates open",
+      "k3": "Your two existing units at the campsite edge will break that rule overnight",
+      "k4": "Two hybrid battery packs give 240 kWh nominal ... two hybrids cannot cover the campsite overnight"
+    }
+  },
+  "K3Y": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "all-hybrid is paying more for less margin and a small, uncertain saving.",
+      "k2": "Eleven weeks out against a 14-week lead time means it misses this year",
+      "k3": "The campsite draws about 45 kW overnight, including medical, which can't drop out.",
+      "k4": "you need about 4 units (about 480 kWh nominal), not 2."
+    }
+  }
+}

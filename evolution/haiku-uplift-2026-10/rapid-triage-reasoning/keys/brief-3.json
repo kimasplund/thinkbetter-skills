@@ -1,0 +1,42 @@
+{
+  "A9M": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Holding can be undone tomorrow. Running cannot be undone once the plates are on.",
+    "k2": "Cancel the 00:01 web go-live and the app alert.",
+    "k3": "Ask the sister titles to hold the embargoed copy.",
+    "k4": "Do not send our copy of the document, tonight or later"}},
+  "R1T": {"k1": "~", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "If the report isn't verified by then, swap in the held-over feature.",
+    "k2": "Pull the 00:01 web publication and the app alert to 70,000 readers.",
+    "k3": "the 21:00 wire splash is withdrawn, so they don't run it on the embargo",
+    "k4": "Sending it to Vosk's lawyer would let him work out who leaked it."}},
+  "J6G": {"k1": "~", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "don't run the splash as it stands unless you can verify the report in the next 40 minutes",
+    "k2": "Pull the 00:01 web publication and the app alert tonight.",
+    "k3": "Tell them it is withdrawn and they must not publish at 00:01.",
+    "k4": "you'd be giving the other side the means to identify your source"}},
+  "F3Q": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Holding costs you a day against the Gazette.",
+    "k2": "Also cancel the app alert, which is probably a separate queued item.",
+    "k3": "tell them the embargo is withdrawn and the story must not run",
+    "k4": "Do not send our copy to Vosk's lawyer."}},
+  "G0N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "You can't take back 38,000 copies, but you can run the story tomorrow.",
+    "k2": "cancel or hold the app alert to the roughly 70,000 readers",
+    "k3": "Send a hold notice on the group wire to the three sister titles",
+    "k4": "Handing them the document would expose the source and let them tailor a denial."}},
+  "H5Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Holding is fully reversible. The story keeps and can run tomorrow",
+    "k2": "Take the 00:01 web publish and the 70,000-reader app alert off the schedule now.",
+    "k3": "Tell the three sister titles' night desks that the Larchmont story is on hold",
+    "k4": "If you send your scan, you hand over the routing stamp and officers' initials."}},
+  "H3O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "you can't reverse 38,000 copies or a 70,000-reader app alert",
+    "k2": "cancel the 00:01 web publish and pull the app alert from the schedule",
+    "k3": "Tell them the splash is embargoed until further notice and ask them to hold",
+    "k4": "Reply in writing that you'll consider any specific written claim"}},
+  "A1G": {"k1": "~", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Don't cancel the splash yet. Set a decision point of 22:35 at the latest.",
+    "k2": "An app alert to 70,000 people cannot be retracted.",
+    "k3": "Send a kill or hold notice on the group wire to all three sister titles",
+    "k4": "The scan may carry marks that point to the leaker"}}
+}

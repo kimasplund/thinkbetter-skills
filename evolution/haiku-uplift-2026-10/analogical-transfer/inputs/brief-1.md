@@ -1,0 +1,7 @@
+I'm general manager of the Lennick Valley Irrigation Board. We release water from Tarrow Reservoir down the Lennick River to two canals. The Upper Canal takes off first and serves 4,200 hectares, nearly all apple and cherry orchards. The Lower Canal intake is 22 km further down and serves 6,800 hectares of barley, hay and grass seed. Drainage from the orchards runs back into the river between the two intakes; the gauge just above the Lower Canal intake usually shows about 40% of what the Upper Canal diverted coming back. A release from Tarrow takes about three days to reach the Lower Canal intake and up to five days to reach the end of that canal.
+
+In two of the last three summers we were about 18% short through July and August, and the farms at the tail of the Lower Canal took nearly all of the shortfall.
+
+Our new board chair, Odile Brannock, ran demand response for the regional power grid for twelve years and wants to bring that playbook over. Her proposal has two parts: an app that posts an hourly water price, and a voluntary programme in which enrolled growers are paid for every cubic metre they divert below their own three-year average whenever the board calls a shortage event. Her view is that it worked for electricity peaks, and a water shortage is just a slower peak.
+
+The board votes in five weeks so we can have something in place for next summer. Would her programme work for us, and what would you put in front of the board?

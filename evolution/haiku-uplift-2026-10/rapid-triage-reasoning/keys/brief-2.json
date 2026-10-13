@@ -1,0 +1,74 @@
+{
+  "Y8Z": {
+    "k1": "~", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Frozen material can be thawed and dried later, so this is the step you can most easily undo.",
+      "k2": "Drying stuck prints and catalogues in open air will cause more damage than freezing.",
+      "k3": "These are irreversible losses of archive material, and the insurer has not yet confirmed",
+      "k4": "Fans can run on a proper socket only after an electrician has checked the light fitting"
+    }
+  },
+  "L1B": {
+    "k1": "~", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "If the van can only come on Monday, you lose two days, but freezing is still the right choice.",
+      "k2": "Fast drying cures the stuck catalogues and photos into a solid block",
+      "k3": "Once they are in a skip they can't be recovered, and the insurer may refuse the claim",
+      "k4": "Switch off the power to the strongroom at the consumer unit (fuse box), not just the wall switch."
+    }
+  },
+  "Q3T": {
+    "k1": "~", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "If the van can only come on Monday, you lose two days, but freezing is still the right choice.",
+      "k2": "Stuck photographic prints and glossy catalogues can't be separated by air-drying.",
+      "k3": "Once they are in a skip they can't be recovered",
+      "k4": "Switching the light off at the wall is not isolation."
+    }
+  },
+  "F4E": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "You can't air-dry that volume in a hall by tonight, and anything not dry within about two days will go mouldy.",
+      "k2": "Coated paper dried wet fuses into a solid block, and once it is frozen it can be separated later",
+      "k3": "since the frozen boxes will be gone with the van anyway, which deals with the smell.",
+      "k4": "Turn off the strongroom lighting circuit at the consumer unit, not just the wall switch."
+    }
+  },
+  "Q9D": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Freezing is cheap and can be undone, and it stops the damage.",
+      "k2": "Heat sets the coated paper. The hard edges on the catalogue stack are the early sign of that.",
+      "k3": "The wet boxes will be out of the building by about 09:00, which deals with the smell.",
+      "k4": "Ask the plumber or an electrician to isolate that circuit at the consumer unit and check it"
+    }
+  },
+  "K3C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Missing the van means waiting until Monday in warm, muggy conditions, which is the risky option.",
+      "k2": "Glossy coated paper that dries while stuck together fuses permanently, so these need freezing while still wet.",
+      "k3": "Once they're destroyed, the claim and the records are both lost, and the Cobbold material can't be replaced.",
+      "k4": "Unplug both and don't run extension leads into the strongroom."
+    }
+  },
+  "U8X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Mould starts within about 48 hours in warm, damp conditions, and 22 °C and muggy is exactly that.",
+      "k2": "Heat on stuck coated paper makes the damage permanent.",
+      "k3": "The loss adjuster can't value or settle for what has been destroyed.",
+      "k4": "Get the circuit isolated at the consumer unit if you can."
+    }
+  },
+  "M8R": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Freezing is the one move that stops the damage today, and it can be undone.",
+      "k2": "heat on wet paper and glossy prints causes cockling and gluing, which is what has already happened",
+      "k3": "Those boxes are the only copies of the Cobbold records",
+      "k4": "Switch off power to the strongroom at the consumer unit (not just the wall switch)"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "brief-1": [
+    {
+      "id": "k1",
+      "text": "Step 1 is invalid because the proofing cabinet, not the oven, caps each load. The cabinet holds 60 loaves per 40-minute cycle, so the D9 can only bake 60 per load: 540 a day, +108, not +216. That covers only 108 of the 150 loaves of lost demand. The fact is mentioned only in passing in the background, so a quick reply misses it.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Step 2 treats revenue as profit. The extra value per loaf is the shelf price net of VAT (6.00/1.10 = about 5.45) minus 1.70 for ingredients and packaging, about 3.75 a loaf, not 6.00. A strong reply must at least use the margin after ingredients, and ideally remove the VAT as well.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Step 3 is invalid. Lower energy per loaf does not mean lower total energy cost. The number of loads stays at 9 a day, and each load costs 30% more (5.20 vs 4.00), so energy is an extra cost of about 10.80 a day, not a saving of 7. The per-loaf figure sounds plausible and is arithmetically right, which makes the error easy to accept.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Step 4 overstates the interest. Simple interest on the full principal for five years ignores that a monthly repayment loan pays the principal down. At 0.5% a month over 60 months the payment is about 1,044, so total interest is about 8,640, not 16,200, for a total cost of about 62,640. This error makes the case look more conservative, so a reader who only hunts for optimistic errors misses it. Corrected throughout (108 loaves x ~3.75 minus ~10.80 energy is ~395 a day), payback is about 159 trading days, roughly 6 months, which fails the four-month rule.",
+      "split": "held-out"
+    }
+  ],
+  "brief-2": [
+    {
+      "id": "k1",
+      "text": "Step 1 starts the 30-day stability clock on the wrong date. The policy counts from the end of the last wet trade, and the silicone case seals (a sealant) run 8-12 March. The clock therefore starts 13 March, and objects can go in from Monday 12 April, not Wednesday 31 March. The seal work is mentioned in passing next to the HVAC date, so a quick reply misses it.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Step 3 counts 14 working days as 14 calendar days. The team works Monday to Friday, so 126/9 = 14 working days. From the corrected start of 12 April, mounting finishes Thursday 29 April, not 13 April. Even from Owen's own start date it would finish Monday 19 April.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Step 2 ignores the oversized crates. The 8 oversized crates take two slots each, so the crates need 68 slots, which is 6 freezer loads, not 5. The last load comes out 2 April and is ready 3 April, not 31 March. Under Owen's dates this would delay the start of mounting. Under the corrected entry date of 12 April it is not the binding constraint, and a strong reply should note that too.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Step 4 schedules the final check the day after mounting ends, which breaks the rule that each case stays closed for 48 hours after its last object is mounted. With the corrected chain (mounting ends 29 April), the last cases cannot be checked before about 1 May. The 29 April sign-off is missed, so the plan as written does not support sending invitations for 1 May without added mounting capacity or a changed scope. This only becomes decisive once k1 and k2 are fixed.",
+      "split": "held-out"
+    }
+  ],
+  "brief-3": [
+    {
+      "id": "k1",
+      "text": "Step 1 uses the wrong comparison group. Pupils were selected for scoring lowest on a single test, so they would rebound by June anyway (regression to the mean). The other pupils' +3 is not the counterfactual. Last year's bottom 15% gained 8 points without Lantern, so the programme's apparent effect is at most about 4 points (12 - 8), not 9.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Step 1 compares different groups across time. The September average of 82 includes the 30 leavers, who averaged 74, while the June average of 94 covers only the 150 who finished. The 150 completers' September average was (180x82 - 30x74)/150 = 83.6, so their gain was about 10.4, not 12. Against last year's +8, the effect is roughly 2-3 points. The leaver data sit in the facts list and are easy to skip.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Step 3 is invalid. The scores are on an equated scale, so the difference in form difficulty is already adjusted for. 'Harder questions' does not mean the gain is understated. The step sounds cautious and is easy to accept without checking.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Step 4 assumes pupils in the 15-30% band would gain the same per-pupil effect as the bottom 15%. Nothing supports that: they were not selected as extreme low scorers and would show less rebound. It also builds on the inflated 9-point figure. With a realistic effect of about 2-3 points for 150 pupils, the current district lift is about 0.3 points, and expansion gives no credible path to the 2-point goal.",
+      "split": "held-out"
+    }
+  ]
+}

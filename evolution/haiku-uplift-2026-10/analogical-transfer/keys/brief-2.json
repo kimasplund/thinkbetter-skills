@@ -1,0 +1,74 @@
+{
+  "R8L": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "✗",
+    "evidence": {
+      "k1": "Expect most filers to describe their case as urgent, so categories will drift upward.",
+      "k2": "Moving even a share of late settlements earlier would free capacity faster than reordering",
+      "k3": "Triage reorders the queue but cannot shorten it unless throughput rises.",
+      "k4": "A system that ranks by claimant urgency could be seen as favouring one side"
+    }
+  },
+  "B4E": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a free-text box ... that costs nothing to exaggerate",
+      "k2": "That is a deadline effect. Parties settle when a credible, near deadline arrives.",
+      "k3": "Triage reorders a queue. It doesn't shrink one.",
+      "k4": "Every extra month in a low category is a month of free use of the tenant's money."
+    }
+  },
+  "B6N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "everyone learns to write \"urgent\". Category 1 inflates and the system stops discriminating.",
+      "k2": "the hearing date is the first thing that forces parties to engage.",
+      "k3": "Triage reorders the queue but doesn't change either number.",
+      "k4": "Delay therefore benefits the landlord ... pressure a tenant is under to settle for less."
+    }
+  },
+  "V2W": {
+    "k1": "~", "k2": "✗", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Prefer structured fields that can be checked against documents",
+      "k2": "Move the settlement window earlier in the notice timetable",
+      "k3": "it reorders the queue but does not create capacity.",
+      "k4": "The landlord holds the deposit until a ruling or settlement, so delay favours the landlord."
+    }
+  },
+  "L7D": {
+    "k1": "~", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "the tool measures writing skill and awareness of the box, not need.",
+      "k2": "Triage does not address this.",
+      "k3": "Triage reorders that queue. It does not add hearing slots.",
+      "k4": "Here the landlord holds the deposit ... Delay costs them money"
+    }
+  },
+  "G5T": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Urgency is self-reported and will be inflated once filers learn it changes their place",
+      "k2": "Issue hearing notices later, or issue a firm date only once the response is in",
+      "k3": "Triage only changes who waits, not how many wait.",
+      "k4": "That gives landlords a reason to delay and gives tenants a reason to want speed"
+    }
+  },
+  "Y7V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "filers will write to the category they want.",
+      "k2": "Parties act when a deadline is close.",
+      "k3": "Triage reorders a queue but doesn't shorten it",
+      "k4": "A system that deprioritizes \"ordinary\" claims quietly rewards landlords who wait."
+    }
+  },
+  "G0C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "most will say it is urgent. Expect category inflation within a few months.",
+      "k2": "the hearing date is the first moment either side has a reason to compromise.",
+      "k3": "It reorders the queue and does not shrink it.",
+      "k4": "so waiting costs tenants and costs landlords nothing."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+"M4T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "A trigger based on storage and forecast, not an hourly price.",
+ "k2": "pay Upper growers for X and deliver about 0.6X",
+ "k3": "Water that an Upper Canal orchard leaves in the river is worth much less.",
+ "k4": "Barley, hay and grass seed are the cheapest water you can free up"}},
+"W9X": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "A price or event call needs to be set days ahead, on forecasts.",
+ "k2": "Pay on estimated consumptive-use savings or apply a discount factor.",
+ "k3": "Payment should depend on location and timing, not just volume.",
+ "k4": "a cut at the wrong time costs a year or more of production in perennial trees"}},
+"O7P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "An hourly signal can't steer that. Any call has to be made days ahead",
+ "k2": "you will overpay for the least effective water",
+ "k3": "roughly 0.6 for Upper, 1.0 for Lower",
+ "k4": "damage the trees for years ... can be fallowed, deficit-irrigated or cut early"}},
+"N6E": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+ "k1": "A price posted today cannot change what reaches the tail this week.",
+ "k2": "adds roughly 0.6 units at the Lower intake, after a delay",
+ "k3": "The price signal points at the wrong users.",
+ "k4": "pulls reductions from the users with the most to lose per unit"}},
+"D9J": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+ "k1": "Any signal has to be a day-ahead or multi-day forecast with a clear shortage call",
+ "k2": "buys only about 60% of its face value for the Lower Canal",
+ "k3": "The scheme should be designed around where the shortage falls",
+ "k4": "deficit stress in perennial trees has effects that last beyond the season"}},
+"R4Q": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Any signal has to go out at least 5 days ahead",
+ "k2": "Paying a flat rate per cubic metre overpays Upper growers by about two-thirds",
+ "k3": "On a grid, a megawatt saved anywhere helps everywhere.",
+ "k4": "Orchard water should be bought only in agronomically safe windows"}},
+"W9N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "A daily or multi-day outlook ... published by a fixed lead time",
+ "k2": "overstates the benefit to the tail by roughly two-thirds",
+ "k3": "Start with the Lower Canal, where the shortage lands",
+ "k4": "Cutting irrigation for a season can damage trees"}},
+"O3D": {"k1": "✓", "k2": "✓", "k3": "✗", "k4": "✓", "evidence": {
+ "k1": "Any useful signal has to be issued days ahead, from a forecast",
+ "k2": "Credits should be measured as volume that actually reaches or stays in the river",
+ "k3": "No discussion of location-dependent value across districts",
+ "k4": "Orchards are the least flexible demand on the system"}}
+}

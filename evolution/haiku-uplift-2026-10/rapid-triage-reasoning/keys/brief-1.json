@@ -1,0 +1,74 @@
+{
+  "C0S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Press Pause. Confirm in the console that the 15:00 widening is cancelled.",
+      "k2": "If it generalizes, Abort turns a \"door doesn't lock\" problem into thousands of dead locks.",
+      "k3": "Hold or pull the 16:00 marketing email.",
+      "k4": "warn only the roughly 21,000 owners on 6.0"
+    }
+  },
+  "A8D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Press Pause. This stops the 15:00 widening to 50%.",
+      "k2": "turn 160 locks that don't latch into hundreds or thousands of dead locks on doors, with no remote fix.",
+      "k3": "Message Marketing: hold the 16:00 email.",
+      "k4": "Send to the 6.0 cohort only, this evening"
+    }
+  },
+  "W1B": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Pause stops the 15:00 widening to 50% and holds the 10% cohort where it is.",
+      "k2": "Abort could convert a stall problem into a bricked-lock problem across the fleet.",
+      "k3": "Cancel or hold the 16:00 launch email.",
+      "k4": "send a short, targeted notice to 6.0 owners, and use it only once the symptom is confirmed."
+    }
+  },
+  "N4V": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Pause the rollout in the console.\" This stops the automatic widening to 50% at 15:00.",
+      "k2": "Spend ten minutes proving it works first.",
+      "k3": "Remove 6.0 as the newest published firmware",
+      "k4": "Send a targeted email to the 6.0 owners from fleet data"
+    }
+  },
+  "R3O": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Pause the rollout now. This stops the automatic widening to 50% at 15:00.",
+      "k2": "If it can brick a stalled lock, Abort is more dangerous than the stall.",
+      "k3": "Unpublish 6.0 as the newest firmware",
+      "k4": "send a message only to the roughly 21,000 locks on 6.0"
+    }
+  },
+  "C0P": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Pause holds the 10% cohort where it is and stops the 15:00 widen to 50%.",
+      "k2": "a mass Abort without this test risks bricking locks that need a physical visit to fix.",
+      "k3": "set the published latest back to 5.8, or pull the launch email. Do one of these",
+      "k4": "Send a targeted notice only to 6.0 owners, using app or account data."
+    }
+  },
+  "K3B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Pause stops the 15:00 widening to 50%. It costs nothing and is reversible.",
+      "k2": "a mass Abort could brick up to 21,000 locks.",
+      "k3": "Ask marketing to hold or cancel the email now.",
+      "k4": "Send to the ~21,000 owners on 6.0, by email and push"
+    }
+  },
+  "E0L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "This holds it at 10% and stops the automatic widening to 50% at 15:00",
+      "k2": "Abort is the one action here you can't undo, so it needs evidence first.",
+      "k3": "Tell Marketing to hold the 16:00 launch email, or at minimum remove the button.",
+      "k4": "Target the ~21,000 locks that took 6.0."
+    }
+  }
+}

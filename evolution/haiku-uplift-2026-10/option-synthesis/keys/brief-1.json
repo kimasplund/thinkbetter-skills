@@ -1,0 +1,74 @@
+{
+  "A0C": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Winter the other 400 outdoors in wraps, about $1,200. Expect about 260 to grade.",
+      "k2": "$37,800 up front, against $15,000 of credit. The most you could send is about 220",
+      "k3": "Holds about 500\" may include Agnete's 300, which would leave only about 200 spare.",
+      "k4": "That nets you +$80 per colony compared with being short."
+    }
+  },
+  "I8S": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Outdoor wraps | $3 | 63% | 69–100% | 43–63%",
+      "k2": "Plan B is out on cash alone.",
+      "k3": "Holm's cellar holds about 500 including her own 300, so room for about 200 more.",
+      "k4": "That is $80 more than an empty slot. The comparison is not $150 against $190."
+    }
+  },
+  "L6J": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "about 378 alive and about 330 graded, 90 short of 420.",
+      "k2": "600 colonies at $63 is $37,800 against a $15,000 line. The most you could send is about 185",
+      "k3": "Agnete's cellar has room for about 200 more colonies (500 total, her 300 already inside).",
+      "k4": "each is worth about $80 against a gap. He is paid only when the co-op pays you"
+    }
+  },
+  "R1N": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Outdoors alone leaves you short. 600 × 65% is about 390",
+      "k2": "$37,800 up front, and you have $15,000 of credit that the bank won't raise.",
+      "k3": "may include Agnete's own 300, which would leave room for only about 200 of yours.",
+      "k4": "+$40 instead of -$40, an $80 improvement per colony."
+    }
+  },
+  "C5M": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "600 at about 66% gives about 396, under 420 even with a good winter.",
+      "k2": "Hauling all 600 costs $37,800 up front against $15,000 of credit.",
+      "k3": "\"Holds about 500\" includes Agnete's 300, so about 200 spaces are free.",
+      "k4": "A $150 colony therefore nets you +$80, not -$40."
+    }
+  },
+  "Q4W": {
+    "k1": "~", "k2": "✓", "k3": "✗", "k4": "✓",
+    "evidence": {
+      "k1": "Wraps, all 600 (37% losses) | ~378 | ~302 | ~52,700 | $1,800 | ~50,900",
+      "k2": "$37,800 paid up front. Your operating line has about $15,000 left",
+      "k3": "Put about 500 colonies in Agnete Holm's cellar if you can get the space",
+      "k4": "you net about $80 per colony. Up to 80 colonies is roughly $6,400 extra"
+    }
+  },
+  "E8I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "All outdoors, no broker: about 262 graded, 158 short, so about $41,700 net",
+      "k2": "roughly $37,800. Your line has about $15,000 spare, so you can't fund it",
+      "k3": "Ask Agnete to confirm she can take 200 more colonies (she has 300 and the cellar holds about 500)",
+      "k4": "That is about $80 a colony when you are short."
+    }
+  },
+  "M6A": {
+    "k1": "~", "k2": "✓", "k3": "✗", "k4": "✓",
+    "evidence": {
+      "k1": "Outdoors as usual, no cover | 600 | $1,800 | about $41,400",
+      "k2": "$37,800 is more than your $15,000 line, and the bank won't raise it.",
+      "k3": "Agnete's cellar for 500 colonies, the other 100 wrapped outdoors as usual",
+      "k4": "covering a shortfall colony is worth about $80 more to you than letting it go short."
+    }
+  }
+}

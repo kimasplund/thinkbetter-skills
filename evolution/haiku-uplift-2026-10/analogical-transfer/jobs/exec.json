@@ -1,0 +1,9 @@
+[
+ {
+  "id": "brief-2--b4--r1",
+  "prompt": "jobs/exec/brief-2--b4--r1.md",
+  "model": "haiku",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ }
+]

@@ -1,0 +1,42 @@
+{
+"Q2G": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+"k1": "Ridgeway and Millbrook produce 83% of the high results (44% + 39%)",
+"k2": "Potassium leaks out of cells when blood is cold, so the tube reads high",
+"k3": "The evidence does not support quarantining the lot.",
+"k4": "hemolysis is normal, so draw technique is not the main explanation"}},
+"O9T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "Those are the two sites the courier change hit.",
+"k2": "Refrigerated whole blood is a known cause of raised potassium.",
+"k3": "so the lot does not explain a jump to 6%",
+"k4": "first high results appear after the 7 September courier change, not on his hire date"}},
+"M6M": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "The courier change on September 7 is what matters.",
+"k2": "refrigeration shuts down the Na/K-ATPase pump that keeps potassium inside",
+"k3": "A lot problem wouldn't hit only two clinics, or only morning draws.",
+"k4": "He only works at Ridgeway, and Millbrook has the same problem."}},
+"S2R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+"k1": "The timing lines up with the courier change.",
+"k2": "Chilling slows the sodium-potassium pump in red cells, so potassium leaks out.",
+"k3": "Quarantining the lot is hard to justify on this data.",
+"k4": "Retraining him does not address the cold-storage mechanism."}},
+"W3T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "The timing matches the courier change.",
+"k2": "The cold-hold policy had been in place for five weeks without a rise.",
+"k3": "Analyzer A ran 57% of flagged samples and carries about 60% of volume",
+"k4": "He works at Ridgeway only, so he can't explain Millbrook"}},
+"W2J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "I'd bring the courier change to Friday as the lead item",
+"k2": "Cold storage was already in place, and the long wait is what changed.",
+"k3": "so there is no skew toward A",
+"k4": "Millbrook has nearly the same excess without Tomas."}},
+"D1K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "The variable that matters is the delay before centrifugation, not the courier company.",
+"k2": "Exempt potassium specimens from the cold-hold rule.",
+"k3": "The data do not support quarantine.",
+"k4": "Millbrook has the same spike (39% of high results) and has no Tomas."}},
+"E4I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "The trigger is the September 7 courier change",
+"k2": "A long cold wait is what produces the leak.",
+"k3": "Analyzer A runs about 60% of volume and 57% of flags, which is proportional",
+"k4": "The rise also appears at Millbrook, where Tomas doesn't work"}}
+}

@@ -1,0 +1,74 @@
+{
+  "B3A": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "A 05:30 departure arrives at Inch Harbour around 06:25, so it misses the 06:20 mainland train.",
+      "k2": "The charter option is contested, not closed.",
+      "k3": "the survey ran during a closure. Travel patterns then were likely distorted",
+      "k4": "we cannot put a meaningful percentage on Pattern C today."
+    }
+  },
+  "R0A": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The earliest legal departure is 05:30, which arrives at 06:25, after the 06:20 train.",
+      "k2": "Both can't be fully right. If the ramp really doesn't fit, money doesn't help",
+      "k3": "That is one dataset, not two confirmations. It was also taken while the Corran Bridge",
+      "k4": "Don't average them or treat them as two votes. They share the same demand data"
+    }
+  },
+  "J5P": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "If the first sailing moves to 05:30 or later, the train connection is lost",
+      "k2": "Both can't be true. If Priya is right, money doesn't help unless the linkspan is modified",
+      "k3": "Both analysts relied on it, so their agreement is not independent confirmation.",
+      "k4": "They share the same data and the same flawed first-sailing time."
+    }
+  },
+  "K8H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "With the 55-minute crossing, that arrives at about 06:25, after the 06:20 train.",
+      "k2": "Unless someone confirms the Dunlin can use the linkspan, it is not a real option, whatever the budget.",
+      "k3": "a September 2024 survey may have captured demand that was pushed onto the ferry.",
+      "k4": "one data source, not two independent checks, so they should not be combined"
+    }
+  },
+  "C2A": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "that arrives at Inch Harbour around 06:25, which misses the 06:20 train.",
+      "k2": "Cost is not the only blocker, so the charter is not a real fallback yet.",
+      "k3": "It may over- or under-state ferry demand. We can't tell which from the notes.",
+      "k4": "Priya's 70% and Owen's 80% can't be combined."
+    }
+  },
+  "R0J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "that arrives at 06:25, after the 06:20 train. The reason for choosing 05:15 therefore fails.",
+      "k2": "treat the Dunlin as ruled out on fit, with cost as an unverified second reason.",
+      "k3": "so the loadings probably overstate normal demand.",
+      "k4": "Owen's 80% is not independent confirmation of Priya's 70%."
+    }
+  },
+  "Q6M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "A 05:30 departure reaches Inch Harbour around 06:25, which misses the 06:20 train.",
+      "k2": "Money does not fix that. ... the charter stays out whatever the budget.",
+      "k3": "road-to-ferry demand that year may have been unusual.",
+      "k4": "They should not be averaged or relied on as they stand."
+    }
+  },
+  "F5R": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A 05:30 departure arrives at about 06:25, after the train.",
+      "k2": "If Priya is right, extra money doesn't help, and Owen's \"fallback\" is not a fallback.",
+      "k3": "the survey was taken when islanders and visitors had little choice but the ferry.",
+      "k4": "Owen's 80% is not independent confirmation. ... uses the same survey as Priya."
+    }
+  }
+}

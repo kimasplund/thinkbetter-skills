@@ -1,0 +1,74 @@
+{
+  "V0C": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "every Greenfold pallet is booked at 60 when about 50 arrive",
+      "k2": "Self-checkout is not the cause. The three southern self-checkout stores sit at 1.4%",
+      "k3": "points away from a security change at eight stores (five of them northern)",
+      "k4": "Power tools are 7% of the extra shrink, and four of the six northern stores are within 2%"
+    }
+  },
+  "U9E": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Nothing in the item master has changed, which is why IT's confirmation doesn't rule this out",
+      "k2": "the three southern self-checkout stores are at 1.4%, so the technology alone does not produce the spike",
+      "k3": "it changed at three stores outside the northern six, and those show no spike",
+      "k4": "they make up only 7% of the extra shrink"
+    }
+  },
+  "N2I": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "\"Nobody edited the item master\" is the problem, not reassurance",
+      "k2": "It also wouldn't concentrate losses in 20–40 kg bags.",
+      "k3": "The other three are presumably at normal shrink, so confirm that.",
+      "k4": "Tools are only 7% of the excess, and four of six stores are within 2% of book."
+    }
+  },
+  "P9V": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "each pallet books 10 bags that never arrived",
+      "k2": "Self-checkout also wouldn't concentrate losses in 20–40 kg bags.",
+      "k3": "which should be at normal shrink if the contractor were the cause",
+      "k4": "Four of the six stores are within 2% of book on tools, so the gang theory explains little."
+    }
+  },
+  "X2U": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "puts about 10 bags into the system that never arrived. That is roughly one in six",
+      "k2": "the three southern stores with self-checkout are at 1.4%, the same as the stores without it",
+      "k3": "The contractor is not where the loss sits.",
+      "k4": "power tools are only 7% of the excess."
+    }
+  },
+  "J4G": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Every Greenfold pallet scanned in therefore books 10 bags that never arrived.",
+      "k2": "The three southern stores with it are at 1.4%, which is normal.",
+      "k3": "The other three are presumably outside the northern six and look normal",
+      "k4": "power tools are only 7% of the excess, and four of the six stores are within 2% of book."
+    }
+  },
+  "N9S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Every Greenfold pallet therefore books 10 bags more than physically arrived.",
+      "k2": "Three southern stores also have self-checkout and sit at 1.4%",
+      "k3": "no effect is visible in the other stores that changed",
+      "k4": "Power tools are only 7% of the extra shrink, and four of six stores are within 2% of book"
+    }
+  },
+  "C6T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Every Greenfold pallet scanned in since July 8 books 10 bags that never arrived.",
+      "k2": "Self-checkout losses also would not concentrate 68% in 20–40 kg bags.",
+      "k3": "Three of the eight switched stores are outside the north and show normal shrink.",
+      "k4": "Power tools are only 7% of the excess, and four of the six stores are within 2% of book"
+    }
+  }
+}

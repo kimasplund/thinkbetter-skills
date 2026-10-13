@@ -1,0 +1,116 @@
+{
+ "skill": "breadth-of-thought",
+ "reaches": {
+  "verdict": "DOES NOT REACH",
+  "conditions": {
+   "guard_judge_G1": "PASS",
+   "guard_judge_G2": "PASS",
+   "guard_judge_G3": "NOISE",
+   "guard_audit_ceremony": "FAIL",
+   "guard_audit_leaks": "PASS",
+   "guard_audit_length": "PASS",
+   "value": "FAIL",
+   "keys": "NOISE",
+   "ranking": "PASS",
+   "agreement": "PASS"
+  },
+  "wins": 1,
+  "losses": 5,
+  "sign_p": 0.2188
+ },
+ "haiku_uplift": {
+  "verdict": "NOT VALIDATED",
+  "conditions": {
+   "guard_judge_G1": "PASS",
+   "guard_judge_G2": "PASS",
+   "guard_judge_G3": "PASS",
+   "guard_audit_ceremony": "FAIL",
+   "guard_audit_leaks": "PASS",
+   "guard_audit_length": "PASS",
+   "value": "NOISE",
+   "ranking": "PASS",
+   "agreement": "PASS"
+  },
+  "wins": 3,
+  "losses": 3,
+  "sign_p": 1.0
+ },
+ "sonnet_uplift": {
+  "verdict": "INCONCLUSIVE",
+  "conditions": {
+   "guard_judge_G1": "PASS",
+   "guard_judge_G2": "PASS",
+   "guard_judge_G3": "PASS",
+   "guard_audit_ceremony": "PASS",
+   "guard_audit_leaks": "PASS",
+   "guard_audit_length": "PASS",
+   "value": "NOISE",
+   "ranking": "PASS",
+   "agreement": "PASS"
+  },
+  "wins": 4,
+  "losses": 1,
+  "sign_p": 0.375
+ },
+ "agreement": 1.0,
+ "freeze_ok": true,
+ "extended": false,
+ "arms": {
+  "hs": {
+   "value_mean": 4.62,
+   "V1": 4.5,
+   "V2": 4.67,
+   "V3": 4.25,
+   "V4": 5.08,
+   "G1": 5.67,
+   "G2": 7.0,
+   "G3": 4.83,
+   "key_rate": 0.812,
+   "ceremony": 0.33,
+   "leaks": 0.0,
+   "word_ratio": 0.75
+  },
+  "hn": {
+   "value_mean": 4.69,
+   "V1": 4.58,
+   "V2": 5.0,
+   "V3": 4.08,
+   "V4": 5.08,
+   "G1": 5.58,
+   "G2": 7.0,
+   "G3": 4.5,
+   "key_rate": 0.91,
+   "ceremony": 0.0,
+   "leaks": 0.0,
+   "word_ratio": 0.72
+  },
+  "ss": {
+   "value_mean": 6.06,
+   "V1": 6.58,
+   "V2": 6.0,
+   "V3": 5.67,
+   "V4": 6.0,
+   "G1": 4.83,
+   "G2": 7.0,
+   "G3": 5.67,
+   "key_rate": 0.958,
+   "ceremony": 0.17,
+   "leaks": 0.0,
+   "word_ratio": 1.08
+  },
+  "sn": {
+   "value_mean": 5.88,
+   "V1": 6.33,
+   "V2": 6.0,
+   "V3": 5.33,
+   "V4": 5.83,
+   "G1": 4.33,
+   "G2": 7.0,
+   "G3": 5.17,
+   "key_rate": 0.979,
+   "ceremony": 0.0,
+   "leaks": 0.0,
+   "word_ratio": 1.0
+  }
+ }
+}
