@@ -2,6 +2,34 @@
 
 The plugin version is set in `.claude-plugin/plugin.json`. Each skill's own version is `metadata.version` in its `SKILL.md`.
 
+## 1.2.0 — 2026-10-13
+
+The suite gauntlet: every skill went through a pre-registered, blind [skill-gauntlet](skills/skill-gauntlet/) round against answering with no skill. Sonnet executed, Opus judged, and a Sonnet auditor and key verifiers checked the replies. Seven rounds also compared the 1.1.0 rewrite with v1.0.0. **No skill validated, and every rewrite was reverted.** Verdicts were applied mechanically from gates frozen before each round. The record is in [evolution/gauntlet-2026-10/](evolution/gauntlet-2026-10/LEDGER.md), and the design is in the [spec](docs/superpowers/specs/2026-10-13-suite-gauntlet-design.md) (about 19.2M subagent tokens, pilot included).
+
+- **Rewrites reverted to the v1.0.0 body.** Each keeps its 1.1.0 frontmatter and gets a patch bump:
+  - integrated-reasoning 2.3.1 ([scorecard](evolution/gauntlet-2026-10/integrated-reasoning/scorecard.md))
+  - tree-of-thoughts 2.3.1 ([scorecard](evolution/gauntlet-2026-10/tree-of-thoughts/scorecard.md))
+  - breadth-of-thought 2.3.1 ([scorecard](evolution/gauntlet-2026-10/breadth-of-thought/scorecard.md)); `context: fork` and `argument-hint` are dropped, because the restored body takes no `$ARGUMENTS`
+  - self-reflecting-chain 2.3.1 ([scorecard](evolution/gauntlet-2026-10/self-reflecting-chain/scorecard.md))
+  - parallel-execution 2.3.1 ([scorecard](evolution/gauntlet-2026-10/parallel-execution/scorecard.md))
+  - reasoning-handover-protocol 2.3.1 ([scorecard](evolution/gauntlet-2026-10/reasoning-handover-protocol/scorecard.md))
+  - premortem-evolved 2.2.2 ([scorecard](evolution/gauntlet-2026-10/premortem-evolved/scorecard.md)): the SKILL.md body and reference revert, and `scripts/pre_delivery_check.py` keeps its tested 1.1.0 bug fixes, because no gauntlet cell can run scripts
+- **Not validated against no skill, text unchanged:**
+  - hypothesis-elimination ([scorecard](evolution/gauntlet-2026-10/hypothesis-elimination/scorecard.md))
+  - adversarial-reasoning ([scorecard](evolution/gauntlet-2026-10/adversarial-reasoning/scorecard.md))
+  - dialectical-reasoning ([scorecard](evolution/gauntlet-2026-10/dialectical-reasoning/scorecard.md))
+  - analogical-transfer ([scorecard](evolution/gauntlet-2026-10/analogical-transfer/scorecard.md))
+  - rapid-triage-reasoning ([scorecard](evolution/gauntlet-2026-10/rapid-triage-reasoning/scorecard.md))
+  - negotiated-decision-framework ([scorecard](evolution/gauntlet-2026-10/negotiated-decision-framework/scorecard.md))
+  - option-synthesis ([scorecard](evolution/gauntlet-2026-10/option-synthesis/scorecard.md))
+  - skill-gauntlet ([scorecard](evolution/gauntlet-2026-10/skill-gauntlet/scorecard.md))
+- **What the rounds found:**
+  - The skill scored higher value than no skill on every brief in 10 of 15 rounds, and value cleared its noise band in 4.
+  - What blocked validation was mostly visible method machinery (the ceremony audit failed in 10 rounds), extra length, and two framing flips (rapid-triage-reasoning, option-synthesis).
+  - premortem-evolved and option-synthesis deliver structured reports, which the rubric's machinery guard penalises by design.
+  - The README's validation section summarises the findings and the instrument's limits.
+- **Rulings made during the program** are in the ledger: the breadth-of-thought frontmatter (round 5), the premortem-evolved script (round 8), and an auditor output normalisation that changed no scored value (round 14).
+
 ## 1.1.0 — 2026-10-13
 
 A format and bug pass across the suite, checked by a pre-registered blind regression round (88 agents, Haiku and Sonnet). The full record is in [evolution/thinkbetter-suite/regression-2026-10-13/](evolution/thinkbetter-suite/regression-2026-10-13/RESULTS.md), and the line-by-line audit in [docs/audits/](docs/audits/2026-10-13-skill-format-audit.md). The round's gate returned **NO ADOPTION**: the new versions lost the blind preference test and leaked more. Which skills to revert was decided by the owner after the results: the four that lost on both models, and the two whose judged leaks rose without a preference win. Every other rewrite, and the handover rewrite, ships by owner decision; see the record for the cells each one lost.

@@ -31,25 +31,37 @@ npx skills add kimasplund/thinkbetter-skills -a codex -g           # all skills,
 
 | Skill | Version | The move | Validation |
 |---|---|---|---|
-| [integrated-reasoning](skills/integrated-reasoning/) | 2.3.0 | Scores the problem and routes it to the right pattern, or to a plain answer when no framework is warranted | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/integrated-reasoning/scorecard.md)) |
-| [tree-of-thoughts](skills/tree-of-thoughts/) | 2.3.0 | Deep branching exploration with pruning: find THE best option | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/tree-of-thoughts/scorecard.md)) |
-| [breadth-of-thought](skills/breadth-of-thought/) | 2.3.0 | Wide sweep with conservative pruning: don't miss options | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/breadth-of-thought/scorecard.md)) |
-| [self-reflecting-chain](skills/self-reflecting-chain/) | 2.3.0 | Stepwise reasoning with per-step validation and backtracking | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/self-reflecting-chain/scorecard.md)) |
+| [integrated-reasoning](skills/integrated-reasoning/) | 2.3.1 | Scores the problem and routes it to the right pattern, or to a plain answer when no framework is warranted | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/integrated-reasoning/scorecard.md)) |
+| [tree-of-thoughts](skills/tree-of-thoughts/) | 2.3.1 | Deep branching exploration with pruning: find THE best option | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/tree-of-thoughts/scorecard.md)) |
+| [breadth-of-thought](skills/breadth-of-thought/) | 2.3.1 | Wide sweep with conservative pruning: don't miss options | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/breadth-of-thought/scorecard.md)) |
+| [self-reflecting-chain](skills/self-reflecting-chain/) | 2.3.1 | Stepwise reasoning with per-step validation and backtracking | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/self-reflecting-chain/scorecard.md)) |
 | [hypothesis-elimination](skills/hypothesis-elimination/) | 2.2.1 | Discriminating-evidence elimination: find THE cause | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/hypothesis-elimination/scorecard.md)) |
 | [adversarial-reasoning](skills/adversarial-reasoning/) | 2.2.1 | Systematic attack on a candidate solution before committing | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/adversarial-reasoning/scorecard.md)) |
 | [dialectical-reasoning](skills/dialectical-reasoning/) | 2.2.1 | Thesis, antithesis, synthesis, for trade-offs where both sides are right | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/dialectical-reasoning/scorecard.md)) |
 | [analogical-transfer](skills/analogical-transfer/) | 2.2.1 | Structured cross-domain borrowing for novel problems | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/analogical-transfer/scorecard.md)) |
 | [rapid-triage-reasoning](skills/rapid-triage-reasoning/) | 2.2.1 | Time-boxed, good-enough decisions for incidents | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/rapid-triage-reasoning/scorecard.md)) |
 | [negotiated-decision-framework](skills/negotiated-decision-framework/) | 2.2.1 | Multi-stakeholder alignment that needs real buy-in | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/negotiated-decision-framework/scorecard.md)) |
-| [parallel-execution](skills/parallel-execution/) | 2.3.0 | Fan-out/fan-in for running patterns concurrently, with merge strategies | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/parallel-execution/scorecard.md)) |
-| [reasoning-handover-protocol](skills/reasoning-handover-protocol/) | 2.3.0 | How to hand off state between reasoning skills, with an optional `.reasoning/` folder | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/reasoning-handover-protocol/scorecard.md)) |
-| [premortem-evolved](skills/premortem-evolved/) | 2.2.1 | Assumes the plan already failed, reasons back to why, then rebuilds it | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/premortem-evolved/scorecard.md)) |
+| [parallel-execution](skills/parallel-execution/) | 2.3.1 | Fan-out/fan-in for running patterns concurrently, with merge strategies | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/parallel-execution/scorecard.md)) |
+| [reasoning-handover-protocol](skills/reasoning-handover-protocol/) | 2.3.1 | How to hand off state between reasoning skills, with an optional `.reasoning/` folder | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/reasoning-handover-protocol/scorecard.md)) |
+| [premortem-evolved](skills/premortem-evolved/) | 2.2.2 | Assumes the plan already failed, reasons back to why, then rebuilds it | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/premortem-evolved/scorecard.md)) |
 | [option-synthesis](skills/option-synthesis/) | 1.0.1 | Pre-registers what a choice must satisfy, generates a wide field, kills finalists with premortems, synthesizes the winner | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/option-synthesis/scorecard.md)) |
 | [skill-gauntlet](skills/skill-gauntlet/) | 1.1.1 | Pre-registered, blind, regression-guarded A/B evaluation of skills, prompts and agent configs | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/skill-gauntlet/scorecard.md)) |
 
 ## Validation status: read this before relying on a skill
 
-The suite is validated with [skill-gauntlet](skills/skill-gauntlet/): blind, pre-registered champion-versus-challenger rounds with conjunctive regression guards. Several results below are NO ADOPTION verdicts that shipped by a disclosed owner decision, and this section says which.
+**No skill in this repo is validated.** In October 2026 each of the 15 skills went through a pre-registered, blind [skill-gauntlet](skills/skill-gauntlet/) round against answering with no skill, and none passed. Treat each skill as a documented methodology, not a proven improvement. Per-skill verdicts, scorecards, research notes and every ruling are in the [ledger](evolution/gauntlet-2026-10/LEDGER.md).
+
+### Suite gauntlet, October 2026
+
+- **Design.** Each round had three fictional briefs with planted keys sealed from the coordinator, a hype/skeptical framing pair of the same facts, and a task too small for the skill. Sonnet answered each brief twice per arm, or four times after the one allowed extension. Two Opus judges per brief scored the blinded replies on four value and three guard dimensions and ranked them. A Sonnet auditor counted visible method machinery, and Sonnet verifiers checked the planted keys. A skill validates only if every condition passes: value above the paired noise band, no guard regression, no extra method ceremony, and the same recommendation under both framings. Each round's gate was frozen before it ran. Design: [spec](docs/superpowers/specs/2026-10-13-suite-gauntlet-design.md).
+- **Rewrites.** Seven skills had a 1.1.0 body that differed from 1.0.0, so their rounds added a third arm. Every one of those rewrites lost to or tied v1.0.0 and was reverted to the v1.0.0 body, keeping the 1.1.0 frontmatter (now 2.3.1, or 2.2.2 for premortem-evolved). The restored bodies were compared with the rewrites, not with no skill.
+- **Where the skills helped.** The skill arm scored higher value than no skill on every brief in 10 of 15 rounds, and won at least 5 of 6 blind rankings in 7. Value cleared its noise band in 4: tree-of-thoughts (the reverted 1.1.0 body), analogical-transfer, negotiated-decision-framework and option-synthesis.
+- **What blocked them.** Mostly visible method. The ceremony audit failed in 10 of 15 rounds, and several skills made replies longer than the judges thought the task needed. rapid-triage-reasoning and option-synthesis changed their recommendation between the hype and skeptical framings of the same facts. premortem-evolved and option-synthesis deliver a structured report by design, which the rubric's machinery and length guards penalise, and both failed those guards decisively.
+- **Limits of the instrument.** The audit band is strict: one extra hit in total fails, and each research note gives the tolerant reading where that mattered. The value band is the spread of the per-brief gains, so a gain that is positive on every brief but uneven can read as noise (adversarial-reasoning: +0.72, every brief positive, band 1.06). Executors were Sonnet only. The rubric scores every reply as a general answer, not as a report artifact.
+
+### Earlier rounds
+
+Several of these are NO ADOPTION verdicts that shipped by a disclosed owner decision, and each says so.
 
 **integrated-reasoning (router).** One with-skill vs no-skill round was run on a frontier model, with 16 cells and sealed keys.
 - **No measured lift in decision quality, and round 1 lost overall.** Detection and judged decision quality landed at exact parity, because the base model already reasoned at ceiling on the test briefs. The no-skill baseline won 5 of 6 blind forced choices, and the round-1 router regressed the proportionality guard (D5 −0.50) by narrating its scoring apparatus into answers.
@@ -58,9 +70,7 @@ The suite is validated with [skill-gauntlet](skills/skill-gauntlet/): blind, pre
 
 On strong models, treat the router as reasoning hygiene and restraint rather than a quality lift. Records are in [evolution/integrated-reasoning/](evolution/integrated-reasoning/).
 
-**The nine patterns and two infrastructure skills** have not been individually gauntleted. Treat each as a documented methodology, not a validated one.
-
-**The 1.1.0 format and bug pass was regression-tested** blind against 1.0.0 with Haiku and Sonnet. The gate returned NO ADOPTION: four rewritten skill bodies lost the blind comparison on both models. Those four bodies, plus two whose leaks rose without a preference win, stayed at their 1.0.0 text. Four other rewrites shipped by owner decision despite split or slightly negative cells (integrated-reasoning's leaks also rose 0 to 2). The reasoning-handover-protocol rewrite ships by owner decision, over a name-count check that penalises a hand-off for naming the next pattern. Record: [evolution/thinkbetter-suite/regression-2026-10-13/](evolution/thinkbetter-suite/regression-2026-10-13/RESULTS.md).
+**The 1.1.0 format and bug pass was regression-tested** blind against 1.0.0 with Haiku and Sonnet. The gate returned NO ADOPTION: four rewritten skill bodies lost the blind comparison on both models. Those four bodies, plus two whose leaks rose without a preference win, stayed at their 1.0.0 text. Four other rewrites shipped by owner decision despite split or slightly negative cells (integrated-reasoning's leaks also rose 0 to 2). The reasoning-handover-protocol rewrite ships by owner decision, over a name-count check that penalises a hand-off for naming the next pattern. Record: [evolution/thinkbetter-suite/regression-2026-10-13/](evolution/thinkbetter-suite/regression-2026-10-13/RESULTS.md). The October 2026 suite gauntlet later reverted all seven 1.1.0 rewrites to their v1.0.0 bodies (see above).
 
 **premortem-evolved 2.2.0.** Each of these rounds beat the champion on totals and blind preference, and each was blocked by a regression guard:
 
@@ -70,8 +80,6 @@ On strong models, treat the router as reasoning hygiene and restraint rather tha
 2.2 ships by owner decision for the linter. The full record is in [evolution/premortem-evolved/](evolution/premortem-evolved/).
 
 **skill-gauntlet 1.1.0.** 1.1 merges the GitHub 1.0 line with three deltas that passed their own pre-registered gate (ADOPT): verifier-integrity hashing (`scripts/freeze.py`), degraded-mode gating, and held-in/held-out key splits. Record: [evolution/skill-gauntlet/](evolution/skill-gauntlet/).
-
-**option-synthesis 1.0.0** has no blind round yet.
 
 ## Provenance
 
