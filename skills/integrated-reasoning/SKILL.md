@@ -1,41 +1,39 @@
 ---
 name: integrated-reasoning
-description: Meta-orchestration guide for choosing and combining optimal reasoning patterns. Scores a problem's characteristics and routes it to the right methodology — debugging, optimization, trade-off synthesis, novel problems, incidents, multi-stakeholder decisions — or to direct analysis when no framework is warranted. Use when facing a complex problem and unsure how to approach it, or when a decision is high-stakes enough that picking the wrong analysis style is itself a risk.
-model: opus
-user-invocable: true
+description: "Chooses how to reason about a hard problem before diving in: scores the problem's traits and routes it to the best-fitting reasoning skill, a sequence of several, or plain direct analysis. Use when a complex or high-stakes problem mixes debugging, trade-offs, novelty or stakeholder politics and the approach is unclear, e.g. 'how should I approach this', 'which method fits here', 'help me think this through'. If the problem type is already clear, use that skill directly: hypothesis-elimination for a root cause, tree-of-thoughts for the best known option, dialectical-reasoning for a trade-off, rapid-triage-reasoning for an emergency."
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
 ---
 
 # Integrated Reasoning — Meta-Orchestration
 
-**Purpose**: Select and orchestrate optimal reasoning pattern(s) for your problem. V2 addresses limitations of v1: adds new patterns, replaces order-dependent decision tree with weighted scoring, includes feedback loops, and fixes confidence aggregation.
+**The scoring pass is silent.** Dimension scores, affinity arithmetic, pattern names, and selection narration never appear in the user-facing answer — the reader sees the analysis, not the apparatus that chose it. A selected pattern's structure may appear only as content built from the problem's own facts (a hypothesis table, a criteria matrix), never as methodology narration. Announce nothing; just analyze.
+
+**Turn discipline:** announcing this skill or a selected pattern is NOT a response. After any announcement, continue immediately in the same turn with the pattern's actual steps and the tool calls that do the work. Smaller models are especially prone to stopping after the announcement.
+
+**Purpose**: Select and orchestrate the best reasoning pattern(s) for the problem, using weighted scoring instead of an order-dependent decision tree, with feedback checkpoints and bounded confidence aggregation.
 
 ## Available Reasoning Patterns (9)
 
-| Pattern | Purpose | Best For |
-|---------|---------|----------|
-| **Tree of Thoughts (ToT)** | Find optimal solution through deep exploration | Optimization, clear criteria, find THE best |
-| **Breadth of Thought (BoT)** | Map solution space comprehensively | Unknown space, need multiple options |
-| **Self-Reflecting Chain (SRC)** | Sequential reasoning with validation | Dependent steps, proofs, linear traces |
-| **Hypothesis-Elimination (HE)** | Systematic elimination through evidence | Diagnosis, debugging, root cause |
-| **Adversarial Reasoning (AR)** | Stress-test through attack simulation | Validation, security, pre-mortems |
-| **Dialectical Reasoning (DR)** | Synthesize opposing valid perspectives | Trade-offs, conceptual conflicts |
-| **Analogical Transfer (AT)** | Solve via cross-domain parallels | Novel problems, no direct precedent |
-| **Rapid Triage Reasoning (RTR)** | Fast decisions under time pressure | Incidents, emergencies, time-boxed choices |
-| **Negotiated Decision Framework (NDF)** | Multi-stakeholder coordination | Politics, competing interests, buy-in needed |
+Each pattern is a sibling skill. The shorthand in the second column is used only in the formulas and tables of this skill.
+
+| Skill | Shorthand | Purpose | Best For |
+|-------|-----------|---------|----------|
+| **tree-of-thoughts** | ToT | Find optimal solution through deep exploration | Optimization, clear criteria, find THE best |
+| **breadth-of-thought** | BoT | Map solution space comprehensively | Unknown space, need multiple options |
+| **self-reflecting-chain** | SRC | Sequential reasoning with validation | Dependent steps, proofs, linear traces |
+| **hypothesis-elimination** | HE | Systematic elimination through evidence | Diagnosis, debugging, root cause |
+| **adversarial-reasoning** | AR | Stress-test through attack simulation | Validation, security, pre-mortems |
+| **dialectical-reasoning** | DR | Synthesize opposing valid perspectives | Trade-offs, conceptual conflicts |
+| **analogical-transfer** | AT | Solve via cross-domain parallels | Novel problems, no direct precedent |
+| **rapid-triage-reasoning** | RTR | Fast decisions under time pressure | Incidents, emergencies, time-boxed choices |
+| **negotiated-decision-framework** | NDF | Multi-stakeholder coordination | Politics, competing interests, buy-in needed |
+
+For a one-line "if you need X, use Y" lookup, read [references/quick-selection-guide.md](references/quick-selection-guide.md) when the right pattern seems obvious and full scoring would be overkill.
 
 ---
 
 ## Pattern Selection: Weighted Multi-Dimensional Scoring
-
-**Turn discipline (all models, critical for small ones):** announcing this
-skill or a selected pattern is NOT a response. After any announcement,
-continue immediately in the same turn with the pattern's actual steps and
-the tool calls that do the work. (Measured failure mode: a 7.5B local model
-announced the skill and ended its turn — three times in five runs.)
-
-**The scoring pass is silent.** Dimension scores, affinity arithmetic, pattern names, and selection narration never appear in the user-facing answer — the reader sees the analysis, not the apparatus that chose it. A selected pattern's structure may appear only as content built from the problem's own facts (a hypothesis table, a criteria matrix), never as methodology narration. Announce nothing; just analyze.
 
 ### Step 1: Assess Problem Characteristics
 
@@ -61,11 +59,11 @@ Score each dimension (1-5):
 
 **CRITICAL**: If Time Pressure = 5 (emergency/incident):
 - Skip full scoring
-- Use **Rapid Triage Reasoning (RTR)** directly
-- RTR is optimized for decisions under extreme time constraints
+- Use **rapid-triage-reasoning** directly
+- It is optimized for decisions under extreme time constraints
 
 If Time Pressure ≥ 4:
-- Consider RTR unless problem is clearly sequential (use SRC) or diagnostic (use HE)
+- Consider rapid-triage-reasoning unless the problem is clearly sequential (use self-reflecting-chain) or diagnostic (use hypothesis-elimination)
 - Apply abbreviated scoring (skip orchestration considerations)
 
 ### Step 2: Calculate Pattern Affinity Scores
@@ -83,7 +81,7 @@ AR   = (Robustness × 0.40) + (SolutionExists × 0.30) + ((6-Novelty) × 0.15) +
        # NOTE: AR requires SolutionExists ≥ 3, otherwise score = 0
 
 DR   = (OpposingViews × 0.50) + (Criteria × 0.20) + ((6-Evidence) × 0.15) + (MIN(SingleAnswer, OpposingViews) × 0.15)
-       # NOTE: V2.1 fix - SingleAnswer no longer penalized when OpposingViews is high
+       # NOTE: SingleAnswer is not penalized when OpposingViews is high
 
 AT   = (Novelty × 0.45) + ((6-SpaceKnown) × 0.30) + ((6-Evidence) × 0.15) + ((6-Sequential) × 0.10)
 
@@ -94,13 +92,13 @@ NDF  = (StakeholderComplexity × 0.45) + (OpposingViews × 0.25) + ((6-Criteria)
        # NOTE: NDF requires StakeholderComplexity ≥ 3 to be considered
 ```
 
-**Formula Validation Rules** (V2.1):
+**Formula Validation Rules**:
 - AR returns 0 if SolutionExists < 3 (nothing to attack)
 - RTR auto-triggers when TimePressure = 5 (emergency mode)
 - NDF returns 0 if StakeholderComplexity < 3 (single decision-maker)
 - If multiple patterns score within 0.3 of each other, use uncertainty propagation (Step 2.5)
 
-### Step 2.5: Uncertainty Propagation (V2.1)
+### Step 2.5: Uncertainty Propagation
 
 When dimension scores are uncertain, propagate uncertainty to pattern selection:
 
@@ -132,17 +130,20 @@ Apply -5% to final confidence for each uncertain dimension that affects the winn
 | One pattern scores >4.0 | Use that pattern directly |
 | Top 2 within 0.5 of each other | Consider multi-pattern orchestration |
 | Top 3 within 0.3 of each other | Apply uncertainty propagation first |
-| All patterns <3.0 | Problem may need decomposition first |
-| Top pattern <2.5 | None fit well; use Direct Analysis |
+| Top pattern ≤4.0, no dimension scored ≥4, and Time Pressure <4 | None fit well; use Direct Analysis |
+| All patterns <3.0 but Direct Analysis does not apply | Problem may need decomposition first |
+
+To check your arithmetic against a fully scored case, read [references/worked-example.md](references/worked-example.md) when you are unsure how to score a dimension or interpret close scores.
 
 ### Direct Analysis (10th Pattern)
 
-When all pattern scores are below 2.5, no specialized methodology is warranted:
+Use Direct Analysis (no specialized pattern) when all three hold:
+- MAX(all pattern scores) ≤ 4.0 — no pattern is a clear fit, AND
+- No dimension scored ≥ 4 — the problem has no strong characteristic a pattern is built for, AND
+- Time Pressure < 4 — otherwise the fast-path applies
 
 ```markdown
 ## Direct Analysis
-
-**When to use**: All patterns score <2.5 (problem doesn't match any pattern's strengths)
 
 **Approach**:
 1. No special framework needed
@@ -161,14 +162,7 @@ When all pattern scores are below 2.5, no specialized methodology is warranted:
 - Any ambiguity = document it explicitly
 ```
 
-### Direct Analysis Threshold
-
-Use Direct Analysis (no specialized pattern) when:
-- MAX(all pattern scores) < 4.0 AND
-- No dimension scored >= 4 AND
-- Problem is not time-critical (TimePressure < 4)
-
-Direct Analysis = simple step-by-step reasoning without framework overhead.
+Problems this simple often don't need scoring at all; if the answer is obvious, answer it.
 
 ---
 
@@ -188,22 +182,15 @@ After selecting the optimal pattern, set effort level:
 | RTR | low | Time-critical (< 5 minutes) |
 | NDF | medium | Standard stakeholder alignment |
 
-For max effort, include "ultrathink" in the analysis prompt to enable extended thinking budget.
+For max effort, use extended thinking.
 
 ---
 
 ## Execution Modes
 
-Patterns with `context: fork` in their frontmatter will automatically run in isolated subagents when invoked via skills. This means:
-- They get their own context window (won't bloat main conversation)
-- They can't see conversation history (provide full context in the prompt)
-- Results are returned as a summary
+Only **breadth-of-thought** runs as a forked subagent (`context: fork`). A fork gets its own context window and cannot see conversation history, so pass it the full problem statement and constraints; it returns a summary.
 
-For inline execution (when you need conversation context), invoke the pattern's methodology directly without using the skill.
-
-**Patterns that fork**: ToT, BoT, HE, AR, SRC, DR, AT
-**Patterns that run inline**: RTR (speed), NDF (needs conversation context for stakeholder interaction)
-**IR-v2 itself**: Always inline (orchestrates within main context)
+All other patterns run inline, in the current conversation. **integrated-reasoning itself** always runs inline, because it orchestrates within the main context.
 
 ---
 
@@ -211,8 +198,8 @@ For inline execution (when you need conversation context), invoke the pattern's 
 
 When running on different models:
 - **Opus**: All patterns available at full depth
-- **Sonnet**: Reduce branch counts (ToT: 3 branches, BoT: 5 approaches). SRC, HE, RTR work well. DR and AT may lose synthesis quality.
-- **Haiku**: Only RTR recommended; other patterns lose quality
+- **Sonnet**: Reduce branch counts (tree-of-thoughts: 3 branches, breadth-of-thought: 5 approaches). self-reflecting-chain, hypothesis-elimination and rapid-triage-reasoning work well. dialectical-reasoning and analogical-transfer may lose synthesis quality.
+- **Haiku**: Only rapid-triage-reasoning recommended; other patterns lose quality
 
 ---
 
@@ -254,7 +241,7 @@ AR attack vectors  (stress-test from multiple directions at once)
 
 ## Full Reasoning Chain: Input → Output
 
-Complete end-to-end flow for IR-v2 orchestration:
+Complete end-to-end flow:
 
 ```
 1. **Problem Input**
@@ -270,11 +257,11 @@ Complete end-to-end flow for IR-v2 orchestration:
    └─→ TimePressure = 5? → RTR immediately (skip remaining steps)
 
 4. **Pattern Selection**
-   └─→ IR-v2 calculates affinity scores for all 9 patterns
+   └─→ Calculate affinity scores for all 9 patterns
    └─→ Apply validation rules (AR needs solution, NDF needs stakeholders)
 
 5. **Direct Analysis Check**
-   └─→ All patterns < 2.5? → Use Direct Analysis (no framework)
+   └─→ Top pattern ≤ 4.0, no dimension ≥ 4, TimePressure < 4? → Direct Analysis (no framework)
 
 6. **Orchestration Decision**
    └─→ Single pattern > 4.0? → Use that pattern directly
@@ -286,12 +273,12 @@ Complete end-to-end flow for IR-v2 orchestration:
    └─→ Apply selected pattern(s) using their methodologies
    └─→ Track confidence and key findings
 
-8. **Checkpoint (15 min)**
+8. **Checkpoint (after each phase of the pattern)**
    └─→ Progress check, pattern fit check, new information check
    └─→ Re-evaluate and potentially switch patterns if needed
 
 9. **Handover (if multi-pattern)**
-   └─→ Transfer context via .reasoning/ directory
+   └─→ Record state as described in reasoning-handover-protocol
    └─→ Preserve insights from completed pattern
    └─→ Set up next pattern with full context
 
@@ -318,7 +305,7 @@ Complete end-to-end flow for IR-v2 orchestration:
 
 - Top 2 patterns within 0.5 points AND
 - Problem is high-stakes (consequences matter) AND
-- Time budget allows (>45 minutes available)
+- The user wants depth rather than a quick answer
 
 ### Orchestration Patterns
 
@@ -350,30 +337,31 @@ Complete end-to-end flow for IR-v2 orchestration:
 | HE | SRC | Sequential: HE (find cause) → SRC (trace mechanism) |
 | RTR | HE | Sequential: RTR (immediate triage) → HE (post-incident RCA) |
 | RTR | AR | Sequential: RTR (quick decision) → AR (post-decision validation) |
-
 | NDF | ToT | Sequential: NDF (get buy-in) → ToT (optimize within agreed bounds) |
 | NDF | DR | Sequential: DR (resolve conceptual tension) → NDF (negotiate stakeholders) |
 | BoT | NDF | Sequential: BoT (explore options) → NDF (negotiate which to pursue) |
 
-**RTR Orchestration Rules**:
-- RTR is typically a STARTING pattern, not an ending one
-- After RTR stabilizes situation, follow up with deeper analysis
+**rapid-triage-reasoning Orchestration Rules**:
+- It is typically a STARTING pattern, not an ending one
+- After it stabilizes the situation, follow up with deeper analysis
 - RTR → HE for incident root cause analysis
 - RTR → ToT for revisiting decision with more time
 
-**NDF Orchestration Rules**:
-- NDF typically FOLLOWS technical analysis (know options before negotiating)
+**negotiated-decision-framework Orchestration Rules**:
+- It typically FOLLOWS technical analysis (know options before negotiating)
 - BoT → NDF: Explore space, then negotiate which options to pursue
 - NDF → ToT: After stakeholder agreement, optimize implementation
 - DR → NDF: Resolve conceptual tensions first, then stakeholder tensions
+
+When a pattern hands work to the next one and the state is too large to carry in conversation, follow **reasoning-handover-protocol** (what to record, the optional `.reasoning/` folder, and cycle prevention).
 
 ---
 
 ## Parallel Pattern Execution
 
 When top 2 patterns score within 0.3:
-- Use built-in parallel subagent execution (multiple Task tool calls)
-- Each pattern runs in its own forked context
+- Use parallel subagents (multiple calls to the Agent tool)
+- Each pattern runs in its own subagent
 - Merge results using agreement analysis
 
 ### When to Parallelize
@@ -385,7 +373,7 @@ Parallel execution is appropriate when independent reasoning paths can run concu
 | **Top 2 patterns within 0.3 of each other** | Run both patterns in parallel, compare results |
 | **BoT natural parallelism** | 8-10 branches can explore simultaneously |
 | **Hypothesis testing (HE)** | Parallel evidence gathering for multiple hypotheses |
-| **Multi-perspective needs (MoA pattern)** | Different "expert personas" analyze in parallel |
+| **Multi-perspective needs (mixture of agents)** | Different "expert personas" analyze in parallel |
 
 ### Parallel Orchestration Patterns
 
@@ -396,49 +384,13 @@ Parallel execution is appropriate when independent reasoning paths can run concu
 | **HE hypotheses** | Parallel evidence collection for each hypothesis | Aggregate evidence, eliminate losers |
 | **AR attacks** | Parallel threat simulation (different attack vectors) | Union of discovered vulnerabilities |
 
-### Parallel Configuration
-
-```yaml
-parallel_config:
-  max_concurrent_patterns: 3      # Max patterns running simultaneously
-  max_concurrent_branches: 8      # Max branches within a single pattern
-  merge_strategy: "consensus"     # "consensus" | "voting" | "aggregation" | "best-of-n"
-  timeout_per_branch_ms: 60000    # 60 second timeout per branch
-  early_termination_threshold: 0.95  # Stop early if confidence exceeds this
-```
-
-**Configuration Guidelines**:
-- Use `max_concurrent_patterns: 2` for typical orchestration
-- Use `max_concurrent_branches: 8` for BoT exploration
-- Increase `timeout_per_branch_ms` for complex sub-problems
-- Lower `early_termination_threshold` (e.g., 0.85) when speed matters more than certainty
-
-### Merge Strategies
-
-| Strategy | When to Use | Behavior |
-|----------|-------------|----------|
-| **Consensus** | High-stakes, need confidence | All must agree → boost confidence by +10%; any disagreement → flag for review |
-| **Voting** | Multiple viable options | Majority wins; ties broken by highest individual confidence |
-| **Aggregation** | Complementary findings | Synthesize all findings into unified result; no filtering |
-| **Best-of-N** | Competitive exploration | Take highest confidence result; discard others |
-
-**Merge Strategy Selection**:
-```
-If robustness critical → "consensus"
-If options are mutually exclusive → "voting"
-If findings are additive → "aggregation"
-If racing for speed → "best-of-n"
-```
-
-### Integration with .reasoning/ Protocol
-
-For the full `.reasoning/` handover protocol (directory structure, branch templates, protocol rules), see the `parallel-execution` skill.
+For concurrency limits and choosing a merge strategy (consensus, voting, aggregation, best-of-n), read [references/parallel-config.md](references/parallel-config.md) when you are about to run patterns or branches in parallel.
 
 ---
 
-## Feedback Loop: 15-Minute Checkpoint
+## Feedback Loop: Phase Checkpoint
 
-**After 15 minutes of applying selected pattern:**
+**After each completed phase of the selected pattern** (or every few turns on a long task — Claude cannot measure elapsed time, so count work, not minutes):
 
 ```markdown
 ## Checkpoint Evaluation
@@ -463,16 +415,18 @@ If 2+ checks FAIL:
 
 If all checks PASS:
   → Continue current pattern
-  → Set next checkpoint at 30 min mark
+  → Checkpoint again after the next phase
 ```
 
 ---
 
-## Confidence Aggregation (Fixed)
+## Confidence Aggregation
 
-**V1 Problem**: Additive confidence boosting was statistically invalid.
+Additive confidence boosting is statistically invalid, so use agreement-based bounded adjustment.
 
-**V2 Approach**: Agreement-based bounded adjustment.
+**Confidence bounds (apply to every result, single or multi-pattern, and to every hand-off):**
+- Floor: 10% (never report lower confidence)
+- Ceiling: 95% (never report higher confidence)
 
 ### Single Pattern Confidence
 Use the pattern's internal confidence score (per its methodology).
@@ -480,7 +434,7 @@ Use the pattern's internal confidence score (per its methodology).
 ### Multi-Pattern Confidence
 
 ```markdown
-## Multi-Pattern Synthesis
+## Multi-Pattern Synthesis (internal working, not for the answer)
 
 ### Raw Scores
 - Pattern A conclusion: [Answer A] at [X]% confidence
@@ -493,17 +447,13 @@ Use the pattern's internal confidence score (per its methodology).
 - Final Confidence = MIN(MAX(X, Y, Z) + 5%, 95%)
 - Rationale: Independent paths converging increases trust
 
-**Confidence Bounds**:
-- Floor: 10% (never report lower confidence)
-- Ceiling: 95% (never report higher confidence)
-
 **PARTIAL AGREEMENT** (2/3 agree):
 - Final Confidence = (AVG of agreeing × 0.7) + (disagreeing × 0.15)
 - Must document the disagreement
 - Consider: Why does one pattern disagree?
 
 **NO AGREEMENT** (different conclusions):
-- Final Confidence = MIN(X, Y, Z) - 10%
+- Final Confidence = MAX(MIN(X, Y, Z) - 10%, 10%)
 - This is a FEATURE not a bug - disagreement reveals complexity
 - Action: Either (a) gather more information, or (b) present trade-offs to stakeholder
 
@@ -512,152 +462,10 @@ If patterns share significant assumptions, apply -5% adjustment.
 (Same LLM, same problem framing, same information = shared blind spots)
 ```
 
----
-
-## Pattern Limitations Reference
-
-**Tree of Thoughts (ToT)**:
-- Requires clear evaluation criteria
-- Deep recursion may overfit to evaluation function
-- Fixed branching can force artificial distinctions
-
-**Breadth of Thought (BoT)**:
-- Cannot truly be "exhaustive"
-- 8-10 branches may not cover solution space
-- Returns multiple options requiring further decision
-
-**Self-Reflecting Chain (SRC)**:
-- Limited by weakest step in chain
-- Backtracking is costly
-- Assumes linear dependency structure
-
-**Hypothesis-Elimination (HE)**:
-- Requires discriminating evidence
-- Can only find causes in the hypothesis set
-- Time-sensitive (may not suit exploration)
-
-**Adversarial Reasoning (AR)**:
-- Requires existing solution to attack
-- Can be demoralizing if overused
-- May miss non-adversarial failure modes
-
-**Dialectical Reasoning (DR)**:
-- Requires genuinely opposing valid views
-- Synthesis isn't always possible
-- Can be slower than just deciding
-
-**Analogical Transfer (AT)**:
-- Analogy quality varies widely
-- Source domain may mislead
-- Requires creativity in finding parallels
-
-**Rapid Triage Reasoning (RTR)**:
-- Sacrifices depth for speed
-- May miss optimal solution (accepts "good enough")
-- Requires follow-up analysis for important decisions
-- Not suitable when time is actually available
-
-**Negotiated Decision Framework (NDF)**:
-- Requires multiple genuine stakeholders
-- Time-intensive (relationship building takes time)
-- May produce suboptimal technical solutions for political acceptance
-- Doesn't help when one party has absolute authority
-
----
-
-## Quick Selection Guide
-
-```
-"I need to find the BEST option among known choices"
-  → Tree of Thoughts
-
-"I need to explore ALL possible approaches"
-  → Breadth of Thought
-
-"I need to trace through a logical chain step by step"
-  → Self-Reflecting Chain
-
-"I need to find THE CAUSE of something"
-  → Hypothesis-Elimination
-
-"I need to VALIDATE a solution before committing"
-  → Adversarial Reasoning
-
-"I'm stuck between two valid but opposing approaches"
-  → Dialectical Reasoning
-
-"This problem is novel - no one has solved it in my domain"
-  → Analogical Transfer
-
-"I need to decide RIGHT NOW (minutes, not hours)"
-  → Rapid Triage Reasoning
-
-"Multiple stakeholders with competing interests must agree"
-  → Negotiated Decision Framework
-
-"I'm not sure which to use"
-  → Score the dimensions (Step 1)
-
---- Parallelism Quick-Reference ---
-
-"Top 2 patterns scored within 0.3"
-  → Run both in parallel, merge with "consensus" or "voting"
-
-"Need to explore many options fast"
-  → Use BoT with max_concurrent_branches: 8
-
-"Testing multiple hypotheses"
-  → HE with parallel evidence gathering
-
-"Need diverse perspectives on same problem"
-  → MoA pattern: parallel expert personas
-
-"Running parallel but need to merge"
-  → consensus (high-stakes) | voting (exclusive) | aggregation (additive) | best-of-n (speed)
-```
+Each pattern has blind spots that cap how far its confidence should be trusted. Read [references/pattern-limitations.md](references/pattern-limitations.md) when deciding how much weight a single pattern's conclusion deserves, or why two patterns disagree.
 
 ---
 
 ## Before delivering — mechanical leak scan
 
-Run a literal text search over the user-facing answer for: every pattern name and abbreviation in the table above (ToT, BoT, SRC, HE, AR, DR, AT, RTR, NDF and their full names), "affinity", "dimension score", "scoring the", "confidence aggregation", "checkpoint", "pattern". Every hit is rewritten as content or deleted; deliver only at zero unrewritten hits. A hypothesis list, a criteria matrix built from the question's own stated criteria, or a confidence statement about the answer itself ("~85% this is the cause") are content — they stay.
-
----
-
-## Example Application
-
-**Problem**: "Design our company's approach to AI governance"
-
-### Characteristic Scoring
-| Dimension | Score | Reasoning |
-|-----------|-------|-----------|
-| Sequential Dependencies | 2 | Not really step-by-step |
-| Criteria Clarity | 3 | Some criteria, but subjective |
-| Solution Space Known | 2 | Emerging field, options unclear |
-| Single Answer Needed | 4 | Need one policy |
-| Evidence Available | 2 | Few precedents to learn from |
-| Opposing Valid Views | 5 | Big tension: innovation vs caution |
-| Problem Novelty | 5 | Very new challenge |
-| Robustness Required | 4 | High stakes, need validation |
-| Solution Exists | 1 | No candidate solution yet |
-| Time Pressure | 2 | Strategic decision, not urgent |
-
-### Pattern Affinity Scores
-- ToT: (3×.35)+(4×.30)+(2×.20)+(1×.15) = 2.80
-- BoT: (4×.35)+(2×.30)+(3×.20)+(5×.15) = 3.35
-- SRC: (2×.45)+(3×.25)+(4×.20)+(1×.10) = 2.55
-- HE: (2×.40)+(4×.30)+(1×.20)+(1×.10) = 2.30
-- AR: **0** (SolutionExists=1 < 3, nothing to attack yet)
-- DR: (5×.50)+(3×.20)+(4×.15)+(4×.15) = 4.30
-- **AT: (5×.45)+(4×.30)+(4×.15)+(4×.10) = 4.45** ← Highest
-- RTR: (2×.50)+(4×.25)+(2×.15)+(1×.10) = 2.40
-
-### Recommendation
-**Primary**: Analogical Transfer (4.45) - Look at how other governance challenges were solved
-**Secondary**: Dialectical Reasoning (3.80) - Innovation vs caution tension needs synthesis
-
-**Orchestration**: AT → DR → AR
-1. Use AT to find analogous governance frameworks (environmental, financial, medical)
-2. Use DR to synthesize the innovation/caution tension
-3. Use AR to stress-test the proposed governance approach
-
+Run a literal text search over the user-facing answer for: every pattern name and shorthand in the table above (ToT, BoT, SRC, HE, AR, DR, AT, RTR, NDF and their full names), "affinity", "dimension score", "scoring the", "confidence aggregation", "checkpoint", "pattern". Every hit is rewritten as content or deleted; deliver only at zero unrewritten hits. A hypothesis list, a criteria matrix built from the question's own stated criteria, or a confidence statement about the answer itself ("~85% this is the cause") are content — they stay.

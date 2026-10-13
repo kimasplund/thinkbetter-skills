@@ -1,277 +1,78 @@
-# Handover Templates Reference
+# Handover Templates
 
-Quick-reference templates for pattern-to-pattern handovers.
+Filled-in examples of the hand-off record from SKILL.md for common pairs of reasoning skills. Each shows only the fields that matter most for that pair; the full template still applies.
 
-## Common Handover Scenarios
+## Contents
 
-### Scenario 1: BoT to ToT (Explore then Optimize)
+- [breadth-of-thought to tree-of-thoughts](#breadth-of-thought-to-tree-of-thoughts)
+- [tree-of-thoughts to adversarial-reasoning](#tree-of-thoughts-to-adversarial-reasoning)
+- [hypothesis-elimination to tree-of-thoughts](#hypothesis-elimination-to-tree-of-thoughts)
+- [self-reflecting-chain to hypothesis-elimination](#self-reflecting-chain-to-hypothesis-elimination)
+- [adversarial-reasoning to hypothesis-elimination](#adversarial-reasoning-to-hypothesis-elimination)
+- [Which pattern hands off well to which](#which-pattern-hands-off-well-to-which)
+- [Common mistakes](#common-mistakes)
 
-**When**: After broad exploration, need to find optimal solution among top candidates.
+## breadth-of-thought to tree-of-thoughts
 
-**BoT Prepares**:
-```json
-{
-  "deliverables": {
-    "type": "approaches",
-    "items": [
-      {"id": "approach-1", "name": "...", "confidence": 0.72},
-      {"id": "approach-2", "name": "...", "confidence": 0.78},
-      {"id": "approach-3", "name": "...", "confidence": 0.68}
-    ]
-  },
-  "recommendations": {
-    "focus_areas": ["Top 3 approaches need comparative evaluation"],
-    "evaluation_criteria": ["latency", "cost", "scalability"],
-    "avoid_areas": ["Pruned approaches had fatal blockers"]
-  }
-}
-```
+Explore, then optimize among the top candidates.
 
-**ToT Receives**:
-- Start at Step 1 with pre-defined approaches
-- Use BoT's retained approaches as Level 0 branches
-- Apply ToT evaluation criteria to score and rank
+- **Findings so far:** three retained approaches (A 72%, B 78%, C 68%), each with its main strength and risk.
+- **Ruled out:** the pruned approaches, each with its fatal blocker.
+- **Next:** tree-of-thoughts uses A, B and C as its first-level branches and scores them on the stated criteria (e.g. latency, cost, scalability).
 
----
+## tree-of-thoughts to adversarial-reasoning
 
-### Scenario 2: ToT to AR (Select then Validate)
+Select, then validate before committing.
 
-**When**: After finding optimal solution, need adversarial validation before implementation.
+- **Findings so far:** the winning path (e.g. JWT, RS256 signing, keys served from a key endpoint, secrets in a vault) and why it won.
+- **Assumptions:** the ones the winner depends on (e.g. vault availability above 99.9%, internal network latency under 10 ms). These are the attack targets.
+- **Ruled out:** alternative architectures already evaluated; do not re-open them.
+- **Next:** adversarial-reasoning attacks the security boundaries, failure modes and edge cases of the winner.
 
-**ToT Prepares**:
-```json
-{
-  "deliverables": {
-    "type": "winning_solution",
-    "items": [
-      {
-        "path": "L0:JWT > L1:RS256 > L2:JWKS > L3:Vault",
-        "score": 91,
-        "confidence": 0.88
-      }
-    ]
-  },
-  "recommendations": {
-    "focus_areas": ["Security boundaries", "Failure modes", "Edge cases"],
-    "key_assumptions": ["Vault availability > 99.9%", "Network latency < 10ms"],
-    "avoid_areas": ["Alternative architectures - already evaluated"]
-  }
-}
-```
+## hypothesis-elimination to tree-of-thoughts
 
-**AR Receives**:
-- Clear target specification from ToT winning path
-- Key assumptions to challenge
-- Pre-identified concerns to investigate
+Diagnose, then choose a fix.
 
----
+- **Findings so far:** confirmed cause (e.g. payment gateway p99 latency rose from 50 ms to 800 ms) with the evidence that discriminated it from the other hypotheses.
+- **Constraints:** limits discovered during diagnosis (e.g. the vendor cannot be changed).
+- **Open questions:** acceptable latency degradation; budget for extra infrastructure.
+- **Next:** tree-of-thoughts treats "mitigate external API latency" as the problem and generates fix options as its first-level branches.
 
-### Scenario 3: HE to ToT (Diagnose then Fix)
+## self-reflecting-chain to hypothesis-elimination
 
-**When**: After identifying root cause, need to evaluate fix options.
+A step-by-step trace hit a dead end.
 
-**HE Prepares**:
-```json
-{
-  "deliverables": {
-    "type": "root_cause",
-    "items": [
-      {
-        "hypothesis": "H3",
-        "name": "External API timeout",
-        "confidence": 0.85,
-        "mechanism": "Payment gateway P99 increased from 50ms to 800ms"
-      }
-    ]
-  },
-  "recommendations": {
-    "focus_areas": ["Mitigation strategies for external API dependency"],
-    "constraint": "Cannot change payment gateway vendor (contract)",
-    "open_questions": ["Acceptable latency degradation?", "Budget for additional infra?"]
-  }
-}
-```
+- **Findings so far:** the steps that held (e.g. event handler found, it calls the form validator) and the step where backtracking failed (validation logic unclear, confidence down to ~35%).
+- **Ruled out:** the parts of the chain known to be correct, so the search can narrow.
+- **Next:** hypothesis-elimination starts from seeds around the failure point (validation passes incorrectly, throws silently, races).
 
-**ToT Receives**:
-- Problem now well-defined: "How to mitigate external API latency"
-- Constraints from HE investigation
-- Can generate fix approaches as Level 0 branches
+## adversarial-reasoning to hypothesis-elimination
 
----
+An attack succeeded; find how the weakness got in.
 
-### Scenario 4: SRC to HE (Trace hits dead end)
+- **Findings so far:** the working attack (e.g. JWT algorithm confusion, switching RS256 to HS256 and signing with the public key) and its impact.
+- **Open questions:** was algorithm validation ever present, and when did it go?
+- **Next:** hypothesis-elimination tests seeds such as "never implemented", "removed in a refactor", "library upgrade changed the default", "configuration override".
 
-**When**: Sequential trace backtracked too many times, need hypothesis-based approach.
+## Which pattern hands off well to which
 
-**SRC Prepares**:
-```json
-{
-  "deliverables": {
-    "type": "partial_trace",
-    "items": [
-      {"step": 1, "result": "Event handler found", "confidence": 0.92},
-      {"step": 2, "result": "Calls validateForm()", "confidence": 0.88},
-      {"step": 3, "result": "BACKTRACK - logic unclear", "confidence": 0.35}
-    ]
-  },
-  "recommendations": {
-    "focus_areas": ["Validation logic is the uncertainty point"],
-    "known_good": ["Event handler routing is correct", "Form submission triggers handler"],
-    "hypothesis_seeds": [
-      "Validation passes incorrectly",
-      "Validation throws silently",
-      "Race condition in validation"
-    ]
-  }
-}
-```
+| From | Best hand-off to | Why |
+|------|------------------|-----|
+| breadth-of-thought | tree-of-thoughts, hypothesis-elimination | Exploration done; optimize or diagnose |
+| tree-of-thoughts | adversarial-reasoning, self-reflecting-chain | Winner found; validate it or trace its implementation |
+| hypothesis-elimination | tree-of-thoughts, self-reflecting-chain | Cause found; choose a fix or trace the mechanism |
+| self-reflecting-chain | hypothesis-elimination, tree-of-thoughts | Trace done or stuck; test hypotheses or compare branches |
+| adversarial-reasoning | hypothesis-elimination, tree-of-thoughts | Attack found; trace its origin or evaluate fixes |
+| dialectical-reasoning | tree-of-thoughts, negotiated-decision-framework | Synthesis reached; optimize it or align stakeholders |
+| analogical-transfer | breadth-of-thought, tree-of-thoughts | Analogy found; explore adaptations or pick the best |
+| rapid-triage-reasoning | hypothesis-elimination, tree-of-thoughts | Situation stable; find the root cause or revisit the decision |
+| negotiated-decision-framework | tree-of-thoughts, dialectical-reasoning | Stakeholders aligned; optimize or resolve leftover tension |
 
-**HE Receives**:
-- Partial trace narrows hypothesis space
-- Step 3 failure suggests validation-related hypotheses
-- Can generate targeted hypotheses around validation
+Every hand-off still obeys the cycle rule in SKILL.md: no pattern twice in one chain, at most 5 patterns.
 
----
+## Common mistakes
 
-### Scenario 5: AR to HE (Attack succeeds, find vulnerability source)
-
-**When**: Adversarial attack succeeded, need to find how vulnerability was introduced.
-
-**AR Prepares**:
-```json
-{
-  "deliverables": {
-    "type": "successful_attack",
-    "items": [
-      {
-        "attack": "ATK-001",
-        "name": "JWT algorithm confusion",
-        "impact": 5,
-        "exploit_path": "Change alg RS256->HS256, sign with public key"
-      }
-    ]
-  },
-  "recommendations": {
-    "focus_areas": ["When was algorithm validation removed?", "Was it ever present?"],
-    "investigation_scope": ["JWT middleware", "Auth library version", "Recent changes"],
-    "hypothesis_seeds": [
-      "Algorithm validation never implemented",
-      "Removed during refactoring",
-      "Library upgrade changed behavior",
-      "Configuration override disables validation"
-    ]
-  }
-}
-```
-
-**HE Receives**:
-- Specific vulnerability to trace
-- Pre-seeded hypotheses from AR attack analysis
-- Clear success criteria: find when/how vulnerability was introduced
-
----
-
-## Handover Confidence Adjustments
-
-### Confidence Transfer Rules
-
-| Scenario | Adjustment | Rationale |
-|----------|------------|-----------|
-| Scope narrowing (BoT to ToT) | -5% | Information loss from pruning |
-| Scope expansion (HE to BoT) | -10% | Moving from focused to broad |
-| Same scope (ToT to AR) | -3% | Information transfer loss |
-| Parallel merge (agreement) | +5% | Independent validation |
-| Parallel merge (disagreement) | -10% | Uncertainty revealed |
-| Long session (>2 hours) | -5% | Cognitive fatigue assumption |
-| Multiple backtracks (SRC) | -10% | Uncertainty in chain |
-
-### Confidence Floor
-
-Never transfer confidence below 0.40. If calculated transfer drops below 0.40:
-1. Document why confidence is low
-2. Recommend re-exploration before continuing
-3. Consider decomposing problem into smaller parts
-
-### Confidence Ceiling
-
-Never transfer confidence above 0.90. Even with high-confidence results:
-1. Shared assumption discount (-5%) applies
-2. Unknown unknowns always exist
-3. Cap at 0.90 until real-world validation
-
----
-
-## Evidence Handover Checklist
-
-When handing off, ensure evidence includes:
-
-- [ ] **Source**: Where evidence came from (logs, metrics, code, external)
-- [ ] **Timestamp**: When evidence was gathered
-- [ ] **Summary**: One-sentence finding
-- [ ] **Impact**: Which hypotheses/branches affected
-- [ ] **File Path**: If evidence is a file, include path
-- [ ] **Reproducibility**: Can this evidence be re-gathered?
-
----
-
-## Quick Reference: Pattern Compatibilities
-
-| From Pattern | Best Handoff To | Rationale |
-|--------------|-----------------|-----------|
-| BoT | ToT, HE | Exploration complete, need optimization or diagnosis |
-| ToT | AR, SRC | Optimal solution found, need validation or implementation trace |
-| HE | ToT, SRC | Root cause found, need fix evaluation or trace verification |
-| SRC | HE, ToT | Trace complete or stuck, need hypothesis or branch evaluation |
-| AR | HE, ToT | Attack found, need vulnerability trace or fix evaluation |
-| DR | ToT, NDF | Synthesis achieved, need optimization or stakeholder alignment |
-| AT | BoT, ToT | Analogy found, need validation via exploration or optimization |
-| RTR | HE, ToT | Triage complete, need deep analysis or fix evaluation |
-| NDF | ToT, DR | Stakeholders aligned, need optimization or resolve remaining tensions |
-
----
-
-## Anti-Patterns to Avoid
-
-### 1. Handover Without State
-
-**Bad**:
-```json
-{
-  "message": "BoT found some good options, ToT should evaluate them"
-}
-```
-
-**Good**:
-```json
-{
-  "deliverables": {
-    "type": "approaches",
-    "items": [/* full approach data */]
-  },
-  "confidence_transfer": {/* proper calculation */}
-}
-```
-
-### 2. Losing Evidence Chain
-
-**Bad**: Starting ToT with just approach names, losing BoT's analysis.
-
-**Good**: Include full exploration data, evidence references, and pruning rationale.
-
-### 3. Confidence Inflation
-
-**Bad**: Each pattern adds confidence, ending at 99%.
-
-**Good**: Use IR-v2 confidence aggregation rules with shared assumption discount.
-
-### 4. Handover Without Checkpoint
-
-**Bad**: Handover without creating checkpoint first.
-
-**Good**: Always checkpoint before handover to enable recovery if target pattern fails.
-
-### 5. Ignoring Pattern Recommendations
-
-**Bad**: ToT ignores BoT's "avoid_areas" and re-explores pruned approaches.
-
-**Good**: Trust previous pattern's conclusions unless new evidence emerges.
+- **Hand-off without state.** "Found some good options, evaluate them" forces the next pattern to start over. Pass the findings, evidence and rule-outs.
+- **Losing the evidence chain.** Passing option names without the reasons they survived lets weak options back in.
+- **Confidence inflation.** Each pattern nudging confidence up until it reads 99%. A hand-off never raises confidence; only independent agreement does, capped at 95%.
+- **Ignoring rule-outs.** The receiving pattern re-explores what the previous one pruned. Trust earlier conclusions unless new evidence appears.
