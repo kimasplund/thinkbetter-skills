@@ -5,7 +5,8 @@ Usage: validate_skills.py [--repo PATH]
 
 Skill checks (skills/<dir>/SKILL.md): frontmatter parses; name is spec-valid and equals
 <dir>; description is 1-1024 chars; metadata maps strings to strings and carries a semver
-metadata.version; every Markdown link into references/, scripts/ or assets/ resolves.
+metadata.version; every Markdown link into references/, scripts/ or assets/ resolves;
+no hard-coded ~/.claude/skills/ install path in the body.
 
 Privacy checks (every `git ls-files` path): no /home/<user>/ paths, no email address other
 than noreply@anthropic.com, nothing from the optional local .privacy-denylist (one
@@ -27,6 +28,7 @@ LINK_RE = re.compile(r"\]\(((?:references|scripts|assets)/[^)#\s]+)")
 HOME_RE = re.compile(r"/home/[a-z_][a-z0-9_-]*/")
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}")
 EMAIL_ALLOW = {"noreply@anthropic.com"}
+INSTALL_PATH_RE = re.compile(r"~/\.claude/skills/")
 
 
 def parse_frontmatter(text: str) -> tuple[dict, str]:
@@ -68,6 +70,8 @@ def check_skill(skill_dir: Path) -> list[str]:
     if not isinstance(md, dict) or not SEMVER_RE.match(str(md.get("version", ""))):
         errors.append(tag + "metadata.version must be a semver string")
 
+    if INSTALL_PATH_RE.search(body):
+        errors.append(tag + "hard-coded install path ~/.claude/skills/ (breaks plugin, npx and claude.ai installs; use a relative link)")
     for target in LINK_RE.findall(body):
         if not (skill_dir / target).exists():
             errors.append(tag + f"broken link {target}")

@@ -382,7 +382,7 @@ After applying BoT methodology, verify:
 
 ## Reference Documentation
 
-**Detailed Templates**: `~/.claude/skills/breadth-of-thought/references/breadth-of-thought-patterns.md`
+**Detailed Templates**: [references/breadth-of-thought-advanced-patterns.md](references/breadth-of-thought-advanced-patterns.md)
 
 Includes:
 - Approach exploration template (deep-dive structure)

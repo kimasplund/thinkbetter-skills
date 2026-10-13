@@ -64,6 +64,11 @@ class CheckSkillTest(unittest.TestCase):
         d = make_skill(self.root, body="See [x](references/a.md#sec).\n", files={"references/a.md": "# A\n"})
         self.assertEqual(check_skill(d), [])
 
+    def test_install_path_reference_flagged(self):
+        d = make_skill(self.root, body="**Templates**: `~/.claude/skills/demo-skill/references/a.md`\n",
+                       files={"references/a.md": "# A\n"})
+        self.assertTrue(any("install path" in e for e in check_skill(d)))
+
     def test_prose_path_not_checked(self):
         d = make_skill(self.root, body="see `scripts/other.py` in another skill\n")
         self.assertEqual(check_skill(d), [])

@@ -322,7 +322,7 @@ After applying ToT methodology, verify:
 
 ## Reference Documentation
 
-**Detailed Templates**: `~/.claude/skills/tree-of-thoughts/references/tree-of-thoughts-patterns.md`
+**Detailed Templates**: [references/tree-of-thoughts-patterns.md](references/tree-of-thoughts-patterns.md)
 
 Includes:
 - Branch exploration template (detailed prompts)
