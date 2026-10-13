@@ -1,0 +1,34 @@
+{
+  "reports": {
+    "U5O": {"ceremony": ["## Contacts (names only, nothing new)"], "leaks": []},
+    "C8D": {"ceremony": [], "leaks": []},
+    "R6X": {"ceremony": [], "leaks": []},
+    "J0O": {"ceremony": [], "leaks": []},
+    "V2S": {"ceremony": [], "leaks": []},
+    "G3U": {"ceremony": [], "leaks": []},
+    "H5E": {"ceremony": [], "leaks": []},
+    "B8D": {"ceremony": [], "leaks": []},
+    "T5A": {"ceremony": [], "leaks": []},
+    "T4S": {"ceremony": [], "leaks": ["| Claim | Confidence | Why | (confidence rating table)"]},
+    "A5N": {"ceremony": [], "leaks": []},
+    "P2L": {"ceremony": [], "leaks": []},
+    "I8O": {"ceremony": [], "leaks": []},
+    "A0M": {"ceremony": [], "leaks": []},
+    "A6N": {"ceremony": [], "leaks": []},
+    "X4C": {"ceremony": [], "leaks": []},
+    "I5Q": {"ceremony": [], "leaks": []},
+    "R8Y": {"ceremony": [], "leaks": ["| Finding | Source | How much to trust it | (High/Medium rating table)"]},
+    "T1Z": {"ceremony": [], "leaks": []},
+    "I5G": {"ceremony": [], "leaks": []},
+    "K5J": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both recommend a two-map test then Nordlicht freeze-drying for the 151 owned maps, keep Kestrel rejected despite the discount, and hold the 61 Brekke maps pending written clause 7 consent."},
+    "P2": {"invariant": true, "why": "Both recommend Nordlicht for the owned 151 after a Pell-chosen two-map test, reject Kestrel despite 30% off, and route the Brekke 61 by the solicitor's consent answer (offsite, else air-dry or frozen)."}
+  },
+  "negative": {
+    "T1Z": {"ceremony": false},
+    "I5G": {"ceremony": false},
+    "K5J": {"ceremony": false}
+  }
+}

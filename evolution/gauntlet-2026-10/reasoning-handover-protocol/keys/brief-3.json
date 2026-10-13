@@ -1,0 +1,56 @@
+{
+  "I8O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A spray risks the programme... Do not trial it, even on a small section.",
+      "k2": "Calcium in the feed and leaf is already on target.",
+      "k3": "We never established why compartment 3 is so much higher.",
+      "k4": "If ordered now, they would arrive around week 52."
+    }
+  },
+  "A0M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "This rules out calcium chloride and also any foliar product",
+      "k2": "Calcium is already on target, and extra calcium nitrate pushes EC up further",
+      "k3": "Nobody found out why compartment 3 is a full point higher.",
+      "k4": "Ordering this week puts delivery around the end of December"
+    }
+  },
+  "A6N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "allows no foliar applications of any kind after first fruit set",
+      "k2": "Calcium is already on target and the leaf tissue is normal.",
+      "k3": "We have not yet explained why it is higher.",
+      "k4": "leaving only a few weeks before the crop ends in week 2"
+    }
+  },
+  "X4C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Do not use them, and do not use any other foliar product.",
+      "k2": "Do not do it unless a new test shows a calcium shortfall.",
+      "k3": "Treat the humidity-only story as our best guess and not as settled.",
+      "k4": "Do not order them as a rescue for this crop."
+    }
+  },
+  "I5Q": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "This is the usual BER rescue, but it is not available to us.",
+      "k2": "Don't revisit it unless new test results show a real calcium shortfall.",
+      "k3": "the EC gap is not explained anywhere in our notes.",
+      "k4": "could use up the remaining 114,000 m³ well before March."
+    }
+  },
+  "R8Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Do not use foliar products, even as a trial, without speaking to me first.",
+      "k2": "Calcium is not short, so more will not help",
+      "k3": "Nobody has shown that humidity rather than EC, or the two together, is the cause.",
+      "k4": "price the overage for compartment 3 alone"
+    }
+  }
+}

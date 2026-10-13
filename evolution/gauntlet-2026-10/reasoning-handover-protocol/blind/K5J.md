@@ -1,0 +1,1 @@
+-20 °C (-4 °F) or colder; a standard chest freezer at that temperature halts mold growth and further water damage until you can dry the records properly.

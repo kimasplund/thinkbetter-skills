@@ -1,0 +1,177 @@
+[
+ {
+  "id": "brief-1--t3--r1",
+  "prompt": "jobs/exec/brief-1--t3--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--t3--r2",
+  "prompt": "jobs/exec/brief-1--t3--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--a0--r1",
+  "prompt": "jobs/exec/brief-1--a0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--a0--r2",
+  "prompt": "jobs/exec/brief-1--a0--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--n8--r1",
+  "prompt": "jobs/exec/brief-1--n8--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-1--n8--r2",
+  "prompt": "jobs/exec/brief-1--n8--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--t3--r1",
+  "prompt": "jobs/exec/brief-2--t3--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--t3--r2",
+  "prompt": "jobs/exec/brief-2--t3--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--a0--r1",
+  "prompt": "jobs/exec/brief-2--a0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--a0--r2",
+  "prompt": "jobs/exec/brief-2--a0--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--n8--r1",
+  "prompt": "jobs/exec/brief-2--n8--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-2--n8--r2",
+  "prompt": "jobs/exec/brief-2--n8--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--t3--r1",
+  "prompt": "jobs/exec/brief-3--t3--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--t3--r2",
+  "prompt": "jobs/exec/brief-3--t3--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--a0--r1",
+  "prompt": "jobs/exec/brief-3--a0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--a0--r2",
+  "prompt": "jobs/exec/brief-3--a0--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--n8--r1",
+  "prompt": "jobs/exec/brief-3--n8--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "brief-3--n8--r2",
+  "prompt": "jobs/exec/brief-3--n8--r2.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "framing-hype--t3--r1",
+  "prompt": "jobs/exec/framing-hype--t3--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "framing-hype--a0--r1",
+  "prompt": "jobs/exec/framing-hype--a0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "framing-skeptical--t3--r1",
+  "prompt": "jobs/exec/framing-skeptical--t3--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "framing-skeptical--a0--r1",
+  "prompt": "jobs/exec/framing-skeptical--a0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "negative--t3--r1",
+  "prompt": "jobs/exec/negative--t3--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "negative--a0--r1",
+  "prompt": "jobs/exec/negative--a0--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ },
+ {
+  "id": "negative--n8--r1",
+  "prompt": "jobs/exec/negative--n8--r1.md",
+  "model": "sonnet",
+  "effort": "medium",
+  "agent": "gauntlet-worker"
+ }
+]

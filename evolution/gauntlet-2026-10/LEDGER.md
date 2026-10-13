@@ -5,7 +5,7 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | # | skill | state | validation | rewrite | commit | subagent tokens |
 |---|---|---|---|---|---|---|
 | 1 | hypothesis-elimination | applied | NOT VALIDATED | - |  | 1.15M (+0.61M pilot 1) |
-| 2 | reasoning-handover-protocol | pending | | | | |
+| 2 | reasoning-handover-protocol | applied | NOT VALIDATED | REVERT |  | 0.94M |
 | 3 | integrated-reasoning | pending | | | | |
 | 4 | tree-of-thoughts | pending | | | | |
 | 5 | breadth-of-thought | pending | | | | |
