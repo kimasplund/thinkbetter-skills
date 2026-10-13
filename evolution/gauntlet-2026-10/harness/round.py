@@ -471,6 +471,90 @@ def score(skill: str, extended: bool = False) -> dict:
     return verdict
 
 
+# ---------------------------------------------------------------- apply / status
+
+VALIDATION_TEXT = {"VALIDATED": "validated", "NOT VALIDATED": "not validated", "VOID": "void (re-run)"}
+
+
+def mark(skill: str, state: str) -> None:
+    set_state(skill, state)
+
+
+def status() -> str:
+    lines, idx = _rows()
+    nxt = next((c[1] for c in ([x.strip() for x in lines[i].strip("|").split("|")] for i in idx)
+                if c[2] != "applied"), None)
+    table = "\n".join(lines[i] for i in [idx[0] - 2, idx[0] - 1] + idx) if idx else ""
+    return table + f"\n\nnext: {nxt or 'none (program complete)'}"
+
+
+def _revert(skill: str) -> None:
+    """Make skills/<skill> exactly its v1.0.0 files, keeping the current frontmatter, patch-bumped."""
+    import re
+    sd = repo() / "skills" / skill
+    current = (sd / "SKILL.md").read_text()
+    fm_text = current[:current.find("\n---", 4) + 4]
+
+    def bump(m):
+        major, minor, patch = (int(x) for x in m.group(2).split("."))
+        return f"{m.group(1)}{major}.{minor}.{patch + 1}{m.group(3)}"
+    fm_text, n = re.subn(r'(\n  version: ")(\d+\.\d+\.\d+)(")', bump, fm_text, count=1)
+    if n != 1:
+        sys.exit(f"{skill}: cannot find metadata.version in frontmatter")
+    old = subprocess.run(["git", "-C", str(repo()), "show", f"v1.0.0:skills/{skill}/SKILL.md"],
+                         capture_output=True, text=True, check=True).stdout
+    old_body = old[old.find("\n---", 4) + 4:]
+    for p in sorted(sd.rglob("*"), reverse=True):
+        if p.is_file():
+            p.unlink()
+        elif p.is_dir():
+            p.rmdir()
+    _extract("v1.0.0", skill, sd)
+    (sd / "SKILL.md").write_text(fm_text + old_body)
+
+
+def apply(skill: str) -> dict:
+    rd = round_dir(skill)
+    v = _load(rd, "verdict.json")
+    val = v["validation"]["verdict"]
+    rew = v["rewrite"]["verdict"] if v.get("rewrite") else None
+    if "INCONCLUSIVE" in (val, rew):
+        sys.exit(f"{skill}: verdict is INCONCLUSIVE; run the extension (round.py extend) and score --extended first")
+    reverted = rew == "REVERT"
+    if reverted:
+        _revert(skill)
+        check = subprocess.run([sys.executable, str(HERE.parent.parent.parent / "scripts" / "validate_skills.py"),
+                                "--repo", str(repo())], capture_output=True, text=True)
+        if check.returncode != 0:
+            sys.exit(f"{skill}: revert left the repo invalid:\n{check.stdout}")
+    status_text = f"Gauntlet 2026-10: {VALIDATION_TEXT[val]}"
+    if rew:
+        status_text += "; rewrite kept" if rew == "KEEP" else "; rewrite reverted"
+    status_text += f" ([scorecard](evolution/gauntlet-2026-10/{skill}/scorecard.md))"
+    readme = repo() / "README.md"
+    lines = readme.read_text().split("\n")
+    for i, l in enumerate(lines):
+        if l.startswith(f"| [{skill}](skills/{skill}/) |"):
+            cells = l.split(" | ")
+            cells[-1] = status_text + " |"
+            lines[i] = " | ".join(cells)
+    readme.write_text("\n".join(lines))
+    arms = v.get("arms", {})
+    note = [f"# Research note: {skill}", "",
+            f"- Validation (new vs none): **{val}**" + (f"; rewrite (new vs old): **{rew}**" if rew else ""),
+            f"- Agreement {v.get('agreement')}, freeze {'OK' if v.get('freeze_ok') else 'FAILED'}, "
+            f"extended {v.get('extended')}"]
+    for a, s in arms.items():
+        note.append(f"- {a}: value {s.get('value_mean')} (spread {s.get('value_spread')}), keys {s.get('key_rate')}, "
+                    f"ceremony {s.get('ceremony')}, leaks {s.get('leaks')}, negative "
+                    f"{'ok' if s.get('negative_ok') else 'FAIL'}, framing {s.get('framing_ok')}")
+    note += ["", "## Autopsy", "", "(The coordinator writes 3 to 5 lines here from scorecard.md: what drove the verdict, "
+             "design vs compliance, anything not chased.)", ""]
+    (rd / "research-note.md").write_text("\n".join(note))
+    set_state(skill, "applied", validation=val, rewrite=rew or "-")
+    return {"readme": status_text, "reverted": reverted}
+
+
 # ---------------------------------------------------------------- CLI
 
 def main(argv=None) -> int:
@@ -484,6 +568,11 @@ def main(argv=None) -> int:
     s = sub.add_parser("score")
     s.add_argument("skill")
     s.add_argument("--extended", action="store_true")
+    sub.add_parser("apply").add_argument("skill")
+    m = sub.add_parser("mark")
+    m.add_argument("skill")
+    m.add_argument("state", choices=STATES)
+    sub.add_parser("status")
     args = ap.parse_args(argv)
     if args.cmd == "build":
         res = build(args.skill)
@@ -497,6 +586,14 @@ def main(argv=None) -> int:
     elif args.cmd == "score":
         score(args.skill, extended=args.extended)
         print((round_dir(args.skill) / "scorecard.md").read_text())
+    elif args.cmd == "apply":
+        r = apply(args.skill)
+        print(f"{args.skill}: applied; README -> {r['readme']}; reverted: {r['reverted']}")
+    elif args.cmd == "mark":
+        mark(args.skill, args.state)
+        print(f"{args.skill}: state {args.state}")
+    elif args.cmd == "status":
+        print(status())
     return 0
 
 

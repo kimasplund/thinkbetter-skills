@@ -251,5 +251,57 @@ class ScoreTest(RenderBlindTest):
         self.assertAlmostEqual(gr.agreement(rows), 6 / 7)
 
 
+class ApplyTest(RoundFixture):
+    def setUp(self):
+        super().setUp()
+        (self.repo / "README.md").write_text(
+            "| Skill | Version | The move | Validation |\n|---|---|---|---|\n"
+            "| [demo-skill](skills/demo-skill/) | 1.1.0 | does a thing | Documented methodology |\n"
+            "| [demo-two](skills/demo-two/) | 1.1.0 | does another | Documented methodology |\n")
+        (self.repo / "skills" / "demo-skill" / "references").mkdir()
+        (self.repo / "skills" / "demo-skill" / "references" / "added-in-new.md").write_text("# new ref\n")
+
+    def verdict(self, skill, validation, rewrite=None, extended=False):
+        rd = gr.round_dir(skill)
+        (rd / "verdict.json").write_text(json.dumps({
+            "skill": skill, "validation": {"verdict": validation, "conditions": {}},
+            "rewrite": None if rewrite is None else {"verdict": rewrite, "conditions": {}},
+            "agreement": 0.9, "freeze_ok": True, "extended": extended, "arms": {}}))
+
+    def test_apply_updates_readme_cell(self):
+        self.verdict("demo-two", "VALIDATED")
+        gr.apply("demo-two")
+        row = [l for l in (self.repo / "README.md").read_text().splitlines() if "[demo-two]" in l][0]
+        self.assertIn("Gauntlet 2026-10: validated", row)
+        self.assertIn("evolution/gauntlet-2026-10/demo-two/scorecard.md", row)
+        self.assertEqual(gr.get_state("demo-two"), "applied")
+
+    def test_apply_revert_restores_body_keeps_frontmatter_and_bumps_patch(self):
+        self.verdict("demo-skill", "VALIDATED", rewrite="REVERT")
+        r = gr.apply("demo-skill")
+        self.assertTrue(r["reverted"])
+        text = (self.repo / "skills" / "demo-skill" / "SKILL.md").read_text()
+        self.assertIn("OLD BODY", text)
+        self.assertNotIn("NEW BODY", text)
+        self.assertIn("description: d2", text)
+        self.assertIn('version: "1.1.1"', text)
+        self.assertFalse((self.repo / "skills" / "demo-skill" / "references" / "added-in-new.md").exists())
+        row = [l for l in (self.repo / "README.md").read_text().splitlines() if "[demo-skill]" in l][0]
+        self.assertIn("rewrite reverted", row)
+
+    def test_apply_refuses_unextended_inconclusive(self):
+        self.verdict("demo-two", "INCONCLUSIVE")
+        with self.assertRaises(SystemExit):
+            gr.apply("demo-two")
+
+    def test_ledger_state_progression_and_status_next(self):
+        gr.mark("demo-skill", "designed")
+        self.assertEqual(gr.get_state("demo-skill"), "designed")
+        self.assertIn("next: demo-skill", gr.status())
+        self.verdict("demo-skill", "NOT VALIDATED", rewrite="KEEP")
+        gr.apply("demo-skill")
+        self.assertIn("next: demo-two", gr.status())
+
+
 if __name__ == "__main__":
     unittest.main()
