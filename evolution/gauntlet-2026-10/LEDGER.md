@@ -6,7 +6,7 @@ States: pending → designed → frozen → ran → blinded → judged → score
 |---|---|---|---|---|---|---|
 | 1 | hypothesis-elimination | applied | NOT VALIDATED | - |  | 1.15M (+0.61M pilot 1) |
 | 2 | reasoning-handover-protocol | applied | NOT VALIDATED | REVERT |  | 0.94M |
-| 3 | integrated-reasoning | pending | | | | |
+| 3 | integrated-reasoning | applied | NOT VALIDATED | REVERT |  | 0.96M |
 | 4 | tree-of-thoughts | pending | | | | |
 | 5 | breadth-of-thought | pending | | | | |
 | 6 | self-reflecting-chain | pending | | | | |

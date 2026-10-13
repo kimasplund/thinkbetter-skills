@@ -1,0 +1,56 @@
+{
+  "T4P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "I'd put roughly 80-85% on \"the new clay body no longer fits your satin white glaze.\"",
+      "k2": "Agree that Friday's deadline doesn't force a decision.",
+      "k3": "Decide on capacity separately, on its own numbers.",
+      "k4": "Fixing the crazing recovers about 7% of capacity"
+    }
+  },
+  "V6K": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Run a side-by-side test. Take the old-body clay... If only the new body crazes, that settles it.",
+      "k2": "an expired quote is not a deadline you control.",
+      "k3": "Kiln C only makes sense as a decision to enter a new product line",
+      "k4": "Once rejects are back near 2%, check how full the kiln is"
+    }
+  },
+  "N8J": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "None of the three kilns fixes a glaze that doesn't fit the clay.",
+      "k2": "A six-week lead time means Friday matters less than it looks.",
+      "k3": "C is a different business decision.",
+      "k4": "fixing the glaze fit may remove much of the capacity squeeze for free."
+    }
+  },
+  "I9X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A new kiln would not fix this.",
+      "k2": "Its six-week lead time and Friday expiry are a sales deadline.",
+      "k3": "This avoids picking a winner between your three positions.",
+      "k4": "Fix the rejects first and you may find you already have more room"
+    }
+  },
+  "B4J": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "a €15,000 to €22,000 purchase should not be justified as a crazing fix.",
+      "k2": "a lost quote is cheap compared with spending €18,400 on the wrong problem.",
+      "k3": "The three kilns, for the capacity question only",
+      "k4": "Fixing crazing could free up roughly 7% of output on its own"
+    }
+  },
+  "B9E": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you are likely to spend €15,000 to €22,000 and still have 9% rejects.",
+      "k2": "A 6-week lead time and a deadline are a sales tactic.",
+      "k3": "Kiln C is the answer to a different question",
+      "k4": "Once rejects are back near 2%, re-measure how many pieces a week you can actually produce"
+    }
+  }
+}

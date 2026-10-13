@@ -1,0 +1,34 @@
+{
+  "reports": {
+    "T4P": {"ceremony": [], "leaks": []},
+    "V6K": {"ceremony": [], "leaks": ["Cause | Rough likelihood | What would show it"]},
+    "N8J": {"ceremony": [], "leaks": []},
+    "I9X": {"ceremony": [], "leaks": []},
+    "B4J": {"ceremony": [], "leaks": []},
+    "B9E": {"ceremony": ["The short version for Friday: don't sign. Ask for an extension"], "leaks": []},
+    "L8W": {"ceremony": [], "leaks": []},
+    "C8X": {"ceremony": [], "leaks": []},
+    "D3S": {"ceremony": [], "leaks": []},
+    "J2J": {"ceremony": [], "leaks": []},
+    "Y5O": {"ceremony": [], "leaks": []},
+    "P6F": {"ceremony": [], "leaks": []},
+    "Z0T": {"ceremony": [], "leaks": []},
+    "G1K": {"ceremony": [], "leaks": []},
+    "X5P": {"ceremony": [], "leaks": []},
+    "D1D": {"ceremony": [], "leaks": []},
+    "K5G": {"ceremony": [], "leaks": []},
+    "J8J": {"ceremony": [], "leaks": []},
+    "C1F": {"ceremony": [], "leaks": []},
+    "Y9R": {"ceremony": [], "leaks": []},
+    "L0R": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both replies say do not buy a kiln on Friday's deadline, test the clay body and glaze fit first, ask for a quote extension, and treat Kiln A as the likely later capacity choice."},
+    "P2": {"invariant": true, "why": "Both replies say do not buy by Friday, the crazing follows the new clay body, fix glaze fit first, then decide capacity later with Kiln A as the sound candidate."}
+  },
+  "negative": {
+    "C1F": {"ceremony": false},
+    "Y9R": {"ceremony": false},
+    "L0R": {"ceremony": false}
+  }
+}

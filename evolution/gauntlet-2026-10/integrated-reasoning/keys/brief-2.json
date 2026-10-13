@@ -1,0 +1,32 @@
+{
+  "L8W": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "about 63.8 units turn up for 62 spaces",
+    "k2": "Each mislabelled campervan quietly adds a unit to the real load, on top of the 3-unit overbook",
+    "k3": "it's a business input, so it belongs to neither IT nor Odile alone",
+    "k4": "pushed the same demand onto fewer sailings... sell out to the full 65 far more often"}},
+  "C8X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "63.8 units turning up for 62 spaces",
+    "k2": "This is not a separate headache. It feeds the same problem",
+    "k3": "That's a revenue-management decision, so this one is yours to fix",
+    "k4": "Demand from the removed sailings moves onto the remaining ones"}},
+  "D3S": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "the engine is built to put about two units too many on the pier",
+    "k2": "push the real deck load past 62 even with zero no-shows",
+    "k3": "A small price compared with stranded passengers; but framed as IT right, Odile wrong",
+    "k4": "the same demand is squeezed into fewer sailings, so more of them sell to the limit"}},
+  "J2J": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "selling 65 leaves about 63.8 turning up on a full sailing",
+    "k2": "This is a plausible second cause, not a proven one, so I'd treat it as part of the same fix",
+    "k3": "Keeping that figure up to date is a revenue management job",
+    "k4": "More weekend sailings now sell out, and only sold-out sailings can overflow"}},
+  "Y5O": {"k1": "✓", "k2": "~", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "65 sold units give about 63.8 that turn up",
+    "k2": "The deckhands' complaint and your overflows may be the same issue seen from two sides",
+    "k3": "The cost is a few units of revenue on sold-out sailings, which is small",
+    "k4": "pushed the same demand into fewer sailings, so more of the remaining ones sell out"}},
+  "P6F": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "65 sold gives about 63.8 arriving, which is about 2 car-equivalents more than the deck holds",
+    "k2": "A second contributor to check: vehicle type",
+    "k3": "The parameter is a business decision, and it has gone stale",
+    "k4": "Dropping a Friday and a Saturday sailing pushed the same demand onto fewer sailings"}}
+}

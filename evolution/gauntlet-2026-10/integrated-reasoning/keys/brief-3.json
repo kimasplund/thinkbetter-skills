@@ -1,0 +1,56 @@
+{
+  "Z0T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Final ABV is known only after fermentation, around day 11... (day 51)",
+      "k2": "The registry only deals with packaged product, so there should be no label approval",
+      "k3": "FV4 has to restart by about day 18 to be safe, and day 21 at the very latest",
+      "k4": "File the amber label application this week... protects the 9-day buffer"
+    }
+  },
+  "G1K": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "Even if you could measure it at the end of primary (day 11), approval would land around day 46",
+      "k2": "On draft it is fine. The registry only handles packaged product",
+      "k3": "In FV4 (10 hl, free now) it is packaged around day 28, which leaves about three weeks of slack",
+      "k4": "Do both, in different formats... The latest possible submission is about day 9"
+    }
+  },
+  "X5P": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Saison in cans is not possible... 35 calendar days of approval and 5 days of printing",
+      "k2": "I'm assuming kegged beer for the festival taps isn't \"packaged product\"",
+      "k3": "The last safe brew date is about day 14 (kegged day 41)",
+      "k4": "Dov submits the amber label application within about 3-5 days (hard limit day 9)"
+    }
+  },
+  "D1D": {
+    "k1": "~", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "you only have after conditioning (about day 27). Then... approval lands around day 62",
+      "k2": "Marguerite's saison works on draft only.",
+      "k3": "In FV4 (free now), it would be ready around day 28-29, which leaves about three weeks of slack",
+      "k4": "Both, split by format... Lock the amber name and artwork and file the application"
+    }
+  },
+  "K5G": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "which puts approval around day 46... Then 5 days of can printing, which puts cans around day 51",
+      "k2": "Draft needs no registry approval, because the registry only deals with packaged product.",
+      "k3": "FV4 is the only route. It also holds 10 hl, and you pour about 5 hl",
+      "k4": "Past about day 9, it's gone... The one date to protect above all is the registry filing"
+    }
+  },
+  "J8J": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you can't apply until the beer is finished (about day 27)... lands near day 62",
+      "k2": "I'm reading \"the registry only deals with packaged product\" as meaning draft kegs don't need label approval",
+      "k3": "The latest safe brew day is around day 14 to 18",
+      "k4": "go/no-go date for the saison brew (this week), the label cutoff (about day 40)"
+    }
+  }
+}
