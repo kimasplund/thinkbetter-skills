@@ -3,7 +3,8 @@ You are designing a sealed evaluation pack for the skill "{skill}". Read {skill_
 Write these files into {pack}:
 
 - **brief-1.md, brief-2.md, brief-3.md:** three realistic user requests, each in a different fictional domain. Each should be hard enough that the skill ought to matter, meaning something a strong professional would find genuinely tricky. Write each in 120–300 words, as the user would write it, with the facts needed and no hints at the answer.
-- **Keys:** plant keys of this type in every brief: {key_type}. Plant 2–4 per brief. Every key must be checkable: a strong reply either catches it or doesn't.
+- **Keys:** plant keys of this type in every brief: {key_type}. Plant 3–4 per brief. Every key must be checkable: a strong reply either catches it or doesn't.
+- **Difficulty:** in every brief, at least two keys must be things a capable assistant answering quickly and without a careful method would plausibly miss. For example, the decisive evidence is easy to overlook, the most salient clue points the wrong way, or the key only becomes visible after something else is ruled out. A key that can be found by restating the most obvious clue is too easy. If every key is caught by every reasonable reply, the evaluation measures nothing.
 - **framing-hype.md and framing-skeptical.md:** the same facts as brief-1, rewritten once in an excited, hype register and once in a doubtful, skeptical register. Keep the same facts, numbers and keys.
 - **negative.md:** a task too small for this skill, such as a quick factual or one-step request in the same general area, where the right answer is short and direct.
 - **keys.json:** in this shape:

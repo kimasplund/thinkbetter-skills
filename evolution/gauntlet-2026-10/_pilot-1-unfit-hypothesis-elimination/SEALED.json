@@ -1,0 +1,24 @@
+{
+ "arms": {
+  "r8": "new",
+  "c8": "none"
+ },
+ "blind": {
+  "brief-1--r8--r1.md": "Z5V",
+  "brief-1--r8--r2.md": "X7W",
+  "brief-1--c8--r1.md": "R1W",
+  "brief-1--c8--r2.md": "P0Y",
+  "brief-2--r8--r1.md": "F2Q",
+  "brief-2--r8--r2.md": "W6Z",
+  "brief-2--c8--r1.md": "L1K",
+  "brief-2--c8--r2.md": "J5O",
+  "brief-3--r8--r1.md": "N2A",
+  "brief-3--r8--r2.md": "S6C",
+  "brief-3--c8--r1.md": "P9I",
+  "brief-3--c8--r2.md": "Y3E",
+  "framing-hype--r8--r1.md": "L0J",
+  "framing-skeptical--r8--r1.md": "Q6K",
+  "negative--r8--r1.md": "B9Q",
+  "negative--c8--r1.md": "M0C"
+ }
+}

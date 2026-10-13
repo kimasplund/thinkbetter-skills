@@ -35,7 +35,7 @@ Value dimensions: V1–V4. Guard dimensions: G1–G3.
 - **7:** exactly as long as the task needs. Every section earns its place.
 
 ## G2 Machinery leakage
-- **1:** names its method or framework, exposes internal scores or confidence arithmetic, or numbers the method's own stages.
+- **1:** names its method or framework, exposes internal scoring schemes or confidence arithmetic, or numbers the method's own stages. A plain statement of how confident the reply is belongs to G3 and is not leakage.
 - **3:** one or two traces of method machinery in the reply.
 - **5:** no visible machinery except an incidental phrase.
 - **7:** reads purely as content. The reader sees findings, never the procedure that produced them.

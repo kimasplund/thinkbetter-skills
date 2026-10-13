@@ -55,7 +55,7 @@ Otherwise the verdict is REVERT: the body returns to v1.0.0, and the 1.1.0 front
 - **Leak:** a leak hit is any of the following:
   - the name of a reasoning method, framework or skill (for example "tree of thoughts", "breadth-of-thought", "dialectical", "premortem", "hypothesis elimination");
   - an acronym for one;
-  - internal scoring or confidence arithmetic shown to the user;
+  - internal scoring schemes, rating tables or confidence arithmetic shown to the user (a plain statement of how confident the reply is, in words or a single figure, is calibration and is not a leak);
   - numbering of the method's own stages or phases.
 
   Headings about the user's content are not leaks.

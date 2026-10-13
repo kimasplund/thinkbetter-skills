@@ -1,0 +1,6 @@
+{
+"S6C": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Google auto-refunds purchases that aren't acknowledged within three days", "k2": "a rollback would leave conversion down and give up about $2", "k3": "Killing the onboarding flow would remove an experiment that shows no conversion effect"}},
+"Y3E": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "double charges, charges after cancelling, failed purchases, or \"I was charged and have no access\"", "k2": "If price were the driver, the unchanged markets should be flat.", "k3": "Both arms dropped together, so whatever happened hit everyone."}},
+"P9I": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Purchases aren't being acknowledged. Google automatically refunds subscriptions that aren't acknowledged within 3 days.", "k2": "a rollback costs margin and doesn't fix the problem", "k3": "It didn't cause this conversion drop, and killing the flow won't recover it."}},
+"N2A": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Google Play automatically refunds a subscription purchase that the app doesn't acknowledge within 3 days", "k2": "rolling back the price would cost you revenue and not fix conversion", "k3": "Killing the flow won't bring conversion back."}}
+}

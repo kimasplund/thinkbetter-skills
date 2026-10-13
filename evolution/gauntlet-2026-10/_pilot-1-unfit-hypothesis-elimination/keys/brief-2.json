@@ -1,0 +1,6 @@
+{
+  "L1K": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "most likely a valve that did not go back fully open", "k2": "Well 7's iron is 0.04 mg/L, and plant effluent manganese is unchanged", "k3": "complaints began September 5, before it started"}},
+  "J5O": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Count turns against the valve records. This is the highest-value check.", "k2": "Well 7's iron is 0.04 mg/L, so it cannot be the source", "k3": "Complaints started Sept 5. Flushing ran Sept 9 to 12, after the problem began."}},
+  "F2Q": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Inspect all four valves isolated on September 4. Confirm each is fully open", "k2": "Well 7 cannot supply the iron.", "k3": "The effect would have to come before its cause."}},
+  "W6Z": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Check all four valves used on Ardent Avenue. Confirm each one is fully open", "k2": "Taking Well 7 offline is not supported by the data", "k3": "Complaints began Sept 5, four days before flushing started on Sept 9."}}
+}

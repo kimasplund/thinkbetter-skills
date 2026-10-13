@@ -4,7 +4,7 @@ States: pending → designed → frozen → ran → blinded → judged → score
 
 | # | skill | state | validation | rewrite | commit | subagent tokens |
 |---|---|---|---|---|---|---|
-| 1 | hypothesis-elimination | pending | | | | |
+| 1 | hypothesis-elimination | scored | NOT VALIDATED | - |  |  |
 | 2 | reasoning-handover-protocol | pending | | | | |
 | 3 | integrated-reasoning | pending | | | | |
 | 4 | tree-of-thoughts | pending | | | | |
@@ -19,3 +19,8 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | 13 | negotiated-decision-framework | pending | | | | |
 | 14 | option-synthesis | pending | | | | |
 | 15 | skill-gauntlet | pending | | | | |
+
+## Amendments
+
+- **Amendment 1:** made before any round. See spec Amendment 1.
+- **Amendment 2:** pilot 1 found the harness unfit (keys at the ceiling; plain confidence statements counted as leaks). The designer prompt, leak rule and rubric G2 anchor were fixed before the pilot re-run. The record is in `_pilot-1-unfit-hypothesis-elimination/`, and that pilot used ~0.61M subagent tokens.

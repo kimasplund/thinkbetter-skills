@@ -1,0 +1,6 @@
+{
+  "Z5V": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "Your data points to the automatic cold crash on FV3 and FV4.", "k2": "Batch 2 was buttery on the old lot, L19.", "k3": "Pia was simply assigned FV3 or FV4 more often"}},
+  "X7W": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "The new density meters on FV3 and FV4 start the cold crash as soon as gravity reaches target.", "k2": "Dumping L22 and switching labs would cost about $1,800 and, on this evidence, probably wouldn't fix anything.", "k3": "Pia just ended up on FV3/FV4 more often."}},
+  "R1W": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "the two tanks with the inline density meters. They crashed after 9 to 10 days.", "k2": "Dumping L22 would not have prevented any of this.", "k3": "Tank is the real driver, and brewer is a coincidental overlap."}},
+  "P0Y": {"k1": "✓", "k2": "✓", "k3": "✓", "evidence": {"k1": "the most likely cause is the July 28 inline density meters on FV3 and FV4.", "k2": "Batch 2 was buttery on the old lot, L19.", "k3": "The brewer pattern is a side effect of which tank was used."}}
+}

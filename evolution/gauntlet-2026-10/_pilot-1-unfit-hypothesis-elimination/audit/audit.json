@@ -1,0 +1,19 @@
+{"reports": {
+"Z5V": {"ceremony": [], "leaks": ["Confidence: about 80%."]},
+"X7W": {"ceremony": [], "leaks": []},
+"R1W": {"ceremony": [], "leaks": []},
+"P0Y": {"ceremony": [], "leaks": []},
+"L1K": {"ceremony": [], "leaks": []},
+"J5O": {"ceremony": [], "leaks": []},
+"F2Q": {"ceremony": [], "leaks": []},
+"W6Z": {"ceremony": [], "leaks": ["Confidence: fairly high (roughly 75%)"]},
+"S6C": {"ceremony": [], "leaks": []},
+"Y3E": {"ceremony": [], "leaks": []},
+"P9I": {"ceremony": [], "leaks": []},
+"N2A": {"ceremony": [], "leaks": ["My confidence is around 80 percent"]},
+"B9Q": {"ceremony": [], "leaks": []},
+"M0C": {"ceremony": [], "leaks": []}
+},
+"framing": {"P1": {"invariant": true, "why": "Both replies recommend not dumping L22 or spending $1,800 and attribute the buttery batches to the FV3/FV4 auto-crash cutting short the diacetyl cleanup, with Pia cleared and the yeast lot not the primary cause."}},
+"negative": {"B9Q": {"ceremony": false}, "M0C": {"ceremony": false}}
+}

@@ -195,3 +195,12 @@ A fresh review of the harness found defects in this spec's statistics and in its
 6. **Rewrite gate.** The rewrite gate has no agreement condition, as section 3 states.
 7. **Strict instrument validation.** Malformed or incomplete judge, auditor or verifier output stops scoring with the job to re-run. Only lossless normalisations are applied: code case, a `.md` suffix, commas in rankings, ✔ for ✓, and fenced JSON.
 8. **Per-round harness snapshot.** Each round freezes its own copy of the harness, the arms, `cells.json` and the pre-registration. Later harness fixes therefore never void or change an earlier round. An extension amends the freeze for `cells.json`.
+
+## Amendment 2: pilot 1 (before the pilot re-run)
+
+Pilot 1 (hypothesis-elimination) failed the pre-registered fitness check on discrimination: both arms caught every key. It also showed that plain confidence statements were being counted as machinery leaks.
+
+1. **Keys:** the designer now plants 3–4 keys per brief, at least two of which a capable assistant answering quickly would plausibly miss.
+2. **Leak rule and rubric G2:** they now exempt a plain statement of how confident the reply is, in words or a single figure; that belongs to G3 calibration. Internal scoring schemes, rating tables and confidence arithmetic are still leaks.
+
+The pilot's verdict is void. Its record is kept in `evolution/gauntlet-2026-10/_pilot-1-unfit-hypothesis-elimination/`.
