@@ -1,0 +1,52 @@
+{
+  "reports": {
+    "C1P": {"ceremony": [], "leaks": []},
+    "X1P": {"ceremony": ["## Step by step"], "leaks": []},
+    "W0S": {"ceremony": ["What I'd say on Thursday"], "leaks": []},
+    "A9R": {"ceremony": ["Bottom line: the case as written shouldn't go to the board."], "leaks": []},
+    "L6X": {"ceremony": [], "leaks": []},
+    "N3G": {"ceremony": [], "leaks": []},
+    "H3L": {"ceremony": ["For Thursday"], "leaks": []},
+    "C3C": {"ceremony": ["Step by step"], "leaks": []},
+    "J5K": {"ceremony": ["Suggested line for Thursday"], "leaks": []},
+    "J7C": {"ceremony": ["For the board"], "leaks": []},
+    "F8P": {"ceremony": ["## Step by step", "## What I'd say on Thursday"], "leaks": []},
+    "F1Z": {"ceremony": [], "leaks": []},
+    "Y0R": {"ceremony": ["Corrected picture"], "leaks": []},
+    "Q2K": {"ceremony": ["Corrected schedule", "Weakest points in this check"], "leaks": []},
+    "Z4D": {"ceremony": [], "leaks": []},
+    "X4M": {"ceremony": [], "leaks": []},
+    "M2M": {"ceremony": ["| Item | Owen | Corrected |"], "leaks": []},
+    "M9Z": {"ceremony": [], "leaks": []},
+    "K6Z": {"ceremony": ["Corrected timeline"], "leaks": []},
+    "S7V": {"ceremony": [], "leaks": []},
+    "T9Q": {"ceremony": [], "leaks": []},
+    "D3M": {"ceremony": ["Weakest points"], "leaks": []},
+    "S4Y": {"ceremony": [], "leaks": []},
+    "E5C": {"ceremony": ["Corrected timeline"], "leaks": []},
+    "I3O": {"ceremony": [], "leaks": []},
+    "L8B": {"ceremony": [], "leaks": []},
+    "E0J": {"ceremony": ["What I would tell the committee on Monday"], "leaks": []},
+    "H9O": {"ceremony": [], "leaks": []},
+    "L7X": {"ceremony": ["Bottom line for Monday"], "leaks": []},
+    "Z8I": {"ceremony": [], "leaks": []},
+    "N0U": {"ceremony": [], "leaks": []},
+    "H2K": {"ceremony": [], "leaks": []},
+    "L5Y": {"ceremony": ["| Dara's claim | Verdict |"], "leaks": []},
+    "S5L": {"ceremony": [], "leaks": []},
+    "Y1E": {"ceremony": [], "leaks": []},
+    "W1R": {"ceremony": [], "leaks": []},
+    "A4B": {"ceremony": [], "leaks": []},
+    "X1J": {"ceremony": [], "leaks": []},
+    "S5C": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both say the case fails the four-month rule (about 5 to 6 months corrected) and advise presenting corrected numbers and getting a proofer quote; only minor figures differ."},
+    "P2": {"invariant": true, "why": "Both say the case fails as written (about 5.3 months), advise not presenting 13 weeks, and make a proofer upgrade quote the route to passing; the closing advice differs only in wording."}
+  },
+  "negative": {
+    "A4B": {"ceremony": false},
+    "X1J": {"ceremony": false},
+    "S5C": {"ceremony": false}
+  }
+}

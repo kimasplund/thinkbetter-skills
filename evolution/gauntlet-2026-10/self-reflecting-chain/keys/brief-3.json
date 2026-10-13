@@ -1,0 +1,62 @@
+{
+"I3O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "lowest scorers tend to move back toward the middle on a retest, whatever is done",
+ "k2": "(180 x 82 - 30 x 74) / 150 = 83.6 ... gain is 10.4, not 12",
+ "k3": "Equating exists to remove exactly this difficulty difference",
+ "k4": "second 15% are higher scorers, so they have less room to rebound"}},
+"L8B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Pupils selected for low scores tend to rise anyway, partly through statistical bounce-back",
+ "k2": "finishers' September average was (180 x 82 - 30 x 74) / 150 = 83.6",
+ "k3": "Equating exists to remove exactly this difficulty difference",
+ "k4": "The second 15% scored higher in September, so they have less room to bounce back"}},
+"E0J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "usual bounce-back when you select the lowest scorers on one sitting",
+ "k2": "Their like-for-like gain is 94 - 83.6 = 10.4, not 12",
+ "k3": "Adding a further allowance for the harder form double-counts the adjustment",
+ "k4": "score higher, have less room to gain, and are less likely to bounce back"}},
+"H9O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "lowest scorers in September tend to score higher on any retest, whatever is done",
+ "k2": "like-for-like gain is 94 - 83.6 = 10.4 points, not 12",
+ "k3": "equating exists to remove differences in form difficulty. Adding a further allowance double-counts",
+ "k4": "They have less room to gain and less bounce-back to absorb"}},
+"L7X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Part of that is regression to the mean, because very low scores tend to drift up",
+ "k2": "The like-for-like gain for the finishers is 94 - 83.6 = 10.4 points, not 12",
+ "k3": "Equating exists to adjust for form difficulty, so the harder questions should already be accounted for",
+ "k4": "start higher, so they have less room to improve and less regression-to-the-mean effect"}},
+"Z8I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "some of a very low score is bad luck on the day",
+ "k2": "like-for-like basis the finishers' gain is 94 - 83.6 = 10.4 points, not 12",
+ "k3": "Equating exists to remove the difficulty difference between forms ... counting the same correction twice",
+ "k4": "extra 15% are higher scorers, so they have less room to improve"}},
+"N0U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "tend to gain more anyway, partly because of regression to the mean",
+ "k2": "The like-for-like gain is 94 - 83.6 = 10.4, not 12",
+ "k3": "a Form B score is already adjusted. Adding a further correction counts it twice",
+ "k4": "Pupils scoring higher have less room to improve"}},
+"H2K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "very low scores are partly bad luck on the day and bounce back (regression to the mean)",
+ "k2": "The like-for-like gain is 94 - 83.6 = 10.4, not 12",
+ "k3": "adding more on top double counts",
+ "k4": "less room to gain, and less regression-to-the-mean effect to confuse things"}},
+"L5Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Low scorers on a single test tend to bounce back somewhat on retest",
+ "k2": "Their actual gain is 94 - 83.6 = 10.4 points, not 12",
+ "k3": "the purpose of equating is to adjust for form difficulty. Adjusting again would double count",
+ "k4": "pupils would need to gain about 6.7 points above their normal growth"}},
+"S5L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Low scorers tend to rise on retest anyway ... (regression to the mean)",
+ "k2": "like-for-like gain is 94 - 83.6 = 10.4 points, not 12",
+ "k3": "Equating exists to remove the difficulty difference between forms. Adding a further credit double-counts",
+ "k4": "higher scorers, with less room to improve and less regression-to-the-mean effect"}},
+"Y1E": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "some of their low September scores were bad days ... gained 8 points by June",
+ "k2": "The like-for-like gain is 94 - 83.6 = 10.4 points, not 12",
+ "k3": "Adding a further credit for difficulty would count it twice",
+ "k4": "Pupils ranked 181 to 360 score higher, have less room to improve"}},
+"W1R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "some of them had an unlucky day ... The right baseline ... is about 8, not 3",
+ "k2": "Like for like, the finishers gained 94 - 83.6 = 10.4 points, not 12",
+ "k3": "Adding a further credit for the harder form double-counts it",
+ "k4": "They have less room to rebound and may have a different need for tutoring"}}
+}

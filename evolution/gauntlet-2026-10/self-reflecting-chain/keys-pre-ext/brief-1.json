@@ -1,0 +1,56 @@
+{
+  "W0S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Output is 9 × 60 = 540 loaves a day, not 648.",
+      "k2": "net price is €6.00 ÷ 1.10 = €5.45. Ingredients and packaging are €1.70, leaving about €3.75",
+      "k3": "energy is an extra cost of €10.80 a day, not a €7 saving.",
+      "k4": "interest of about €8,600, not €16,200."
+    }
+  },
+  "L6X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Real output: 60 × 9 = 540 loaves a day, up 108 (not 216).",
+      "k2": "€6.00 is revenue, not profit. It includes 10% VAT",
+      "k3": "Total energy goes up by €1.20 a load × 9 loads = €10.80 a day extra cost.",
+      "k4": "so interest is about €8,600, not €16,200."
+    }
+  },
+  "F8P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Realistic output is 60 x 9 = 540 a day, up 108 on today's 432.",
+      "k2": "Net revenue is €6.00 / 1.10 = €5.45 a loaf.",
+      "k3": "Energy spend goes up from €36 to €46.80 a day, a cost of about €10.80",
+      "k4": "total repayments about €62,600, and interest about €8,600, not €16,200."
+    }
+  },
+  "C1P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Real output is 60 x 9 = 540 loaves a day, not 648.",
+      "k2": "Net revenue is 6.00 / 1.10 = €5.45 per loaf.",
+      "k3": "That is an extra cost of €10.80 a day, not a €7 gain.",
+      "k4": "total repaid about €62,600, and interest about €8,600, not €16,200."
+    }
+  },
+  "H3L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "It does not cover the roughly 150 loaves a day you turn away. It covers 108",
+      "k2": "Net revenue is €6.00 / 1.10 = €5.45.",
+      "k3": "That is €10.80 a day more, not €7 saved.",
+      "k4": "Total repaid is about €62,600, so interest is about €8,600, not €16,200."
+    }
+  },
+  "F1Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "With the D9: 60 x 9 = 540 loaves/day, up 108, not 216.",
+      "k2": "Net revenue is 6.00 / 1.10 = €5.45.",
+      "k3": "It goes from 9 x €4.00 = €36 to 9 x €5.20 = €46.80 a day, so +€10.80 a day.",
+      "k4": "Total repaid is about €62,600, so interest is about €8,600, not €16,200."
+    }
+  }
+}

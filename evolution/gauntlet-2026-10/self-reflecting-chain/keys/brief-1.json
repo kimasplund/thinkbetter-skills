@@ -1,0 +1,62 @@
+{
+"C1P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Real output is 60 x 9 = 540 loaves a day, not 648.",
+ "k2": "Net revenue is 6.00 / 1.10 = €5.45 per loaf.",
+ "k3": "an extra cost of €10.80 a day, not a €7 gain",
+ "k4": "interest about €8,600, not €16,200."}},
+"X1P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "you can only bake 60 per load. That gives 60 × 9 = 540",
+ "k2": "the margin is €5.45 − €1.70 = €3.75 a loaf.",
+ "k3": "energy rises by €10.80 a day. Her case counts +€7",
+ "k4": "interest about €8,600, not €16,200."}},
+"W0S": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Output is 9 × 60 = 540 loaves a day, not 648.",
+ "k2": "the net price is €6.00 ÷ 1.10 = €5.45.",
+ "k3": "energy is an extra cost of €10.80 a day, not a €7 saving.",
+ "k4": "a total of about €62,600 and interest of about €8,600"}},
+"A9R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Realistic output is 60 x 9 = 540 a day, up 108",
+ "k2": "Net revenue is €6.00 / 1.10 = €5.45.",
+ "k3": "energy is an extra cost of about €10.80 a day, not a €7 saving",
+ "k4": "Interest is about €8,600, not €16,200."}},
+"L6X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Real output: 60 × 9 = 540 loaves a day, up 108",
+ "k2": "€6.00 ÷ 1.10 = €5.45 net... The contribution is about €3.75 a loaf.",
+ "k3": "€10.80 a day extra cost. It is a cost to subtract",
+ "k4": "total repaid about €62,600, so interest is about €8,600"}},
+"N3G": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "9 x 60 = 540 loaves a day... the gain is 108 loaves a day",
+ "k2": "Net price is 6.00 / 1.10 = €5.45.",
+ "k3": "That is €10.80 a day more.",
+ "k4": "interest is about €8,600, not €16,200."}},
+"H3L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Realistic output is 60 × 9 = 540 loaves a day, not 648.",
+ "k2": "Net revenue is €6.00 / 1.10 = €5.45.",
+ "k3": "That is €10.80 a day more, not €7 saved.",
+ "k4": "so interest is about €8,600, not €16,200."}},
+"C3C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Realistic output is 60 × 9 = 540 loaves a day, up 108",
+ "k2": "Margin before energy is about €3.75 a loaf, not €6.00.",
+ "k3": "9 loads go from €36.00 to €46.80 a day, which is €10.80 more.",
+ "k4": "total interest is about €8,600 (not €16,200)"}},
+"J5K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "60 x 9 = 540 loaves a day, which is +108, not +216.",
+ "k2": "so the contribution is about €3.75 a loaf.",
+ "k3": "That is a cost of about €10.80 a day, where she has a gain of €7.",
+ "k4": "Total interest is about €8,600, and the total repaid is about €62,600."}},
+"J7C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Output is 9 × 60 = 540 loaves a day, not 648.",
+ "k2": "Net of VAT... €5.45 − €1.70 = €3.75.",
+ "k3": "energy rises by 9 × €1.20 = €10.80 a day.",
+ "k4": "total with interest of roughly €8,700 (about €1,045 a month)"}},
+"F8P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Realistic output is 60 x 9 = 540 a day, up 108",
+ "k2": "That leaves a margin of about €3.75 a loaf.",
+ "k3": "a cost of about €10.80 a day, where Petra shows a €7 gain.",
+ "k4": "total repayments about €62,600, and interest about €8,600"}},
+"F1Z": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "With the D9: 60 x 9 = 540 loaves/day, up 108, not 216.",
+ "k2": "Margin is about €3.75 a loaf, before energy.",
+ "k3": "Total energy spend rises... so +€10.80 a day.",
+ "k4": "Total repaid is about €62,600, so interest is about €8,600"}}
+}

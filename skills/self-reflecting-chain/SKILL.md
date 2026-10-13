@@ -2,20 +2,22 @@
 name: self-reflecting-chain
 description: Works through a problem one dependent step at a time, reflecting on each step's validity and backtracking when a step fails. Use when order matters and each step builds on the last - tracing a known execution path, a proof or derivation, a causal chain, a plan where phase B needs phase A - or when the user says "walk me through it step by step", "check each step", "trace this through". Not for finding an unknown root cause among many candidates (use hypothesis-elimination), for choosing among options (use tree-of-thoughts or breadth-of-thought), or for steps that can run in any order.
 metadata:
-  version: "2.3.0"
+  version: "2.3.1"
 ---
+
+## Effort & Thinking Budget
+- **Recommended effort**: medium/high — step-by-step reasoning doesn't always need max depth per step
+- Include "ultrathink" only for steps with confidence below 70% that require deeper analysis
+- For time-constrained scenarios, use effort: medium with fewer backtracking iterations
+
+## Model Recommendation
+Best with Opus for maximum reasoning depth. Sonnet handles straightforward sequential chains well; reserve Opus for chains with complex dependencies or high-stakes backtracking decisions.
 
 # Self-Reflecting Chain Reasoning Methodology
 
-Works best with extended thinking for the hardest phases.
+**Purpose**: Sequential step-by-step reasoning with deep self-reflection at each step. Unlike parallel exploration (ToT/BoT), this follows a single logical chain, reflects on each step's validity, and backtracks when errors detected.
 
-## Backstage rule: the method never appears in the answer
-
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Self-Reflecting Chain", "SRC", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
-
-**Purpose**: Sequential step-by-step reasoning with deep self-reflection at each step. Unlike parallel exploration (tree-of-thoughts, breadth-of-thought), this follows a single logical chain, reflects on each step's validity, and backtracks when errors are detected.
-
-## When to Use This Method
+## When to Use Self-Reflecting Chain
 
 **✅ Use when:**
 - Steps have dependencies (Step N depends on Step N-1)
@@ -23,18 +25,18 @@ This methodology is scaffolding, not content. In the user-facing answer: no meth
 - Need to trace exact reasoning path
 - Error detection and correction critical
 - Sequential planning (Step A must complete before Step B)
-- Tracing a known execution path (follow one code path or data flow step by step). To find an unknown root cause among several candidates, use hypothesis-elimination instead
+- Debugging (trace bug through execution flow)
 
 **❌ Don't use when:**
-- Multiple independent solution paths exist → Use tree-of-thoughts or breadth-of-thought
-- Need to explore many options in parallel → Use breadth-of-thought
+- Multiple independent solution paths exist → Use ToT or BoT
+- Need to explore many options in parallel → Use BoT
 - Steps can execute in any order → Don't need sequential reasoning
 
 **Examples**:
-- "Trace this request through the handler, queue and worker step-by-step" ✅
+- "Debug this race condition by tracing execution step-by-step" ✅
 - "Prove this mathematical theorem" ✅
 - "Plan project where each phase depends on previous" ✅
-- "Choose between 5 architectures" (parallel problem - use breadth-of-thought) ❌
+- "Choose between 5 architectures" (parallel problem - use BoT) ❌
 
 ---
 
@@ -51,10 +53,10 @@ This methodology is scaffolding, not content. In the user-facing answer: no meth
 4. Number steps clearly (Step 1, 2, 3...)
 5. Identify dependencies between steps
 
-**Example** (tracing a known path):
+**Example** (Debugging):
 ```
 Start: System crashes when user clicks "Submit"
-Goal: Find where the traced path diverges from the expected one
+Goal: Identify root cause
 
 Steps:
 1. Trace user action to event handler
@@ -62,7 +64,7 @@ Steps:
 3. Trace data flow to backend
 4. Check backend validation logic
 5. Inspect database query execution
-6. Pin down the exact point of divergence
+6. Identify exact failure point
 ```
 
 ---
@@ -75,17 +77,20 @@ Steps:
 2. **State Result**: What did you learn/discover?
 3. **Self-Reflect**: Is this step correct?
 4. **Check Validity**: Does logic hold? Any assumptions?
-5. **Verify if you can**: If the step can be executed or checked (run the code, evaluate the arithmetic, read the file, query the config), do that before trusting it.
+5. **Empirical Verification**: If this step involves code, did you compile/run it?
 6. **Confidence**: How confident in this step (0-100%)?
 
-**Verify before you trust.** A step you reasoned out but could have checked is a guess. Models are fluent at producing plausible code, math and claims that are wrong, and a wrong step silently poisons every step after it. So when a check is available, run it and record the command and its output. Rate an unchecked step lower than a checked one, and rate it lower still when it is the kind that often fails in practice (code behaviour, off-by-one counts, library semantics). When a check is impossible, say so in the step's assumptions and let that lower the confidence honestly; the threshold below then tells you whether to proceed.
+**CRITICAL: Empirical Verification Requirement**
 
-**Confidence thresholds** (one rule, used everywhere below):
-- **70% or more**: proceed.
-- **60-69%**: do not proceed yet. Firm the step up first (run the check, test the assumption, re-derive it another way) and re-rate. Proceed only if it now reaches 70%; otherwise backtrack.
-- **Below 60%**: backtrack.
+For any step involving code, PoCs, or technical claims:
+- [ ] Code compiles/builds successfully
+- [ ] Code executes without errors (or crashes as expected)
+- [ ] Output demonstrates the claimed behavior
+- [ ] Commands and output documented
 
-**Step Template** (internal working, not for the answer):
+**Without empirical verification, confidence for this step: MAXIMUM 50%**
+
+**Step Template**:
 ```markdown
 ## Step [N]: [Action]
 
@@ -104,8 +109,8 @@ Steps:
 
 ### Decision
 - ✅ **Proceed** to Step [N+1] (confidence ≥70%)
-- ⚠️ **Firm up, then re-rate** (60-69%): proceed only if it reaches ≥70%
-- ❌ **Backtrack** to Step [N-X] (confidence <60%, or still <70% after firming up)
+- ⚠️ **Low Confidence** but proceeding (60-69%)
+- ❌ **Backtrack** to Step [N-X] (confidence <60%)
 ```
 
 ---
@@ -113,7 +118,7 @@ Steps:
 ### Step 3: Backtracking Protocol
 
 **Trigger backtracking when:**
-- Step confidence <60%, or still <70% after you tried to firm it up
+- Step confidence <60%
 - Logic error detected
 - Assumption proven false
 - Result contradicts known facts
@@ -170,9 +175,9 @@ Steps:
 4. **Alternative paths explored**: Document backtracks and why
 5. **Final answer**: Clear conclusion with reasoning trace
 
-**Synthesis Template** (internal working, not for the answer; the answer states the conclusion, the steps that carry it, and the weakest step in plain words, with numbers only if the user asked for them):
+**Synthesis Template**:
 ```markdown
-## Chain complete
+## Reasoning Chain Complete
 
 ### Complete Path
 1. [Step 1] → Result: [X] (Confidence: 85%)
@@ -181,15 +186,18 @@ Steps:
 4. [Step 4] → Result: [A] (Confidence: 88%)
 5. [Step 5] → Result: [B] (Confidence: 82%)
 
-### Chain confidence
-75%, set by Step 3, the weakest link
+### Overall Confidence
+**Minimum**: 75% (Step 3 was lowest)
+**Chain Confidence**: 75% (limited by weakest link)
 
 ### Backtracks
 - Backtracked from Step 4 to Step 2 (logic error)
 - Alternative path tried at Step 3 (failed, original was correct)
 
-### Conclusion
+### Final Conclusion
 [Answer based on complete reasoning chain]
+
+**Reasoning Trace**: Step 1 → Step 2 → Step 3 → Step 4 → Step 5 → Conclusion
 ```
 
 ---
@@ -209,7 +217,7 @@ Steps:
 ## Common Mistakes
 
 1. **Skipping Reflection**: Moving to next step without genuine self-reflection
-2. **Ignoring Low Confidence**: Proceeding when confidence is below 70%
+2. **Ignoring Low Confidence**: Proceeding when confidence <60%
 3. **Missing Dependencies**: Not checking if later steps depend on earlier ones
 4. **No Backtracking**: Never questioning previous steps when contradictions arise
 5. **False Confidence**: High confidence without justification
@@ -219,7 +227,7 @@ Steps:
 
 ## Sequential vs Parallel Decision Guide
 
-| Problem Type | Use self-reflecting-chain | Use tree-of-thoughts / breadth-of-thought |
+| Problem Type | Use Self-Reflecting Chain | Use ToT/BoT |
 |--------------|---------------------------|-------------|
 | Dependencies | Sequential steps | Independent paths |
 | Goal | Single logical conclusion | Explore options |
@@ -231,7 +239,7 @@ Steps:
 
 ## Summary
 
-This methodology gives you:
+Self-Reflecting Chain is systematic methodology for:
 1. **Sequential reasoning** (step-by-step)
 2. **Deep self-reflection** (confidence at each step)
 3. **Error detection** (validate logic continuously)
@@ -241,3 +249,7 @@ This methodology gives you:
 Use it when order matters, dependencies exist, and you need one correct answer with full reasoning trace.
 
 **Remember**: Chain confidence = minimum step confidence. A 95% confident chain with one 60% step has 60% overall confidence. Strengthen the weakest link.
+
+## Backstage rule — the method never appears in the answer
+
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Self-Reflecting Chain", "SRC", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.

@@ -1,0 +1,56 @@
+{
+  "M2M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The case fitters run silicone seals on 8-12 March, so the clock restarts on Friday 12 March.",
+      "k2": "14 working days, because the team works only Monday to Friday. Owen counted calendar days.",
+      "k3": "you need 6 loads, not 5... freezing has about a week of slack.",
+      "k4": "The last case can be checked on Saturday 1 May, which is opening day."
+    }
+  },
+  "Y0R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The silicone seals on the cases are a wet trade, and the fitters finish them on Friday 12 March.",
+      "k2": "Even Owen's own start date of 31 March would have finished around 19 April",
+      "k3": "68 slots over 12 per load needs 6 loads, not 5.",
+      "k4": "Owen's own dates break this rule, because a check on 14 April is only 24 hours after"
+    }
+  },
+  "S7V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Day 1 is 13 March and day 30 is Sunday 11 April.",
+      "k2": "Even on Owen's own start date of 31 March, 14 working days would end on 19 April",
+      "k3": "the last crates are ready on Saturday 3 April... Freezing is not the constraint.",
+      "k4": "the earliest final check is Saturday 1 May... two days after the sign-off is due."
+    }
+  },
+  "D3M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The case fitters run silicone seals 8-12 March, so the clock starts after 12 March",
+      "k2": "Owen counted 14 calendar days.",
+      "k3": "you need 6 loads, not 5... last crates are ready on Saturday 3 April.",
+      "k4": "the final check can't happen before Saturday 1 May, which is opening day."
+    }
+  },
+  "K6Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Day 1 is 13 March and day 30 is 11 April. Objects can enter from Monday 12 April.",
+      "k2": "Even from his own 31 March start, the end date would be Monday 19 April",
+      "k3": "It is at least 6 loads... The last crates finish their 24-hour sealed rest on Saturday 3 April.",
+      "k4": "the earliest final check is Saturday 1 May... two days after the 29 April sign-off deadline."
+    }
+  },
+  "X4M": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "day 1 here is 12 March and day 30 is Saturday 10 April. Objects can enter from Sunday 11 April",
+      "k2": "14 working days from 31 March would run to 19 April.",
+      "k3": "that is 6 loads, not 5... ready 24 hours later, on Saturday 3 April.",
+      "k4": "its check can't happen until Saturday 1 May... the plan misses it by two days"
+    }
+  }
+}
