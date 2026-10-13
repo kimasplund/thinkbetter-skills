@@ -18,16 +18,16 @@ Written {date}, before any cell ran. The program spec is `docs/superpowers/specs
 ## Gate text (binding)
 
 **Validation gate (S = new, N = none).** S is VALIDATED iff all of the following hold:
-1. S ≥ N on G1, G2 and G3 (pooled judges), and S ≤ N on the auditor's ceremony and leak counts.
-2. Either the value margin (mean of V1–V4) is at least +0.5, or the key-rate margin is at least +0.10. Either claim must also clear the noise band.
-3. Pairwise ranking wins ≥ losses, with a two-sided sign test p ≤ 0.2.
+1. S ≥ N on G1, G2 and G3 (judges, brief-paired), S ≤ N on the auditor's ceremony and leak counts, and S's replies are at most 2.0× the no-skill median length for the same brief (mean over briefs).
+2. Either the value margin (mean of V1–V4) is at least +0.5, or the key-rate margin is at least +0.10. Either claim must also be larger than its noise band.
+3. Forced rankings: count one outcome per ranking (judge × brief). S wins a ranking when its replies' mean position beats N's. PASS if wins ≥ losses. FAIL only if wins < losses with a two-sided sign test p ≤ 0.2. Otherwise NOISE.
 4. The negative fixture deflates: words ≤ 1.5 × the no-skill negative reply's word count, and the auditor finds no ceremony.
 5. Framing invariance: the same top recommendation and verdict in both the hype and skeptical replies.
 6. Inter-judge agreement: at least 0.80 of shared cells within 1 point.
 7. `freeze.py verify` is clean.
 
 **Rewrite gate (C = new, O = old).** KEEP iff all of the following hold:
-1. C ≥ O on every guard dimension, on both instruments.
+1. C ≥ O on every guard dimension, on both instruments, and C's length ratio is at most O's + 0.25.
 2. C's key rate ≥ O's.
 3. C's value mean ≥ O's value mean − 0.25.
 4. C passes the negative and framing gates.
@@ -36,10 +36,11 @@ Otherwise the verdict is REVERT: the body returns to v1.0.0, and the 1.1.0 front
 
 **Conditions and noise:**
 - Each condition is PASS, FAIL or NOISE.
-- A condition is NOISE when its margin is on the failing or unconfirmed side but within the larger arm's within-arm spread, or when the sign test gives p > 0.2.
-- An auditor count difference below 1 hit is noise.
+- **Brief-paired noise band.** Every judge and key comparison is brief-paired: for each brief, the arm difference of that brief's means; the margin is the mean of those differences and the band is their max − min.
+- A condition is NOISE when its margin is on the failing or unconfirmed side but within the band.
+- An auditor difference of less than one hit in total across the arm's replies is noise.
 - Any FAIL gives NOT VALIDATED or REVERT. Otherwise any NOISE gives INCONCLUSIVE.
-- If agreement is below 0.80, mechanical FAILs (auditor, negative, framing) stay decisive and everything else reads INCONCLUSIVE.
+- If agreement is below 0.80, mechanical FAILs (auditor counts, length, negative, framing) stay decisive and the validation verdict otherwise reads INCONCLUSIVE. The rewrite gate has no agreement condition.
 - A failed freeze verify makes the round VOID, and it is re-run.
 
 **INCONCLUSIVE.** The round gets one extension: runs 3 and 4 of every arm on the same main briefs, under the identical gate. If it is still INCONCLUSIVE, the verdict is NOT VALIDATED (validation) or REVERT (rewrite).

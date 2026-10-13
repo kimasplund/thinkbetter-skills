@@ -10,7 +10,7 @@ const DONE = { type: 'object', properties: { status: { type: 'string' } }, requi
 phase('Run')
 const results = await pipeline(args.jobs, (job) =>
   agent(`Read ${args.run}/${job.prompt} and do exactly what it says. Return only: done`,
-    { label: job.id, phase: 'Run', model: job.model, effort: job.effort, schema: DONE })
+    { label: job.id, phase: 'Run', model: job.model, effort: job.effort, agentType: job.agent, schema: DONE })
     .then((r) => ({ id: job.id, ok: !!r })))
 
 const failed = args.jobs.map((j, i) => (results[i] && results[i].ok ? null : j.id)).filter(Boolean)

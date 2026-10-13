@@ -177,3 +177,21 @@ Harness repairs are amended rows, recorded before the next round uses them. If t
 - Triggering tests.
 - Haiku and Opus executors.
 - Plugin-level changes beyond README status, reverts and the 1.2.0 release.
+
+## Amendment 1: pre-pilot review (before any round ran)
+
+A fresh review of the harness found defects in this spec's statistics and in its isolation. The changes below were made before any cell ran, so no result could influence them. The binding gate text is `evolution/gauntlet-2026-10/harness/PREREG-TEMPLATE.md`, which each round snapshots and freezes.
+
+1. **Isolation.** Every executor, judge, auditor, verifier and designer runs as the `gauntlet-worker` agent type, which has only the Read and Write tools. Without this, the no-skill arm could call the real skill through the Skill tool, and the old arm could load the new body.
+2. **Noise band.** "Within-arm spread (max − min across runs and judges)" grows with sample size, so the extension could never resolve INCONCLUSIVE, and brief difficulty inflated it. It is replaced by a brief-paired band: the margin is the mean of per-brief arm differences, and the band is their max − min. This follows the gauntlet protocol's own advice to cluster by brief.
+3. **Forced rankings.**
+   - **Unit:** one outcome per ranking (judge × brief), as the spec's condition 3 says. Counting every run pair would multiply correlated comparisons.
+   - **PASS:** wins ≥ losses ("at least half").
+   - **The sign test** now only decides whether a loss is significant.
+4. **Length guard.**
+   - **Auditor G1:** includes the word ratio against the no-skill median for the same brief, capped at 2.0 for validation.
+   - **Rewrite gate:** a candidate may not exceed the champion's ratio by more than 0.25.
+5. **Auditor band.** The auditor's count band is one hit in total across an arm's replies, not one hit per reply.
+6. **Rewrite gate.** The rewrite gate has no agreement condition, as section 3 states.
+7. **Strict instrument validation.** Malformed or incomplete judge, auditor or verifier output stops scoring with the job to re-run. Only lossless normalisations are applied: code case, a `.md` suffix, commas in rankings, ✔ for ✓, and fenced JSON.
+8. **Per-round harness snapshot.** Each round freezes its own copy of the harness, the arms, `cells.json` and the pre-registration. Later harness fixes therefore never void or change an earlier round. An extension amends the freeze for `cells.json`.

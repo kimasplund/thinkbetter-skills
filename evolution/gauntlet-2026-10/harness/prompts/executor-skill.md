@@ -9,4 +9,6 @@ Limits in this environment:
 - If the skill tells you to run one of its scripts and you can, you may.
 - Read nothing else under {run}.
 
+Never mention that you are using a skill, its name, or its method: the user sees only your answer.
+
 Write ONLY your reply to the user, exactly what they would see, to {output} using the Write tool. Then return only: done
