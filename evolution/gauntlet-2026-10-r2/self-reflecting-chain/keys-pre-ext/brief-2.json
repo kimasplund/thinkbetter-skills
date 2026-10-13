@@ -1,0 +1,56 @@
+{
+  "U0M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "That is 8 weeks, not 12. So either the comparison is 12 weeks before against 8 weeks after",
+      "k2": "Nothing shows Varrow Road is a good guide to Kessel Street.",
+      "k3": "The shopkeepers are also the group most relevant to Kessel Street, which has 14 loading bays",
+      "k4": "A rise after the lane opened doesn't show the lane caused it."
+    }
+  },
+  "P8G": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "which is only about 8 weeks. Either the \"12 weeks after\" claim is wrong",
+      "k2": "the step from \"worked on Varrow\" to \"approve on Kessel\" is a separate argument",
+      "k3": "Both are anecdotal, and drivers have an obvious interest in the lane.",
+      "k4": "A 9% rise is consistent with that, but it doesn't show it."
+    }
+  },
+  "V1L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The data stops at 31 March, which is only about 8 weeks.",
+      "k2": "Transferability to Kessel Street is not addressed.",
+      "k3": "The dismissal is inconsistent and also matters most for Kessel Street",
+      "k4": "assumes the conclusion. A 9% rise is consistent with the lane"
+    }
+  },
+  "O8J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "which is about 8 weeks, not 12. The comparison is therefore 12 weeks before against roughly 8",
+      "k2": "It does not yet show that a lane on Kessel Street would work.",
+      "k3": "This is the evidence closest to Kessel's main risk, its 14 loading bays.",
+      "k4": "assumes the cause it is trying to prove."
+    }
+  },
+  "X0B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A lane opening on 3 February cannot have 12 weeks of data by 31 March.",
+      "k2": "the jump to Kessel is an assumption.",
+      "k3": "Kessel has 14 loading bays used by its shops, so delivery access is exactly the issue",
+      "k4": "the only evidence for that is the rise itself."
+    }
+  },
+  "G9N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "That is 8 weeks, not 12. A 12-week \"after\" window would run to about 28 April.",
+      "k2": "The gap between Varrow Road and Kessel Street is never examined",
+      "k3": "if one is anecdotal so is the other.",
+      "k4": "A 9% ridership rise does not confirm anything about cause."
+    }
+  }
+}

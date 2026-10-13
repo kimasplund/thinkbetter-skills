@@ -1,0 +1,317 @@
+[
+ {
+  "cell": "brief-1--w8--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "w8",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--w8--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "w8",
+  "run": 2
+ },
+ {
+  "cell": "brief-1--y1--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "y1",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--y1--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "y1",
+  "run": 2
+ },
+ {
+  "cell": "brief-1--m2--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "m2",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--m2--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "m2",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--w8--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "w8",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--w8--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "w8",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--y1--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "y1",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--y1--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "y1",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--m2--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "m2",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--m2--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "m2",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--w8--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "w8",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--w8--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "w8",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--y1--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "y1",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--y1--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "y1",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--m2--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "m2",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--m2--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "m2",
+  "run": 2
+ },
+ {
+  "cell": "framing-hype--w8--r1",
+  "kind": "framing",
+  "input": "pack/framing-hype.md",
+  "arm": "w8",
+  "run": 1
+ },
+ {
+  "cell": "framing-hype--y1--r1",
+  "kind": "framing",
+  "input": "pack/framing-hype.md",
+  "arm": "y1",
+  "run": 1
+ },
+ {
+  "cell": "framing-hype--m2--r1",
+  "kind": "framing",
+  "input": "pack/framing-hype.md",
+  "arm": "m2",
+  "run": 1
+ },
+ {
+  "cell": "framing-skeptical--w8--r1",
+  "kind": "framing",
+  "input": "pack/framing-skeptical.md",
+  "arm": "w8",
+  "run": 1
+ },
+ {
+  "cell": "framing-skeptical--y1--r1",
+  "kind": "framing",
+  "input": "pack/framing-skeptical.md",
+  "arm": "y1",
+  "run": 1
+ },
+ {
+  "cell": "framing-skeptical--m2--r1",
+  "kind": "framing",
+  "input": "pack/framing-skeptical.md",
+  "arm": "m2",
+  "run": 1
+ },
+ {
+  "cell": "negative--w8--r1",
+  "kind": "negative",
+  "input": "pack/negative.md",
+  "arm": "w8",
+  "run": 1
+ },
+ {
+  "cell": "negative--y1--r1",
+  "kind": "negative",
+  "input": "pack/negative.md",
+  "arm": "y1",
+  "run": 1
+ },
+ {
+  "cell": "negative--m2--r1",
+  "kind": "negative",
+  "input": "pack/negative.md",
+  "arm": "m2",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--w8--r3",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "w8",
+  "run": 3
+ },
+ {
+  "cell": "brief-1--w8--r4",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "w8",
+  "run": 4
+ },
+ {
+  "cell": "brief-1--y1--r3",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "y1",
+  "run": 3
+ },
+ {
+  "cell": "brief-1--y1--r4",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "y1",
+  "run": 4
+ },
+ {
+  "cell": "brief-1--m2--r3",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "m2",
+  "run": 3
+ },
+ {
+  "cell": "brief-1--m2--r4",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "m2",
+  "run": 4
+ },
+ {
+  "cell": "brief-2--w8--r3",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "w8",
+  "run": 3
+ },
+ {
+  "cell": "brief-2--w8--r4",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "w8",
+  "run": 4
+ },
+ {
+  "cell": "brief-2--y1--r3",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "y1",
+  "run": 3
+ },
+ {
+  "cell": "brief-2--y1--r4",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "y1",
+  "run": 4
+ },
+ {
+  "cell": "brief-2--m2--r3",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "m2",
+  "run": 3
+ },
+ {
+  "cell": "brief-2--m2--r4",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "m2",
+  "run": 4
+ },
+ {
+  "cell": "brief-3--w8--r3",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "w8",
+  "run": 3
+ },
+ {
+  "cell": "brief-3--w8--r4",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "w8",
+  "run": 4
+ },
+ {
+  "cell": "brief-3--y1--r3",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "y1",
+  "run": 3
+ },
+ {
+  "cell": "brief-3--y1--r4",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "y1",
+  "run": 4
+ },
+ {
+  "cell": "brief-3--m2--r3",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "m2",
+  "run": 3
+ },
+ {
+  "cell": "brief-3--m2--r4",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "m2",
+  "run": 4
+ }
+]

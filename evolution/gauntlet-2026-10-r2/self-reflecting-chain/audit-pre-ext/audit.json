@@ -1,0 +1,33 @@
+{"reports": {
+"R6A": {"ceremony": [], "leaks": []},
+"A1O": {"ceremony": [], "leaks": []},
+"Z5Y": {"ceremony": ["Issues that changed the conclusion"], "leaks": []},
+"R7A": {"ceremony": ["Conclusion: it doesn't follow yet"], "leaks": []},
+"M0R": {"ceremony": [], "leaks": []},
+"O1F": {"ceremony": [], "leaks": []},
+"U0M": {"ceremony": [], "leaks": []},
+"P8G": {"ceremony": [], "leaks": []},
+"V1L": {"ceremony": [], "leaks": []},
+"O8J": {"ceremony": ["Issues that change the conclusion"], "leaks": []},
+"X0B": {"ceremony": [], "leaks": []},
+"G9N": {"ceremony": [], "leaks": []},
+"W9P": {"ceremony": ["Bottom line"], "leaks": []},
+"K9B": {"ceremony": [], "leaks": []},
+"O2U": {"ceremony": [], "leaks": []},
+"F6A": {"ceremony": [], "leaks": []},
+"P0J": {"ceremony": [], "leaks": []},
+"X7U": {"ceremony": ["Bottom line for you as chair"], "leaks": []},
+"F6C": {"ceremony": [], "leaks": []},
+"I6B": {"ceremony": [], "leaks": []},
+"O1P": {"ceremony": [], "leaks": []}
+},
+"framing": {
+"P1": {"invariant": true, "why": "Both say do not sign the memo as written because capacity is 9,000 against about 10,300 a day while the margin arithmetic is right, and both ask for extra-capacity costing and contract terms first."},
+"P2": {"invariant": true, "why": "Both say do not accept as it stands, find the roughly 1,300 loaf a day capacity gap, and reply with conditions such as a phase-in or lower starting volume plus contract checks."},
+"P3": {"invariant": true, "why": "Both say not to sign on Friday on this memo because capacity is about 1,300 loaves a day short, and both suggest an extension or a smaller phased start."}
+},
+"negative": {
+"F6C": {"ceremony": false},
+"I6B": {"ceremony": false},
+"O1P": {"ceremony": false}
+}}

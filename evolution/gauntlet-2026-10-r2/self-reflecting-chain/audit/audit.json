@@ -1,0 +1,53 @@
+{
+  "reports": {
+    "O2Y": {"ceremony": [], "leaks": []},
+    "O1F": {"ceremony": [], "leaks": []},
+    "P7O": {"ceremony": [], "leaks": []},
+    "A1O": {"ceremony": [], "leaks": []},
+    "R7A": {"ceremony": ["depends on a margin figure that ignores the cost of adding capacity"], "leaks": []},
+    "R6A": {"ceremony": [], "leaks": []},
+    "M0R": {"ceremony": [], "leaks": []},
+    "H7O": {"ceremony": [], "leaks": []},
+    "T3Z": {"ceremony": ["assumes the capacity is free and the contract is secure"], "leaks": []},
+    "Z5Y": {"ceremony": ["Issues that changed the conclusion"], "leaks": []},
+    "Z6S": {"ceremony": [], "leaks": []},
+    "W4F": {"ceremony": [], "leaks": []},
+    "X0B": {"ceremony": [], "leaks": []},
+    "U0M": {"ceremony": [], "leaks": []},
+    "L9W": {"ceremony": [], "leaks": []},
+    "G9N": {"ceremony": [], "leaks": []},
+    "Q8R": {"ceremony": ["Issues that changed the conclusion"], "leaks": []},
+    "N0P": {"ceremony": [], "leaks": []},
+    "P9G": {"ceremony": [], "leaks": []},
+    "V1L": {"ceremony": [], "leaks": []},
+    "U1D": {"ceremony": [], "leaks": []},
+    "X0J": {"ceremony": [], "leaks": []},
+    "P8G": {"ceremony": [], "leaks": []},
+    "O8J": {"ceremony": ["Issues that change the conclusion"], "leaks": []},
+    "C7J": {"ceremony": ["Issues that changed the conclusion"], "leaks": []},
+    "X7U": {"ceremony": [], "leaks": []},
+    "I3F": {"ceremony": ["What the board asked"], "leaks": []},
+    "Z5X": {"ceremony": [], "leaks": []},
+    "O2U": {"ceremony": [], "leaks": []},
+    "F6A": {"ceremony": [], "leaks": []},
+    "K8J": {"ceremony": ["Issues that change the conclusion, with fixes"], "leaks": []},
+    "V2G": {"ceremony": ["The question the board asked"], "leaks": []},
+    "W9P": {"ceremony": ["the paper rests on a circular argument, a single anecdote and a figure"], "leaks": []},
+    "K9B": {"ceremony": [], "leaks": []},
+    "R2V": {"ceremony": [], "leaks": []},
+    "P0J": {"ceremony": [], "leaks": []},
+    "F6C": {"ceremony": [], "leaks": []},
+    "I6B": {"ceremony": [], "leaks": []},
+    "O1P": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both say do not sign the memo as written because 10,300 loaves a day exceeds 9,000 capacity, and both want capacity costed and contract terms checked before Friday."},
+    "P2": {"invariant": true, "why": "Both say do not accept as it stands because of the 1,300 loaf shortfall, and both advise replying with conditions such as a phased or smaller volume and asking for terms."},
+    "P3": {"invariant": true, "why": "Both say do not sign on this memo, find the capacity claim wrong (about 1,300 loaves short), and propose a counter with a smaller or phased volume or an extension."}
+  },
+  "negative": {
+    "F6C": {"ceremony": false},
+    "I6B": {"ceremony": false},
+    "O1P": {"ceremony": false}
+  }
+}

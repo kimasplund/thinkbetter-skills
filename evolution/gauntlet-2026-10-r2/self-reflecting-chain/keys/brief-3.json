@@ -1,0 +1,62 @@
+{
+"C7J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 hectares is 25%, not 19%.",
+ "k2": "\"Lowest-yielding variety per hectare\" says nothing about income. The £38 premium is the missing half.",
+ "k3": "Mills paying £38 a tonne over the alternative is what strong demand for a scarce grain looks like.",
+ "k4": "one vivid event standing in for a risk rate."}},
+"X7U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 ha out of 2,400 ha is 25.4%, not 19%.",
+ "k2": "The paper's conclusion answers a different question, which is whether Calder Red has the lowest yield per hectare.",
+ "k3": "Calling that \"scarcity rather than real demand\" doesn't hold up, because a premium is what buyers pay",
+ "k4": "how Brannock fields at those or nearby farms fared in the same storm"}},
+"I3F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 hectares is about 25%, not 19%.",
+ "k2": "Nothing says what the 19 growers would plant instead",
+ "k3": "A buyer paying extra for a product is evidence of demand.",
+ "k4": "compare lodging or loss rates for Calder Red and Brannock over several seasons"}},
+"Z5X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 hectares is about 25%, not 19%.",
+ "k2": "Because the vote is about next year's member earnings, the paper should say something about the 19 growers.",
+ "k3": "a buyer premium is evidence of demand, not of its absence.",
+ "k4": "whether Brannock fields nearby also lodged or were lost"}},
+"O2U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "3. The share figure doesn't add up. 610 of 2,400 hectares is 25%, not 19%.",
+ "k2": "The conclusion answers an easier question.",
+ "k3": "The only demand evidence given is that mills pay a £38/t premium, which points the other way.",
+ "k4": "what happened to Brannock in the same storm"}},
+"F6A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Its own figures give 610 of 2,400 ha, which is about 25%.",
+ "k2": "The paper's conclusion is only that Calder Red has the lowest yield per hectare. Yield is not income",
+ "k3": "The £38 premium also points toward demand exceeding supply",
+ "k4": "whether Brannock fields also went down that day, how often Calder Red has been lost in other years"}},
+"K8J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 hectares is about 25%, not 19%.",
+ "k2": "Yield is used as a stand-in for earnings.",
+ "k3": "a buyer paying extra is demand.",
+ "k4": "it doesn't show that Brannock would have stood up better in the same storm."}},
+"V2G": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 hectares is 25%, not 19%.",
+ "k2": "the board's question was about member earnings.",
+ "k3": "A price premium arises when buyers want more than is available, and that is demand.",
+ "k4": "It doesn't show Calder Red is riskier than Brannock unless we know how Brannock fared nearby"}},
+"W9P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 hectares is about 25%, not 19%.",
+ "k2": "\"Lowest-yielding per hectare\" is not \"lowest-earning per hectare\".",
+ "k3": "scarcity only pushes price up when someone wants the grain.",
+ "k4": "doesn't say whether neighbouring Brannock fields stood"}},
+"K9B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 ha is 25.4%, not 19%.",
+ "k2": "\"Lowest-yielding variety per hectare\" is about tonnes, but the board asked about member earnings.",
+ "k3": "A premium of £38/t is evidence of demand.",
+ "k4": "it needs to check whether Brannock fields were affected in the same storm."}},
+"R2V": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 ha is 25.4%, not 19%.",
+ "k2": "Yield per hectare is not income per hectare.",
+ "k3": "The only direct evidence of demand in the paper is that mills pay a premium",
+ "k4": "Was Brannock also flattened in 2022?"}},
+"P0J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "610 of 2,400 ha is 25.4%, not 19%.",
+ "k2": "The question was about member income, and the paper never gives a price per tonne or any costs.",
+ "k3": "Mills paying £38 a tonne more is evidence that at least some buyers want this grain.",
+ "k4": "how Brannock fared in the same storm"}}
+}
