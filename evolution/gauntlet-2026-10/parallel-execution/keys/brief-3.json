@@ -1,0 +1,62 @@
+{
+  "Q5J": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "If transect 7 really is shared... Assign it to one site only.",
+    "k2": "observer has to be a covariate in every model, and its effect has to be estimated from all sites",
+    "k3": "Before anyone fits anything, collapse reed and sedge at Site D to \"marsh tit-wren\"",
+    "k4": "If the protocol must be followed, run the fill once in the shared prep step."}},
+  "S1U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Please confirm which site owns transect 7 before anyone starts.",
+    "k2": "split by species group, not by site. Each fits the shared pooled model",
+    "k3": "Create a species crosswalk. For all sites and years, collapse reed tit-wren and sedge tit-wren",
+    "k4": "It also couples B's trend to C's... the ratio mixes observer effects."}},
+  "K0T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "Settle the transect 7 question.",
+    "k2": "Each analyst fits one model per species using all four sites",
+    "k3": "Recode D's 2023+ reed and sedge tit-wren to marsh tit-wren",
+    "k4": "the B/C ratio carries the observer difference... I'd treat 2021 at B as missing"}},
+  "N8O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Resolve the transect 7 question.",
+    "k2": "Preferred: also fit one pooled model on the stacked data",
+    "k3": "Apply the tit-wren lumping and keep the original code in a separate column.",
+    "k4": "one person computes the fill-in once, from a single agreed ratio definition"}},
+  "J2U": {"k1": "✓", "k2": "~", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "assign it to one site and drop it from the other's spreadsheet.",
+    "k2": "A simpler alternative to consider... a single pooled model",
+    "k3": "Apply the shared recode (marsh tit-wren combined) from your common script.",
+    "k4": "Site C's data must be frozen first so the numbers don't shift."}},
+  "O4R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Resolve the transect 7 question.",
+    "k2": "split by species group, not by site. Each analyst fits the same joint model",
+    "k3": "Pool the three tit-wren codes into one \"tit-wren (marsh/reed/sedge combined)\" for all sites",
+    "k4": "B's numbers depend on C's data... the ratio carries the observer difference too."}},
+  "L7C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Resolve transect 7 (point 2 above).",
+    "k2": "I'd split by species group instead, after a short shared prep step.",
+    "k3": "Recode D's 2023-25 reed and sedge tit-wren records to \"marsh tit-wren,\"",
+    "k4": "B and C are no longer independent in the average."}},
+  "J3I": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "it must be assigned to one site (or split by count point) before anyone starts.",
+    "k2": "Next week (one analyst, or you): the joint fit",
+    "k3": "Apply the agreed species recoding.",
+    "k4": "The fill-in is a cross-site dependency... Mark missing site-years as missing. Do not impute."}},
+  "T9W": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "Transect 7: decide which site owns it.",
+    "k2": "Fit one regional model per species on all the data",
+    "k3": "Applies the tit-wren rule (analyst D only).",
+    "k4": "Analyst C hands over final C counts first, since a protocol fill for B needs them."}},
+  "L6T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "assign transect 7 to exactly one site.",
+    "k2": "the cleanest split is by species group, not by site.",
+    "k3": "Do this once, centrally, with a lookup table",
+    "k4": "B and C are then no longer independent when you average them"}},
+  "E0N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Decide which site owns it, and have both analysts drop it from the other.",
+    "k2": "An observer-adjusted trend can only come from a model fitted across all four sites.",
+    "k3": "I'd have one person write a single species crosswalk and give it to all four analysts.",
+    "k4": "do the fill once, centrally, flag the rows as imputed"}},
+  "Q9R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Fix transect 7: assign it to exactly one site",
+    "k2": "Each analyst fits every site together for their species",
+    "k3": "Lump marsh tit-wren, reed tit-wren and sedge tit-wren into one \"tit-wren (complex)\"",
+    "k4": "The B analyst would need C's data, and the B and C trends would then share information."}}
+}

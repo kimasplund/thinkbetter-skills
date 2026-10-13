@@ -1,0 +1,38 @@
+{
+  "R3S": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "Translators working from v2.0 would translate a keyword that is going away",
+    "k2": "222 cards needs 3 sheets per edition, which is 12 sheets across the four editions instead of 8",
+    "k3": "Any change to the box has to happen before translators fix their text",
+    "k4": "Three weeks of translation starting after v2.1 would end in week 4, and layout takes two more weeks. That is too late."
+  }},
+  "P6Z": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "start Monday on the stable material and send a change delta at the end of W2",
+    "k2": "3 sheets per edition instead of 2, which is 12 sheets across four editions instead of 8",
+    "k3": "Tomasz should not simply build four layouts from the English files and hope the text drops in",
+    "k4": "That makes Brazilian Portuguese the critical path, and it needs to run ahead of the other three"
+  }},
+  "M4J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "Translators working from the current files would translate text that gets thrown away",
+    "k2": "222 is 3 sheets, which is about 50% more print cost on the card side",
+    "k3": "send the translators the box size and... Tell Priya and the translators by Thu W1 so they work to the limit",
+    "k4": "Portuguese files must reach Casa by about the end of week 4... That forces Portuguese to go first"
+  }},
+  "H3U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "Translation should start from v2.1 once it is frozen",
+    "k2": "which means 3 sheets per edition, or 12 sheets. That is a 50 percent jump",
+    "k3": "send the translators the box size and a per-card character budget by Friday",
+    "k4": "Zero slack on Casa Tabuleiro. Their review ends on the last Friday before the deadline."
+  }},
+  "Y0I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Every card or rules passage that uses Exhaust would be translated twice",
+    "k2": "220 is exactly 2 sheets per edition and 222 is 3. That is 8 sheets versus 12",
+    "k3": "Layouts built \"ready for the text\" would be redone.",
+    "k4": "3 weeks translation + 2 weeks layout + 2 weeks approval = 7 weeks, and you have exactly 7."
+  }},
+  "C3X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Translators starting from v2.0 would translate text that gets thrown away, then redo it",
+    "k2": "which is 3 sheets per edition, or 12 sheets instead of 8",
+    "k3": "If he builds from English, the layouts will overflow",
+    "k4": "the natural finish for Brazilian Portuguese is the end of week 7 at the earliest. That is two weeks late"
+  }}
+}

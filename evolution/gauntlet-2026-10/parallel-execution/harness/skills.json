@@ -1,0 +1,196 @@
+[
+ {
+  "order": 1,
+  "skill": "hypothesis-elimination",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "the true cause plus 2 plausible red herrings, each supported by some evidence in the brief"
+ },
+ {
+  "order": 2,
+  "skill": "reasoning-handover-protocol",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "facts the next phase must carry forward: a binding constraint, a ruled-out option with its reason, and an open question"
+ },
+ {
+  "order": 3,
+  "skill": "integrated-reasoning",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "a routing trap: a problem that looks like one kind of reasoning task but actually needs another"
+ },
+ {
+  "order": 4,
+  "skill": "tree-of-thoughts",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "a hidden hard constraint, stated only in passing, that rules out the obviously attractive option"
+ },
+ {
+  "order": 5,
+  "skill": "breadth-of-thought",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "a non-obvious but viable class of options that a narrow answer would miss"
+ },
+ {
+  "order": 6,
+  "skill": "self-reflecting-chain",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "an invalid step planted inside an otherwise sound chain of reasoning"
+ },
+ {
+  "order": 7,
+  "skill": "parallel-execution",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "a hidden dependency between sub-tasks that makes naive fan-out produce wrong results"
+ },
+ {
+  "order": 8,
+  "skill": "premortem-evolved",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "concrete plan flaws a rigorous premortem must surface"
+ },
+ {
+  "order": 9,
+  "skill": "adversarial-reasoning",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "planted vulnerabilities or abuse paths in the design"
+ },
+ {
+  "order": 10,
+  "skill": "dialectical-reasoning",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "a false dichotomy that hides a workable third option"
+ },
+ {
+  "order": 11,
+  "skill": "analogical-transfer",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "a disanalogy: a structural difference that breaks the most tempting surface analogy"
+ },
+ {
+  "order": 12,
+  "skill": "rapid-triage-reasoning",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "an irreversible-action trap alongside a reversible option that buys time"
+ },
+ {
+  "order": 13,
+  "skill": "negotiated-decision-framework",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "a hidden veto holder or an unstated interest that decides whether any agreement holds"
+ },
+ {
+  "order": 14,
+  "skill": "option-synthesis",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "a dominated incumbent option plus a hidden constraint the winning option must satisfy"
+ },
+ {
+  "order": 15,
+  "skill": "skill-gauntlet",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "planted protocol violations in an evaluation scenario (goalpost movement, a burned fixture, an unblinded judge)"
+ }
+]

@@ -1,0 +1,34 @@
+{
+  "reports": {
+    "R3S": {"ceremony": [], "leaks": []},
+    "P6Z": {"ceremony": [], "leaks": []},
+    "M4J": {"ceremony": [], "leaks": []},
+    "H3U": {"ceremony": [], "leaks": []},
+    "Y0I": {"ceremony": ["## What can run in parallel from Monday"], "leaks": []},
+    "C3X": {"ceremony": ["## What I'd do Monday"], "leaks": []},
+    "P1Z": {"ceremony": ["[paste shared contract and rules here]", "[paste shared contract and rules here]"], "leaks": []},
+    "H6T": {"ceremony": [], "leaks": []},
+    "M9C": {"ceremony": [], "leaks": []},
+    "V5L": {"ceremony": [], "leaks": []},
+    "E2X": {"ceremony": [], "leaks": []},
+    "N3R": {"ceremony": [], "leaks": []},
+    "K0T": {"ceremony": [], "leaks": []},
+    "L7C": {"ceremony": [], "leaks": []},
+    "Q5J": {"ceremony": [], "leaks": []},
+    "J3I": {"ceremony": [], "leaks": []},
+    "N8O": {"ceremony": [], "leaks": []},
+    "Q9R": {"ceremony": [], "leaks": []},
+    "Y5V": {"ceremony": [], "leaks": []},
+    "H1D": {"ceremony": [], "leaks": []},
+    "Y5D": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both say do not send the current English files, do not build final layouts from English, quote 222 cards (3 sheets per edition), put Brazilian Portuguese first because of Casa Tabuleiro, and the verdict is workable but with almost no slack."},
+    "P2": {"invariant": true, "why": "Both start translators on stable material only, have Tomasz stress-test one template, quote 222 cards (12 sheets vs 8), and name Casa Tabuleiro's ten-day review as the critical path with almost no slack."}
+  },
+  "negative": {
+    "Y5V": {"ceremony": false},
+    "H1D": {"ceremony": false},
+    "Y5D": {"ceremony": false}
+  }
+}

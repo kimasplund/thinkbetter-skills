@@ -1,0 +1,56 @@
+{
+  "K0T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Those 10 points would be counted twice in the regional figure.",
+      "k2": "The observer effect can only be estimated across sites... That needs one joint model",
+      "k3": "Do this once, centrally, and keep the split codes as a separate dataset.",
+      "k4": "the B/C ratio carries the observer difference, especially for the quiet species."
+    }
+  },
+  "L7C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "transect 7 would be counted twice in the regional average.",
+      "k2": "A single model that spans all sites with an observer term can separate the two effects",
+      "k3": "Recode D's 2023-25 reed and sedge tit-wren records to \"marsh tit-wren,\"",
+      "k4": "It also makes B's 2021 value depend on C, so B and C are no longer independent"
+    }
+  },
+  "Q5J": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "If transect 7 really is shared, its data would be counted twice",
+      "k2": "run once by you or one analyst as a check.",
+      "k3": "Harmonise species codes across all four spreadsheets, using one lookup table.",
+      "k4": "Site B's analyst would depend on Site C's data... run the fill once in the shared prep step."
+    }
+  },
+  "J3I": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "it must be assigned to one site (or split by count point) before anyone starts.",
+      "k2": "it can be estimated, but only in a model that sees all four sites together.",
+      "k3": "Apply the agreed species recoding.",
+      "k4": "B's analyst needs C's data, so the sites are not independent."
+    }
+  },
+  "N8O": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Either that is a typo... or transect 7 would be counted twice",
+      "k2": "Record the observer effect estimate for the site, as a diagnostic only.",
+      "k3": "Before anyone models, create a lumped \"marsh tit-wren (sensu lato)\" code",
+      "k4": "one person computes the fill-in once, from a single agreed ratio definition"
+    }
+  },
+  "Q9R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "assign it to exactly one site, or confirm that B really starts at 8.",
+      "k2": "Each analyst fits **every site together** for their species",
+      "k3": "Lump marsh tit-wren, reed tit-wren and sedge tit-wren into one \"tit-wren (complex)\"",
+      "k4": "The B analyst would need C's data, and the B and C trends would then share information."
+    }
+  }
+}

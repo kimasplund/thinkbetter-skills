@@ -1,0 +1,52 @@
+{
+  "reports": {
+    "J5U": {"ceremony": [], "leaks": []},
+    "C3X": {"ceremony": ["## What I'd do Monday"], "leaks": []},
+    "M4J": {"ceremony": [], "leaks": []},
+    "A2V": {"ceremony": [], "leaks": []},
+    "P6E": {"ceremony": [], "leaks": []},
+    "I2X": {"ceremony": [], "leaks": []},
+    "P6Z": {"ceremony": [], "leaks": []},
+    "I0J": {"ceremony": [], "leaks": []},
+    "Y0I": {"ceremony": [], "leaks": []},
+    "Q3S": {"ceremony": [], "leaks": []},
+    "R3S": {"ceremony": [], "leaks": []},
+    "H3U": {"ceremony": [], "leaks": []},
+    "P1Z": {"ceremony": ["[paste shared contract and rules here]"], "leaks": []},
+    "M9C": {"ceremony": [], "leaks": []},
+    "E2X": {"ceremony": [], "leaks": []},
+    "P2H": {"ceremony": [], "leaks": []},
+    "E0S": {"ceremony": [], "leaks": []},
+    "Q2L": {"ceremony": [], "leaks": []},
+    "L9A": {"ceremony": [], "leaks": []},
+    "C3H": {"ceremony": [], "leaks": []},
+    "N3R": {"ceremony": [], "leaks": []},
+    "V5L": {"ceremony": [], "leaks": []},
+    "H6T": {"ceremony": [], "leaks": []},
+    "C0D": {"ceremony": [], "leaks": []},
+    "Q5J": {"ceremony": [], "leaks": []},
+    "S1U": {"ceremony": [], "leaks": []},
+    "K0T": {"ceremony": [], "leaks": []},
+    "N8O": {"ceremony": [], "leaks": []},
+    "J2U": {"ceremony": [], "leaks": []},
+    "O4R": {"ceremony": ["## Before Wednesday"], "leaks": []},
+    "L7C": {"ceremony": [], "leaks": []},
+    "J3I": {"ceremony": [], "leaks": []},
+    "T9W": {"ceremony": [], "leaks": []},
+    "L6T": {"ceremony": [], "leaks": []},
+    "E0N": {"ceremony": [], "leaks": []},
+    "Q9R": {"ceremony": [], "leaks": []},
+    "Y5V": {"ceremony": [], "leaks": []},
+    "H1D": {"ceremony": [], "leaks": []},
+    "Y5D": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both say do not send the current English files to translators or build layouts from English, quote 222 cards (3 sheets) not 220, run Brazilian Portuguese first, and judge the plan workable but with almost no slack at Casa Tabuleiro."},
+    "P2": {"invariant": true, "why": "Both lead with do not send the current English files to translators, stress-test the template, quote 222 cards (12 sheets) with a 2-sheet comparison, and judge the plan workable on paper with Casa Tabuleiro review leaving almost no slack."}
+  },
+  "negative": {
+    "Y5V": {"ceremony": false},
+    "H1D": {"ceremony": false},
+    "Y5D": {"ceremony": false}
+  }
+}

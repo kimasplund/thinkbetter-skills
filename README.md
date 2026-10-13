@@ -41,7 +41,7 @@ npx skills add kimasplund/thinkbetter-skills -a codex -g           # all skills,
 | [analogical-transfer](skills/analogical-transfer/) | 2.2.1 | Structured cross-domain borrowing for novel problems | Documented methodology |
 | [rapid-triage-reasoning](skills/rapid-triage-reasoning/) | 2.2.1 | Time-boxed, good-enough decisions for incidents | Documented methodology |
 | [negotiated-decision-framework](skills/negotiated-decision-framework/) | 2.2.1 | Multi-stakeholder alignment that needs real buy-in | Documented methodology |
-| [parallel-execution](skills/parallel-execution/) | 2.3.0 | Fan-out/fan-in for running patterns concurrently, with merge strategies | Infrastructure |
+| [parallel-execution](skills/parallel-execution/) | 2.3.0 | Fan-out/fan-in for running patterns concurrently, with merge strategies | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/parallel-execution/scorecard.md)) |
 | [reasoning-handover-protocol](skills/reasoning-handover-protocol/) | 2.3.0 | How to hand off state between reasoning skills, with an optional `.reasoning/` folder | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/reasoning-handover-protocol/scorecard.md)) |
 | [premortem-evolved](skills/premortem-evolved/) | 2.2.1 | Assumes the plan already failed, reasons back to why, then rebuilds it | 3 blind rounds + an owner decision (see below) |
 | [option-synthesis](skills/option-synthesis/) | 1.0.1 | Pre-registers what a choice must satisfy, generates a wide field, kills finalists with premortems, synthesizes the winner | Not yet gauntleted |

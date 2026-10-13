@@ -1,0 +1,56 @@
+{
+  "P1Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the ORM upgrade merges first, so pricing is built on the post-5.x behavior",
+      "k2": "pricing owns a single `roundHalfEven` helper with tests, the backfill imports it",
+      "k3": "\"alter first, backfill after\" loses the data",
+      "k4": "Fix: reserve numbers now. Pricing gets 0042, billing 0043"
+    }
+  },
+  "H6T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Numeric columns become strings, and the pricing code assumes numbers.",
+      "k2": "Convert with `toMinor` from packages/pricing using half-to-even.",
+      "k3": "values have to be multiplied by 10^exponent first... Fix: expand/contract.",
+      "k4": "Pre-assign numbers: pricing gets 0042, billing gets 0043"
+    }
+  },
+  "M9C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Pricing code that does `amount * 100` would silently coerce.",
+      "k2": "All rounding is half-to-even using `roundHalfEven` from the shared helper",
+      "k3": "Altering `numeric(12,4)` to `bigint` in place would silently round 3.1M rows",
+      "k4": "Migration numbers, reserved up front."
+    }
+  },
+  "V5L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a runtime change that type-checks in many places and breaks silently",
+      "k2": "tasks 2 and 4 must call the shared helper and not write their own rounding",
+      "k3": "it keeps the integer part of a value like 18.3350 as 18",
+      "k4": "All four branches would create `0042_*`. Reserve numbers up front"
+    }
+  },
+  "E2X": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "One branch assumes numbers, another assumes strings",
+      "k2": "`toMinor` helper that use only strings and integers. No `Math.round`",
+      "k3": "An in-place `ALTER ... TYPE bigint` can't wait for a later script.",
+      "k4": "each agent will pick 0042. Merging gives a duplicate number."
+    }
+  },
+  "N3R": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Whatever parsing the pricing agent writes has to hold under both Kestrel versions.",
+      "k2": "The backfill agent will reuse it. Do not use Postgres `round()`",
+      "k3": "18.3350 becomes 18, not 1834.",
+      "k4": "Pricing and billing will both create 0042... Assign them now."
+    }
+  }
+}

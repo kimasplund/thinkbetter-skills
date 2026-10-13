@@ -3,32 +3,29 @@ name: parallel-execution
 description: Guides running independent work in parallel, as several tool calls or several subagents in one message, and merging the results. Use when a task splits into independent sub-problems, when the user says "do these in parallel", "fan out", "explore several approaches at once", "run these agents at the same time", or when several branches, hypotheses or perspectives need to be explored together. Also covers parallel code editing in isolated worktrees and advanced ensemble and tree-search patterns. Not for steps that depend on each other (use self-reflecting-chain).
 license: MIT
 metadata:
-  version: "2.3.0"
+  version: "2.3.1"
 ---
 
 # Parallel Execution Patterns
 
-Read [references/parallel-patterns-advanced.md](references/parallel-patterns-advanced.md) when you need the detailed algorithms behind the advanced patterns below: pruning and worker reallocation formulas, tree-search selection, multi-layer ensembles, graph operations, clustering, checkpoint and recovery shapes, or configuration profiles. The core of this skill is enough for most tasks.
-
 ## Built-in Parallel Patterns (no skill needed)
 
-Use these first before reaching for advanced patterns.
+Claude Code v2.1.76+ provides native parallelism. Use these first before reaching for advanced patterns.
 
 | Pattern | How | Best For |
 |---------|-----|----------|
-| **Parallel tool calls** | Several tool calls in one message | Reading files, searching, independent lookups |
-| **Parallel subagents** | Several Agent calls in one message, optionally with `run_in_background: true` | Independent research, analysis, exploration |
-| **Worktree isolation** | An Agent call with `isolation: "worktree"` | Parallel agents editing code without colliding |
-| **Agent teams** (Claude Code only, experimental) | Enabled by an environment variable; check the Claude Code docs for the current name | Coordinated multi-file work with shared tasks |
-| **Background execution** | `run_in_background: true`, or Ctrl+B in Claude Code | Long-running work you don't need immediately |
-
-The harness decides what is available. Where a tool or option above does not exist (other agents, claude.ai), run the same work sequentially and keep the same fan-out and merge structure.
+| **Parallel tool calls** | Multiple tools in single response auto-batch | Reading files, searching, independent lookups |
+| **Parallel subagents** | Multiple Task calls with `run_in_background: true` | Independent research, analysis, exploration |
+| **Agent teams** | `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` | Coordinated multi-file work with shared tasks |
+| **Worktree isolation** | `isolation: worktree` in agent frontmatter | Parallel agents editing code on separate branches |
+| **Background execution** | Ctrl+B or `run_in_background: true` | Long-running tasks you don't need results from immediately |
 
 ### Parallel Tool Calls
 
-Make the independent calls in one message; they run together:
+Just make multiple tool calls in one response. Claude Code batches them automatically:
 
 ```
+# These run in parallel:
 - Read file A
 - Read file B
 - Grep for pattern X
@@ -37,48 +34,70 @@ Make the independent calls in one message; they run together:
 
 ### Parallel Subagents
 
-Send several Agent calls in one message so they run concurrently:
+Spawn multiple independent agents that run concurrently:
 
 ```
-# Fan-out: one message, three Agent calls (run_in_background: true on each)
-Agent 1: "Analyze database performance"
-Agent 2: "Review API response times"
-Agent 3: "Check frontend bundle size"
+# Fan-out: 3 agents in parallel
+Task 1 (run_in_background: true): "Analyze database performance"
+Task 2 (run_in_background: true): "Review API response times"
+Task 3 (run_in_background: true): "Check frontend bundle size"
 
-# Fan-in: each background agent's result arrives as a notification when it finishes.
-# Wait for all three, then synthesize the findings.
+# Fan-in: collect results
+TaskOutput from Task 1, 2, 3
+Synthesize findings
 ```
 
-Give each agent a self-contained prompt (it cannot see your conversation) and say what shape of result you want back, so the merge is easy.
+### Agent Teams
 
-### Agent Teams (Claude Code only, experimental)
+For coordinated parallel work where agents need to communicate:
 
-For coordinated parallel work where agents need to communicate and share a task list with dependencies, for example refactor models, then update routes and tests in parallel, then update docs. This is an experimental Claude Code feature behind an environment variable and may change; prefer plain parallel subagents unless the agents genuinely need to coordinate.
+```
+Enable: CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
+
+Shared task list:
+1. Refactor models (no deps)
+2. Update routes (depends: 1)
+3. Update tests (depends: 1)
+4. Update docs (depends: 1, 2, 3)
+
+Agents pick available tasks and coordinate automatically.
+```
 
 ### Worktree Isolation
 
-For parallel code editing without conflicts, give each editing agent its own working copy of the repository:
+For parallel code editing without conflicts:
 
-```
-Agent call 1: isolation: "worktree", prompt: "Implement feature A in src/features/a/"
-Agent call 2: isolation: "worktree", prompt: "Implement feature B in src/features/b/"
+```yaml
+# Agent 1
+---
+isolation: worktree
+model: sonnet
+---
+"Implement feature A in src/features/a/"
+
+# Agent 2
+---
+isolation: worktree
+model: sonnet
+---
+"Implement feature B in src/features/b/"
 ```
 
-Each agent works on its own copy. Review and merge the resulting branches when done.
+Each agent gets its own git worktree. Merge when done.
 
 ## When to Parallelize
 
 **Parallelize when:**
 - Problem decomposes into independent sub-problems
-- Multiple solution approaches need exploration (breadth-of-thought, tree-of-thoughts branching)
+- Multiple solution approaches need exploration (BoT, ToT branching)
 - High confidence required (ensemble methods)
-- Multiple hypotheses need simultaneous testing (hypothesis-elimination)
-- Cross-domain analogies need parallel investigation (analogical-transfer)
+- Multiple hypotheses need simultaneous testing (HE)
+- Cross-domain analogies need parallel investigation (AT)
 
 **Do not parallelize when:**
-- Steps have sequential dependencies (use self-reflecting-chain instead)
+- Steps have sequential dependencies (use SRC instead)
 - Each step depends on previous results
-- Problem is inherently linear (tracing one execution path)
+- Problem is inherently linear (debugging traces)
 - Merge strategy is undefined
 
 ### Decision Tree
@@ -93,7 +112,7 @@ Is the task decomposable?
         └─ YES -> How many sub-tasks?
             ├─ 2-3 -> Parallel tool calls or subagents
             ├─ 4-8 -> Subagents with run_in_background
-            └─ 8+  -> Batches of subagents, or agent teams (Claude Code, experimental)
+            └─ 8+  -> Agent teams or DPTS pattern
 ```
 
 ---
@@ -104,6 +123,8 @@ These patterns complement the built-in execution with structured reasoning strat
 
 ### Pattern 1: Dynamic Parallel Tree Search (DPTS)
 
+**Efficiency**: 2-4x improvement, 70% faster convergence
+
 Adaptive parallel exploration that dynamically allocates resources to promising branches while pruning unpromising ones.
 
 **Key Mechanisms:**
@@ -112,10 +133,10 @@ Adaptive parallel exploration that dynamically allocates resources to promising 
 - Early termination: stop when confidence exceeds threshold
 - Resource rebalancing: move workers from exhausted/pruned branches
 
-**Integration with tree-of-thoughts:**
+**Integration with ToT:**
 
 ```markdown
-## DPTS + tree-of-thoughts
+## DPTS + Tree of Thoughts
 
 ### Phase 1: Initial Parallel Expansion
 - Spawn N workers for Level 0 branches (N = 5-10)
@@ -199,8 +220,7 @@ Layered proposer/aggregator architecture for ensemble confidence.
 │            Proposer Layer               │
 │  ┌────────┐ ┌────────┐ ┌────────┐      │
 │  │Prop 1  │ │Prop 2  │ │Prop 3  │      │
-│  │tree-of-│ │breadth-│ │analog- │      │
-│  │thoughts│ │of-thght│ │transfer│      │
+│  │(ToT)   │ │(BoT)   │ │(AT)    │      │
 │  └────────┘ └────────┘ └────────┘      │
 └────────────────────────────────────────┘
 ```
@@ -208,7 +228,7 @@ Layered proposer/aggregator architecture for ensemble confidence.
 **Conflict Resolution:**
 - If proposers agree: Boost confidence +5%
 - If 2/3 agree: Use majority, document minority
-- If no agreement: Escalate to dialectical-reasoning
+- If no agreement: Escalate to DR (Dialectical Reasoning)
 
 ---
 
@@ -244,7 +264,9 @@ Arbitrary graph-structured reasoning with merge, split, and cycle operations.
 
 ---
 
-### Pattern 5: Self-Consistency with Clustering (RASC)
+### Pattern 5: Self-Consistency with RASC
+
+**Efficiency**: 70% compute reduction vs naive self-consistency
 
 Generate multiple reasoning paths, cluster by rationale similarity, use representative answers.
 
@@ -265,15 +287,15 @@ Final: Microservices (70% weighted agreement)
 
 ## Integration with Cognitive Skills
 
-### breadth-of-thought: Parallel Branch Exploration
+### BoT: Parallel Branch Exploration
 
 ```markdown
-Spawn 8-10 parallel workers (Agent calls in one message)
+Spawn 8-10 parallel workers (subagents with run_in_background)
 Each explores one approach independently
-Prune after ALL Level 0 workers have reported (static 40% threshold)
+Pruning after ALL Level 0 complete (static 40% threshold)
 ```
 
-### tree-of-thoughts: MCTS-Style Search
+### ToT: MCTS-Style Search
 
 ```markdown
 UCB1(branch) = avg_score + C * sqrt(ln(N) / n_branch)
@@ -281,7 +303,7 @@ Run parallel rollouts from each branch (subagents)
 Use UCB1 to decide which branches get more rollouts
 ```
 
-### hypothesis-elimination: Parallel Hypothesis Testing
+### HE: Parallel Hypothesis Testing
 
 ```markdown
 Phase 1: Generate hypotheses
@@ -290,7 +312,7 @@ Phase 3: Parallel evidence gathering
 Phase 4: Synchronized hypothesis update + elimination
 ```
 
-### analogical-transfer: Multi-Perspective via MoA
+### AT: Multi-Perspective via MoA
 
 ```markdown
 Proposer 1: Technology domain analogies (subagent)
@@ -305,10 +327,10 @@ Aggregator: Cross-analogy synthesis (main session)
 
 | Pattern | Threshold | Rationale |
 |---------|-----------|-----------|
-| **breadth-of-thought** | Static 40% | Conservative breadth |
-| **tree-of-thoughts** | Static top-1/top-2 | Aggressive, find single best |
+| **BoT** | Static 40% | Conservative breadth |
+| **ToT** | Static top-1/top-2 | Aggressive, find single best |
 | **DPTS** | Dynamic (best - 30%) | Adaptive to landscape |
-| **hypothesis-elimination** | Evidence-based | Prune when evidence eliminates |
+| **HE** | Evidence-based | Prune when evidence eliminates |
 | **MoA** | Agreement-based | Prune minority after consensus |
 
 ## Anti-Patterns
@@ -324,14 +346,14 @@ Aggregator: Cross-analogy synthesis (main session)
 | Situation | Pattern | Why |
 |-----------|---------|-----|
 | Independent file reads | Parallel tool calls | Built-in, zero overhead |
-| Independent research | Parallel subagents | Concurrent execution |
-| Coordinated editing | Worktrees (or agent teams in Claude Code) | Avoid conflicts |
-| Explore unknown space | DPTS + breadth-of-thought | Dynamic pruning, parallel breadth |
-| Find optimal option | MCTS + tree-of-thoughts | Simulation-guided depth |
+| Independent research | Parallel subagents | Background execution |
+| Coordinated editing | Agent teams / worktrees | Avoid conflicts |
+| Explore unknown space | DPTS + BoT | Dynamic pruning, parallel breadth |
+| Find optimal option | MCTS + ToT | Simulation-guided depth |
 | Decomposable problem | BSM | Clean partition and merge |
 | Need ensemble confidence | MoA or RASC | Multiple perspectives |
 | Iterative refinement | GoT | Merge and cycle support |
-| Test hypotheses | Parallel hypothesis-elimination | Independent evidence gathering |
+| Test hypotheses | Parallel HE | Independent evidence gathering |
 
 ## Configuration
 
