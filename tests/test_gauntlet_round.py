@@ -303,5 +303,30 @@ class ApplyTest(RoundFixture):
         self.assertIn("next: demo-two", gr.status())
 
 
+class ProcedureTest(RenderBlindTest):
+    def test_extend_adds_runs_3_and_4(self):
+        rd = self.built()
+        self.write_raw(rd)
+        before = len(json.loads((rd / "cells.json").read_text()))
+        gr.extend("demo-skill")
+        cells = json.loads((rd / "cells.json").read_text())
+        self.assertEqual(len(cells) - before, 3 * 3 * 2)
+        self.assertEqual({c["run"] for c in cells if c["kind"] == "main"}, {1, 2, 3, 4})
+        self.assertTrue(json.loads((rd / "SEALED.json").read_text())["extended"])
+        jobs = gr.render("demo-skill", "exec")  # only cells without output yet
+        self.assertEqual(len(jobs), 18)
+        self.assertTrue(all(j["id"].endswith(("--r3", "--r4")) for j in jobs))
+
+    def test_render_designer_lists_prior_fixtures_to_avoid(self):
+        prior = self.root / "demo-two" / "pack" / "brief-1.md"
+        path = gr.render_designer("demo-skill")
+        text = path.read_text()
+        self.assertIn(str(prior), text)
+        self.assertIn("skills/demo-skill", text)
+        self.assertIn("x", text)  # key_type from skills.json
+        self.assertNotIn(str(self.root / "demo-skill" / "pack" / "brief-1.md"), text.split("earlier rounds:")[1])
+        self.assertNotRegex(text, r"\{[a-z_]+\}")
+
+
 if __name__ == "__main__":
     unittest.main()

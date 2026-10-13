@@ -236,6 +236,8 @@ def render(skill: str, phase: str) -> list:
         out_dir = rd / "jobs" / "exec"
         out_dir.mkdir(parents=True, exist_ok=True)
         for c in _load(rd, "cells.json"):
+            if (rd / "raw" / f"{c['cell']}.md").is_file():
+                continue  # already ran; extensions and re-runs only render what is missing
             none = sealed["arms"][c["arm"]] == "none"
             tpl = (prompts / ("executor-none.md" if none else "executor-skill.md")).read_text()
             stem = Path(c["input"]).stem
@@ -335,6 +337,50 @@ def blind(skill: str, seed=None) -> dict:
     (rd / "jobs" / "judge-plan.json").write_text(json.dumps(plan, indent=1))
     set_state(skill, "blinded")
     return {"blind": len(mapping), "leak_hits": leak_hits}
+
+
+def _prior_fixtures(skill: str) -> list:
+    r = repo()
+    found = []
+    for pattern in ("evolution/**/fixtures/*.json", "evolution/**/briefs/*.md", "examples/**/*.md",
+                    "skills/skill-gauntlet/references/fixtures.md"):
+        found += r.glob(pattern)
+    for other in root().iterdir():
+        if other.is_dir() and other.name not in (skill, "harness"):
+            pack = other / "pack"
+            found += [f for f in pack.glob("*.md") if f.name != "notes.md"] if pack.is_dir() else []
+    return sorted({str(f) for f in found})
+
+
+def render_designer(skill: str) -> Path:
+    spec = load_spec(skill)
+    rd = round_dir(skill).resolve()
+    (rd / "jobs").mkdir(parents=True, exist_ok=True)
+    (rd / "pack").mkdir(exist_ok=True)
+    avoid = _prior_fixtures(skill)
+    text = _fill((root() / "harness" / "prompts" / "designer.md").read_text(), skill=skill,
+                 skill_dir=repo() / "skills" / skill, key_type=spec["key_type"], pack=rd / "pack",
+                 avoid=("\n" + "\n".join(f"- {a}" for a in avoid)) if avoid else "(none yet)")
+    out = rd / "jobs" / "designer.md"
+    out.write_text(text)
+    return out
+
+
+def extend(skill: str) -> dict:
+    rd = round_dir(skill)
+    sealed, cells = _load(rd, "SEALED.json"), _load(rd, "cells.json")
+    if sealed.get("extended"):
+        sys.exit(f"{skill}: already extended once; the gate allows a single extension")
+    added = []
+    for b in BRIEFS:
+        for code in sealed["arms"]:
+            for run in (3, 4):
+                added.append(_cell(b, "main", code, run))
+    (rd / "cells.json").write_text(json.dumps(cells + added, indent=1))
+    sealed["extended"] = True
+    (rd / "SEALED.json").write_text(json.dumps(sealed, indent=1))
+    set_state(skill, "frozen")
+    return {"added": len(added)}
 
 
 # ---------------------------------------------------------------- score
@@ -573,6 +619,8 @@ def main(argv=None) -> int:
     m.add_argument("skill")
     m.add_argument("state", choices=STATES)
     sub.add_parser("status")
+    sub.add_parser("render-designer").add_argument("skill")
+    sub.add_parser("extend").add_argument("skill")
     args = ap.parse_args(argv)
     if args.cmd == "build":
         res = build(args.skill)
@@ -594,6 +642,10 @@ def main(argv=None) -> int:
         print(f"{args.skill}: state {args.state}")
     elif args.cmd == "status":
         print(status())
+    elif args.cmd == "render-designer":
+        print(f"{args.skill}: designer prompt -> {render_designer(args.skill)}")
+    elif args.cmd == "extend":
+        print(f"{args.skill}: extension added {extend(args.skill)['added']} cells; state frozen")
     return 0
 
 
