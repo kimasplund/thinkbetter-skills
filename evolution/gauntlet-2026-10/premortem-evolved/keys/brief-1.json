@@ -1,0 +1,56 @@
+{
+  "P5K": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "full cohorts bring in about $7,350 a month against $9,400 in costs",
+      "k2": "Expect a backlog that grows every week, with students waiting a month or more",
+      "k3": "gas arrives between about August 11 and September 8. That's after the August 4 course start",
+      "k4": "Test it before you commit: email the list now and ask for deposits"
+    }
+  },
+  "G1D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Four full cohorts bring in $13,600 every 8 weeks, which is about $7,400 a month",
+      "k2": "Students finished the course with unglazed bisque",
+      "k3": "For six or more weeks, neither kiln could fire",
+      "k4": "Offer the 140 names a refundable $100 deposit"
+    }
+  },
+  "P1O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "At full fill with no gap weeks the space earns about $7,350 a month against $9,400",
+      "k2": "a backlog of 35–75 pieces every week, or 280–600 pieces by the end of one eight-week cycle",
+      "k3": "June 2 plus 10 weeks is August 11, and plus 14 weeks is September 8",
+      "k4": "A free try-the-wheel sheet commits nobody"
+    }
+  },
+  "S3V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Against $9,400 that is a $2,040 monthly loss at 100% fill",
+      "k2": "Students' pieces waited four to six weeks. Members' pieces were bumped for students'",
+      "k3": "for weeks no kiln anywhere could fire anything",
+      "k4": "Presell the first round at your price before signing"
+    }
+  },
+  "L9X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "At 100% capacity you lose about $2,000 a month",
+      "k2": "280-360 piece-firings. Capacity: 3 firings x 70 = 210 piece-firings a week",
+      "k3": "The two free months end around August 2, so rent starts before you can fire anything",
+      "k4": "140 names from a free try-the-wheel booth is interest, not commitment"
+    }
+  },
+  "A1J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "$13,600 x 6.5 cycles / 12) against $9,400 of costs: a $2,030 monthly loss at 100% fill",
+      "k2": "The unfired backlog grows 35 to 75 pieces every week",
+      "k3": "even the best case lands after the Aug 4 start",
+      "k4": "Signing a sheet is a Comply-grade commitment, not a purchase"
+    }
+  }
+}

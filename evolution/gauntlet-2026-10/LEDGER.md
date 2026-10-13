@@ -11,9 +11,9 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | 5 | breadth-of-thought | applied | NOT VALIDATED | REVERT |  | 1.07M |
 | 6 | self-reflecting-chain | applied | NOT VALIDATED | REVERT |  | 1.66M (extended) |
 | 7 | parallel-execution | applied | NOT VALIDATED | REVERT |  | ~2.1M (extended) |
-| 8 | premortem-evolved | blinded |  |  |  |  |
+| 8 | premortem-evolved | applied | NOT VALIDATED | REVERT |  | ~2.16M |
 | 9 | adversarial-reasoning | applied | NOT VALIDATED | - |  | ~1.53M (extended) |
-| 10 | dialectical-reasoning | pending | | | | |
+| 10 | dialectical-reasoning | blinded |  |  |  |  |
 | 11 | analogical-transfer | pending | | | | |
 | 12 | rapid-triage-reasoning | pending | | | | |
 | 13 | negotiated-decision-framework | pending | | | | |
@@ -26,3 +26,5 @@ States: pending → designed → frozen → ran → blinded → judged → score
 - **Amendment 2:** pilot 1 found the harness unfit (keys at the ceiling; plain confidence statements counted as leaks). The designer prompt, leak rule and rubric G2 anchor were fixed before the pilot re-run. The record is in `_pilot-1-unfit-hypothesis-elimination/`, and that pilot used ~0.61M subagent tokens.
 - **Owner decision after pilot 2:** the harness is accepted as fit. The literal pilot fitness check failed only because the skill's real effect on Sonnet is small (value +0.30 after the extension), not because the instruments couldn't discriminate. See `hypothesis-elimination/research-note.md`.
 - **Ruling (round 5):** removed `context: fork` and `argument-hint` from breadth-of-thought's frontmatter after the mechanical revert. The restored v1.0.0 body has no `$ARGUMENTS` block, so a forked run would start without the problem. This is a frontmatter-only change, and the body remains exactly v1.0.0.
+
+- **Ruling (round 8):** premortem-evolved's mechanical revert restored the v1.0.0 SKILL.md body and `references/`, but `scripts/pre_delivery_check.py` was kept at its 1.1.0 version. Gauntlet workers have no Bash, so the script never ran in any cell and the verdict carries no evidence about it. Its 1.1.0 changes are mechanical bug fixes (whole-word token matching, template-token detection, `-h`, read errors) covered by `tests/test_skill_scripts.py`, and it doesn't depend on the 1.1.0 wording. Cost if wrong: one `git checkout v1.0.0 -- skills/premortem-evolved/scripts/` plus dropping the affected tests.

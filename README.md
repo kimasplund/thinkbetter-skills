@@ -43,7 +43,7 @@ npx skills add kimasplund/thinkbetter-skills -a codex -g           # all skills,
 | [negotiated-decision-framework](skills/negotiated-decision-framework/) | 2.2.1 | Multi-stakeholder alignment that needs real buy-in | Documented methodology |
 | [parallel-execution](skills/parallel-execution/) | 2.3.0 | Fan-out/fan-in for running patterns concurrently, with merge strategies | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/parallel-execution/scorecard.md)) |
 | [reasoning-handover-protocol](skills/reasoning-handover-protocol/) | 2.3.0 | How to hand off state between reasoning skills, with an optional `.reasoning/` folder | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/reasoning-handover-protocol/scorecard.md)) |
-| [premortem-evolved](skills/premortem-evolved/) | 2.2.1 | Assumes the plan already failed, reasons back to why, then rebuilds it | 3 blind rounds + an owner decision (see below) |
+| [premortem-evolved](skills/premortem-evolved/) | 2.2.1 | Assumes the plan already failed, reasons back to why, then rebuilds it | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/premortem-evolved/scorecard.md)) |
 | [option-synthesis](skills/option-synthesis/) | 1.0.1 | Pre-registers what a choice must satisfy, generates a wide field, kills finalists with premortems, synthesizes the winner | Not yet gauntleted |
 | [skill-gauntlet](skills/skill-gauntlet/) | 1.1.1 | Pre-registered, blind, regression-guarded A/B evaluation of skills, prompts and agent configs | 1.1 deltas adopted by their own gate |
 

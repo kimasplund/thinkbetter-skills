@@ -1,0 +1,56 @@
+{
+  "C8P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the shortfall is about $75k. Nothing is left for the existing four schools",
+      "k2": "a proven 12 becomes 15 at ten new schools",
+      "k3": "that \"we know the people\" turns five months into five weeks",
+      "k4": "Practicum credit does not start until January 20"
+    }
+  },
+  "K6R": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Costs through Jan 31 were $150k, the whole reserve. Feb 1 to Mar 16 added about $75k",
+      "k2": "15 points in about 13 weeks, from a program that earns 12 points in about 28",
+      "k3": "From an Oct 8 vote, Jan 12 is about 14 weeks, against 21 for the last MOU",
+      "k4": "grows a pool built over years by 2.5 times in two months, from a single university"
+    }
+  },
+  "N5L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you have spent about $225k against a $150k reserve: a $75k hole",
+      "k2": "asks new schools to beat the existing four schools' full-year result by 25%",
+      "k3": "a vote on October 8 plus five months is early March",
+      "k4": "Harmon's spring semester starts January 20, eight days after the January 12 start"
+    }
+  },
+  "Q0T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Your $150k reserve runs out around the end of January, and you are about $75k short",
+      "k2": "about 13 weeks (January 12 to mid-April), with a late start, new coordinators",
+      "k3": "Five months from October is March. Knowing the people helps",
+      "k4": "Harmon's spring semester starts January 20, but you plan to start tutoring on January 12"
+    }
+  },
+  "W6I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "roughly $225k (4.5 months), against $150k in reserves",
+      "k2": "A realistic expectation is well under 12 points, not above it",
+      "k3": "10 schools can't be signed, onboarded and staffed by January 12",
+      "k4": "Harmon's spring term starts January 20, so a January 12 start has no tutors"
+    }
+  },
+  "V1F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Reserves hit zero in the last week of January, six weeks before the first reimbursement",
+      "k2": "a benchmark bar 25% above your best full-year result, measured on under half the dose",
+      "k3": "the plan gives this one about three months",
+      "k4": "Recruiting and training were scheduled for November and December"
+    }
+  }
+}

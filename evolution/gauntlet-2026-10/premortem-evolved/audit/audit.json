@@ -1,0 +1,338 @@
+{
+  "reports": {
+    "P5K": {
+      "ceremony": ["the plan, as it stands, loses money even when everything goes right"],
+      "leaks": []
+    },
+    "G1D": {
+      "ceremony": [
+        "Success was defined as: the new space covering its own costs",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Existing guard: none.",
+        "Reference class: second locations of small membership studios",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Saltmarsh Clay second space (beginner wheel courses)",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "Their commitment to the plan is accept",
+        "What this premortem probably missed:"
+      ]
+    },
+    "P1O": {
+      "ceremony": [
+        "The full breakdown follows.",
+        "Success was defined as: the new space covering its own costs",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Guard in the plan today: none.",
+        "Reference class: craft studios and maker spaces",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Saltmarsh Clay second space",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "What this premortem probably missed:"
+      ]
+    },
+    "S3V": {
+      "ceremony": [
+        "Success was defined as: the new space covering its own costs",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Existing guard: none.",
+        "Cause of death: unresolved. The adversary section below names",
+        "Unknown. The scenario here would be some actor reacting",
+        "Where the numbers tie:",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Saltmarsh Clay second space (8-week beginner wheel courses",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "is Accept-level commitment (agrees, then silence does the killing)",
+        "What this premortem probably missed:"
+      ]
+    },
+    "L9X": {
+      "ceremony": ["Bottom line: the market interest and your instinct to grow"],
+      "leaks": []
+    },
+    "A1J": {
+      "ceremony": [
+        "Success was defined as: the new space covering its own costs",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Guard already in the plan: none.",
+        "Reference class (weakly sourced, you offered none):",
+        "Tie-break at ~10% (#4, #5, #6):",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Saltmarsh Clay second space",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "Commitment grades: the utility is Comply (no written date)",
+        "What this premortem probably missed:"
+      ]
+    },
+    "C8P": {
+      "ceremony": [
+        "Success was defined as: all 14 schools running in January",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Tie-break within the 10% rung:",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Ledgerwood Reading Partners, 10-school expansion on the Arbelle grant",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "They are at best Accept on the commitment scale",
+        "What this premortem probably missed:"
+      ]
+    },
+    "K6R": {
+      "ceremony": [
+        "Success was defined as: all 14 schools running in January",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Existing guard: none.",
+        "Tie-break (#2 over #3, both at ~20%)",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Arbelle expansion from 4 to 14 schools",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "Harmon's grade is Accept at best.",
+        "What this premortem probably missed:"
+      ]
+    },
+    "N5L": {
+      "ceremony": [
+        "Success was defined as: all 14 schools running in January",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Guard already in the plan: none.",
+        "Tie-break (#4, #5): both sit at ~10%.",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Ledgerwood's 10-school expansion under the Arbelle grant",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "a below-Endorse commitment",
+        "graded Accept at best",
+        "What this premortem probably missed:"
+      ]
+    },
+    "Q0T": {
+      "ceremony": [
+        "accept the grant only with changes: an advance or faster payment",
+        "Showing them these four numbers (the $75k gap, the five-month MOU,"
+      ],
+      "leaks": []
+    },
+    "W6I": {
+      "ceremony": ["Take the board a revised version: a staggered start,"],
+      "leaks": []
+    },
+    "V1F": {
+      "ceremony": [
+        "Success was defined as: all 14 schools running in January",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Existing guard: none.",
+        "Reference class and disanalogy:",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Ledgerwood Reading Partners, 4 to 14 schools",
+        "Note on the percentages: they are shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "so it is Comply, not Endorse",
+        "What this premortem probably missed:"
+      ]
+    },
+    "F9Z": {
+      "ceremony": [
+        "Success was defined as: by September, Calloway is our biggest account",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Reference class and disanalogy:",
+        "Tie-break at ~10%",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Tidewell x Calloway Markets, 48 stores, 3 flavors, March 1 2027",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I x F |",
+        "Calloway holds Accept at best",
+        "What this premortem probably missed:"
+      ]
+    },
+    "Y9W": {
+      "ceremony": [
+        "Success was defined as: by September, Calloway is our biggest account",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Existing guard: none.",
+        "Reference class and disanalogy:",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Tidewell x Calloway Markets (3 flavors, 48 stores, March 1 start)",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "What this premortem probably missed:"
+      ]
+    },
+    "X8S": {
+      "ceremony": [
+        "Success was defined as: by September, Calloway is our biggest account",
+        "The assumption you stated with the most certainty, attacked first:",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Existing guard: none.",
+        "Reference class: small specialty-food brands entering grocery",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "# Premortem: Tidewell x Calloway Markets (48 stores, 3 flavors, March 1 start)",
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I×F |",
+        "What this premortem probably missed:"
+      ]
+    },
+    "Y3B": {
+      "ceremony": ["The opportunity is real, and a smaller, staged version of this deal"],
+      "leaks": []
+    },
+    "G6V": {
+      "ceremony": [
+        "Success was defined as: by September, Calloway is our biggest account",
+        "## The Autopsy",
+        "## The Verdict",
+        "## The Rebuild",
+        "## The Adversary",
+        "## The Tripwires",
+        "The strongest case for this plan:",
+        "Existing guard: none.",
+        "Reference class and disanalogy:",
+        "Tie-breaks at the 10% rung:",
+        "Considered and cut:",
+        "Downgraded — guarded for now:",
+        "lands on delay, reduce, or don't — the reverse autopsy",
+        "Calibration review"
+      ],
+      "leaks": [
+        "Note on the percentages: shares of failure",
+        "| # | Impact (1-5) | Feasibility (1-5) | I x F |",
+        "What this premortem probably missed:"
+      ]
+    },
+    "J9T": {
+      "ceremony": ["This is a good account to want and a bad deal"],
+      "leaks": []
+    },
+    "W0X": {"ceremony": [], "leaks": []},
+    "U4A": {"ceremony": [], "leaks": []},
+    "Z2U": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {
+      "invariant": true,
+      "why": "Both replies give the verdict do not sign June 2 as written, and the same top recommendation: gate signing on a paid-deposit demand test plus lease terms (rent starting at energization, capped guarantee), with a pilot at the original studio as the fallback. They differ only in which step is listed first and in the exact price and cohort numbers."
+    },
+    "P2": {
+      "invariant": true,
+      "why": "Both replies give the verdict do not sign June 2 as written, and the same top recommendation: convert the unknowns to paper first (written utility date, paid or refundable deposits, lease with rent tied to energization and a capped guarantee, a firing source for members), else run a pilot at the original studio. They differ in pricing and cohort choices only (about 580 dollars with two cohorts versus 425 dollars with six)."
+    }
+  },
+  "negative": {
+    "W0X": {"ceremony": false},
+    "U4A": {"ceremony": false},
+    "Z2U": {"ceremony": false}
+  }
+}

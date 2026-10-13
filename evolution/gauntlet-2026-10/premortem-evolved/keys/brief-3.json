@@ -1,0 +1,56 @@
+{
+  "F9Z": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "If it is 25% off wholesale, it costs $1.35 a jar (no loss-per-jar point made)",
+      "k2": "reorder was due about May 19: $23,250 deposit against $11k",
+      "k3": "At 3 per store-week, no lot sells inside its shelf life",
+      "k4": "That puts finished goods at Halvard at March 1-8 at best"
+    }
+  },
+  "Y9W": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the promo weeks lose money on every jar. Please check which it is.",
+      "k2": "forced a second $46,500 order before any Calloway cash arrived",
+      "k3": "The weakest flavor ran about 2... expired product credited back at $5.40 a jar",
+      "k4": "puts finished goods at Halvard between March 1 and March 8"
+    }
+  },
+  "X8S": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you fund $2.25 a jar sold (no comparison to $2.00 margin)",
+      "k2": "reorder had to be placed by about May 4... You were $14k short",
+      "k3": "selling through 15,000 jars inside a six-month life needs an average of 4.0",
+      "k4": "puts finished goods at March 2–9, after the March 1 start"
+    }
+  },
+  "Y3B": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "if the discount is off the shelf price ($2.25/jar), you lose money on every jar sold",
+      "k2": "you must place order #2 around early May... when you have about $9k left",
+      "k3": "5,000 jars per flavor is about 17 weeks of supply per flavor at forecast",
+      "k4": "Plus the 6-week lead time gives finished goods around Mar 2 to 9"
+    }
+  },
+  "G6V": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "25% of the $8.99 shelf price ($2.25 a jar) (no loss-per-jar point made)",
+      "k2": "second Halvard deposit came due before Calloway had paid a dollar",
+      "k3": "about half the 15,000-jar run (roughly 7,500 jars) was still unsold",
+      "k4": "puts finished jars at Halvard on Mar 2-9"
+    }
+  },
+  "J9T": {
+    "k1": "✗", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "about $15,500 if it's off shelf price (no per-jar loss stated)",
+      "k2": "you must reorder in early May. That's another $23k deposit, when you have about $9k",
+      "k3": "If one flavor lags, you're stuck with 5,000 jars; unsold product nears expiry",
+      "k4": "That puts finished goods in early-to-mid March, plus transit"
+    }
+  }
+}
