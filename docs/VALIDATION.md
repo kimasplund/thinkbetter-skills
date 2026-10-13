@@ -37,6 +37,7 @@ A post-hoc review ([summary](../evolution/gauntlet-2026-10/_followup/SUMMARY.md)
 - **Three edits lost to the shipped text.** analogical-transfer's template edit surfaced more method headings. negotiated-decision-framework's edit made replies tighter and more decisive but less calibrated. rapid-triage-reasoning did not beat no skill on fresh briefs.
 - **The new quote check caught two misattributed auditor quotes,** and the identical-prompt re-runs passed.
 - **The shipped analogical-transfer text beat no skill 6–0 on fresh briefs,** with fewer ceremony hits than no skill. Under the amended gates only G1 noise held it back; that is a post-hoc reading, not a verdict.
+- **A sixth round tested a review mode for self-reflecting-chain,** cherry-picked from the old Cogito server ([audit](audits/2026-10-13-cogito-feature-audit.md), Amendment 4). It ran on drafts with planted flaws and was extended once. The edit caught more planted flaws (key rate 0.99, against 0.91 for the shipped text and 0.94 for no skill). But executors turned its delivery line into a heading, and the ceremony audit failed (5 hits against 2). Verdict REVERT, so the skill ships unchanged at 2.3.1.
 
 ### Earlier rounds
 

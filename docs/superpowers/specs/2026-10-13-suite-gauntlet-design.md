@@ -218,3 +218,7 @@ The October program closed with every verdict applied. A post-hoc review (`evolu
 7. **Fresh briefs:** the designer must avoid every brief from both programs.
 
 Everything else is unchanged: rubric, instruments, models, the single extension and conservative finalisation.
+
+## Amendment 4: Cogito cherry-pick round (owner decision, before it ran)
+
+An audit of the old Cogito copies (`docs/audits/2026-10-13-cogito-feature-audit.md`) found no lost functionality, but some useful method ideas. On the owner's instruction to cherry-pick what is useful, self-reflecting-chain gets a review mode for a finished answer: up to three critique-and-revise passes with a stop rule, and backstage checks for circular reasoning, named biases, contradictions, drift from the question, a counterfactual probe and unsupported leaps. It is tested as round 6 of the follow-up program under the Amendment 3 gates. new is the edit, old is the shipped text at `v1.2.1`, and none is no skill. The briefs are drafts the user asks to have checked, with planted flaws. The rewrite gate decides adoption.

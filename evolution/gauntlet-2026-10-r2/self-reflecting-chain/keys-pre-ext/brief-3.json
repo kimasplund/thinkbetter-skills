@@ -1,0 +1,56 @@
+{
+  "W9P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "610 of 2,400 hectares is about 25%, not 19%.",
+      "k2": "The conclusion answers a different question.",
+      "k3": "scarcity only pushes price up when someone wants the grain.",
+      "k4": "One event on two farms out of 19 growers is not evidence"
+    }
+  },
+  "K9B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "610 of 2,400 ha is 25.4%, not 19%.",
+      "k2": "\"Lowest-yielding variety per hectare\" is about tonnes, but the board asked about member earnings.",
+      "k3": "A premium of £38/t is evidence of demand.",
+      "k4": "It also needs to check whether Brannock fields were affected in the same storm."
+    }
+  },
+  "O2U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "610 of 2,400 hectares is 25%, not 19%.",
+      "k2": "Yield per hectare is not the same as earnings per hectare",
+      "k3": "The only demand evidence given is that mills pay a £38/t premium, which points the other way.",
+      "k4": "what happened to Brannock in the same storm."
+    }
+  },
+  "F6A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "which is about 25%. Either the 19% is wrong",
+      "k2": "\"Lowest yield, so stop\" skips the income step.",
+      "k3": "The £38 premium also points toward demand exceeding supply",
+      "k4": "a memorable event, not a measure of how risky the variety is."
+    }
+  },
+  "P0J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "610 of 2,400 ha is 25.4%, not 19%.",
+      "k2": "Yield is not earnings.",
+      "k3": "Mills paying £38 a tonne more is evidence that at least some buyers want this grain.",
+      "k4": "Without a comparison it is a memorable story, not evidence."
+    }
+  },
+  "X7U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "610 ha out of 2,400 ha is 25.4%, not 19%.",
+      "k2": "compare income per hectare, not yield per hectare.",
+      "k3": "a premium is what buyers pay when they want something.",
+      "k4": "how Brannock fields at those or nearby farms fared in the same storm"
+    }
+  }
+}

@@ -38,4 +38,6 @@ The first five ideas are one capability: checking a finished answer for flawed r
 - a review mode that runs up to three critique-and-revise passes with a stop rule;
 - a backstage checklist covering circular reasoning, named biases, contradictions, drift from the question, and the counterfactual probe.
 
-Following the gauntlet's lesson that visible method costs a skill, the checks stay out of the reply. The change ships only if its pre-registered round keeps it; see `evolution/gauntlet-2026-10-r2/LEDGER.md`.
+Following the gauntlet's lesson that visible method costs a skill, the checks were meant to stay out of the reply. The change would ship only if its pre-registered round kept it.
+
+**Outcome: not adopted.** Round 6 of the follow-up program ([scorecard](../../evolution/gauntlet-2026-10-r2/self-reflecting-chain/scorecard.md), [ledger](../../evolution/gauntlet-2026-10-r2/LEDGER.md)) returned REVERT after one extension. The review mode found more of the planted flaws (key rate 0.99, against 0.91 for the shipped text and 0.94 for no skill). But executors turned its "issues that changed the conclusion" delivery line into a heading, and the ceremony audit failed (5 hits against 2). self-reflecting-chain ships unchanged at 2.3.1. The candidate text stays in the history of branch `cogito-cherrypick` (commit `e78eb5d`) for a later attempt without a delivery template.

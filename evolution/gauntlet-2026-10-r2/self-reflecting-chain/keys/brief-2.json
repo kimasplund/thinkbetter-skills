@@ -1,0 +1,62 @@
+{
+  "X0B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "A lane opening on 3 February cannot have 12 weeks of data by 31 March.",
+    "k2": "The recommendation assumes the two roads are alike.",
+    "k3": "Drivers counted, shopkeepers dismissed... delivery access is exactly the issue the committee has to decide.",
+    "k4": "the only evidence for that is the rise itself."}},
+  "U0M": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "either 12 weeks before against 8 weeks after, or the dates are wrong",
+    "k2": "Nothing shows Varrow Road is a good guide to Kessel Street.",
+    "k3": "if one is anecdotal, so is the other.",
+    "k4": "The ridership claim is causal and unsupported."}},
+  "L9W": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "the comparison isn't like for like",
+    "k2": "the committee is being asked to apply it to a different street",
+    "k3": "Dismissing one group and counting the other is inconsistent.",
+    "k4": "A 9% ridership rise does not confirm anything about cause."}},
+  "G9N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "covers the Christmas and New Year period, which is not like February and March",
+    "k2": "If Varrow Road is wider or has few bays, its result tells you little about Kessel.",
+    "k3": "if one is anecdotal so is the other.",
+    "k4": "A 9% ridership rise does not confirm anything about cause."}},
+  "Q8R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "If it is 12 weeks before against 8 after, the periods are unequal",
+    "k2": "Varrow Road is evidence for that only to the extent the two streets are alike.",
+    "k3": "\"Anecdotal\" was applied to one side only.",
+    "k4": "The ridership argument is circular."}},
+  "N0P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "The \"before\" period was in the depths of winter",
+    "k2": "the pilot was not designed to test the Kessel question.",
+    "k3": "applies a different standard to each group.",
+    "k4": "assumed the conclusion. The ridership rise was offered as proof of the cause"}},
+  "P9G": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "whether the \"before\" period was matched in length.",
+    "k2": "Varrow Road may not be a good guide to Kessel Street.",
+    "k3": "Treating the two groups differently looks selective.",
+    "k4": "A 9% rise doesn't confirm that."}},
+  "V1L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "12 weeks before a 3 February opening is all of winter",
+    "k2": "Transferability to Kessel Street is not addressed.",
+    "k3": "The dismissal is inconsistent and also matters most for Kessel Street",
+    "k4": "assumes the conclusion."}},
+  "U1D": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "Either the after period is shorter than stated, or the data cut-off is wrong.",
+    "k2": "Nothing shows Varrow Road is comparable to Kessel Street.",
+    "k3": "Dismissing one group and counting the other is inconsistent",
+    "k4": "The ridership claim is a causal claim with no support."}},
+  "X0J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "whether the before and after windows are the same length.",
+    "k2": "Varrow Road may not be comparable to Kessel.",
+    "k3": "The 61 shopkeeper comments about delivery access were set aside as \"anecdotal\", while the driver comments were counted.",
+    "k4": "A rise that happens at the same time doesn't show that."}},
+  "P8G": {"k1": "~", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "Either the \"12 weeks after\" claim is wrong or the data is incomplete.",
+    "k2": "the step from \"worked on Varrow\" to \"approve on Kessel\" is a separate argument",
+    "k3": "Both are anecdotal, and drivers have an obvious interest in the lane.",
+    "k4": "A 9% rise is consistent with that, but it doesn't show it."}},
+  "O8J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "The comparison is therefore 12 weeks before against roughly 8 weeks after.",
+    "k2": "It does not yet show that a lane on Kessel Street would work.",
+    "k3": "This is the evidence closest to Kessel's main risk, its 14 loading bays.",
+    "k4": "assumes the cause it is trying to prove."}}
+}

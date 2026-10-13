@@ -1,0 +1,62 @@
+{
+"O2Y": {"k1": "✓", "k2": "~", "k3": "~", "k4": "✓", "evidence": {
+  "k1": "6,100 + 4,200 = 10,300 loaves a day; Capacity is 9,000",
+  "k2": "This is the answer to your question. If you sign as is",
+  "k3": "A three-year term shows Pellam wants a stable supplier. It doesn't show they are financially solid",
+  "k4": "Bakeries where it went badly are less likely to be at the dinner table"}},
+"O1F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "About 1,300 loaves a day over capacity, around 14% above",
+  "k2": "hasn't shown that you can take it on without letting down your existing customers",
+  "k3": "A customer offering a long contract is not evidence that it is financially solid",
+  "k4": "Bakers who were hurt by these deals are less likely to be the ones people mention"}},
+"P7O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "You'd be about 1,300 loaves a day over capacity, roughly 14%",
+  "k2": "the memo hasn't shown that you can deliver it without letting down the cafés",
+  "k3": "A three-year commitment doesn't show that Pellam is financially solid",
+  "k4": "Bakeries where supermarket contracts went badly are less likely to be telling that story"}},
+"A1O": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "That is 10,300 a day. You would be about 1,300 loaves a day over capacity",
+  "k2": "The contract may still be worth taking, but the memo hasn't shown it",
+  "k3": "is not evidence of solvency",
+  "k4": "Bakeries where it went badly are less likely to be speaking up"}},
+"R7A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Total demand would be 10,300, which is about 1,300 loaves a day over capacity",
+  "k2": "the memo doesn't show you can take this on without letting existing customers down",
+  "k3": "Risk: the reasoning is circular",
+  "k4": "Bakeries where supermarket contracts went badly are less likely to be talked about"}},
+"R6A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "roughly 1,300 loaves a day over capacity",
+  "k2": "answers a different question from yours. Whether it pays is not the same as",
+  "k3": "argues in a circle. A willingness to sign says nothing about solvency",
+  "k4": "You hear from the ones who are happy to talk"}},
+"M0R": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "That is about 1,300 loaves a day (roughly 14%) more than you can bake",
+  "k2": "the capacity section, which answers your question about not letting down your café",
+  "k3": "It says little about whether Pellam is financially solid",
+  "k4": "Bakeries where it went badly may have closed or may not take his calls"}},
+"H7O": {"k1": "✓", "k2": "~", "k3": "~", "k4": "✓", "evidence": {
+  "k1": "That is 1,300 loaves a day more than you can bake, with no slack",
+  "k2": "The first two answer your original question the wrong way round",
+  "k3": "A three-year commitment doesn't show Pellam is financially solid",
+  "k4": "Bakeries where it went badly may have closed or may not be taking calls"}},
+"T3Z": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Together that is 10,300 against 9,000, so you'd be about 1,300 loaves a day short",
+  "k2": "the memo doesn't show that you can serve Pellam without letting down your existing customers",
+  "k3": "Look at their credit directly. Don't infer it from the contract length.",
+  "k4": "Talk to a couple more bakeries, including one that had a bad experience"}},
+"Z5Y": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "you would need about 10,300. That is roughly 1,300 loaves a day more",
+  "k2": "Letting those customers down is the outcome you wanted to avoid",
+  "k3": "The three-year term does not show Pellam is financially solid",
+  "k4": "You only hear from the ones who stayed in business and are happy"}},
+"Z6S": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "you'd be about 1,300 loaves a day short. Total demand would be about 10,300",
+  "k2": "The conclusion answers a different question from the one you asked.",
+  "k3": "A three-year commitment is not the same as a financially solid customer",
+  "k4": "mostly reflects who you'd be likely to hear from"}},
+"W4F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "which is 1,300 loaves a day more than you can bake",
+  "k2": "The conclusion answers a different question.",
+  "k3": "Check their payment terms and credit position directly. Don't infer them from the contract length.",
+  "k4": "You haven't heard from bakeries that took on a supermarket contract and were hurt"}}
+}
