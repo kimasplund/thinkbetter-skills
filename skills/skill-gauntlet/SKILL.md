@@ -2,6 +2,7 @@
 name: skill-gauntlet
 description: >-
   Runs a regression-guarded blind A/B evaluation of a candidate skill, prompt, rubric, or agent configuration against the current champion, and adopts it only if it wins on value dimensions without regressing on guard dimensions. Use when a revision must prove itself before adoption: champion vs challenger testing, pre-registered conjunctive adoption gates, blind persona-diverse judge panels, cross-check auditors, planted-flaw key verification, framing and negative fixtures, generic controls. Triggers: "A/B test this skill", "extreme testing", "make sure we're not regressing", "test before adopting", "compare these two prompts/skills rigorously", "champion vs challenger", evolving an installed skill where a silent regression would be costly. Do NOT use for: simple factual QA, one-shot content generation, or evals where a single automated metric fully defines quality (use a test suite instead).
+license: MIT
 metadata:
   version: "1.1.1"
 ---

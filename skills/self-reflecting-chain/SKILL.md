@@ -1,6 +1,7 @@
 ---
 name: self-reflecting-chain
 description: Works through a problem one dependent step at a time, reflecting on each step's validity and backtracking when a step fails. Use when order matters and each step builds on the last - tracing a known execution path, a proof or derivation, a causal chain, a plan where phase B needs phase A - or when the user says "walk me through it step by step", "check each step", "trace this through". Not for finding an unknown root cause among many candidates (use hypothesis-elimination), for choosing among options (use tree-of-thoughts or breadth-of-thought), or for steps that can run in any order.
+license: MIT
 metadata:
   version: "2.3.1"
 ---

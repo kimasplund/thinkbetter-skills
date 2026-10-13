@@ -2,6 +2,7 @@
 name: premortem-evolved
 description: >-
   Runs a premortem on a plan before it launches: assumes the plan already failed, ranks the causes with calibrated probability shares, scores impact against feasibility, rebuilds the plan behind a decision rule, plays the adversary's dated kill chain, and sets tripwires. Use whenever someone shares a plan, launch, pitch, campaign, career move, business idea, budget, or any significant decision they are about to commit to, including when they only ask "is this a good plan?", "what do you think?", "any holes in this?", "should I do it?", or "poke holes in this". Treats a shared plan as a request for a premortem unless they clearly want something else.
+license: MIT
 metadata:
   version: "2.2.2"
 ---

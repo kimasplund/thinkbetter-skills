@@ -1,6 +1,7 @@
 ---
 name: rapid-triage-reasoning
 description: Reaches a defensible decision fast when minutes matter, preferring reversible actions, a stated quality floor and a short follow-up list over the perfect answer. Use when the user says "production is down, what do we do", "I have ten minutes to decide", "we need a call right now", or faces an incident, emergency or hard deadline where delay costs more than a suboptimal choice. Not for decisions with real time to spare (use tree-of-thoughts), for finding a root cause before acting (use hypothesis-elimination, after stabilizing), or for disagreements between several parties (use negotiated-decision-framework).
+license: MIT
 metadata:
   version: "2.2.1"
 ---

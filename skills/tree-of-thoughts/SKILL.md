@@ -1,8 +1,9 @@
 ---
 name: tree-of-thoughts
 description: "Finds the single best option among several fundamentally different approaches by exploring 5 or more branches, scoring each against explicit criteria, and recursively deepening the winner for at least four levels. Use for questions like which architecture to pick, REST vs GraphQL vs gRPC, what the best strategy is, or any optimization or strategic-planning decision with real trade-offs. Not for obvious single-path problems, time-critical calls (use rapid-triage-reasoning), mapping every possible option (use breadth-of-thought), or reconciling two valid opposites (use dialectical-reasoning)."
+license: MIT
 metadata:
-  version: "2.3.1"
+  version: "2.3.2"
 ---
 
 ## Effort & Thinking Budget
@@ -265,18 +266,20 @@ Final Confidence = Posterior Odds / (1 + Posterior Odds)
 ```
 
 **Practical Calculation**:
-1. Start with prior confidence: 50% (neutral)
+1. Start with prior confidence: 50% (neutral, odds = 1)
 2. For each evaluation criterion score (0-20):
-   - Convert to likelihood ratio: `LR = 0.25 + (score/20) * 3.75`
+   - Convert to likelihood ratio: `LR = 2^((score - 10) / 10)`. A score of 10/20 is neutral (LR = 1), lower scores reduce confidence, higher scores raise it. LR runs from 0.5 (score 0) to 2 (score 20).
    - Update odds: `Odds = Odds × LR`
 3. Convert back to probability: `Conf = Odds / (1 + Odds)`
 4. Cap at 95% (Bayesian humility for unknown unknowns)
 
+Shortcut: the five likelihood ratios multiply to `2^((total - 50) / 10)`, where total is the 0-100 score. A total of 50 gives 50%, 70 gives 80%, 80 gives 89%, and 100 gives 97% (capped at 95%).
+
 **Example**:
-- Branch scores: Novelty 18/20, Feasibility 19/20, Completeness 17/20, Confidence 18/20, Alignment 19/20
-- Likelihood ratios: 3.62, 3.81, 3.44, 3.62, 3.81
-- Final odds: 1.0 × 3.62 × 3.81 × 3.44 × 3.62 × 3.81 = 1,782
-- Confidence: 1782 / 1783 = 99.9% → **Capped at 95%**
+- Branch scores: Novelty 18/20, Feasibility 19/20, Completeness 17/20, Confidence 18/20, Alignment 19/20 (total 91)
+- Likelihood ratios: 1.74, 1.87, 1.62, 1.74, 1.87
+- Final odds: 1.0 × 1.74 × 1.87 × 1.62 × 1.74 × 1.87 = 2^4.1 = 17.1
+- Confidence: 17.1 / 18.1 = 94.5%, which is under the 95% cap
 
 **Confidence Interpretation**:
 - **90-95%**: Exceptional evidence, suitable for critical decisions

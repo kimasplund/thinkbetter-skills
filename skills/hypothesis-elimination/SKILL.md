@@ -1,6 +1,7 @@
 ---
 name: hypothesis-elimination
 description: Finds the single cause of a problem by listing candidate explanations, gathering evidence that rules them out, and confirming the survivor. Use for "why is this happening", "what caused this", "find the root cause", production incidents, intermittent bugs, performance regressions, and differential diagnosis, where one answer is correct and evidence can discriminate between candidates. Not for generating or comparing solution options (use breadth-of-thought or tree-of-thoughts), for tracing a path you already know (use self-reflecting-chain), or when no evidence can be gathered.
+license: MIT
 metadata:
   version: "2.2.1"
 ---

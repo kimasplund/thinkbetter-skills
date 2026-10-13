@@ -154,8 +154,8 @@ for branch in branches:
 - **Confidence 16**: Self-reflection shows 80% confidence with good reasoning
 - **Alignment 15**: Good fit for constraints, minor context misalignment
 
-**Likelihood Ratios**: 3.44, 3.81, 3.62, 3.25, 3.06
-**Bayesian Confidence**: ~92%
+**Likelihood Ratios** (`2^((score - 10) / 10)`): 1.62, 1.87, 1.74, 1.52, 1.41
+**Bayesian Confidence**: odds = 2^3.5 = 11.3, so 11.3 / 12.3 = 91.9%, about 92%
 
 ### Medium Confidence Branch (65/100)
 
@@ -168,8 +168,8 @@ for branch in branches:
 - **Confidence 13**: Self-reflection shows 65% confidence with uncertainties
 - **Alignment 13**: Decent fit, some misalignment with constraints
 
-**Likelihood Ratios**: 2.50, 2.87, 2.69, 2.69, 2.69
-**Bayesian Confidence**: ~75%
+**Likelihood Ratios** (`2^((score - 10) / 10)`): 1.15, 1.32, 1.23, 1.23, 1.23
+**Bayesian Confidence**: odds = 2^1.5 = 2.83, so 2.83 / 3.83 = 73.9%, about 74%
 
 ---
 

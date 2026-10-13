@@ -1,8 +1,9 @@
 ---
 name: integrated-reasoning
 description: "Chooses how to reason about a hard problem before diving in: scores the problem's traits and routes it to the best-fitting reasoning skill, a sequence of several, or plain direct analysis. Use when a complex or high-stakes problem mixes debugging, trade-offs, novelty or stakeholder politics and the approach is unclear, e.g. 'how should I approach this', 'which method fits here', 'help me think this through'. If the problem type is already clear, use that skill directly: hypothesis-elimination for a root cause, tree-of-thoughts for the best known option, dialectical-reasoning for a trade-off, rapid-triage-reasoning for an emergency."
+license: MIT
 metadata:
-  version: "2.3.1"
+  version: "2.3.2"
 ---
 
 # Integrated Reasoning — Meta-Orchestration
@@ -130,17 +131,18 @@ Apply -5% to final confidence for each uncertain dimension that affects the winn
 | One pattern scores >4.0 | Use that pattern directly |
 | Top 2 within 0.5 of each other | Consider multi-pattern orchestration |
 | Top 3 within 0.3 of each other | Apply uncertainty propagation first |
-| All patterns <3.0 | Problem may need decomposition first |
-| Top pattern <2.5 | None fit well; use Direct Analysis |
+| All patterns <3.0 but Direct Analysis does not apply | Problem may need decomposition first |
+| Top pattern ≤4.0, no dimension scored ≥4, and Time Pressure <4 | None fit well; use Direct Analysis |
 
 ### Direct Analysis (10th Pattern)
 
-When all pattern scores are below 2.5, no specialized methodology is warranted:
+Use Direct Analysis (no specialized pattern) when all three hold:
+- MAX(all pattern scores) ≤ 4.0 — no pattern is a clear fit, AND
+- No dimension scored ≥ 4 — the problem has no strong characteristic a pattern is built for, AND
+- Time Pressure < 4 — otherwise the fast-path applies
 
 ```markdown
 ## Direct Analysis
-
-**When to use**: All patterns score <2.5 (problem doesn't match any pattern's strengths)
 
 **Approach**:
 1. No special framework needed
@@ -158,13 +160,6 @@ When all pattern scores are below 2.5, no specialized methodology is warranted:
 - Clear problem + clear answer = high confidence
 - Any ambiguity = document it explicitly
 ```
-
-### Direct Analysis Threshold
-
-Use Direct Analysis (no specialized pattern) when:
-- MAX(all pattern scores) < 4.0 AND
-- No dimension scored >= 4 AND
-- Problem is not time-critical (TimePressure < 4)
 
 Direct Analysis = simple step-by-step reasoning without framework overhead.
 
@@ -272,7 +267,7 @@ Complete end-to-end flow for IR-v2 orchestration:
    └─→ Apply validation rules (AR needs solution, NDF needs stakeholders)
 
 5. **Direct Analysis Check**
-   └─→ All patterns < 2.5? → Use Direct Analysis (no framework)
+   └─→ Top pattern ≤ 4.0, no dimension ≥ 4, TimePressure < 4? → Direct Analysis (no framework)
 
 6. **Orchestration Decision**
    └─→ Single pattern > 4.0? → Use that pattern directly
@@ -639,6 +634,7 @@ Run a literal text search over the user-facing answer for: every pattern name an
 | Robustness Required | 4 | High stakes, need validation |
 | Solution Exists | 1 | No candidate solution yet |
 | Time Pressure | 2 | Strategic decision, not urgent |
+| Stakeholder Complexity | 3 | Legal, product and engineering differ, but one executive owner decides |
 
 ### Pattern Affinity Scores
 - ToT: (3×.35)+(4×.30)+(2×.20)+(1×.15) = 2.80
@@ -649,10 +645,11 @@ Run a literal text search over the user-facing answer for: every pattern name an
 - DR: (5×.50)+(3×.20)+(4×.15)+(4×.15) = 4.30
 - **AT: (5×.45)+(4×.30)+(4×.15)+(4×.10) = 4.45** ← Highest
 - RTR: (2×.50)+(4×.25)+(2×.15)+(1×.10) = 2.40
+- NDF: (3×.45)+(5×.25)+(3×.15)+(4×.15) = 3.65
 
 ### Recommendation
 **Primary**: Analogical Transfer (4.45) - Look at how other governance challenges were solved
-**Secondary**: Dialectical Reasoning (3.80) - Innovation vs caution tension needs synthesis
+**Secondary**: Dialectical Reasoning (4.30) - Innovation vs caution tension needs synthesis
 
 **Orchestration**: AT → DR → AR
 1. Use AT to find analogous governance frameworks (environmental, financial, medical)

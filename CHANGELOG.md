@@ -2,6 +2,15 @@
 
 The plugin version is set in `.claude-plugin/plugin.json`. Each skill's own version is `metadata.version` in its `SKILL.md`.
 
+## 1.2.1 — 2026-10-13
+
+- **Arithmetic fixes, re-applied by owner decision.** The 1.2.0 reverts restored three bugs that 1.1.0 had fixed. Only those fixes are re-applied here, without a gauntlet round; they change numbers, not method.
+  - **integrated-reasoning 2.3.2:** the Direct Analysis threshold is reachable and consistent (top pattern ≤ 4.0, no dimension ≥ 4, time pressure < 4), replacing two conflicting cut-offs (< 2.5 and < 4.0). The worked example now scores every pattern, and its recommendation quotes the right figures.
+  - **tree-of-thoughts 2.3.2:** the confidence likelihood ratio is `2^((score - 10) / 10)`, so a 10/20 score is neutral and confidence no longer saturates at the 95% cap. The worked examples are recomputed.
+  - **breadth-of-thought 2.3.2:** every confidence input is on a 0–100 scale, so the formula reaches its full range. Every branch count agrees with the others (33–45 through Level 1, at most 70 with Level 2, 10–15 viable solutions).
+- **Every skill now carries `license: MIT`** in its frontmatter. This is a frontmatter-only change.
+- **Docs:** the round-by-round validation history moved to [docs/VALIDATION.md](docs/VALIDATION.md), and the README keeps a short current status. A README sentence that claimed the router threshold fix was still shipping, after its revert in 1.2.0, is corrected. The follow-up gauntlet records (`evolution/gauntlet-2026-10-r2/`, no skill changes) are summarised there.
+
 ## 1.2.0 — 2026-10-13
 
 The suite gauntlet: every skill went through a pre-registered, blind [skill-gauntlet](skills/skill-gauntlet/) round against answering with no skill. Sonnet executed, Opus judged, and a Sonnet auditor and key verifiers checked the replies. Seven rounds also compared the 1.1.0 rewrite with v1.0.0. **No skill validated, and every rewrite was reverted.** Verdicts were applied mechanically from gates frozen before each round. The record is in [evolution/gauntlet-2026-10/](evolution/gauntlet-2026-10/LEDGER.md), and the design is in the [spec](docs/superpowers/specs/2026-10-13-suite-gauntlet-design.md) (about 19.2M subagent tokens, pilot included).

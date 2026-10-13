@@ -1,6 +1,7 @@
 ---
 name: negotiated-decision-framework
 description: Works out a decision that several people or groups with competing interests must all accept, by mapping stakeholders, finding common ground, sorting real conflicts from false ones, and designing an agreement each party can live with. Use when the user says "the teams disagree", "how do I get buy-in", "engineering and product want different things", "stakeholders won't agree", or when politics and power dynamics will decide whether the best answer is adopted. Not for a single decision-maker with clear criteria (use tree-of-thoughts), for a purely conceptual tension (use dialectical-reasoning), or when time pressure rules out negotiation (use rapid-triage-reasoning, then negotiate afterwards).
+license: MIT
 metadata:
   version: "2.2.1"
 ---

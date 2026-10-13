@@ -1,8 +1,9 @@
 ---
 name: breadth-of-thought
 description: "Maps the whole solution space by exploring 8-10 fundamentally different approaches, pruning only the clearly non-viable, and returning 3-5 viable options with their trade-offs instead of one winner. Use for what are all my options, I do not know what the possibilities are, compare every architecture, or any decision where missing a viable alternative would be costly. Not for picking the single best of known options (use tree-of-thoughts), tracing a long dependent chain of reasoning (use self-reflecting-chain), diagnosing a bug or incident (use hypothesis-elimination), or obvious one-path problems."
+license: MIT
 metadata:
-  version: "2.3.1"
+  version: "2.3.2"
 ---
 
 ## Effort & Thinking Budget
@@ -45,12 +46,12 @@ Best with Opus for maximum reasoning depth. On Sonnet, reduce to 5 approaches pe
 
 | Dimension | **Breadth of Thought** | **Tree of Thoughts** |
 |-----------|----------------------|---------------------|
-| **Exploration** | Wide: 8-10 branches per level | Deep: 5 branches → 1 best |
+| **Exploration** | Wide: 8-10 approaches at Level 0, 5 sub-approaches per retained approach below | Deep: 5 branches → 1 best |
 | **Pruning** | Conservative: Keep >40% | Aggressive: Keep top 1-2 |
 | **Levels** | Shallow: 2-3 levels | Deep: 4-6 levels |
 | **Output** | 3-5 viable solutions | 1 optimal solution |
 | **Use when** | Solution space unknown | Evaluation criteria clear |
-| **Total exploration** | 50-100 branches | 25-40 branches |
+| **Total exploration** | 33-45 branches (up to 70 with Level 2) | 20-30 branches |
 | **Philosophy** | "Don't miss anything" | "Find the best" |
 
 ---
@@ -197,7 +198,7 @@ Best with Opus for maximum reasoning depth. On Sonnet, reduce to 5 approaches pe
 2. For each approach, identify 5 sub-approaches (variations, implementations, configurations)
 3. Explore each sub-approach (same depth as Level 0)
 4. Evaluate and prune conservatively (keep >40%)
-5. **(Optional) Level 2**: If time allows and depth needed, repeat for top branches
+5. **(Optional) Level 2**: If more depth is needed, repeat for the top 5 branches (5 sub-approaches each, up to 25 more)
 
 **Level 1 Decomposition** (per retained approach):
 ```markdown
@@ -229,12 +230,14 @@ Approach 2: Real-time Streaming
 └─ 2.5: Redis Streams + Node.js workers
 ```
 
+**Branch count**: 8-10 at Level 0, plus 5-7 retained × 5 = 25-35 at Level 1, so 33-45 branches through Level 1. Level 2 adds at most 25 (top 5 × 5), for 70 at most.
+
 **Stopping Criteria**:
 - **After Level 1**: If you have 10-15 viable sub-approaches (sufficient breadth)
 - **Continue to Level 2**: If approaches still too abstract, need implementation details
-- **Maximum Depth**: 3 levels (breadth over depth philosophy)
+- **Maximum Depth**: 3 levels, Level 0 to Level 2 (breadth over depth philosophy)
 
-**Deliverable**: 10-20 viable solutions across all expanded approaches
+**Deliverable**: 10-15 viable solutions across all expanded approaches
 
 ---
 
@@ -260,8 +263,8 @@ Approach 2: Real-time Streaming
 
 ### Total Exploration
 - **Level 0**: 8 approaches explored → 6 retained
-- **Level 1**: 30 sub-approaches explored → 12 retained
-- **Total branches analyzed**: 38
+- **Level 1**: 30 sub-approaches explored (6 × 5) → 12 retained
+- **Total branches analyzed**: 38 (8 + 30)
 - **Time**: [X] minutes
 
 ### Top 5 Viable Solutions
@@ -355,7 +358,7 @@ After applying BoT methodology, verify:
 4. **Single Winner**: Returning only 1 solution like ToT, defeating purpose of BoT
 5. **Shallow Exploration**: Brief 1-paragraph analyses instead of thorough investigation
 6. **Ignoring Unknown Unknowns**: Not exploring "wild card" unconventional approaches
-7. **Over-Execution**: Going to Level 3-4 when Level 2 already gave 20+ viable solutions
+7. **Over-Execution**: Going to Level 2 when Level 1 already gave 10-15 viable solutions
 
 ---
 
@@ -392,7 +395,7 @@ Includes:
 ## Summary
 
 Breadth of Thought is a **systematic methodology** for exhaustive solution space exploration through:
-1. **Wide branching** (8-10 approaches per level)
+1. **Wide branching** (8-10 approaches at Level 0, 5 sub-approaches per retained approach)
 2. **Conservative pruning** (keep >40% confidence)
 3. **Shallow depth** (2-3 levels maximum)
 4. **Multiple solutions** (return top 3-5, not just 1)

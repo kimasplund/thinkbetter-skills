@@ -1,6 +1,7 @@
 ---
 name: analogical-transfer
 description: Solves a novel problem with no direct precedent by mapping it onto structurally similar solved problems in other domains and carrying the working mechanisms over. Use when the user says "we've never done anything like this", "is there a precedent for this", "what is this similar to", "how would other fields handle this", or when the obvious in-domain answers are exhausted. Also useful for explaining a hard concept through a well-chosen parallel. Not for problems with known in-domain solutions (research them instead), for choosing among known options (use tree-of-thoughts), or for enumerating the whole option space (use breadth-of-thought).
+license: MIT
 metadata:
   version: "2.2.1"
 ---

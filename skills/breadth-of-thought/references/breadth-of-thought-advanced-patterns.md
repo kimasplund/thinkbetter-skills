@@ -120,7 +120,7 @@ Decision: KEEP ONE LEVEL - novel approach worth exploring despite uncertainty
 
 ### Conservative Bias Justification
 
-- **False positive** (keeping weak branch): Costs one more level of exploration, ~5-10 tasks
+- **False positive** (keeping weak branch): Costs one more level of exploration, roughly 5 more branches
 - **False negative** (pruning viable solution): Miss potentially optimal solution permanently
 - **BoT philosophy**: Comprehensive coverage > early optimization
 
@@ -183,11 +183,16 @@ For each pair of branches (i, j):
     Elevate to "strong evidence"
 ```
 
-### Confidence Boost
+### Convergence Score
 
-- 2 branches converge: +10% confidence
-- 3+ branches converge: +20% confidence
-- Convergence from branches that started with opposing assumptions: +30% confidence
+The convergence score is a 0-100 input to the confidence formula below. This table is the only place its values are set.
+
+| Convergence evidence | Score |
+|---|---|
+| None | 0 |
+| 2 branches converge | 40 |
+| 3+ branches converge | 70 |
+| Convergence from branches that started with opposing assumptions | 100 |
 
 ---
 
@@ -266,18 +271,21 @@ Assess:
 
 ### Aggregation Formula
 
+All five inputs are on a 0-100 scale and the weights sum to 1, so the result is also 0-100 (100 only if every input is 100):
+
 ```
 Final_Confidence =
   (Level_0_Confidence × 0.3) +
   (Level_1_Confidence × 0.3) +
   (Level_2_Confidence × 0.2) +
-  (Convergence_Boost × 0.1) +
-  (Evidence_Quality × 0.1)
+  (Convergence_Score  × 0.1) +
+  (Evidence_Quality   × 0.1)
 
 Where:
 - Level_X_Confidence: Average confidence of branches contributing to this solution
-- Convergence_Boost: 0-20% based on cross-branch validation
-- Evidence_Quality: 0-10% based on depth of analysis
+  (if Level 2 was not run, move its 0.2 weight to the other two levels equally: 0.4 / 0.4 / 0 / 0.1 / 0.1)
+- Convergence_Score: from the Convergence Score table above
+- Evidence_Quality: 0-100, how thorough and well-supported the analysis was
 ```
 
 ### Example Calculation
@@ -292,34 +300,32 @@ Contributing branches:
 - Level 1, Branch A.4 (Caching layer): 70% confidence
 - Level 2, Hybrid implementation: 90% confidence
 
-Convergence: Branches A and C independently suggested PostgreSQL → +15%
-Evidence: 5 branches analyzed, 100+ explorations → +8%
+Convergence: Branches A and C independently suggested PostgreSQL (2 branches) → score 40
+Evidence: 5 contributing branches, analyzed to Level 2 → score 80
 
 Calculation:
-Base = (75 + 80)/2 × 0.3 = 23.25  (Level 0)
-L1 = (85 + 70)/2 × 0.3 = 23.25     (Level 1)
-L2 = 90 × 0.2 = 18.0               (Level 2)
-Conv = 15 × 0.1 = 1.5              (Convergence)
-Evid = 8 × 0.1 = 0.8               (Evidence)
+L0   = (75 + 80)/2 × 0.3 = 77.5 × 0.3 = 23.25
+L1   = (85 + 70)/2 × 0.3 = 77.5 × 0.3 = 23.25
+L2   = 90 × 0.2 = 18.0
+Conv = 40 × 0.1 = 4.0
+Evid = 80 × 0.1 = 8.0
 
-Final_Confidence = 23.25 + 23.25 + 18.0 + 1.5 + 0.8 = 66.8%
-
-Rounded: 67% confidence (Medium-High)
+Final_Confidence = 23.25 + 23.25 + 18.0 + 4.0 + 8.0 = 76.5% (Medium-High)
 ```
 
-### Confidence Adjustments
+### Setting the Inputs
 
-**Increase confidence if**:
-- Multiple independent branches converge (+5-20%)
-- Deep evidence trail (extensive exploration) (+5-10%)
-- Real-world validation examples exist (+10-15%)
-- Prior experience with approach (+5-10%)
+Raise Evidence_Quality and the level confidences when:
+- Multiple independent branches converge (also scored in Convergence_Score, so do not count it twice)
+- The exploration trail is deep and extensive
+- Real-world validation examples exist
+- There is prior experience with the approach
 
-**Decrease confidence if**:
-- Branches conflict on key decisions (-10-20%)
-- Novel/unproven approach (-10-15%)
-- Sparse evidence (<50 explorations) (-5-10%)
-- High implementation complexity (-5-10%)
+Lower them when:
+- Branches conflict on key decisions
+- The approach is novel or unproven
+- Evidence is sparse (few explorations behind the solution)
+- Implementation complexity is high
 
 ---
 
@@ -343,13 +349,13 @@ This is ToT, not BoT.
 ```
 Level 0: 10 approaches explored
 Pruning: Keep 6 approaches (✅ 40% pruned, conservative)
-Level 1: 40 explorations total (6-7 per surviving branch)
-Total: 50+ explorations
+Level 1: 30 explorations total (5 per surviving branch)
+Total: 40 explorations
 ```
 
 **How to detect**:
 - Pruning >50% of branches at any level → Too aggressive
-- Total exploration count <50 → Not enough exploration
+- Total exploration count below 33 (8 approaches, 5 retained, 5 sub-approaches each) → Not enough exploration
 - Only 1-2 solutions in final report → Converged too early
 
 ---
@@ -416,8 +422,7 @@ Independent validation:
 - Branch C: Recommended TimescaleDB (PostgreSQL extension) for time-series
 - Branch E: Recommended PostgreSQL for data integrity
 
-Confidence boost: 3 independent branches converged → +20%
-Final confidence: 85% (High)
+Convergence score: 70 (3 independent branches converged), which raises the solution's final confidence
 
 Conclusion: PostgreSQL is strong evidence-based choice.
 ```
@@ -446,7 +451,7 @@ Conclusion: PostgreSQL is strong evidence-based choice.
 - **Level 0**: [X] initial approaches explored
 - **Level 1**: [Y] sub-branches expanded ([Z] pruned as <40% viable)
 - **Level 2**: [W] detailed implementations analyzed
-- **Total Explorations**: [~100+]
+- **Total Explorations**: [33-45 through Level 1, up to 70 with Level 2]
 - **Solutions Retained**: Top 5 (plus 5 runners-up documented)
 
 ---
