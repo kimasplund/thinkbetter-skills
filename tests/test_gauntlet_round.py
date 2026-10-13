@@ -109,5 +109,73 @@ class BuildTest(RoundFixture):
             gr.build("demo-two", seed=4)
 
 
+class RenderBlindTest(RoundFixture):
+    def built(self, skill="demo-skill", seed=5):
+        gr.build(skill, seed=seed)
+        return gr.round_dir(skill)
+
+    def write_raw(self, rd, text="# Answer\n\n## 1. First point\n\nContent.\n", skip=()):
+        (rd / "raw").mkdir(exist_ok=True)
+        for c in json.loads((rd / "cells.json").read_text()):
+            if c["cell"] not in skip:
+                (rd / "raw" / f"{c['cell']}.md").write_text(text)
+
+    def test_render_exec_prompts_hide_arms_and_keys(self):
+        rd = self.built()
+        jobs = gr.render("demo-skill", "exec")
+        self.assertEqual(len(jobs), 25)
+        none_code = {v: k for k, v in json.loads((rd / "SEALED.json").read_text())["arms"].items()}["none"]
+        for j in jobs:
+            text = (rd / j["prompt"]).read_text()
+            for word in (" new ", " old ", " none ", "v1.0.0", "1.1.0"):
+                self.assertNotIn(word, text, j["id"])
+            for b in KEYS.values():
+                for k in b:
+                    self.assertNotIn(k["text"], text)
+            self.assertNotIn("pack/", text)
+            if f"--{none_code}--" in j["id"]:
+                self.assertNotIn("SKILL.md", text)
+            else:
+                self.assertIn("SKILL.md", text)
+        self.assertTrue(all(j["model"] == "sonnet" for j in jobs))
+
+    def test_render_judge_embeds_keys_only_in_verifier_prompts(self):
+        rd = self.built()
+        self.write_raw(rd)
+        gr.blind("demo-skill", seed=6)
+        jobs = gr.render("demo-skill", "judge")
+        kinds = {j["id"].split("-")[0] for j in jobs}
+        self.assertEqual(kinds, {"J", "auditor", "verifier"})
+        self.assertEqual(len(jobs), 2 * 3 + 1 + 3)
+        for j in jobs:
+            text = (rd / j["prompt"]).read_text()
+            has_key = any(k["text"] in text for b in KEYS.values() for k in b)
+            self.assertEqual(has_key, j["id"].startswith("verifier"), j["id"])
+            self.assertNotIn("SEALED", text)
+        self.assertTrue(all(j["model"] == "opus" for j in jobs if j["id"].startswith("J-")))
+
+    def test_blind_refuses_missing_raw(self):
+        rd = self.built()
+        first = json.loads((rd / "cells.json").read_text())[0]["cell"]
+        self.write_raw(rd, skip=(first,))
+        with self.assertRaises(SystemExit) as cm:
+            gr.blind("demo-skill", seed=6)
+        self.assertIn(first, str(cm.exception))
+
+    def test_blind_strips_ordinals_and_writes_plan(self):
+        rd = self.built()
+        self.write_raw(rd)
+        r = gr.blind("demo-skill", seed=6)
+        self.assertEqual(r["blind"], 25)
+        plan = json.loads((rd / "jobs" / "judge-plan.json").read_text())
+        mapping = json.loads((rd / "SEALED.json").read_text())["blind"]
+        mains = [c for c in json.loads((rd / "cells.json").read_text()) if c["kind"] == "main"]
+        self.assertEqual(sorted(sum(plan["main"].values(), [])), sorted(mapping[f"{c['cell']}.md"] for c in mains))
+        self.assertEqual(len(plan["framing_pairs"]), 2)
+        some = rd / "blind" / f"{plan['main']['brief-1'][0]}.md"
+        self.assertIn("## First point", some.read_text())
+        self.assertNotIn("## 1.", some.read_text())
+
+
 if __name__ == "__main__":
     unittest.main()
