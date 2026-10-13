@@ -1,0 +1,19 @@
+[
+ {
+  "order": 1,
+  "skill": "self-reflecting-chain",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "flaws planted in a finished draft (an argument, plan or analysis) that the user pastes and asks to have checked: a circular argument, a cognitive bias driving a conclusion, an internal contradiction in numbers or dates, and a conclusion that answers an easier question than the one asked",
+  "new_ref": "HEAD",
+  "old_ref": "v1.2.1",
+  "adopt": "rewrite"
+ }
+]
