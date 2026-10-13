@@ -52,9 +52,9 @@ npx skills add kimasplund/thinkbetter-skills -a codex -g           # all skills,
 The suite is validated with [skill-gauntlet](skills/skill-gauntlet/): blind, pre-registered champion-versus-challenger rounds with conjunctive regression guards. Several results below are NO ADOPTION verdicts that shipped by a disclosed owner decision, and this section says which.
 
 **integrated-reasoning (router).** One with-skill vs no-skill round was run on a frontier model, with 16 cells and sealed keys.
-- **No measured lift in decision quality.** Detection and judged decision quality landed at exact parity, because the base model already reasoned at ceiling on the test briefs.
-- **The restraint machinery passed.** The Direct Analysis threshold deflated a trivial question, and the time-pressure fast-path opened an incident response with the rollback rather than analysis.
-- **A machinery leak was found and fixed.** Round 2 gauntleted a fix for a leak of scoring apparatus into answers. The fix eliminated the leaks (0 vs 9) but missed one planted-key bar (93.8% vs 100%), so v2.2 ships by owner decision.
+- **No measured lift in decision quality, and round 1 lost overall.** Detection and judged decision quality landed at exact parity, because the base model already reasoned at ceiling on the test briefs. The no-skill baseline won 5 of 6 blind forced choices, and the round-1 router regressed the proportionality guard (D5 −0.50) by narrating its scoring apparatus into answers.
+- **The restraint fixtures passed.** The Direct Analysis threshold deflated a trivial question, and the time-pressure fast-path opened an incident response with the rollback rather than analysis.
+- **Round 2 fixed the leak and brought the router back to parity.** A backstage rule plus a mechanical leak scan eliminated the leaks (0 vs 9) and brought the guards back to statistical parity with no skill (D5 4.17 vs 4.50, total 28.25 vs 28.50). The gate still returned NO ADOPTION because planted-key detection came in at 93.8% vs 100%, so v2.2 ships by owner decision.
 
 On strong models, treat the router as reasoning hygiene and restraint rather than a quality lift. Records are in [evolution/integrated-reasoning/](evolution/integrated-reasoning/).
 
@@ -62,7 +62,7 @@ On strong models, treat the router as reasoning hygiene and restraint rather tha
 
 **premortem-evolved 2.2.0.** Each of these rounds beat the champion on totals and blind preference, and each was blocked by a regression guard:
 
-- **Round 3 (Claude):** the v2.1 candidate won 12/12 blind forced choices and detected 97.2% of planted flaws versus 91.7–93.1%. It shipped as v2.1 by owner decision over a statistical-sufficiency line.
+- **Round 3 (Claude):** the v2.1 candidate won 12/12 blind forced choices and detected 97.2% of planted flaws versus the champion's 93.1%. It shipped as v2.1 by owner decision over a statistical-sufficiency line.
 - **Kimi round 2:** the 2.2 deltas swept 6/6 forced choices, scored +2.06 on the total, and its `pre_delivery_check.py` linter closed the probability-honesty defect class completely. The gate still returned **NO ADOPTION** on two template-header leaks and a fatal-flaw label that flipped with framing.
 
 2.2 ships by owner decision for the linter. The full record is in [evolution/premortem-evolved/](evolution/premortem-evolved/).
@@ -84,6 +84,7 @@ Earlier copies of the reasoning suite lived in [claude_cognitive_reasoning](http
 ## Development
 
 ```bash
+git config core.hooksPath .githooks         # once per clone: validator + tests run before every push
 python3 -m unittest discover -s tests       # script tests
 python3 scripts/validate_skills.py          # spec + privacy checks (needs PyYAML)
 claude plugin validate . --strict           # marketplace manifest

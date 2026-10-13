@@ -2,14 +2,6 @@
 name: option-synthesis
 description: "Find and build the best option for a decision instead of grading the first idea. Pre-registers what the choice must satisfy, generates a wide field of genuinely different options (the status quo and the competent default included), kills weak ones with short premortems, compares finalists against the frozen incumbent (blind when the stakes warrant it), and synthesizes the winner with grafts that close its failure modes. Delivers the recommendation, the runner-up, the cheapest decisive experiment, a decision rule and tripwires. Use when choosing between approaches, routes, materials, formulations, designs, equipment, test plans or strategies, e.g. 'what are our options', 'which should we pick', 'best way to', 'compare these approaches', 'is there something better than the current plan', 'design the best X'. Composes premortem-evolved and skill-gauntlet. Not for stress-testing one finished plan (use premortem-evolved) or a candidate skill revision (use skill-gauntlet)."
 metadata:
-  authored_via: "claude-science"
-  published_by: "agent"
-  published_at: "2026-09-29T11:16:33.649Z"
-  authored_by: "agent"
-  authored_at: "2026-09-29T11:16:27.626Z"
-  authoring_session: "35f5a9a0-6f7b-48c4-97e0-4537cb11ffb6"
-  last_modified_by: "agent"
-  last_modified_at: "2026-09-29T11:16:27.761Z"
   version: "1.0.0"
 ---
 

@@ -19,9 +19,9 @@ jobs:
         run: python scripts/validate_skills.py
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
       - name: Claude Code plugin validation
         run: |
-          npx -y @anthropic-ai/claude-code plugin validate . --strict
-          npx -y @anthropic-ai/claude-code plugin validate .claude-plugin/plugin.json --strict
-          npx -y @anthropic-ai/claude-code plugin validate ./skills --strict
+          npx -y @anthropic-ai/claude-code@2.1.296 plugin validate . --strict
+          npx -y @anthropic-ai/claude-code@2.1.296 plugin validate .claude-plugin/plugin.json --strict
+          npx -y @anthropic-ai/claude-code@2.1.296 plugin validate ./skills --strict
