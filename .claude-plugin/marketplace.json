@@ -1,0 +1,14 @@
+{
+  "name": "thinkbetter",
+  "owner": { "name": "Kim Asplund", "url": "https://github.com/kimasplund" },
+  "description": "Reasoning router, nine reasoning patterns, premortem, option synthesis and a blind A/B skill-evaluation harness",
+  "plugins": [
+    {
+      "name": "thinkbetter",
+      "source": "./",
+      "description": "Reasoning router, nine reasoning patterns, premortem, option synthesis and a blind A/B skill-evaluation harness",
+      "category": "reasoning",
+      "tags": ["reasoning", "premortem", "evals"]
+    }
+  ]
+}

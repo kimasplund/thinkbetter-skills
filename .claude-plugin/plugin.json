@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "thinkbetter",
+  "displayName": "ThinkBetter",
+  "version": "1.0.0",
+  "description": "Reasoning router, nine reasoning patterns, premortem, option synthesis and a blind A/B skill-evaluation harness",
+  "author": { "name": "Kim Asplund", "url": "https://github.com/kimasplund" },
+  "homepage": "https://github.com/kimasplund/thinkbetter-skills",
+  "repository": "https://github.com/kimasplund/thinkbetter-skills",
+  "license": "MIT",
+  "keywords": ["reasoning", "premortem", "decision-making", "evals", "skills"]
+}
