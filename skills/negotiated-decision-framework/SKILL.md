@@ -1,28 +1,23 @@
 ---
 name: negotiated-decision-framework
-description: Multi-stakeholder coordination for decisions involving competing interests, different value systems, or organizational politics. Use when multiple parties must agree, when power dynamics affect decisions, or when consensus is required but perspectives diverge. Unlike DR (resolves conceptual tensions), NDF resolves stakeholder tensions.
-model: opus
-agent: general-purpose
-user-invocable: true
+description: Works out a decision that several people or groups with competing interests must all accept, by mapping stakeholders, finding common ground, sorting real conflicts from false ones, and designing an agreement each party can live with. Use when the user says "the teams disagree", "how do I get buy-in", "engineering and product want different things", "stakeholders won't agree", or when politics and power dynamics will decide whether the best answer is adopted. Not for a single decision-maker with clear criteria (use tree-of-thoughts), for a purely conceptual tension (use dialectical-reasoning), or when time pressure rules out negotiation (use rapid-triage-reasoning, then negotiate afterwards).
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
 ---
 
-## Effort & Thinking Budget
-- **Recommended effort**: medium/high — depends on stakeholder count and conflict complexity
-- Include "ultrathink" only when analyzing complex multi-party conflicts with hidden agendas
-- For simpler 2-party negotiations, effort: medium is sufficient
+Works best with extended thinking for the hardest phases.
 
-## Model Recommendation
-Best with Opus for maximum reasoning depth. Stakeholder analysis and interest archaeology benefit from deep reasoning, but Sonnet can handle straightforward 2-3 party negotiations.
+# Negotiated Decision Framework
 
-# Negotiated Decision Framework (NDF)
+## Backstage rule — the method never appears in the answer
 
-**Purpose**: Navigate multi-stakeholder decisions where different parties have legitimate but competing interests. NDF helps find decisions that stakeholders can live with, even if no one gets everything they want.
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Negotiated Decision Framework", or any other reasoning-skill name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
 
-## When to Use NDF
+**Purpose**: Navigate multi-stakeholder decisions where different parties have legitimate but competing interests. Find decisions that stakeholders can live with, even if no one gets everything they want.
 
-**Use NDF when:**
+## When to Use Negotiated Decision Framework
+
+**Use when:**
 - Multiple stakeholders must agree (or at least not block)
 - Different parties have different success criteria
 - Power dynamics or politics affect the decision
@@ -30,20 +25,22 @@ Best with Opus for maximum reasoning depth. Stakeholder analysis and interest ar
 - "Best technical answer" won't get adopted due to stakeholder resistance
 - Need buy-in for implementation success
 
-**Don't use NDF when:**
-- Single decision-maker with clear authority (use ToT)
-- Stakeholders agree on criteria (use ToT with shared criteria)
-- Conceptual tension, not stakeholder tension (use DR)
-- Time pressure prevents negotiation (use RTR, negotiate later)
+**Don't use when:**
+- Single decision-maker with clear authority (use tree-of-thoughts)
+- Stakeholders agree on criteria (use tree-of-thoughts with shared criteria)
+- Conceptual tension, not stakeholder tension (use dialectical-reasoning)
+- Time pressure prevents negotiation (use rapid-triage-reasoning, negotiate later)
 
-**NDF vs Other Patterns:**
-- DR: Resolves conceptual/philosophical tensions (NDF: resolves people tensions)
-- ToT: Finds optimal given criteria (NDF: finds optimal given stakeholders)
-- BoT: Explores solution space (NDF: explores stakeholder space)
+**Versus other skills:**
+- dialectical-reasoning: resolves conceptual/philosophical tensions (this one resolves people tensions)
+- tree-of-thoughts: finds the optimum given criteria (this one finds it given stakeholders)
+- breadth-of-thought: explores solution space (this one explores stakeholder space)
 
 ---
 
 ## Core Methodology: ALIGN Framework
+
+The phase templates below are internal working, not for the answer. Deliver in the Output Template shape at the end.
 
 ### A - Analyze Stakeholder Landscape
 
@@ -83,7 +80,7 @@ Best with Opus for maximum reasoning depth. Stakeholder analysis and interest ar
 ...
 ```
 
-**Interest Archeology:**
+**Interest Archaeology:**
 Don't just accept stated positions. Dig deeper:
 - "We need feature X" → Why? What problem does X solve?
 - "This must be done by Q2" → Why? What happens if Q3?
@@ -338,26 +335,26 @@ When history poisons current negotiation:
 
 ---
 
-## Integration with Other Patterns
+## Integration with Other Skills
 
-**Before NDF:**
-- BoT: Explore full solution space before stakeholder negotiation
-- DR: Resolve conceptual tensions first, then negotiate
+**Before:**
+- breadth-of-thought: Explore the full solution space before stakeholder negotiation
+- dialectical-reasoning: Resolve conceptual tensions first, then negotiate
 
-**After NDF:**
-- ToT: Optimize implementation details within agreed framework
-- AR: Stress-test agreed solution before full commitment
+**After:**
+- tree-of-thoughts: Optimize implementation details within the agreed framework
+- adversarial-reasoning: Stress-test the agreed solution before full commitment
+- self-reflecting-chain: Trace implementation steps after agreement is reached
 
-**Parallel with NDF:**
-- RTR: If time pressure, do quick stakeholder check, negotiate later
-- SRC: Trace implementation steps after agreement reached
+**Instead, under time pressure:**
+- rapid-triage-reasoning: If time pressure prevents negotiation, make the quick, reversible call with it (including a quick stakeholder check), then return here and negotiate once the pressure is off
 
 ---
 
 ## Output Template
 
 ```markdown
-# NDF Decision Record: [Decision Topic]
+# Recommended Agreement: [Decision Topic]
 
 ## Stakeholder Landscape
 [Summary of key stakeholders and interests]
@@ -376,7 +373,7 @@ When history poisons current negotiation:
 |----------|------|------------|
 | [Conflict 1] | [Type] | [How resolved] |
 
-## Negotiated Solution
+## Proposed Agreement
 [Description of agreed solution]
 
 ### Value Distribution
@@ -392,22 +389,6 @@ When history poisons current negotiation:
 ## Implementation Notes
 [How to execute with stakeholder buy-in]
 
-## Confidence: [X]%
-[Based on commitment strength and alignment quality]
+## Risks to the Agreement
+[Where commitment is weakest, who could stall or reopen it, and what to do about it]
 ```
-
----
-
-## Version History
-
-**V1.0** (Current):
-- Initial release
-- ALIGN framework (Analyze, Locate, Identify, Generate, Negotiate)
-- Stakeholder mapping and interest analysis
-- Integrative bargaining strategies
-- Power dynamics navigation
-- Special scenario handling
-
-## Backstage rule — the method never appears in the answer
-
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Negotiated Decision Framework", "NDF", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.

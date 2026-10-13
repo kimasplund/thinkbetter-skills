@@ -1,48 +1,45 @@
 ---
 name: rapid-triage-reasoning
-description: Fast decision-making methodology for time-critical situations. Use when you have minutes (not hours) to decide, during incidents, emergencies, or hard deadlines. Optimizes for "good enough now" over "perfect later". Unlike other patterns that maximize quality, RTR maximizes decision speed while maintaining acceptable quality floors.
-model: sonnet
-agent: general-purpose
-user-invocable: true
+description: Reaches a defensible decision fast when minutes matter, preferring reversible actions, a stated quality floor and a short follow-up list over the perfect answer. Use when the user says "production is down, what do we do", "I have ten minutes to decide", "we need a call right now", or faces an incident, emergency or hard deadline where delay costs more than a suboptimal choice. Not for decisions with real time to spare (use tree-of-thoughts), for finding a root cause before acting (use hypothesis-elimination, after stabilizing), or for disagreements between several parties (use negotiated-decision-framework).
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
 ---
 
-## Effort & Thinking Budget
-- **Recommended effort**: low/medium — speed is the point; extended thinking defeats the purpose
-- Do NOT use "ultrathink" with RTR; the overhead contradicts the time-critical nature
-- If you find yourself wanting max effort, you probably don't need RTR
+Keep thinking short; speed is the point.
 
-## Model Recommendation
-Works well with Sonnet for speed; use Opus only for high-stakes triage where the decision is irreversible and consequences are severe.
+# Rapid Triage Reasoning
 
-# Rapid Triage Reasoning (RTR)
+## Backstage rule — the method never appears in the answer
 
-**Purpose**: Make defensible decisions under extreme time pressure. RTR accepts that perfect is the enemy of good when time is the critical constraint.
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Rapid Triage Reasoning", or any other reasoning-skill name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
+
+**Purpose**: Make defensible decisions under extreme time pressure. Perfect is the enemy of good when time is the critical constraint.
 
 ## When to Use Rapid Triage Reasoning
 
-**Use RTR when:**
+**Use when:**
 - Decision needed in minutes, not hours
 - Production incident requiring immediate action
 - Hard deadline with no extension possible
 - Stakes of delay exceed stakes of suboptimal choice
 - "No decision" is worse than "imperfect decision"
 
-**Don't use RTR when:**
+**Don't use when:**
 - You actually have time (even if it feels urgent)
 - Decision is irreversible AND high-stakes (take the time)
 - Problem requires deep analysis (flag for later, make temporary decision)
 - You can buy time by acknowledging the problem
 
-**RTR vs Other Patterns:**
-- ToT: When you need THE BEST (RTR: when you need SOMETHING GOOD NOW)
-- HE: When you need THE CAUSE (RTR: when you need TO ACT before knowing cause)
-- BoT: When you need ALL OPTIONS (RTR: when you need ONE OPTION FAST)
+**Versus other skills:**
+- tree-of-thoughts: when you need THE BEST (here: SOMETHING GOOD NOW)
+- hypothesis-elimination: when you need THE CAUSE (here: TO ACT before knowing the cause)
+- breadth-of-thought: when you need ALL OPTIONS (here: ONE OPTION FAST)
 
 ---
 
 ## Core Methodology: RAPID Framework
+
+The templates below are internal working, not for the answer, except where noted. Deliver in the Output Template shape at the end.
 
 ### R - Recognize Constraints
 
@@ -130,7 +127,7 @@ Works well with Sonnet for speed; use Opus only for high-stakes triage where the
 - If one option clearly better AND irreversible → Still okay if confidence >70%
 - If uncertain AND must choose irreversible → Get second opinion if ANY time remains
 
-**Quick Assessment Matrix:**
+**Quick Assessment Matrix (internal working, not for the answer):**
 ```markdown
 | Option | Expected Outcome | Confidence | Reversibility | Score |
 |--------|------------------|------------|---------------|-------|
@@ -143,28 +140,28 @@ Prefer highest score
 
 ---
 
-### I - Implement with Checkpoints
+### I - Implement with Progress Checks
 
 **Goal**: Start acting while maintaining ability to course-correct
 
 **Process:**
 1. Begin executing chosen option IMMEDIATELY
-2. Set checkpoint at 25% and 50% of remaining time
-3. At each checkpoint: Is it working? Continue or pivot?
+2. Set a progress check at 25% and 50% of remaining time
+3. At each check: Is it working? Continue or pivot?
 4. Document what you're doing (brief notes, not essays)
 
-**Checkpoint Template:**
+**Progress Check Template:**
 ```markdown
 ## Execution Log
 
 **Started**: [Time]
 **Action**: [What we're doing]
 
-### Checkpoint 1 (25%): [Time]
+### Progress check 1 (25%): [Time]
 - Working? [Yes/Partially/No]
 - Continue? [Yes/Pivot to Option X]
 
-### Checkpoint 2 (50%): [Time]
+### Progress check 2 (50%): [Time]
 - Working? [Yes/Partially/No]
 - Continue? [Yes/Pivot to Option X]
 ```
@@ -188,7 +185,7 @@ Prefer highest score
 
 **Template:**
 ```markdown
-## RTR Decision Record
+## Decision Record
 
 **Situation**: [1-sentence summary]
 **Time Pressure**: [Why urgent]
@@ -199,7 +196,7 @@ Prefer highest score
 ### Follow-up Required
 - [ ] [Investigation or fix needed]
 - [ ] [Technical debt to address]
-- [ ] [Root cause analysis with HE]
+- [ ] [Root cause analysis with hypothesis-elimination]
 ```
 
 ---
@@ -213,13 +210,13 @@ Prefer highest score
 | **30-minute decision** | 30 min | 2m | 5m | 3m | 18m | 2m |
 | **1-hour critical** | 60 min | 3m | 10m | 7m | 35m | 5m |
 
-**If you have >1 hour, consider if RTR is actually needed**
+**If you have >1 hour, consider whether this is actually needed**
 
 ---
 
-## Pre-Built Triage Patterns
+## Pre-Built Triage Playbooks
 
-### Pattern 1: Production Incident Triage
+### Playbook 1: Production Incident Triage
 
 ```markdown
 ## Incident Triage (5 minutes)
@@ -243,7 +240,7 @@ Prefer highest score
 [Brief notes for postmortem]
 ```
 
-### Pattern 2: Meeting Decision Triage
+### Playbook 2: Meeting Decision Triage
 
 ```markdown
 ## Meeting Decision (2 minutes before deadline)
@@ -264,7 +261,7 @@ Prefer highest score
 [Note decision, rationale, revisit date]
 ```
 
-### Pattern 3: Technical Triage
+### Playbook 3: Technical Triage
 
 ```markdown
 ## Technical Decision Under Pressure
@@ -294,7 +291,7 @@ ELSE → Middle ground
 
 1. **Fake Urgency**: Treating everything as urgent
    - Fix: Ask "What happens if I take 30 more minutes?"
-   - If answer is "nothing much" → Not RTR territory
+   - If answer is "nothing much" → Not a triage situation
 
 2. **Analysis Paralysis Under Pressure**: Freezing when time is short
    - Fix: Force yourself to pick within time budget
@@ -305,18 +302,18 @@ ELSE → Middle ground
    - Future you will thank present you
 
 4. **Cowboy Decisions**: Using time pressure to avoid review
-   - Fix: RTR still requires stating rationale
+   - Fix: Still state the rationale
    - "No time to explain" is a red flag
 
-5. **Not Following Up**: Making RTR decisions permanent
+5. **Not Following Up**: Making emergency decisions permanent
    - Fix: Always flag for follow-up
-   - RTR is triage, not treatment
+   - Triage is not treatment
 
 ---
 
-## RTR Quality Metrics
+## Quality Metrics
 
-Unlike other methodologies that optimize for decision QUALITY, RTR optimizes for:
+Unlike methods that optimize for decision QUALITY, this one optimizes for:
 
 | Metric | Target | Measurement |
 |--------|--------|-------------|
@@ -326,22 +323,22 @@ Unlike other methodologies that optimize for decision QUALITY, RTR optimizes for
 | **Follow-up Rate** | 100% get follow-up | Did we revisit the decision? |
 | **Regret Rate** | <20% | Would we decide differently with more time? |
 
-**Acceptable RTR Outcome**: Decision made in time, met quality floor, documented for follow-up.
+**Acceptable outcome**: Decision made in time, met quality floor, documented for follow-up.
 
-**RTR is NOT about making perfect decisions. It's about making good-enough decisions fast enough to matter.**
+**This is NOT about making perfect decisions. It's about making good-enough decisions fast enough to matter.**
 
 ---
 
-## Integration with Other Patterns
+## Integration with Other Skills
 
-**RTR as Starting Point:**
-- RTR (triage) → HE (root cause after stabilization)
-- RTR (quick fix) → ToT (proper solution design)
-- RTR (incident) → AR (post-incident security review)
+**Starting point:**
+- Triage → hypothesis-elimination (root cause after stabilization)
+- Quick fix → tree-of-thoughts (proper solution design)
+- Incident → adversarial-reasoning (post-incident security review)
 
-**RTR Escalation:**
-If during RTR you realize:
-- This is actually not urgent → Exit RTR, use appropriate pattern
+**Escalation:**
+If during triage you realize:
+- This is actually not urgent → Stop, use the appropriate skill
 - This requires expertise you lack → Escalate, don't guess
 - The options all look terrible → Document and escalate
 
@@ -350,7 +347,7 @@ If during RTR you realize:
 ## Output Template
 
 ```markdown
-# RTR Decision Record: [Situation]
+# Decision Record: [Situation]
 
 ## Constraints
 - **Deadline**: [When]
@@ -365,11 +362,11 @@ If during RTR you realize:
 ## Decision
 **Chosen**: [Option]
 **Rationale**: [1-2 sentences]
-**Confidence**: [%] (lower is expected in RTR)
+**How sure**: [Plain words; less than certain is expected under time pressure, say what could make this wrong]
 
 ## Execution
 - Started: [Time]
-- Checkpoints: [What happened]
+- Progress checks: [What happened]
 - Outcome: [Result]
 
 ## Follow-up Required
@@ -379,18 +376,3 @@ If during RTR you realize:
 ## Post-Incident Review
 [To be completed after crisis passes]
 ```
-
----
-
-## Version History
-
-**V1.0** (Current):
-- Initial release
-- RAPID framework (Recognize, Assess, Prioritize, Implement, Document)
-- Pre-built patterns for incidents, meetings, technical decisions
-- Time budgets for different scenarios
-- Integration points with HE, ToT, AR for follow-up
-
-## Backstage rule — the method never appears in the answer
-
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Rapid Triage Reasoning", "RTR", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
