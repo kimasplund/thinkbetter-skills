@@ -1,0 +1,22 @@
+{
+"T2B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "agents now have to ask for them on the call",
+"k2": "If the new starters were the cause, tenured staff would be unaffected.",
+"k3": "AHT for October 10–24 still matches October 3–9.",
+"k4": "Motor-only calls rose by the same amount. This rules out the floods"}},
+"F7X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "an even, flat cost per call, which matches the uniform rise",
+"k2": "The rise is the same, 1.7 to 1.9 minutes, for tenured and new agents.",
+"k3": "The October 9 patch changed nothing, because October 10-24 matches October 3-9.",
+"k4": "Motor-only calls rose by the same amount, and floods are only about 11% of calls."}},
+"I5C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "the work has moved. Before October 3 the caller's date of birth and postcode were captured in the IVR",
+"k2": "18 agents out of 140 at about one extra minute would add only about 0.13 minutes",
+"k3": "Slow screens would also usually show up as hold or after-call work, and both are flat.",
+"k4": "Even if they ran very long, they couldn't lift the whole average by 1.7 to 1.9 minutes."}},
+"M4F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "the ID check didn't go away. It moved onto the agent's live time.",
+"k2": "A new-starter effect would hit the new group harder.",
+"k3": "Hold and after-call work, where screen lag would show up, are flat.",
+"k4": "11% of calls can't produce a ~30% rise overall."}}
+}

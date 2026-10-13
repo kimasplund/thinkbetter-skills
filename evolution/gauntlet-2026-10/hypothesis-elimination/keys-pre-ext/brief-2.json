@@ -1,0 +1,26 @@
+{
+  "F0O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Every Greenfold pallet scanned in since July 8 books 10 bags that never arrived.",
+    "k2": "Three southern stores have had it since May and sit at 1.4%.",
+    "k3": "Three of the eight switched stores are outside the north and show normal shrink.",
+    "k4": "Power tools are only 7% of the excess, and four of the six stores are within 2%"
+  }},
+  "F0Y": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "Every Greenfold pallet scanned in therefore books 10 bags that never arrived.",
+    "k2": "The three southern stores with it are at 1.4%, which is normal.",
+    "k3": "The other three are presumably outside the northern six and look normal",
+    "k4": "power tools are only 7% of the excess, and four of the six stores are within 2% of book"
+  }},
+  "O5G": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "Each Greenfold pallet scanned in therefore adds 10 bags to the books that were never on the shelf.",
+    "k2": "The three southern stores with self-checkout since May are at 1.4%, which is normal.",
+    "k3": "The other three are presumably at normal shrink, so confirm that.",
+    "k4": "Tools are only 7% of the excess, and four of six stores are within 2% of book."
+  }},
+  "Q5P": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "each pallet books 10 bags that never arrived.",
+    "k2": "the three southern ones are at 1.4%, which is normal.",
+    "k3": "should be at normal shrink if the contractor were the cause.",
+    "k4": "tools are only 7% of the excess. Four of the six stores are within 2% of book"
+  }}
+}

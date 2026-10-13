@@ -1,0 +1,42 @@
+{
+"M4F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "When you dropped the date-of-birth and postcode prompts, the ID check ... moved onto the agent's live time.",
+ "k2": "A new-starter effect would hit the new group harder.",
+ "k3": "AHT for October 10-24 matches October 3-9, so the fix changed nothing.",
+ "k4": "Motor-only calls rose by the same amount, and 11% of calls can't produce"}},
+"V2O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Now the agent asks for them, waits for the answers, keys them in",
+ "k2": "They add a small constant drag, about a minute each on 18 of 140 agents.",
+ "k3": "AHT was also unchanged after the October 9 patch (Oct 10-24 equals Oct 3-9).",
+ "k4": "Motor-only calls rose by the same amount, and floods are only about 11%"}},
+"P7U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "moved the date-of-birth and postcode collection from the IVR to your agents.",
+ "k2": "A new-starter effect would hit the new group harder.",
+ "k3": "AHT for October 10-24 matches October 3-9. If slow screens were the cause",
+ "k4": "Floods are about 11% of calls, so they can't lift the average by about 30%."}},
+"F7X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "agents are now collecting the date of birth and postcode by voice at the start of every call",
+ "k2": "New starters would show a bigger rise.",
+ "k3": "It went live October 2, but AHT jumped October 3. The October 9 patch changed nothing",
+ "k4": "Motor-only calls rose by the same amount, and floods are only about 11% of calls."}},
+"I5C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "agents now have to collect that information live, and that is adding time to every call.",
+ "k2": "18 agents out of 140 at about one extra minute would add only about 0.13 minutes",
+ "k3": "AHT for October 10–24 is the same as for October 3–9, so the patch changed nothing.",
+ "k4": "Motor-only calls rose by the same amount, and flood claims are only about 11% of calls."}},
+"V6T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "adds about 1.8 minutes of talk time to every call.",
+ "k2": "would raise AHT for new agents, and only a little for the team overall.",
+ "k3": "hold and after-call work are flat, and AHT for October 10-24 matches October 3-9.",
+ "k4": "Motor-only calls rose by the same amount, which rules them out."}},
+"T2B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "agents now have to ask for them on the call.",
+ "k2": "If the new starters were the cause, tenured staff would be unaffected.",
+ "k3": "AHT for October 10–24 still matches October 3–9.",
+ "k4": "Motor-only calls rose by the same amount. This rules out the floods"}},
+"M0E": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Agents now have to collect that information by voice, at the start of the call",
+ "k2": "they are 18 of 140 agents, so they can't explain a 1.8 minute rise across everyone.",
+ "k3": "AHT for October 10-24 matches October 3-9, even though load times are reportedly back",
+ "k4": "Flood claims are about 11% of calls, and motor-only calls rose by the same amount."}}
+}

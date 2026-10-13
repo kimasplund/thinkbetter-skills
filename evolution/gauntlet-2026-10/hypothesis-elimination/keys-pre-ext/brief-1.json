@@ -1,0 +1,38 @@
+{
+  "P6C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The September 7 courier change put unspun, refrigerated blood on a roughly 4 to 7 hour wait",
+      "k2": "refrigeration shuts down the sodium-potassium pump that normally keeps potassium inside the cells",
+      "k3": "Analyzer A ran 57% of flagged samples and carries about 60% of volume",
+      "k4": "He works at Ridgeway only, so he can't explain Millbrook"
+    }
+  },
+  "R7F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The courier change on September 7 is what matters.",
+      "k2": "refrigeration shuts down the Na/K-ATPase pump that keeps potassium inside",
+      "k3": "Analyzer A ran 57% of the flagged samples and does about 60% of the volume",
+      "k4": "He only works at Ridgeway, and Millbrook has the same problem."
+    }
+  },
+  "A3I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Cold storage was already in place, and the long wait is what changed.",
+      "k2": "Refrigeration of unspun whole blood is the wrong choice for potassium.",
+      "k3": "Inpatient and ED results run on the same analyzer and lot are unchanged.",
+      "k4": "Millbrook has nearly the same excess without Tomas. The timing is a week early."
+    }
+  },
+  "O6S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The trigger is the September 7 courier change, working together with the August 1 cold-hold policy.",
+      "k2": "A long cold wait is what produces the leak.",
+      "k3": "Analyzer A runs about 60% of volume and 57% of flags, which is proportional",
+      "k4": "The rise also appears at Millbrook, where Tomas doesn't work"
+    }
+  }
+}

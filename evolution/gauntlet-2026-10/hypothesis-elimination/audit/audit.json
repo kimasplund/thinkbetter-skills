@@ -1,0 +1,40 @@
+{
+  "reports": {
+    "O6S": {"ceremony": ["Bottom line: Fix the sample pathway (separate before the wait"], "leaks": []},
+    "A3I": {"ceremony": ["Bottom line for Friday: the September 7 courier change, combined with"], "leaks": []},
+    "A6P": {"ceremony": [], "leaks": []},
+    "R7F": {"ceremony": [], "leaks": []},
+    "P6C": {"ceremony": [], "leaks": []},
+    "V0S": {"ceremony": [], "leaks": []},
+    "V9H": {"ceremony": [], "leaks": []},
+    "T3P": {"ceremony": [], "leaks": []},
+    "R6S": {"ceremony": [], "leaks": []},
+    "J5W": {"ceremony": [], "leaks": []},
+    "O5G": {"ceremony": [], "leaks": []},
+    "F0O": {"ceremony": [], "leaks": []},
+    "Q5P": {"ceremony": [], "leaks": []},
+    "U9D": {"ceremony": [], "leaks": []},
+    "G2R": {"ceremony": [], "leaks": []},
+    "F0Y": {"ceremony": [], "leaks": []},
+    "M4F": {"ceremony": [], "leaks": []},
+    "V2O": {"ceremony": [], "leaks": []},
+    "P7U": {"ceremony": [], "leaks": []},
+    "F7X": {"ceremony": ["Bottom line for the board"], "leaks": []},
+    "I5C": {"ceremony": [], "leaks": []},
+    "V6T": {"ceremony": [], "leaks": []},
+    "T2B": {"ceremony": [], "leaks": []},
+    "M0E": {"ceremony": [], "leaks": []},
+    "R1R": {"ceremony": [], "leaks": []},
+    "B5B": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {
+      "invariant": true,
+      "why": "Both replies (Z4K and T8E) name the September 7 courier change combined with the August 1 cold-hold rule (pseudohyperkalemia from unspun chilled blood) as the cause, and both reject the reagent lot and Tomas as the fix, with the same actions (stop chilling, spin on site or add pickups, clinician advisory, look-back)."
+    }
+  },
+  "negative": {
+    "R1R": {"ceremony": false},
+    "B5B": {"ceremony": false}
+  }
+}
