@@ -1,0 +1,32 @@
+{
+  "U9L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "its stated record is 93% against a 90% standard",
+    "k2": "validated against something independent. Examples are actual blue-light times",
+    "k3": "5.6 km at 48 km/h is 7 minutes, not 5",
+    "k4": "An average across the borough can improve while one area gets worse"}},
+  "A1P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "it doesn't outweigh a station that meets the standard on 93% of calls",
+    "k2": "compare its output with the actual response times for the last two or three years",
+    "k3": "5.6 km at 48 km/h takes 7 minutes, not 5",
+    "k4": "an average can improve while one area gets worse"}},
+  "C2I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "One 14-minute response is a vivid case, not a rate.",
+    "k2": "the model reproduces Eastfield's actual 93% when run for today's layout",
+    "k3": "5.6 km at 48 km/h is 7 minutes, not 5",
+    "k4": "Neither the borough mean nor 'faster on average' says anything about a 90% threshold"}},
+  "I6I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "a single 14-minute response is consistent with it being one of the other 7%",
+    "k2": "calibrated against actual recorded response times, such as Eastfield's own incident data",
+    "k3": "5.6 km at 48 km/h takes 7 minutes, not 5",
+    "k4": "An average can improve while one area gets worse"}},
+  "D9V": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Eastfield meets the standard on 93% of calls, so one failure doesn't show",
+    "k2": "calibrated against something else, such as actual recorded response times",
+    "k3": "5.6 km at 48 km/h is 7 minutes, not 5",
+    "k4": "An average can improve while one area gets worse"}},
+  "B9B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Eastfield meets the standard on 93% of calls, which is the opposite",
+    "k2": "Test it against actual historic response times, with speeds that aren't tuned",
+    "k3": "5.6 km at 48 km/h is 7 minutes, not 5",
+    "k4": "That is a percentile target for one area."}}
+}

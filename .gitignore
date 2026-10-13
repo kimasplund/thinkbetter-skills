@@ -4,4 +4,5 @@ __pycache__/
 .claude/worktrees/
 evolution/gauntlet-2026-10/*/state/
 evolution/gauntlet-2026-10-r2/*/state/
+evolution/gauntlet-2026-10-r3/*/state/
 evolution/haiku-uplift-2026-10/*/state/

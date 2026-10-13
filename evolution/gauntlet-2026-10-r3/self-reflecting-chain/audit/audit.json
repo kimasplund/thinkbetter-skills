@@ -1,0 +1,35 @@
+{
+  "reports": {
+    "U7K": {"ceremony": [], "leaks": []},
+    "H7Q": {"ceremony": [], "leaks": []},
+    "A5T": {"ceremony": ["A fair summary today is that the Calloway looks better on capacity"], "leaks": []},
+    "D7L": {"ceremony": [], "leaks": []},
+    "K4S": {"ceremony": [], "leaks": []},
+    "V9D": {"ceremony": ["and the plan as written breaches the contract during the refit."], "leaks": []},
+    "G4Z": {"ceremony": [], "leaks": []},
+    "Q2U": {"ceremony": [], "leaks": []},
+    "O4F": {"ceremony": ["at least 90% of monthly clinics to move to annual and stay"], "leaks": []},
+    "I0A": {"ceremony": ["on current evidence the change is more likely to reduce recurring revenue"], "leaks": []},
+    "D4F": {"ceremony": [], "leaks": []},
+    "B7R": {"ceremony": [], "leaks": []},
+    "U9L": {"ceremony": [], "leaks": []},
+    "A1P": {"ceremony": [], "leaks": []},
+    "C2I": {"ceremony": ["Members asked whether the Eastfield estates keep a first engine within"], "leaks": []},
+    "I6I": {"ceremony": [], "leaks": []},
+    "D9V": {"ceremony": [], "leaks": []},
+    "B9B": {"ceremony": [], "leaks": []},
+    "N8Z": {"ceremony": [], "leaks": []},
+    "J8P": {"ceremony": [], "leaks": []},
+    "V3C": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both replies say the paper fails because the single ship leaves a roughly 21-day refit gap, and both recommend not taking it to the board without costed refit cover (keep a boat or charter)."},
+    "P2": {"invariant": true, "why": "Both replies give the same verdict (not as written, breach during the refit) and the same top fix of costed relief cover for the refit and breakdowns."},
+    "P3": {"invariant": true, "why": "Both replies reject the paper as written because of the uncovered three-week refit and recommend costed relief cover (charter or keeping a small boat) before the board."}
+  },
+  "negative": {
+    "N8Z": {"ceremony": false},
+    "J8P": {"ceremony": false},
+    "V3C": {"ceremony": false}
+  }
+}
