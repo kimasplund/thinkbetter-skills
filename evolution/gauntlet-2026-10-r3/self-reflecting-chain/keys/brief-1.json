@@ -1,0 +1,32 @@
+{
+  "U7K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "The sixth would leave Port Skerrow at about 18:40 ... That makes 2,000 seats each way",
+    "k2": "which assumes its own conclusion ... how often the boats ... turned people away",
+    "k3": "The pier money is spent either way.",
+    "k4": "as written the answer is no ... for three weeks it would be in breach"}},
+  "H7Q": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "She can make 5 round trips, not 6, so 2,000 seats each way, not 2,400.",
+    "k2": "a forecast offered as its own evidence ... Your current boats' winter loads would show",
+    "k3": "The £1.2 million is already spent. Not buying the Calloway doesn't make it more or less spent.",
+    "k4": "Callum's paper recommends a fleet that cannot meet your contract's core condition for three weeks"}},
+  "A5T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "She can make five round trips, which is 2,000 seats each way, not 2,400.",
+    "k2": "The conclusion is being used as its own evidence ... booking data, turned-away counts",
+    "k3": "The £1.2 million is spent whichever way you decide.",
+    "k4": "no, the paper doesn't show ... the switch would break your contract's core condition"}},
+  "D7L": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Five round trips fit ... 5 x 400 = 2,000 seats each way, not 2,400.",
+    "k2": "assumes the result it is meant to prove, and it is a forecast, not evidence.",
+    "k3": "The £1.2 million is already spent whichever way the board decides.",
+    "k4": "a one-ship fleet would breach the contract condition during the refit."}},
+  "K4S": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Six round trips is 14 hours, which doesn't fit ... 5 x 400 = 2,000 seats",
+    "k2": "an assertion with no evidence, and it is then used to justify the ship",
+    "k3": "The £1.2 million ... is gone whichever choice you make.",
+    "k4": "With only the Calloway, the route has no vessel for about three weeks"}},
+  "V9D": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "720 / 140 is about 5.1, so she can make 5 round trips, not 6.",
+    "k2": "This is an assumption, not evidence.",
+    "k3": "The £1.2m is already spent and won't be recovered whichever way you decide",
+    "k4": "the switch would put you in breach of the contract's core condition every winter"}}
+}
