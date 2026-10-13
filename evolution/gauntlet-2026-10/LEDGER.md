@@ -8,7 +8,7 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | 2 | reasoning-handover-protocol | applied | NOT VALIDATED | REVERT |  | 0.94M |
 | 3 | integrated-reasoning | applied | NOT VALIDATED | REVERT |  | 0.96M |
 | 4 | tree-of-thoughts | applied | NOT VALIDATED | REVERT |  | 0.91M |
-| 5 | breadth-of-thought | pending | | | | |
+| 5 | breadth-of-thought | applied | NOT VALIDATED | REVERT |  | 1.07M |
 | 6 | self-reflecting-chain | pending | | | | |
 | 7 | parallel-execution | pending | | | | |
 | 8 | premortem-evolved | pending | | | | |
@@ -25,3 +25,4 @@ States: pending → designed → frozen → ran → blinded → judged → score
 - **Amendment 1:** made before any round. See spec Amendment 1.
 - **Amendment 2:** pilot 1 found the harness unfit (keys at the ceiling; plain confidence statements counted as leaks). The designer prompt, leak rule and rubric G2 anchor were fixed before the pilot re-run. The record is in `_pilot-1-unfit-hypothesis-elimination/`, and that pilot used ~0.61M subagent tokens.
 - **Owner decision after pilot 2:** the harness is accepted as fit. The literal pilot fitness check failed only because the skill's real effect on Sonnet is small (value +0.30 after the extension), not because the instruments couldn't discriminate. See `hypothesis-elimination/research-note.md`.
+- **Ruling (round 5):** removed `context: fork` and `argument-hint` from breadth-of-thought's frontmatter after the mechanical revert. The restored v1.0.0 body has no `$ARGUMENTS` block, so a forked run would start without the problem. This is a frontmatter-only change, and the body remains exactly v1.0.0.

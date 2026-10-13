@@ -1,0 +1,50 @@
+{
+  "N8N": {
+    "k1": "✓", "k2": "✓", "k3": "✓",
+    "evidence": {
+      "k1": "That is about 7 months, which is exactly when your current stock runs out.",
+      "k2": "That is about 5.7 months of production sitting in your warehouse.",
+      "k3": "Their parts stock may contain VX-41 chips, finished boards, or boards close enough to adapt."
+    }
+  },
+  "Q0O": {
+    "k1": "✓", "k2": "✓", "k3": "✓",
+    "evidence": {
+      "k1": "That is the same as your existing stock, instead of 14 months.",
+      "k2": "that is around 5 to 6 months of supply.",
+      "k3": "the stock may include VX-41 chips, bare boards or finished controllers."
+    }
+  },
+  "V8H": {
+    "k1": "✓", "k2": "✓", "k3": "✓",
+    "evidence": {
+      "k1": "you could be certified in about 7 months. That equals your stock.",
+      "k2": "1,900 boards is about 5.7 months of production.",
+      "k3": "They may hold VX-41 stock or unallocated Brisk work-in-progress."
+    }
+  },
+  "Q7J": {
+    "k1": "✓", "k2": "✓", "k3": "✓",
+    "evidence": {
+      "k1": "Keep VX-41 boards for retail bikes only (about 40% of volume) until the sensor is ready.",
+      "k2": "1,900 boards is about 5.7 months of production, worth roughly €750k",
+      "k3": "the auction could supply boards or loose chips quickly and cheaply"
+    }
+  },
+  "Y7K": {
+    "k1": "✓", "k2": "✓", "k3": "✓",
+    "evidence": {
+      "k1": "The M7 port and EMC take about 7 months and don't depend on the sensor.",
+      "k2": "those bikes hold up to about 1,900 boards, or about 5.7 months",
+      "k3": "Tarrow may hold VX-41 stock or have its own last-time-buy allocation."
+    }
+  },
+  "H0N": {
+    "k1": "✓", "k2": "✓", "k3": "✓",
+    "evidence": {
+      "k1": "certified and shipping in about 7-8 months (4 months port plus 3 months EMC), not 14.",
+      "k2": "roughly 5.7 months of production, and it costs only test and refurb labour.",
+      "k3": "their parts stock may hold VX-41 chips, bare or populated boards"
+    }
+  }
+}

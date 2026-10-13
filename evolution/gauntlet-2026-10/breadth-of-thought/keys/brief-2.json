@@ -1,0 +1,56 @@
+{
+  "K9C": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Keep it on the list as a long shot, not a plan.",
+      "k2": "offer to buy it back or take a voluntary surrender",
+      "k3": "Ferney Bank (3 ha, closed pitch-and-putt)... It costs nothing to acquire.",
+      "k4": "paying them to reserve space for Wickham Lees residents, to a joint burial committee"
+    }
+  },
+  "C3G": {
+    "k1": "✗", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "outside London, local authorities generally have no power to reuse graves",
+      "k2": "does nothing for the next four years. It is a supporting option, not a rescue.",
+      "k3": "A former golf course is often well suited to a natural burial area.",
+      "k4": "An agreement could cover reserved spaces, a resident fee, or a joint burial committee."
+    }
+  },
+  "D0Q": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Rights granted from 1888 on should all have expired by now",
+      "k2": "offer a voluntary surrender with a refund. Councils do this",
+      "k3": "Natural burial or woodland section at Ferney Bank",
+      "k4": "It makes a good bridge while you build the longer-term answer."
+    }
+  },
+  "W2Q": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "its 75-year rights expired long ago unless renewed... new interments may be possible",
+      "k2": "write to the holders or their heirs and offer buy-backs or refunds",
+      "k3": "Natural or woodland burial on part of it",
+      "k4": "a service agreement to buy burial capacity, a joint committee"
+    }
+  },
+  "E5E": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Check whether rights have expired and whether any lawful reuse is possible.",
+      "k2": "trace the owners or heirs and offer to buy back the rights",
+      "k3": "Use Ferney Bank (3 hectares, already yours).",
+      "k4": "agreement for your residents to use it at resident rates"
+    }
+  },
+  "M3T": {
+    "k1": "✗", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Re-using graves early. It isn't generally available outside London.",
+      "k2": "trace holders and heirs, advertise, and offer a modest refund for surrender",
+      "k3": "A natural or woodland burial section here could also earn income",
+      "k4": "through buying a block of grave rights, to a joint arrangement"
+    }
+  }
+}

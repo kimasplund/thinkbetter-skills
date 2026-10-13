@@ -1,0 +1,34 @@
+{
+  "reports": {
+    "N4B": {"ceremony": [], "leaks": []},
+    "G4T": {"ceremony": ["The comparison for members is that the helicopter as sole plan"], "leaks": []},
+    "W6O": {"ceremony": [], "leaks": []},
+    "N3V": {"ceremony": [], "leaks": []},
+    "L8X": {"ceremony": [], "leaks": []},
+    "Z1W": {"ceremony": [], "leaks": []},
+    "K9C": {"ceremony": [], "leaks": []},
+    "C3G": {"ceremony": [], "leaks": []},
+    "D0Q": {"ceremony": [], "leaks": []},
+    "W2Q": {"ceremony": [], "leaks": []},
+    "E5E": {"ceremony": [], "leaks": []},
+    "M3T": {"ceremony": [], "leaks": []},
+    "N8N": {"ceremony": [], "leaks": []},
+    "Q0O": {"ceremony": [], "leaks": []},
+    "V8H": {"ceremony": [], "leaks": []},
+    "Q7J": {"ceremony": [], "leaks": []},
+    "Y7K": {"ceremony": [], "leaks": []},
+    "H0N": {"ceremony": [], "leaks": []},
+    "G2H": {"ceremony": [], "leaks": []},
+    "X2A": {"ceremony": [], "leaks": []},
+    "O0H": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both lead with cutting demand plus storing the June overflow plus a Grauberg supply, helicopter only as backstop, borehole deferred; both judge the two committee proposals weak."},
+    "P2": {"invariant": true, "why": "Both recommend a layered plan of demand cuts with a dry-spell mode, a large cistern, talks with the Grauberg family, and a capped helicopter budget, with the borehole deferred; both judge the two proposals weak."}
+  },
+  "negative": {
+    "G2H": {"ceremony": false},
+    "X2A": {"ceremony": false},
+    "O0H": {"ceremony": false}
+  }
+}

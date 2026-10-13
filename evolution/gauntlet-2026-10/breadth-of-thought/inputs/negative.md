@@ -1,0 +1,1 @@
+Quick one. Our mountain hut's water tank holds 12 m³, and at full occupancy we use about 6 m³ a day. If the spring stopped tonight with the tank full and every bed taken, how many days would the water last?

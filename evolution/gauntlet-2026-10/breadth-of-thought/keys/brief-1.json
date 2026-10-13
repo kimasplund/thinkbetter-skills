@@ -1,0 +1,56 @@
+{
+  "N4B": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Add one or more insulated or buried cisterns... filled while the spring overflows in late June",
+      "k2": "Switch the showers off, or make them token-operated, once the spring drops.",
+      "k3": "Close early in the autumn only when the tank falls below a set level",
+      "k4": "solar pumping to 190 m is cheap... Your spare solar capacity can cover it."
+    }
+  },
+  "G4T": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "the problem is timing as much as supply... about 45 m³ of additional storage",
+      "k2": "Flush toilets and showers are almost certainly the largest share of your 6 m³/day",
+      "k3": "a lower bed cap from mid-August. Occupancy is already about 55%",
+      "k4": "Lifting 6 m³ by 190 m takes only a few kWh a day, which your spare solar capacity can supply"
+    }
+  },
+  "W6O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Capture that surplus in a much larger buried or insulated store, for example 30 to 40 m³",
+      "k2": "return some toilets to dry or composting.",
+      "k3": "a planned partial closure costs less than an emergency one",
+      "k4": "The energy is small, a few kWh a day, and your spare solar can cover it."
+    }
+  },
+  "N3V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "This is the option that matches the actual problem, which is timing rather than total volume.",
+      "k2": "Go back to dry or composting toilets, at least in a drought mode.",
+      "k3": "a planned shorter season with no refunds beats an unplanned closure.",
+      "k4": "Your spare solar could drive that pump."
+    }
+  },
+  "L8X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The spring floods the path in late June and then fails in August, so you could store the surplus.",
+      "k2": "going back to dry or composting toilets.",
+      "k3": "Occupancy halves after mid-August anyway. You could plan a lighter late-August service",
+      "k4": "Run a seasonal pipe 1.1 km and pump the 190 m rise with solar power."
+    }
+  },
+  "Z1W": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Add storage to capture the June overflow and top it up through July.",
+      "k2": "Return to dry or composting toilets, at least in part.",
+      "k3": "Occupancy falls from mid-August anyway. You could plan an earlier close",
+      "k4": "Your spare solar capacity makes this plausible."
+    }
+  }
+}

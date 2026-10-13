@@ -33,7 +33,7 @@ npx skills add kimasplund/thinkbetter-skills -a codex -g           # all skills,
 |---|---|---|---|
 | [integrated-reasoning](skills/integrated-reasoning/) | 2.3.0 | Scores the problem and routes it to the right pattern, or to a plain answer when no framework is warranted | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/integrated-reasoning/scorecard.md)) |
 | [tree-of-thoughts](skills/tree-of-thoughts/) | 2.3.0 | Deep branching exploration with pruning: find THE best option | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/tree-of-thoughts/scorecard.md)) |
-| [breadth-of-thought](skills/breadth-of-thought/) | 2.3.0 | Wide sweep with conservative pruning: don't miss options | Documented methodology |
+| [breadth-of-thought](skills/breadth-of-thought/) | 2.3.0 | Wide sweep with conservative pruning: don't miss options | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/breadth-of-thought/scorecard.md)) |
 | [self-reflecting-chain](skills/self-reflecting-chain/) | 2.3.0 | Stepwise reasoning with per-step validation and backtracking | Documented methodology |
 | [hypothesis-elimination](skills/hypothesis-elimination/) | 2.2.1 | Discriminating-evidence elimination: find THE cause | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/hypothesis-elimination/scorecard.md)) |
 | [adversarial-reasoning](skills/adversarial-reasoning/) | 2.2.1 | Systematic attack on a candidate solution before committing | Documented methodology |
