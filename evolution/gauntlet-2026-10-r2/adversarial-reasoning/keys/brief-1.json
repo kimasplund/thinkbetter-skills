@@ -1,0 +1,38 @@
+{
+  "X6D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Grow the bank to several hundred questions... Shorten the window. Use fixed sessions (or a 24-hour window at most)",
+      "k2": "Nobody compares it to anything at the time. The snapshot is only useful if a human looks at it later",
+      "k3": "the question on screen is hidden... review every session that exceeds the cap before the pass is released",
+      "k4": "For flagged sessions, hold until reviewed... withdraw a registration if misconduct is later found"
+    }
+  },
+  "J0U": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "a bank of 90 is far too small... Aim for several hundred items with variants, and retire and rotate",
+      "k2": "the snapshot is only looked at later, if the session is flagged",
+      "k3": "cap reconnections (for example three) and cap total pause time; show the same question rather than a fresh one",
+      "k4": "do not publish a pass until any flagged session has been reviewed (no revocation process defined)"
+    }
+  },
+  "Q6U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Grow the bank to at least 300... Run fixed sittings... instead of a 3-day open window",
+      "k2": "Have a human compare face to ID and to the photo on the membership record before the paper unlocks",
+      "k3": "The app should keep recording locally during an outage and upload on reconnect",
+      "k4": "A flagged session never auto-confirms... write down a revocation process"
+    }
+  },
+  "T7W": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Grow the bank substantially. Several hundred items... Shorten the window, or use fixed sittings",
+      "k2": "Have a trained person compare face and ID live before the exam unlocks",
+      "k3": "Treat several drops... as flags that always get human review... stop the questions from showing at all during a reconnect",
+      "k4": "Hold the certificate and register entry until any flag on that session has been reviewed... revoking a pass"
+    }
+  }
+}

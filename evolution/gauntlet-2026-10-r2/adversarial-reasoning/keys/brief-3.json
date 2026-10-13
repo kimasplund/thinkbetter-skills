@@ -1,0 +1,38 @@
+{
+  "S8W": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Never call a number that was changed within the last 30 to 90 days.",
+      "k2": "Separate who can create a supplier from who can raise POs and approve receipts.",
+      "k3": "Generate a hash of the file at export, and have a second person verify it",
+      "k4": "Look for duplicate supplier records that share a bank account or registration number."
+    }
+  },
+  "F1M": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Verify them by callback to the old number, notify the old email, and impose a cooling-off period",
+      "k2": "matching goods-received or work-certified confirmation from someone other than the PO raiser",
+      "k3": "The totals should include a hash of account numbers, not only counts and sums.",
+      "k4": "normalise invoice numbers (strip spaces, case and punctuation) and also match on supplier, amount and date"
+    }
+  },
+  "I0C": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Send a notice to the old email and old phone number as well as the new one.",
+      "k2": "Move creation to AP or procurement. Site managers can request a supplier, and AP completes it.",
+      "k3": "Hash the file at export and verify it at upload.",
+      "k4": "match bank account across supplier records so two records can't share one account."
+    }
+  },
+  "Z3O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Send the \"bank details changed\" notice to the previous email address and phone number",
+      "k2": "flags a new supplier whose bank account, address or phone number matches an employee",
+      "k3": "Use a direct, authenticated integration between Ledgerfold and the bank, or at least lock the folder",
+      "k4": "Check for duplicate supplier records by registration number and bank account."
+    }
+  }
+}

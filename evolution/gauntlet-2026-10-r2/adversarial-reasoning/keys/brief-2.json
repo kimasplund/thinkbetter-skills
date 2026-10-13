@@ -1,0 +1,38 @@
+{
+  "D8F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Replace the derived PIN with a random per-device pairing secret that is not computable from the serial.",
+      "k2": "make the default fail-safe: an unconfirmed claim does not go through silently.",
+      "k3": "Give each unit its own credential: a client certificate or key provisioned at manufacture",
+      "k4": "block updates whenever the temperature is near the threshold or sprinklers are running"
+    }
+  },
+  "L4X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The PIN is therefore broadcast to anyone in radio range, so it is not a secret at all.",
+      "k2": "Silence counts as consent.",
+      "k3": "Rotating the key doesn't help... Every unit needs its own credential.",
+      "k4": "don't install when the temperature is near the trigger or sprinklers are active"
+    }
+  },
+  "C3Q": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Replace the derived PIN with a random per-device secret not derivable from the serial.",
+      "k2": "require an affirmative approval by the old owner for units that are recently active.",
+      "k3": "Provision a unique key or client certificate per unit at manufacture (ideally in a secure element)",
+      "k4": "Avoid 02:00 reboots during frost season, or make them conditional on temperature"
+    }
+  },
+  "F7Y": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Use a random per-device PIN or passkey, not derived from the serial and not broadcast.",
+      "k2": "Don't let a claim silently take over alerting.",
+      "k3": "Give each unit a unique secret or certificate (mutual TLS, provisioned at manufacture",
+      "k4": "avoid updating during frost-risk windows, or at least confirm frost protection is active after reboot."
+    }
+  }
+}

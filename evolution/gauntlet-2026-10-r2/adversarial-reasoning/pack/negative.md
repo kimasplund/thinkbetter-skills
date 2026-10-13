@@ -1,0 +1,1 @@
+Quick one: we stopped working with one of our dealers last week. He still knows the password to our dealer download page, where we post price lists and product manuals, and all our other dealers share that same password. Should I change it, or is that overkill?

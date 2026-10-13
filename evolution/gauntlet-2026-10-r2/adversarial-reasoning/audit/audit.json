@@ -1,0 +1,26 @@
+{
+  "reports": {
+    "X6D": {"ceremony": [], "leaks": []},
+    "J0U": {"ceremony": [], "leaks": []},
+    "Q6U": {"ceremony": [], "leaks": []},
+    "T7W": {"ceremony": [], "leaks": []},
+    "D8F": {"ceremony": [], "leaks": []},
+    "L4X": {"ceremony": [], "leaks": []},
+    "C3Q": {"ceremony": [], "leaks": ["(ranked by ease times impact)"]},
+    "F7Y": {"ceremony": [], "leaks": []},
+    "S8W": {"ceremony": [], "leaks": []},
+    "F1M": {"ceremony": [], "leaks": []},
+    "I0C": {"ceremony": [], "leaks": []},
+    "Z3O": {"ceremony": [], "leaks": []},
+    "V8C": {"ceremony": [], "leaks": []},
+    "X9S": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": false, "why": "Both give the same verdict (do not sign yet), but J3V puts holding flagged passes until review first, while J4I puts identity verification first."},
+    "P2": {"invariant": true, "why": "Both put holding certificates and register entries until review first and give the same verdict that the design has serious gaps and should not go ahead as is."}
+  },
+  "negative": {
+    "V8C": {"ceremony": false},
+    "X9S": {"ceremony": false}
+  }
+}

@@ -1,0 +1,83 @@
+[
+ {
+  "order": 1,
+  "skill": "tree-of-thoughts",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "a hidden hard constraint, stated only in passing, that rules out the obviously attractive option",
+  "new_ref": "HEAD",
+  "old_ref": "v1.2.0",
+  "adopt": "validated"
+ },
+ {
+  "order": 2,
+  "skill": "adversarial-reasoning",
+  "arms": [
+   "new",
+   "none"
+  ],
+  "gates": [
+   "validation"
+  ],
+  "key_type": "planted vulnerabilities or abuse paths in the design",
+  "new_ref": "HEAD",
+  "old_ref": "v1.2.0",
+  "adopt": "validated"
+ },
+ {
+  "order": 3,
+  "skill": "analogical-transfer",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "a disanalogy: a structural difference that breaks the most tempting surface analogy",
+  "new_ref": "HEAD",
+  "old_ref": "v1.2.0",
+  "adopt": "rewrite"
+ },
+ {
+  "order": 4,
+  "skill": "negotiated-decision-framework",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "a hidden veto holder or an unstated interest that decides whether any agreement holds",
+  "new_ref": "HEAD",
+  "old_ref": "v1.2.0",
+  "adopt": "rewrite"
+ },
+ {
+  "order": 5,
+  "skill": "rapid-triage-reasoning",
+  "arms": [
+   "new",
+   "old",
+   "none"
+  ],
+  "gates": [
+   "validation",
+   "rewrite"
+  ],
+  "key_type": "an irreversible-action trap alongside a reversible option that buys time",
+  "new_ref": "HEAD",
+  "old_ref": "v1.2.0",
+  "adopt": "rewrite"
+ }
+]

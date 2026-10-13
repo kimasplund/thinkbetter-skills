@@ -2,7 +2,7 @@
 name: adversarial-reasoning
 description: Stress-tests a design, decision or piece of code by attacking it the way an intelligent adversary would, then proposes countermeasures. Use when the user says "red-team this", "attack this design", "find the holes", "what could go wrong with this system", "security review" or "what are the edge cases", before something ships. Works through eight threat categories (spoofing through privilege escalation, supply chain, social engineering) plus eight edge-case categories. For a full premortem of a plan about to launch, premortem-evolved goes deeper. Not for exploring options (use breadth-of-thought), for choosing between options (use tree-of-thoughts), or for diagnosing a failure that already happened (use hypothesis-elimination).
 metadata:
-  version: "2.3.0"
+  version: "2.2.1"
 ---
 
 ## Effort & Thinking Budget
@@ -332,7 +332,10 @@ For project/decision risk analysis (not security):
 [Non-malicious failure modes]
 
 ## Residual Risk
-[What risks remain after mitigations, then in plain words (no percentage, no "Confidence" heading): what you took from the brief, what you assumed, and what to check first]
+[What risks remain after mitigations]
+
+## Confidence: [X]%
+- [Justification - coverage, depth, expertise]
 ```
 
 ## Backstage rule — the method never appears in the answer
