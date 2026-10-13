@@ -2,47 +2,44 @@
 name: analogical-transfer
 description: Solves a novel problem with no direct precedent by mapping it onto structurally similar solved problems in other domains and carrying the working mechanisms over. Use when the user says "we've never done anything like this", "is there a precedent for this", "what is this similar to", "how would other fields handle this", or when the obvious in-domain answers are exhausted. Also useful for explaining a hard concept through a well-chosen parallel. Not for problems with known in-domain solutions (research them instead), for choosing among known options (use tree-of-thoughts), or for enumerating the whole option space (use breadth-of-thought).
 metadata:
-  version: "2.3.0"
+  version: "2.2.1"
 ---
 
-Works best with extended thinking for the hardest phases.
+## Effort & Thinking Budget
+- **Recommended effort**: high/max — cross-domain transfer needs creative depth to find non-obvious parallels
+- Use extended thinking in the Investigate Analogies (I) and Distill Transferable Principles (D) phases
+- For time-constrained scenarios, use effort: high with fewer candidate analogies (3 instead of 5-10)
 
-# Analogical Transfer
+## Model Recommendation
+Best with Opus for maximum reasoning depth. Cross-domain analogical thinking is one of the most demanding cognitive tasks and benefits significantly from the strongest model.
 
-## Backstage rule — the method never appears in the answer
+# Analogical Transfer (AT)
 
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Analogical Transfer", or any other reasoning-skill name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
-
-**Purpose**: Solve novel problems by finding structural parallels in domains where solutions exist. Many "new" problems have been solved before—just in different contexts.
+**Purpose**: Solve novel problems by finding structural parallels in domains where solutions exist. AT leverages the insight that many "new" problems have been solved before—just in different contexts.
 
 ## When to Use Analogical Transfer
 
-**✅ Use when:**
+**✅ Use AT when:**
 - Problem is genuinely novel (no direct precedent)
 - Domain knowledge is limited
 - Looking for creative/non-obvious solutions
 - Need to explain complex concepts simply
 - Cross-pollination might yield insights
 
-**❌ Don't use when:**
+**❌ Don't use AT when:**
 - Direct solutions exist in the same domain (just research)
-- Problem is well-defined with known solution space (use tree-of-thoughts)
+- Problem is well-defined with known solution space (use ToT)
 - Analogy might mislead more than illuminate
 - Precision matters more than insight
 
 **Examples:**
-- "How should a fleet of AI agents hand work to each other when none can see the others' full context?" ✅ (no in-domain playbook; learn from hospital shift changes, relay races, air traffic control)
+- "How should we design our API rate limiting?" ✅ (learn from traffic engineering, nightclub bouncers, utility pricing)
 - "How to structure our startup equity?" ✅ (learn from partnerships, marriage, sports teams)
 - "Which database for our use case?" ❌ (direct comparisons exist)
-- "How should we design our API rate limiting?" ❌ (in-domain solutions exist; research them)
 
 ---
 
 ## Core Methodology: BRIDGE Framework
-
-The phase templates and worked examples below are internal working, not for the answer. Deliver in the Output Template shape at the end.
-
-Count rule: generate 5-10 candidate analogies, investigate the top 3 in depth, and carry only those 3 into the answer.
 
 ### B - Base Problem Articulation
 
@@ -74,20 +71,20 @@ Count rule: generate 5-10 candidate analogies, investigate the top 3 in depth, a
 
 **Example:**
 ```markdown
-## Base Problem: Dividing Work Among Autonomous Agents
+## Base Problem: API Rate Limiting
 
 ### Concrete Statement
-Several AI agents must split a large task and hand work to each other, but none can see the others' full context
+Prevent API abuse while maintaining good user experience
 
 ### Abstract Structure
-- **Entities**: Actors with partial knowledge, a divisible task with hidden dependencies, an optional coordinator
-- **Relationships**: Work and partial results pass between actors; each handoff loses some context
-- **Constraints**: Context is lossy and cannot be fully shared; understanding is expensive to verify
-- **Goals**: Finish the whole task correctly with little rework
-- **Tensions**: Fine-grained split (parallel speed) vs coarse split (less context lost per handoff)
+- **Entities**: Requesters (good, bad), Resource (finite capacity), Gatekeeper
+- **Relationships**: Requesters compete for resource access
+- **Constraints**: Resource capacity is limited; can't perfectly distinguish good/bad
+- **Goals**: Maximize good access, minimize bad access
+- **Tensions**: Strictness (blocks abuse) vs Permissiveness (allows legitimate use)
 
 ### Core Challenge (Domain-Neutral)
-"How to divide work among actors who each hold partial knowledge, without losing what the whole depends on"
+"How to allocate limited shared resources fairly while preventing abuse"
 ```
 
 ---
@@ -112,7 +109,7 @@ Several AI agents must split a large task and hand work to each other, but none 
 
 **Process:**
 1. For each category, ask: "Does this domain face my Core Challenge?"
-2. Generate 5-10 candidate analogies (see the count rule above)
+2. Generate 5-10 candidate analogies
 3. Don't filter yet—quantity over quality initially
 
 **Template:**
@@ -130,7 +127,7 @@ Several AI agents must split a large task and hand work to each other, but none 
 
 ### I - Investigate Analogies Deeply
 
-**Goal**: Explore the top 3 analogies for transferable insights
+**Goal**: Explore top 3-5 analogies for transferable insights
 
 **For each promising analogy:**
 
@@ -189,9 +186,9 @@ Several AI agents must split a large task and hand work to each other, but none 
 ```
 
 **Example Principles:**
-- "Standardized handoff checklists" (from hospital shift changes → agent handoffs)
-- "Explicit ownership of each boundary" (from relay-race baton zones → task interfaces)
-- "Read-back to confirm understanding" (from air traffic control → summarize-and-confirm)
+- "Fairness through randomization" (from lotteries → load balancing)
+- "Reputation as access control" (from communities → API quotas)
+- "Surge pricing to shift demand" (from electricity → rate limiting)
 
 ---
 
@@ -295,7 +292,7 @@ For each solution, explicitly list:
 - **Constraints**: Must be stable, must evolve, must be secure
 - **Core Challenge**: "How to grow an ecosystem where many independent actors thrive"
 
-### Retrieved Analogies (5 candidates; top 3 investigated, City shown)
+### Retrieved Analogies
 1. Shopping mall (landlord-tenant-shopper)
 2. Operating system (platform-app developer-user)
 3. Coral reef (substrate-species-ecosystem)
@@ -339,7 +336,7 @@ For each solution, explicitly list:
    - Fix: Require structural mapping table
 
 2. **Single Analogy**: Latching onto first promising parallel
-   - Fix: Generate 5-10 candidates, investigate the top 3
+   - Fix: Generate 5+ candidates, investigate top 3
 
 3. **Analogy Worship**: Ignoring where analogy breaks down
    - Fix: Explicit disanalogy check for every solution
@@ -352,43 +349,50 @@ For each solution, explicitly list:
 
 ---
 
-## Integration with Other Skills
+## Integration with Other Patterns
 
-**When to enter**: When breadth-of-thought yields no good options (solution space seems empty)
+**When to enter AT**: When BoT yields no good options (solution space seems empty)
 
-**analogical-transfer → tree-of-thoughts**: After solutions are generated, use tree-of-thoughts to evaluate and select
+**AT → ToT**: After AT generates solutions, use ToT to evaluate and select
 
-**analogical-transfer → dialectical-reasoning**: If two analogies suggest opposite approaches, use dialectical-reasoning
+**AT → DR**: If AT reveals two analogies suggesting opposite approaches, use DR
 
-**analogical-transfer → adversarial-reasoning**: Attack analogy-derived solutions with adversarial-reasoning
+**AT → AR**: Use adversarial reasoning to attack analogy-derived solutions
 
 ---
 
 ## Output Template
 
 ```markdown
-# Borrowing Solutions for [Problem]
+# Analogical Analysis: [Problem]
 
-## The Problem in Plain Terms
+## Problem Abstraction
 [Domain-neutral core challenge]
 
-## Parallels Worth Learning From
-1. [Parallel 1] - [Key insight]
-2. [Parallel 2] - [Key insight]
-3. [Parallel 3] - [Key insight]
+## Analogies Investigated
+1. [Analogy 1] - [Key insight]
+2. [Analogy 2] - [Key insight]
+3. [Analogy 3] - [Key insight]
 
-## What Carries Over
+## Transferable Principles
 - [Principle 1 with conditions]
 - [Principle 2 with conditions]
 
 ## Proposed Solutions
-1. [Solution from parallel 1]
+1. [Solution from analogy 1]
 2. [Combined solution]
 
-## Where the Parallels Break Down
+## Disanalogies and Risks
 - [Where analogies break down]
 - [Target-specific complications]
 
 ## Recommendation
-[Best solution with adaptation notes, and how well the parallels fit: what maps cleanly and what does not]
+[Best solution with adaptation notes]
+
+## Confidence: [X]%
+[Based on analogy strength and mapping completeness]
 ```
+
+## Backstage rule — the method never appears in the answer
+
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Analogical Transfer", "AT", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.

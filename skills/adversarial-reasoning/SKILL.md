@@ -2,46 +2,46 @@
 name: adversarial-reasoning
 description: Stress-tests a design, decision or piece of code by attacking it the way an intelligent adversary would, then proposes countermeasures. Use when the user says "red-team this", "attack this design", "find the holes", "what could go wrong with this system", "security review" or "what are the edge cases", before something ships. Works through eight threat categories (spoofing through privilege escalation, supply chain, social engineering) plus eight edge-case categories. Not for plans about to launch (use premortem-evolved), for exploring options (use breadth-of-thought), for choosing between options (use tree-of-thoughts), or for diagnosing a failure that already happened (use hypothesis-elimination).
 metadata:
-  version: "2.3.0"
+  version: "2.2.1"
 ---
 
-Works best with extended thinking for the hardest phases.
+## Effort & Thinking Budget
+- **Recommended effort**: high/max — thorough attack analysis requires deep adversarial thinking
+- Use extended thinking in complex analysis phases
+- For time-constrained scenarios, use effort: medium with focus on STRIDE categories most relevant to scope
 
-# Adversarial Reasoning
+## Model Recommendation
+Best with Opus for maximum reasoning depth. Security analysis and adversarial thinking benefit significantly from the strongest model available.
 
-## Backstage rule — the method never appears in the answer
+# Adversarial Reasoning (AR)
 
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Adversarial Reasoning", or any other reasoning-skill name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
-
-**Purpose**: Systematically attack your own solutions to find weaknesses before reality does. Take the role of an intelligent adversary trying to break, exploit, or invalidate the design.
+**Purpose**: Systematically attack your own solutions to find weaknesses before reality does. AR assumes the role of an intelligent adversary trying to break, exploit, or invalidate your design.
 
 ## When to Use Adversarial Reasoning
 
-**✅ Use when:**
+**✅ Use AR when:**
 - Validating a proposed solution before implementation
 - Security review of systems or processes
+- Pre-mortem analysis ("how could this project fail?")
 - Stress-testing business decisions
 - Finding edge cases in algorithms
 - Challenging group consensus (devil's advocate)
 
-**❌ Don't use when:**
-- Still exploring solution space (use breadth-of-thought first)
-- Optimizing between options (use tree-of-thoughts first)
-- Debugging existing issues (use hypothesis-elimination)
-- A plan is about to launch and needs a failure analysis (use premortem-evolved)
+**❌ Don't use AR when:**
+- Still exploring solution space (use BoT first)
+- Optimizing between options (use ToT first)
+- Debugging existing issues (use HE)
 - Need constructive ideation, not critique
 
 **Examples:**
 - "Attack our authentication design" ✅
+- "How could this product launch fail?" ✅
 - "What are the edge cases in this algorithm?" ✅
-- "How could this product launch fail?" ❌ (use premortem-evolved)
-- "What features should we build?" ❌ (use breadth-of-thought)
+- "What features should we build?" ❌ (use BoT)
 
 ---
 
 ## Core Methodology: STRIKE Framework
-
-The phase templates below are internal working, not for the answer. Deliver in the Output Template shape at the end.
 
 ### S - Specify the Target
 
@@ -230,9 +230,25 @@ The phase templates below are internal working, not for the answer. Deliver in t
 
 ---
 
-## Plans About to Launch
+## Pre-Mortem Variant
 
-For a project, launch or decision that needs a failure analysis rather than a security attack, use premortem-evolved.
+For project/decision risk analysis (not security):
+
+**Prompt**: "It's 6 months from now. This project has failed spectacularly. What happened?"
+
+**Categories:**
+1. **Technical Failures**: Architecture, scalability, integration
+2. **Resource Failures**: Budget, timeline, staffing
+3. **Stakeholder Failures**: Changing requirements, politics, sponsorship
+4. **Market Failures**: Competition, timing, demand
+5. **Operational Failures**: Deployment, monitoring, support
+6. **Team Failures**: Burnout, turnover, skill gaps
+
+**For each failure mode:**
+- Probability (1-5)
+- Impact (1-5)
+- Early warning signs
+- Preventive actions
 
 ---
 
@@ -244,7 +260,7 @@ For a project, launch or decision that needs a failure analysis rather than a se
 1. Review target specification
 2. Generate attacks using STRIDE+
 3. Develop top 5 attack paths in detail
-4. Attempt exploitation only with explicit authorization from the system's owner, and only in a test environment
+4. Attempt exploitation (in test environment)
 5. Document successful attacks
 
 **Blue Team (Defenders):**
@@ -276,35 +292,35 @@ For a project, launch or decision that needs a failure analysis rather than a se
 4. **Attack Without Defense**: Finding problems without solutions
    - Fix: Every attack must have countermeasure recommendations
 
-5. **One-Time Exercise**: Treating the review as a checkbox activity
+5. **One-Time Exercise**: Treating AR as checkbox activity
    - Fix: Regular red team exercises, continuous threat modeling
 
 ---
 
-## Integration with Other Skills
+## Integration with Other Patterns
 
-**tree-of-thoughts → adversarial-reasoning**: After tree-of-thoughts selects the best solution, attack it before implementation
+**ToT → AR**: After ToT selects best solution, use AR to validate before implementation
 
-**adversarial-reasoning → tree-of-thoughts**: If critical flaws turn up, evaluate fix options with tree-of-thoughts
+**AR → ToT**: If AR finds critical flaws, use ToT to evaluate fix options
 
-**breadth-of-thought → adversarial-reasoning**: After breadth-of-thought generates options, attack the top candidates
+**BoT → AR**: After BoT generates options, use AR on top candidates
 
-**adversarial-reasoning → hypothesis-elimination**: If a vulnerability was actually exploited, investigate with hypothesis-elimination
+**AR → HE**: If AR reveals actual vulnerability was exploited, use HE to investigate
 
 ---
 
 ## Output Template
 
 ```markdown
-# Where [Subject] Can Break
+# Adversarial Analysis: [Subject]
 
-## Summary
+## Executive Summary
 - **Target**: [What was analyzed]
 - **Critical Findings**: [Top 3 risks]
 - **Recommendation**: [Ship / Fix / Redesign]
 
 ## Threat Model
-[Attack categories examined and what each turned up]
+[STRIDE+ analysis summary]
 
 ## Top 5 Attack Paths
 [Detailed attack scenarios]
@@ -318,6 +334,10 @@ For a project, launch or decision that needs a failure analysis rather than a se
 ## Residual Risk
 [What risks remain after mitigations]
 
-## What This Review Did Not Cover
-[Areas not examined, assumptions made, expertise that would sharpen the findings]
+## Confidence: [X]%
+- [Justification - coverage, depth, expertise]
 ```
+
+## Backstage rule — the method never appears in the answer
+
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Adversarial Reasoning", "AR", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.

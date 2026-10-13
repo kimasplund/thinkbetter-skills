@@ -2,34 +2,35 @@
 name: dialectical-reasoning
 description: Resolves a genuine conceptual or design tension, where two opposing positions are both valid and a binary choice is a false one, by steel-manning each side and building a synthesis that keeps the value of both. Use when the user asks "monolith or microservices", "consistency or availability", "move fast or don't break things", "centralize or decentralize", or is stuck between two approaches that each have a real case. Not for picking a winner among options (use tree-of-thoughts), exploring unknown options (use breadth-of-thought), or questions with an objective answer. When the decision needs several people's buy-in, use negotiated-decision-framework instead.
 metadata:
-  version: "2.3.0"
+  version: "2.2.1"
 ---
 
-Works best with extended thinking for the hardest phases.
+## Effort & Thinking Budget
+- **Recommended effort**: high — synthesis of opposing positions requires deep thought
+- Use extended thinking in the Synthesis Generation phase (Phase 4) where dialectical transcendence is attempted
+- For time-constrained scenarios, use effort: medium with focus on Contextual or Temporal synthesis types
 
-# Dialectical Reasoning
+## Model Recommendation
+Best with Opus for maximum reasoning depth. Synthesis quality degrades significantly with weaker models since it requires holding two opposing positions simultaneously.
 
-## Backstage rule — the method never appears in the answer
+# Dialectical Reasoning (DR)
 
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Dialectical Reasoning", or any other reasoning-skill name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
-
-**Purpose**: Navigate genuine tensions between valid but opposing forces through synthesis rather than selection. Many problems involve trade-offs where both sides have legitimate merit.
+**Purpose**: Navigate genuine tensions between valid but opposing forces through synthesis rather than selection. DR recognizes that many problems involve trade-offs where both sides have legitimate merit.
 
 ## When to Use Dialectical Reasoning
 
-**✅ Use when:**
+**✅ Use DR when:**
 - Two valid perspectives are in genuine tension
 - "Both/and" might be better than "either/or"
-- The tension is conceptual or architectural: two valid principles or approaches pull against each other
+- Stakeholders have conflicting but legitimate interests
 - Historical debates suggest no clear winner
 - The "right" answer depends on context that varies
 
-**❌ Don't use when:**
-- One option is clearly superior (use tree-of-thoughts)
-- Need to explore unknown space (use breadth-of-thought)
+**❌ Don't use DR when:**
+- One option is clearly superior (use ToT)
+- Need to explore unknown space (use BoT)
 - Problem has objective correct answer
 - Time doesn't permit nuanced synthesis
-- The decision needs several people's buy-in, with competing interests and politics (use negotiated-decision-framework)
 
 **Examples:**
 - "Monolith vs microservices" ✅ (genuine trade-off)
@@ -40,8 +41,6 @@ This methodology is scaffolding, not content. In the user-facing answer: no meth
 ---
 
 ## Core Methodology: Hegelian Spiral
-
-The phase templates and the worked example below are internal working, not for the answer. Deliver in the Output Template shape at the end.
 
 ### Phase 1: Thesis Articulation
 
@@ -221,7 +220,7 @@ The phase templates and the worked example below are internal working, not for t
 
 ---
 
-## Example: Monolith vs Microservices (internal working)
+## Example: Monolith vs Microservices
 
 ### Thesis: Monolith
 - **Core Claim**: Single deployable unit provides simplicity and coherence
@@ -277,7 +276,7 @@ Extract to service IF:
    - Fix: Steel-man test - could advocates recognize their view?
 
 2. **False Balance**: Treating unequal positions as equal
-   - Fix: If one position is clearly stronger, use tree-of-thoughts instead
+   - Fix: If one position is clearly stronger, use ToT not DR
 
 3. **Premature Synthesis**: Jumping to "both!" without tension analysis
    - Fix: Explicitly analyze why simple compromise fails
@@ -290,35 +289,40 @@ Extract to service IF:
 
 ---
 
-## Integration with Other Skills
+## Integration with Other Patterns
 
-**Before**: Use when tree-of-thoughts reveals two branches are nearly tied and represent genuine perspectives
+**Before DR**: Use when ToT reveals two branches are nearly tied and represent genuine perspectives
 
-**After**: If the synthesis identifies context variables, use tree-of-thoughts to optimize within each context
+**After DR**: If synthesis identifies context variables, use ToT to optimize within each context
 
-**breadth-of-thought → dialectical-reasoning**: If breadth-of-thought shows options cluster into two camps, use this skill to understand the underlying tension
-
-**dialectical-reasoning → negotiated-decision-framework**: Once the conceptual tension is resolved, if the people involved still disagree, hand over to negotiated-decision-framework
+**BoT → DR**: If BoT reveals options cluster into two camps, use DR to understand the underlying tension
 
 ---
 
 ## Output Template
 
 ```markdown
-# [Topic]: Two Positions and a Way Through
+# Dialectical Analysis: [Topic]
 
-## [Position 1]
+## Thesis: [Position 1]
 [Steel-manned presentation]
 
-## [Position 2]
+## Antithesis: [Position 2]
 [Steel-manned presentation]
 
-## Where They Collide
+## Tension Analysis
 [Why neither alone suffices, why simple compromise fails]
 
-## Resolution: [Name]
-[Core idea, how it keeps what each side gets right, rules for applying it]
+## Synthesis: [Resolution Name]
+[Type, core resolution, decision framework]
 
-## What Stays Unresolved
-[Tensions the resolution doesn't remove, and what would change the answer]
+## Residual Tensions
+[What the synthesis doesn't resolve]
+
+## Confidence: [X]%
+[Justification - strength of synthesis, coverage of concerns]
 ```
+
+## Backstage rule — the method never appears in the answer
+
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Dialectical Reasoning", "DR", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
