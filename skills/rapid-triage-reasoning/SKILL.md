@@ -2,7 +2,7 @@
 name: rapid-triage-reasoning
 description: Reaches a defensible decision fast when minutes matter, preferring reversible actions, a stated quality floor and a short follow-up list over the perfect answer. Use when the user says "production is down, what do we do", "I have ten minutes to decide", "we need a call right now", or faces an incident, emergency or hard deadline where delay costs more than a suboptimal choice. Not for decisions with real time to spare (use tree-of-thoughts), for finding a root cause before acting (use hypothesis-elimination, after stabilizing), or for disagreements between several parties (use negotiated-decision-framework).
 metadata:
-  version: "2.2.1"
+  version: "2.3.0"
 ---
 
 ## Effort & Thinking Budget
@@ -50,6 +50,7 @@ Works well with Sonnet for speed; use Opus only for high-stakes triage where the
 2. State consequences of delay: "If we don't decide by then, [CONSEQUENCE]"
 3. State quality floor: "Minimum acceptable outcome is [THRESHOLD]"
 4. Acknowledge what you're sacrificing: "We may miss [OPTIMIZATION]"
+5. Strip the framing (silently; never a section in the answer): keep the facts (times, numbers, who can do what, what each action physically does) and set aside the requester's mood, adjectives and any opinion not backed by a fact ("obviously a glitch", "reckless", "be brutal"). Decide on the facts; let tone shape only the wording.
 
 **Template:**
 ```markdown
@@ -124,8 +125,10 @@ Works well with Sonnet for speed; use Opus only for high-stakes triage where the
 
 **Decision Rule:**
 - If uncertain AND options have similar outcomes → Choose most reversible
-- If one option clearly better AND irreversible → Still okay if confidence >70%
+- If one option clearly better AND irreversible → Still okay if confidence >70%, and only if that confidence rests on stated facts, not on how hopeful or doubtful the requester sounds
 - If uncertain AND must choose irreversible → Get second opinion if ANY time remains
+- Classify reversibility by what the action itself does (a button that refunds and releases every seat is irreversible), not by how recoverable its aftermath sounds
+- If the call hinges on a fact someone can check before the deadline, don't guess it: recommend the reversible option now, name the check, and set a cutoff (before waiting itself turns costly) with the action for each answer
 
 **Quick Assessment Matrix:**
 ```markdown
@@ -277,7 +280,7 @@ Prefer highest score
 - Middle ground: [Balance]
 
 ### Selection (30s)
-IF blast radius = Large → Conservative
+IF blast radius = Large → Conservative (the most reversible option that removes the hazard; stopping everything is not automatically conservative)
 ELSE IF time < 10min → Aggressive (if reversible)
 ELSE → Middle ground
 
@@ -308,6 +311,10 @@ ELSE → Middle ground
 5. **Not Following Up**: Making RTR decisions permanent
    - Fix: Always flag for follow-up
    - RTR is triage, not treatment
+
+6. **Framing Capture**: The requester's lean, or a quoted stakeholder's stance, picks the option
+   - Fix: Ask "would I make the same call if they had asked hopefully / doubtfully?"
+   - If not, make the call conditional on the checkable fact (see Decision Rule)
 
 ---
 

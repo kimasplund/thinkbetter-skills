@@ -2,7 +2,7 @@
 name: analogical-transfer
 description: Solves a novel problem with no direct precedent by mapping it onto structurally similar solved problems in other domains and carrying the working mechanisms over. Use when the user says "we've never done anything like this", "is there a precedent for this", "what is this similar to", "how would other fields handle this", or when the obvious in-domain answers are exhausted. Also useful for explaining a hard concept through a well-chosen parallel. Not for problems with known in-domain solutions (research them instead), for choosing among known options (use tree-of-thoughts), or for enumerating the whole option space (use breadth-of-thought).
 metadata:
-  version: "2.2.1"
+  version: "2.3.0"
 ---
 
 ## Effort & Thinking Budget
@@ -363,11 +363,10 @@ For each solution, explicitly list:
 
 ## Output Template
 
-```markdown
-# Analogical Analysis: [Problem]
+Work the steps above in your notes. The reply delivers only their results, under headings in the user's own terms, and opens with the answer, not with a title or a restatement of the problem.
 
-## Problem Abstraction
-[Domain-neutral core challenge]
+```markdown
+**Short answer:** [Verdict on the user's analogy or plan, and what to do instead]
 
 ## Analogies Investigated
 1. [Analogy 1] - [Key insight]
@@ -389,10 +388,12 @@ For each solution, explicitly list:
 ## Recommendation
 [Best solution with adaptation notes]
 
-## Confidence: [X]%
-[Based on analogy strength and mapping completeness]
+## Where I could be wrong
+[Only what is new: assumptions that decide the design, analogue facts recalled rather than checked, and what would change the answer. No recap of earlier sections.]
 ```
 
 ## Backstage rule — the method never appears in the answer
 
 This methodology is scaffolding, not content. In the user-facing answer: no method names ("Analogical Transfer", "AT", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
+
+The method's own steps stay backstage too: no section restating the problem in abstract or domain-neutral terms, no title that repeats the user's question, no closing recap of points already made, no mapping labels such as "what carries over" (say what the user should do instead), and only the analogies that change the recommendation.

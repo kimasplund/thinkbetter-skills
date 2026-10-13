@@ -2,7 +2,7 @@
 name: negotiated-decision-framework
 description: Works out a decision that several people or groups with competing interests must all accept, by mapping stakeholders, finding common ground, sorting real conflicts from false ones, and designing an agreement each party can live with. Use when the user says "the teams disagree", "how do I get buy-in", "engineering and product want different things", "stakeholders won't agree", or when politics and power dynamics will decide whether the best answer is adopted. Not for a single decision-maker with clear criteria (use tree-of-thoughts), for a purely conceptual tension (use dialectical-reasoning), or when time pressure rules out negotiation (use rapid-triage-reasoning, then negotiate afterwards).
 metadata:
-  version: "2.2.1"
+  version: "2.3.0"
 ---
 
 ## Effort & Thinking Budget
@@ -360,13 +360,9 @@ When history poisons current negotiation:
 [Summary of key stakeholders and interests]
 
 ### Key Stakeholders
-| Stakeholder | Interest | Power | Support Level |
+| Stakeholder (only those who can block or must act) | What they need | How they could block | What they get / give |
 |-------------|----------|-------|---------------|
-| [Name] | [What they want] | [H/M/L] | [Champion/Endorse/Accept/Oppose] |
-
-## Zones of Agreement
-- [Shared goal 1]
-- [Shared goal 2]
+| [Name] | [Their real need, in plain words] | [Vote, veto, walk-out, quiet non-compliance] | [Gain] / [Concession] |
 
 ## Conflicts Addressed
 | Conflict | Type | Resolution |
@@ -376,12 +372,6 @@ When history poisons current negotiation:
 ## Negotiated Solution
 [Description of agreed solution]
 
-### Value Distribution
-| Stakeholder | What They Get | What They Give |
-|-------------|---------------|----------------|
-| [A] | [Gain] | [Concession] |
-| [B] | [Gain] | [Concession] |
-
 ## Commitments and Conditions
 - [Commitment 1]
 - [Condition/Contingency]
@@ -389,8 +379,8 @@ When history poisons current negotiation:
 ## Implementation Notes
 [How to execute with stakeholder buy-in]
 
-## Confidence: [X]%
-[Based on commitment strength and alignment quality]
+## What would change this recommendation
+[The fact that would flip it, and the cheapest way to check it first]
 ```
 
 ---
@@ -407,4 +397,4 @@ When history poisons current negotiation:
 
 ## Backstage rule — the method never appears in the answer
 
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Negotiated Decision Framework", "NDF", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Negotiated Decision Framework", "NDF", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them. The method's stage vocabulary is machinery too: never write "stated position" versus "underlying interest", "zones of agreement", "BATNA" or commitment-level labels; name the specific need instead. Lead with the recommendation and the blockers, describe each party once and only if it can block or must act, add no separate "what everyone agrees on" section, and stop at the last new point with no closing recap.
