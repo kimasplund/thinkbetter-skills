@@ -1,9 +1,9 @@
 ---
 name: self-reflecting-chain
-description: Works through a problem one dependent step at a time, reflecting on each step's validity and backtracking when a step fails. Use when order matters and each step builds on the last - tracing a known execution path, a proof or derivation, a causal chain, a plan where phase B needs phase A - or when the user says "walk me through it step by step", "check each step", "trace this through". Not for finding an unknown root cause among many candidates (use hypothesis-elimination), for choosing among options (use tree-of-thoughts or breadth-of-thought), or for steps that can run in any order.
+description: Works through a problem one dependent step at a time, reflecting on each step's validity and backtracking when a step fails. Use when order matters and each step builds on the last - tracing a known execution path, a proof or derivation, a causal chain, a plan where phase B needs phase A - or when the user says "walk me through it step by step", "check each step", "trace this through". Also reviews a finished answer, argument or plan someone asks to check ("check my reasoning", "is this argument sound", "review this before I send it"), with up to three critique-and-revise passes. Not for finding an unknown root cause among many candidates (use hypothesis-elimination), for choosing among options (use tree-of-thoughts or breadth-of-thought), or for steps that can run in any order.
 license: MIT
 metadata:
-  version: "2.3.1"
+  version: "2.4.0"
 ---
 
 ## Effort & Thinking Budget
@@ -163,6 +163,7 @@ For any step involving code, PoCs, or technical claims:
 - [ ] All assumptions explicitly stated
 - [ ] Dependencies satisfied
 - [ ] No better alternative path obvious
+- [ ] No circular step, unchecked bias, contradiction or drift from the question ([references/reasoning-checks.md](references/reasoning-checks.md))
 
 ---
 
@@ -200,6 +201,25 @@ For any step involving code, PoCs, or technical claims:
 
 **Reasoning Trace**: Step 1 → Step 2 → Step 3 → Step 4 → Step 5 → Conclusion
 ```
+
+---
+
+## Review Mode: Checking a Finished Answer
+
+Use this when someone hands over a finished answer, argument, plan or analysis to check, or before delivering a high-stakes conclusion of your own.
+
+**Passes (at most three):**
+1. Restate in one line the question the draft must settle.
+2. Run the checks in [references/reasoning-checks.md](references/reasoning-checks.md) on the draft: circular reasoning, named biases, contradictions, drift from the question, the counterfactual probe, and unsupported leaps.
+3. Fix every material issue in the draft itself.
+4. Stop when a pass finds no material issue, when a pass changes nothing that matters, or after the third pass.
+
+**Deliver:**
+- the corrected answer first;
+- then each issue that changed the conclusion, in one line with its fix;
+- then anything still unresolved, with the cheapest way to check it.
+
+Never deliver the pass log, the checklist or check names as headings. If the draft holds up, say so in one line and name the one point most worth watching.
 
 ---
 
