@@ -1,0 +1,18 @@
+# Round report — skill-gauntlet cherry-pick (2026-08-22)
+
+**Verdict: ADOPT.** The candidate passes all five pre-registered conditions (PRE-REGISTRATION.md, written before any edit). The packaged successor ships as `/mnt/agents/output/skill-gauntlet.skill` (name unchanged); the champion directory `/mnt/agents/output/skill-gauntlet/` is preserved frozen as the historical record. The installed copy at `/app/.user/skills/skill-gauntlet/` is on a read-only mount — update it manually from the new package.
+
+## Candidate
+skill-gauntlet + exactly three deltas cherry-picked from the uploaded TypeScript in-sim gauntlet module: (1) verifier-integrity hashing with an append-only, tamper-evident ledger (`scripts/freeze.py`); (2) degraded-mode gating (mechanicals always decisive; absent panel → INCONCLUSIVE, never ADOPT); (3) held-in/held-out key splits with a single source of truth in the sealed matrix (excluding the TS module's divergent-definition bug by construction) and an explicit "empty held-out split cannot pass" clause.
+
+## Gate adjudication (conjunctive — all five PASS)
+1. **Exact-diff: PASS.** Only SKILL.md, references/protocol.md, references/key-verification.md changed; scripts/freeze.py added; the other five files byte-identical; frontmatter untouched.
+2. **Adversarial review: PASS.** Round 1 found 4 BLOCKERs + 5 MINORs (review.md) — all fixed within the declared surface; round 2 returned **CLEAN** (review-r2.md); its 3 residual nits were then also fixed (protocol.md template clauses; freeze.py `used` rejects unregistered paths). freeze.py exercised across 12 test paths (register/refuse-overwrite, verify clean, silent-change FAIL, amend-before-use PASS, amend-after-use FAIL, ledger-tamper FAIL exit 2, three parser-abuse refusals, manifest-default verify, use-event recording/rejection).
+3. **Functional test (retroactive on the real v6 round): PASS.** (a) the §13 instrument-symmetry correction classifies as a valid amended gate row (timestamped, reasoned, symmetric, pre-use) while a silent auditor edit voids the round; (b) v6-minus-panels degrades to REJECT on the mechanical framing gate — identical verdict, no ADOPT reachable; (c) the reused 12-key matrix classifies held-in-only, exposing the missing held-out leg. All three adjudicated unambiguously (retro-verify.md).
+4. **Swarm eval: PASS.** Grader (blind paths): candidate 12/13 expectations vs champion 6/13; candidate met all expectations on all three scenarios (E3-d borderline-PASS, documented — the executor ran against the pre-fix candidate; the post-fix text covers the caveat verbatim); champion missed ≥1 expectation on 3/3 scenarios (≥2 required). Blind comparator: candidate preferred 3/3, champion 0. Both arms were citation-accurate and honest about their skill's silences — the gap is protocol coverage, not answerer candor.
+5. **Champion freeze: PASS.** All eight md5s identical pre/post.
+
+## Aftermath
+- Shipped: `/mnt/agents/output/skill-gauntlet.skill` (supersedes the previous package; the premortem champion remains untouched — this round concerned the harness, not the premortem skill).
+- Known disclosed limits (accepted, documented in the artifact): the ledger raises the cost of edits but a coordinator with write access can rewrite it — the strong anchor is copying `state_hash` into the external pre-registration file; skipping `used` calls degrades the ordering audit to a printed manual-confirmation note.
+- Instrument files: PRE-REGISTRATION.md, review.md, review-r2.md, retro-verify.md, grading.md, comparison.md, eval/ (per-arm answers + blind copies), BLIND-MAPPING-coordinator-only.txt.
