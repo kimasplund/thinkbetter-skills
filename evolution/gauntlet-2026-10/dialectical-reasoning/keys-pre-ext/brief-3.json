@@ -1,0 +1,38 @@
+{
+  "I9A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Remove standing write access to the ledger... Keep broad read access through a replica or masked view.",
+      "k2": "Move support onto a read replica or a masked, read-only view with no write path.",
+      "k3": "turned into reviewed, parameterized runbook actions... Engineers then need no raw write access",
+      "k4": "The on-call engineer self-approves during a declared incident, with a mandatory reason and incident ID."
+    }
+  },
+  "C7S": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The finding is about standing write access. It says nothing about read access or about all access.",
+      "k2": "Reads stay as they are, or move to a read replica with sensitive columns masked",
+      "k3": "wrap them as parameterized, logged operations that on-call can run immediately, with no approval step",
+      "k4": "Fix the 3 am friction first... self-approved by the on-call engineer during a declared incident"
+    }
+  },
+  "E6Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Don't remove them in this round, since the finding is about writes.",
+      "k2": "move routine support lookups to a read replica or a masked status view",
+      "k3": "Package the three statements as reviewed, parameterised procedures or runbook commands... needs no database grant",
+      "k4": "The on-call engineer self-approves while an incident is open... Fix the workflow"
+    }
+  },
+  "W0J": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Mirela's \"remove all access by 31 January\" goes further than the finding does",
+      "k2": "Either give support a status lookup... or keep reads on a standing read-only role with logging.",
+      "k3": "packaged as named, parameterised, pre-reviewed operations... invoked by the on-call engineer without any access request",
+      "k4": "Make the grant automatic when the engineer is the acknowledged on-call for an open Sev-1"
+    }
+  }
+}

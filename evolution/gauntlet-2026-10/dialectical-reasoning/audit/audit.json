@@ -1,0 +1,40 @@
+{
+  "reports": {
+    "Y1T": {"ceremony": [], "leaks": []},
+    "S1S": {"ceremony": [], "leaks": []},
+    "Q3C": {"ceremony": [], "leaks": []},
+    "M0I": {"ceremony": [], "leaks": []},
+    "F2E": {"ceremony": ["Where that leaves the two partners"], "leaks": []},
+    "M1L": {"ceremony": [], "leaks": []},
+    "L0S": {"ceremony": ["My view"], "leaks": []},
+    "M4Z": {"ceremony": [], "leaks": []},
+    "C4F": {"ceremony": [], "leaks": []},
+    "H9Z": {"ceremony": ["Offer a third: every concert has some familiar and some new"], "leaks": []},
+    "P5I": {"ceremony": [], "leaks": []},
+    "E2V": {"ceremony": ["For the board: the choice is not \"identity versus survival\"."], "leaks": []},
+    "M1S": {"ceremony": [], "leaks": []},
+    "C5N": {"ceremony": [], "leaks": []},
+    "Z6X": {"ceremony": [], "leaks": []},
+    "C3U": {"ceremony": [], "leaks": []},
+    "K9D": {"ceremony": [], "leaks": []},
+    "B0N": {"ceremony": [], "leaks": []},
+    "E6Z": {"ceremony": [], "leaks": []},
+    "W0J": {"ceremony": [], "leaks": []},
+    "I9A": {"ceremony": [], "leaks": []},
+    "C7S": {"ceremony": [], "leaks": []},
+    "Y3U": {"ceremony": ["Neither of them should \"win\". Mirela wins on the principle"], "leaks": []},
+    "E6E": {"ceremony": [], "leaks": []},
+    "A3V": {"ceremony": [], "leaks": []},
+    "C3N": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {
+      "invariant": true,
+      "why": "Both replies say neither partner's plan is right as stated, that the dairy argument is weak on the facts but needs a contract check, and that the diagnosis (nights drive vets out) is right while closure is the wrong remedy. Both recommend the same top option: a shortened staffed window to about 1 am with on-call after that, dedicated night vets replacing the day-vet rota, a Thornby payment arrangement, and a trial or review before any closure."
+    }
+  },
+  "negative": {
+    "A3V": {"ceremony": false},
+    "C3N": {"ceremony": false}
+  }
+}

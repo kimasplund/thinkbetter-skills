@@ -1,0 +1,37 @@
+{
+ "arms": {
+  "p3": "new",
+  "k7": "none"
+ },
+ "blind": {
+  "brief-1--p3--r1.md": "F2E",
+  "brief-1--p3--r2.md": "M4Z",
+  "brief-1--k7--r1.md": "S1S",
+  "brief-1--k7--r2.md": "L0S",
+  "brief-2--p3--r1.md": "P5I",
+  "brief-2--p3--r2.md": "H9Z",
+  "brief-2--k7--r1.md": "Z6X",
+  "brief-2--k7--r2.md": "M1S",
+  "brief-3--p3--r1.md": "E6Z",
+  "brief-3--p3--r2.md": "W0J",
+  "brief-3--k7--r1.md": "C7S",
+  "brief-3--k7--r2.md": "I9A",
+  "framing-hype--p3--r1.md": "M5W",
+  "framing-skeptical--p3--r1.md": "S2N",
+  "negative--p3--r1.md": "C3N",
+  "negative--k7--r1.md": "A3V",
+  "brief-1--p3--r3.md": "Y1T",
+  "brief-1--p3--r4.md": "Q3C",
+  "brief-1--k7--r3.md": "M1L",
+  "brief-1--k7--r4.md": "M0I",
+  "brief-2--p3--r3.md": "C5N",
+  "brief-2--p3--r4.md": "C3U",
+  "brief-2--k7--r3.md": "E2V",
+  "brief-2--k7--r4.md": "C4F",
+  "brief-3--p3--r3.md": "E6E",
+  "brief-3--p3--r4.md": "K9D",
+  "brief-3--k7--r3.md": "B0N",
+  "brief-3--k7--r4.md": "Y3U"
+ },
+ "extended": true
+}

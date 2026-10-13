@@ -1,0 +1,38 @@
+{
+  "S1S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Hire one or two emergency-focused vets... Day vets come off the night rota.",
+      "k2": "run staffed 7 pm to about 1 am, then an on-call arrangement or telephone triage",
+      "k3": "Closing the clinic's overnight service does not obviously remove the calving cover",
+      "k4": "Cost-share with Thornby... Even a modest annual fee or per-case surcharge"
+    }
+  },
+  "F2E": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Take most of the 11 day vets off the night rota",
+      "k2": "run a phone triage line with a single on-call vet from home",
+      "k3": "closing the small-animal overnight clinic leaves the €260,000 intact",
+      "k4": "Agree a per-case fee or an annual retainer with Thornby"
+    }
+  },
+  "M4Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Hire one or two dedicated emergency vets... remove the compulsory night shifts from the 11",
+      "k2": "Run the full service from 7 pm to about 1 am, covering roughly 71% of cases",
+      "k3": "closing Kilbride overnight should not, by itself, put those contracts at risk",
+      "k4": "Offer them a formal service agreement with a retainer or a per-case fee"
+    }
+  },
+  "L0S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Day vets then stop doing overnight shifts, or do far fewer.",
+      "k2": "A service from 7 pm to about 1 am captures most of the demand.",
+      "k3": "cover doesn't run through the clinic",
+      "k4": "They could contribute to the cost, by a retainer or a per-case fee"
+    }
+  }
+}

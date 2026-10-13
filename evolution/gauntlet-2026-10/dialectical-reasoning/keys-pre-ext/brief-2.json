@@ -1,0 +1,38 @@
+{
+  "Z6X": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "One short living-composer piece on most programmes would meet the threshold.",
+      "k2": "Include at least one film or game-score programme, or a half-programme",
+      "k3": "Keep it and expand it modestly, for instance 8-10 nights, with players leading the programming.",
+      "k4": "Keep Friday programmes close to the current mix so you do not disturb your 81% base."
+    }
+  },
+  "H9Z": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "One living-composer piece in 12 of the 16 concerts would meet the rule.",
+      "k2": "The film concert and Unbound sold out because the audience knew what they were getting",
+      "k3": "Protect and expand Unbound... keeps the players engaged in work they care about.",
+      "k4": "Saturdays (the weak spot): anchor on recognisable titles... Fridays: leave the subscription model alone."
+    }
+  },
+  "M1S": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "You do not need to commission to hit 20%, because plenty of existing living-composer repertoire is available",
+      "k2": "\"popular\" does not have to mean \"dead composers\".",
+      "k3": "Treat it as the pipeline for younger audiences... add nights.",
+      "k4": "Your single-ticket problem is a Saturday problem... The Friday base is healthy, so don't disturb it."
+    }
+  },
+  "P5I": {
+    "k1": "✓", "k2": "~", "k3": "✗", "k4": "✓",
+    "evidence": {
+      "k1": "A 10-minute piece by a living composer opening a Tchaikovsky concert counts the same",
+      "k2": "Keep one film-and-game programme, and consider a second... keep it to one or two nights",
+      "k3": "Pick the strongest pieces from Unbound and move them into the main hall as short openers",
+      "k4": "Saturdays carry the draw... Friday subscription slot can carry the more demanding commission"
+    }
+  }
+}

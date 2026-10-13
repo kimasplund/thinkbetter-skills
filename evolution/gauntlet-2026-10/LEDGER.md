@@ -13,7 +13,7 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | 7 | parallel-execution | applied | NOT VALIDATED | REVERT |  | ~2.1M (extended) |
 | 8 | premortem-evolved | applied | NOT VALIDATED | REVERT |  | ~2.16M |
 | 9 | adversarial-reasoning | applied | NOT VALIDATED | - |  | ~1.53M (extended) |
-| 10 | dialectical-reasoning | blinded |  |  |  |  |
+| 10 | dialectical-reasoning | applied | NOT VALIDATED | - |  | ~1.26M (extended) |
 | 11 | analogical-transfer | pending | | | | |
 | 12 | rapid-triage-reasoning | pending | | | | |
 | 13 | negotiated-decision-framework | pending | | | | |

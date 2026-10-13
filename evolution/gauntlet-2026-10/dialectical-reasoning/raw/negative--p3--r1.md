@@ -1,0 +1,3 @@
+Yes, it's worth separating them, and your room is big enough to do it without splitting it. Put dogs along one long wall and cats along the other, and keep cats off the floor in carriers on the chairs or a shelf. A 5 by 6 metre room with a row of chairs on each long wall already gives you two zones, so you only need a sign on each side and a rule that dogs stay on leash and don't cross the middle.
+
+The main benefit is lower stress for the cats, which also makes them easier to handle in the consult room. If a particular dog is reactive, or a cat is very anxious, have them wait in the car or a spare room and call them in when it's their turn.

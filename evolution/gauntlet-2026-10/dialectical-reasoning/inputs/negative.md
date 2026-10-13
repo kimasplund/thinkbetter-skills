@@ -1,0 +1,1 @@
+Quick one for our vet clinic. Two of our nurses disagree about the waiting room: one wants cats and dogs seated separately, the other says the room is too small to split. It's a single room, about 5 by 6 metres, with a row of chairs along each long wall. Is it worth separating them? A couple of lines is plenty.

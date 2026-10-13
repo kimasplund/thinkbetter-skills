@@ -1,0 +1,42 @@
+{
+  "K9D": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Mirela is arguing against standing access and Anders is arguing against all access.",
+    "k2": "Support and engineers read through a read replica or a masked, read-only view",
+    "k3": "become parameterised runbook commands or stored procedures",
+    "k4": "auto-approved for the on-call engineer while a Sev-1 or Sev-2 incident is open"}},
+  "B0N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "I'm not removing read access this month, because it isn't what the auditors flagged.",
+    "k2": "Keep read access for support, ideally through a read replica or masked views",
+    "k3": "pre-approved, reviewed, parameterised actions (stored procedures or a small runbook tool)",
+    "k4": "on-call can self-grant time-limited write access (say 1-2 hours)"}},
+  "E6Z": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Mirela is wrong that all access must go by 31 January.",
+    "k2": "move routine support lookups to a read replica or a masked status view",
+    "k3": "Package the three statements as reviewed, parameterised procedures or runbook commands.",
+    "k4": "The on-call engineer self-approves while an incident is open"}},
+  "W0J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Mirela's \"remove all access by 31 January\" goes further than the finding does",
+    "k2": "give support a status lookup (a read replica, a masked view or a small internal tool)",
+    "k3": "packaged as named, parameterised, pre-reviewed operations",
+    "k4": "Make the grant automatic when the engineer is the acknowledged on-call for an open Sev-1"}},
+  "I9A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Anders is right that removing *all* access, including reads, would hurt.",
+    "k2": "Move support onto a read replica or a masked, read-only view with no write path.",
+    "k3": "reviewed, parameterized runbook actions (stored procedures or a small ops tool)",
+    "k4": "The on-call engineer self-approves during a declared incident"}},
+  "C7S": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Mirela's \"remove all access\" goes beyond the finding.",
+    "k2": "Reads stay as they are, or move to a read replica with sensitive columns masked",
+    "k3": "wrap them as parameterized, logged operations that on-call can run immediately",
+    "k4": "page-triggered pre-authorization, a single command or Slack action"}},
+  "Y3U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Standing read access can stay, but check that the ledger tables don't expose sensitive fields.",
+    "k2": "ideally through a read replica or a status-lookup tool rather than the production ledger",
+    "k3": "Put them behind runbook tooling, such as stored procedures or a small service",
+    "k4": "Let the on-call engineer self-approve during a declared incident"}},
+  "E6E": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Full removal of every form of access isn't needed to close this finding",
+    "k2": "Support's status checks should go through a read replica or a masked view",
+    "k3": "Wrap the payout re-queue, the settlement-lock release and the FX rounding correction",
+    "k4": "Make the grant self-service once a Sev-1 is declared and tied to the incident ticket"}}
+}

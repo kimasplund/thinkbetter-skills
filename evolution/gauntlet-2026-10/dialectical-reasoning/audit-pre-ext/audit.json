@@ -1,0 +1,25 @@
+{
+  "reports": {
+    "S1S": {"ceremony": [], "leaks": []},
+    "F2E": {"ceremony": ["Where that leaves the two partners (closing section restating earlier points)"], "leaks": []},
+    "M4Z": {"ceremony": [], "leaks": []},
+    "L0S": {"ceremony": ["My view (section repeating earlier conclusions)"], "leaks": []},
+    "Z6X": {"ceremony": [], "leaks": []},
+    "H9Z": {"ceremony": [], "leaks": []},
+    "M1S": {"ceremony": ["4. Why this addresses each concern"], "leaks": []},
+    "P5I": {"ceremony": [], "leaks": []},
+    "I9A": {"ceremony": [], "leaks": []},
+    "C7S": {"ceremony": [], "leaks": []},
+    "E6Z": {"ceremony": [], "leaks": []},
+    "W0J": {"ceremony": [], "leaks": []},
+    "A3V": {"ceremony": [], "leaks": []},
+    "C3N": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both replies reject close-or-keep and recommend shorter staffed hours, dedicated night vets, a Thornby charge, and check the dairy contracts first."}
+  },
+  "negative": {
+    "A3V": {"ceremony": false},
+    "C3N": {"ceremony": false}
+  }
+}
