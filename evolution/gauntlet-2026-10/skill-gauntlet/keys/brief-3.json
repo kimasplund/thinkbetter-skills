@@ -1,0 +1,38 @@
+{
+  "F3U": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "in the direction that favoured the candidate",
+      "k2": "Scores measure how good an answer looks... The recommendation flipped.",
+      "k3": "run ranges overlap almost completely... could easily be noise",
+      "k4": "A 3-point gap (about 5%) is not \"clearly\" better"
+    }
+  },
+  "P4N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "changing the instrument after seeing results is moving the goalposts",
+      "k2": "the test is whether the advice changes, not whether the scores match",
+      "k3": "a gap that small sits inside the run-to-run spread",
+      "k4": "this scorecard barely separates any of the three"
+    }
+  },
+  "H3Q": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "a change of the yardstick in v9's favor",
+      "k2": "it fails on the behavior, not the score",
+      "k3": "that gap is within run-to-run noise. It is a hint",
+      "k4": "Beating the no-configuration baseline by 3 of 55 points... is small"
+    }
+  },
+  "W2U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "The original-wording scores... are the honest test of what you agreed.",
+      "k2": "measures how well written they were, not whether they agree",
+      "k3": "Individual runs overlap heavily... a gap that small could easily be noise",
+      "k4": "v8 beats the baseline by 2 points, so the real question"
+    }
+  }
+}

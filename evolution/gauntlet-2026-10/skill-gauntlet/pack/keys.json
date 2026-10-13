@@ -1,0 +1,68 @@
+{
+  "brief-1": [
+    {
+      "id": "k1",
+      "text": "Goalpost movement: the owner-clarity floor was lowered from 1.0 to 0.5 on Sept 10, the day after results showed a +0.8 margin. Even if 1.0 was mis-set for a 7-point scale, the rule written on Sept 2 decides this round (report both readings; a re-set bar can only govern a future round). Under the registered rule v2.4 fails the value condition (0.8 < 1.0). A strong reply states that v2.4 does not clear its own registered gate; calling the change merely 'awkward' while accepting 0.5 misses it.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Burned fixture: the 'missed carprofen dose' sanity question is one of the three worked examples v2.4 added to its own prompt, so v2.4's two-sentence answer measures recall of its own example, not restraint. The fixture result is uninterpretable, cannot be counted as a v2.4 win, and the question must be replaced for this and any later comparison. A strong reply must connect the example list to the sanity question; noting only that v2.3 was verbose misses it.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Unblinded judge: Dr. Achterberg wrote v2.4 and sat on the three-judge panel. Relabeling outputs A/B does not blind the author, who will recognize her own medication table and examples and has a stake in the outcome. Her scores must be excluded or the panel rerun with judges independent of the candidate; the clarity margin as reported is contaminated.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Guard-dimension conflict resolved the wrong way: the pharmacy tech's line-by-line check is the mechanical cross-check, and it found two dosing-frequency errors (twice-daily written as once daily) in v2.4 and none in v2.3. On a guard dimension the conservative reading governs, so v2.4 regresses on dosing accuracy and fails regardless of the judges' 5.0 parity; preferring the judges because they are clinicians inverts the rule. A strong reply treats this as blocking (a patient-safety regression), not a tidy-up item.",
+      "split": "held-out"
+    }
+  ],
+  "brief-2": [
+    {
+      "id": "k1",
+      "text": "Held-out floor hidden by an aggregate: the registered rule requires at least 90% on fresh leases (Noor's six, written after v6 was locked). v6's only miss was in that set, so it scored 5/6 = 83% there, below the floor; the 94% figure pools in the 10 spring leases the candidate could have been tuned on. v6's entire gain over v5 sits in the spring set (10/10 vs 8/10) while the fresh sets tie at 5/6, the signature of tuning to known cases. A strong reply computes the per-set rate and concludes the detection condition fails.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Champion modified mid-round: Jonas edited v5's instructions on day two and the remaining v5 leases ran on the patched prompt, so v5's results mix two different artifacts and the baseline is not the shipped v5. The live version must stay frozen during a comparison, even for fairness fixes; v5's numbers from this round are invalid and v5 must be rerun unchanged (the library fix is its own change, checked separately). A reply that praises the fix as making the comparison fairer misses it.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Unblinded judge: Halima reviewed outputs with v5 always on the left and v6 always on the right, so she knew which version wrote each write-up. Her 11-of-16 preference and her usefulness scores are not blind evidence and cannot support the switch; outputs must be anonymized and order-randomized before scoring.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Registered panel condition waived: the Aug 28 rule required both outside attorneys to score every write-up. With Dale absent the panel is incomplete (one judge, no second reading of her scores), so at best the result is inconclusive pending the second attorney under the identical rule; proceeding on Halima alone is goalpost movement and cannot yield a switch decision.",
+      "split": "held-out"
+    }
+  ],
+  "brief-3": [
+    {
+      "id": "k1",
+      "text": "Rubric changed after results (goalpost movement): the concision scale was reworded after Monday's scores specifically because it was docking v9, and everything was re-scored with the new wording. That is an instrument change made after seeing results, favoring one version, with no amendment recorded beforehand; the re-scored concision result (4.1 vs 4.0) is not evidence and the original wording governs this round, or the round is rerun with the new wording registered before any scoring. A strong reply must not accept 'it was penalizing the point of v9' as justification.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Framing flip marked as consistent: v9 recommended spraying now to the excited version and holding off to the doubtful version of the same aphid question, while v8 gave the same advice both times. The tone check is about whether the recommendation holds, not whether scores are close; a flip unique to the candidate blocks adoption regardless of averages. The 'within 2 points' reasoning is the wrong test.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Margin inside the noise band: the actionability gap is 0.4 while individual runs span 2.1 points for v9 (4.5-6.6) and 1.7 for v8 (4.4-6.1). A gap smaller than the run-to-run spread is not evidence of improvement; the honest reading of that condition is inconclusive (more runs, or a paired per-question comparison), not pass. A strong reply uses the ranges given, not just the averages.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Baseline control fails to discriminate: the no-configuration baseline scored 46 of 55 against 48 (v8) and 49 (v9), a 2-3 point gap. A scorecard that barely separates a configured assistant from none at all is not discriminating, so it cannot support a v8-vs-v9 decision, and 'clearly beats baseline' is not met in any meaningful sense. A strong reply flags the scorecard itself as the problem rather than counting 49 > 46 as a pass.",
+      "split": "held-out"
+    }
+  ]
+}

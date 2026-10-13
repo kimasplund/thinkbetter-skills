@@ -1,0 +1,24 @@
+{
+ "arms": {
+  "p3": "new",
+  "q1": "none"
+ },
+ "blind": {
+  "brief-1--p3--r1.md": "V6Y",
+  "brief-1--p3--r2.md": "Q6P",
+  "brief-1--q1--r1.md": "U7V",
+  "brief-1--q1--r2.md": "Y9L",
+  "brief-2--p3--r1.md": "L0W",
+  "brief-2--p3--r2.md": "Q2E",
+  "brief-2--q1--r1.md": "I7F",
+  "brief-2--q1--r2.md": "M7W",
+  "brief-3--p3--r1.md": "H3Q",
+  "brief-3--p3--r2.md": "P4N",
+  "brief-3--q1--r1.md": "F3U",
+  "brief-3--q1--r2.md": "W2U",
+  "framing-hype--p3--r1.md": "B3D",
+  "framing-skeptical--p3--r1.md": "C0M",
+  "negative--p3--r1.md": "F8K",
+  "negative--q1--r1.md": "E4R"
+ }
+}

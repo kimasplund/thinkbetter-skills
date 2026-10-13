@@ -18,7 +18,7 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | 12 | rapid-triage-reasoning | applied | NOT VALIDATED | - |  | ~0.69M |
 | 13 | negotiated-decision-framework | applied | NOT VALIDATED | - |  | ~1.51M (extended) |
 | 14 | option-synthesis | pending | | | | |
-| 15 | skill-gauntlet | frozen |  |  |  |  |
+| 15 | skill-gauntlet | applied | NOT VALIDATED | - |  | ~0.59M |
 
 ## Amendments
 

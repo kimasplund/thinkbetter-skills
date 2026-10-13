@@ -1,0 +1,18 @@
+{"reports": {
+"Q6P": {"ceremony": ["The clarity gain looks real in direction and the small-question behavior is promising."], "leaks": []},
+"Y9L": {"ceremony": [], "leaks": []},
+"V6Y": {"ceremony": [], "leaks": []},
+"U7V": {"ceremony": [], "leaks": []},
+"I7F": {"ceremony": [], "leaks": []},
+"L0W": {"ceremony": [], "leaks": []},
+"M7W": {"ceremony": [], "leaks": []},
+"Q2E": {"ceremony": [], "leaks": []},
+"F3U": {"ceremony": [], "leaks": []},
+"P4N": {"ceremony": ["Overall: the actionability gain is real in direction but small and unproven"], "leaks": []},
+"H3Q": {"ceremony": ["What passes and what doesn't, against your own criteria"], "leaks": []},
+"W2U": {"ceremony": ["Verdict by criterion"], "leaks": []},
+"F8K": {"ceremony": [], "leaks": []},
+"E4R": {"ceremony": [], "leaks": []}
+},
+"framing": {"P1": {"invariant": true, "why": "Both replies recommend not telling clinics about Monday, keeping v2.3 live, and give the verdict that v2.4 fails the registered rule on dosing and clarity."}},
+"negative": {"F8K": {"ceremony": false}, "E4R": {"ceremony": false}}}
