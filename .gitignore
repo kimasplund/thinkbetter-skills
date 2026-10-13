@@ -3,3 +3,4 @@ __pycache__/
 .privacy-denylist
 .claude/worktrees/
 evolution/gauntlet-2026-10/*/state/
+evolution/gauntlet-2026-10-r2/*/state/
