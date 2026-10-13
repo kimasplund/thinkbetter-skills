@@ -25,7 +25,7 @@ Worked example — the premortem rubric (9 dims, max 55): D1 specificity (1–7)
 
 ## Judge prompt template
 
-```text
+````text
 You are Judge <ID>, <persona: role, years, what you price>. You score blind reports.
 
 Read the rubric at <RUBRIC_PATH> and follow its mechanics exactly
@@ -45,7 +45,7 @@ MANDATORY: end the file with a machine-readable block:
 judge,code,D1,D2,...,D9,total
 <ID>,<CODE>,...
 ```
-```
+````
 
 ## Anti-patterns
 
