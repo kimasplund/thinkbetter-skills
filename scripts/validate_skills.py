@@ -9,7 +9,8 @@ metadata.version; every Markdown link into references/, scripts/ or assets/ reso
 no hard-coded ~/.claude/skills/ install path in the body.
 
 Privacy checks (every `git ls-files` path): no /home/<user>/ paths, no email address other
-than noreply@anthropic.com, nothing from the optional local .privacy-denylist (one
+than noreply@anthropic.com or a reserved documentation domain (example.com, .example,
+.test, .invalid), nothing from the optional local .privacy-denylist (one
 case-insensitive literal per line, '#' lines ignored; the file itself is git-ignored).
 
 Exit 0 only when everything passes.
@@ -28,6 +29,8 @@ LINK_RE = re.compile(r"\]\(((?:references|scripts|assets)/[^)#\s]+)")
 HOME_RE = re.compile(r"/home/[a-z_][a-z0-9_-]*/")
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}")
 EMAIL_ALLOW = {"noreply@anthropic.com"}
+# RFC 2606 / 6761 documentation domains can never belong to a real person
+RESERVED_DOMAIN_RE = re.compile(r"(?i)@(?:[a-z0-9-]+\.)*(?:example\.(?:com|net|org)|[a-z0-9-]+\.(?:example|test|invalid|localhost))$")
 INSTALL_PATH_RE = re.compile(r"~/\.claude/skills/")
 
 
@@ -90,7 +93,7 @@ def check_privacy(repo: Path, files: list[str], denylist: list[str]) -> list[str
             if HOME_RE.search(line):
                 hits.append(f"{rel}:{n}: home path")
             for m in EMAIL_RE.finditer(line):
-                if m.group(0).lower() not in EMAIL_ALLOW:
+                if m.group(0).lower() not in EMAIL_ALLOW and not RESERVED_DOMAIN_RE.search(m.group(0)):
                     hits.append(f"{rel}:{n}: email {m.group(0)}")
             low = line.lower()
             for d in deny:

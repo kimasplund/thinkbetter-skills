@@ -4,12 +4,12 @@ The plugin version is set in `.claude-plugin/plugin.json`. Each skill's own vers
 
 ## 1.1.0 — 2026-10-13
 
-A format and bug pass across the suite, checked by a pre-registered blind regression round (88 agents, Haiku and Sonnet). The full record is in [evolution/thinkbetter-suite/regression-2026-10-13/](evolution/thinkbetter-suite/regression-2026-10-13/RESULTS.md), and the line-by-line audit in [docs/audits/](docs/audits/2026-10-13-skill-format-audit.md). The round's gate returned **NO ADOPTION**: the new versions lost the blind preference test and leaked more. The skills that regressed were therefore reverted, and one rewrite ships by owner decision.
+A format and bug pass across the suite, checked by a pre-registered blind regression round (88 agents, Haiku and Sonnet). The full record is in [evolution/thinkbetter-suite/regression-2026-10-13/](evolution/thinkbetter-suite/regression-2026-10-13/RESULTS.md), and the line-by-line audit in [docs/audits/](docs/audits/2026-10-13-skill-format-audit.md). The round's gate returned **NO ADOPTION**: the new versions lost the blind preference test and leaked more. Which skills to revert was decided by the owner after the results: the four that lost on both models, and the two whose judged leaks rose without a preference win. Every other rewrite, and the handover rewrite, ships by owner decision; see the record for the cells each one lost.
 
 - **All 15 skills:**
-  - Frontmatter is cleaned up. `model: opus`, `agent` and `user-invocable` are gone, along with `context: fork`, except in breadth-of-thought, which now receives its problem through `$ARGUMENTS`.
+  - Frontmatter is cleaned up. `model: opus`, `agent` and `user-invocable` are gone (reasoning-handover-protocol keeps `user-invocable: false`, a deliberate non-default). `context: fork` is gone everywhere except breadth-of-thought, which now receives its problem through `$ARGUMENTS`.
   - Descriptions are rewritten in third person. They lead with what the skill does and when to use it, and name sibling skills in full instead of using acronyms.
-  - The new descriptions route as well as the old ones (triggering test: 39 to 40 out of 40 on Haiku and Sonnet).
+  - In the triggering test the new descriptions scored 39/40 on both Haiku and Sonnet; the old ones scored 40/40 and 39/40. After the test, two descriptions (adversarial-reasoning, dialectical-reasoning) were reworded so they no longer contradict the 1.0.0 bodies they front.
 - **New bodies (2.3.0):**
   - **integrated-reasoning:** cut to under 500 lines, with sections moved into linked references. The Direct Analysis threshold is now the one the formulas can actually reach, and the worked example recomputes.
   - **tree-of-thoughts:** the confidence formula no longer saturates at the cap.
@@ -23,8 +23,9 @@ A format and bug pass across the suite, checked by a pre-registered blind regres
 - **Champion bodies kept (2.2.1):** adversarial-reasoning, dialectical-reasoning, analogical-transfer, rapid-triage-reasoning, negotiated-decision-framework and hypothesis-elimination.
   - Their rewrites lost the blind comparison or leaked more method machinery, so the v1.0.0 bodies stay. Only the `ultrathink` line is reworded.
   - The new frontmatter and descriptions do apply.
-- **premortem-evolved 2.2.1, skill-gauntlet 1.1.1, option-synthesis 1.0.1:** format and script fixes only, with the methodology unchanged.
-  - `pre_delivery_check.py` and `normalize.py` handle `--help` and missing input.
+- **premortem-evolved 2.2.1, skill-gauntlet 1.1.1, option-synthesis 1.0.1:** format and script fixes, with the methodology unchanged except one wording change in premortem-evolved's length-discipline sentence (it no longer lists stage and section numbers, which the script still checks).
+  - `pre_delivery_check.py` and `normalize.py` handle `--help`; `pre_delivery_check.py` reports a missing report file without a traceback, and `normalize.py` prints usage when run with no arguments.
+  - `pre_delivery_check.py` now also flags any bracketed text identical to a placeholder in the skill's own report template, and its word list tolerates plurals.
   - `normalize.py` now honours its documented flat mapping, which it used to ignore silently.
   - `pre_delivery_check.py`'s template-token check matches whole words only.
   - Code fences are fixed, and the stale option-synthesis footer is removed.

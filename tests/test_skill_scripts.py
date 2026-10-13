@@ -1,5 +1,6 @@
 """Tests for the helper scripts shipped inside skills (run via subprocess)."""
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -53,6 +54,20 @@ class PreDeliveryCheckTest(unittest.TestCase):
         r = run(PRE_DELIVERY, str(self.report("\nThe pilot slipped past [Monday] again.\n")))
         self.assertEqual(r.returncode, 0, r.stdout)
         self.assertNotIn("unfilled template token", r.stdout)
+
+    def test_every_shipped_template_placeholder_fails(self):
+        skill_md = (ROOT / "skills" / "premortem-evolved" / "SKILL.md").read_text()
+        tokens = set(re.findall(r"\[[^\]\n]{1,60}\](?!\()", skill_md))
+        self.assertGreater(len(tokens), 10)
+        for token in sorted(tokens):
+            r = run(PRE_DELIVERY, str(self.report(f"\nNote: {token}\n")))
+            self.assertEqual(r.returncode, 1, token)
+            self.assertIn("unfilled template token", r.stdout, token)
+
+    def test_plural_placeholder_words_fail(self):
+        for token in ("[days]", "[reasons]", "[signals]", "[failure modes]"):
+            r = run(PRE_DELIVERY, str(self.report(f"\nNote: {token}\n")))
+            self.assertEqual(r.returncode, 1, token)
 
     def test_real_template_tokens_still_fail(self):
         for token in ("[date]", "[plan name]", "[Optional, high-stakes only]", "[month 3]"):

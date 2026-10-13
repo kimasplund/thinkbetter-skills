@@ -21,6 +21,7 @@ No ladder found: passes with a note (a deflated short answer has no ladder).
 import re
 import sys
 from itertools import combinations
+from pathlib import Path
 
 if len(sys.argv) == 2 and sys.argv[1] in ("-h", "--help"):
     print(__doc__.strip())
@@ -53,9 +54,15 @@ WARN_LEAKS = [
 TOKEN = re.compile(r"\[[^\]\n]{1,60}\]")
 # Whole words only: "[Monday]" is plan content, "[date]" is an unfilled token.
 TOKEN_WORDS = re.compile(
-    r"(?i)\b(?:change|day|date|mode|their|at most|duplicates|signal|guard|"
-    r"plan name|reason|horizon|optional|their words|month \d)\b"
+    r"(?i)\b(?:changes?|days?|dates?|modes?|their|at most|duplicates?|signals?|guards?|"
+    r"plan names?|reasons?|horizons?|optional|their words|months? \d)\b"
 )
+# Any bracketed text that is verbatim a placeholder from this skill's own report template is unfilled.
+try:
+    _template = (Path(__file__).resolve().parent.parent / "SKILL.md").read_text(encoding="utf-8")
+    TEMPLATE_TOKENS = {m.lower() for m in re.findall(r"\[[^\]\n]{1,60}\](?!\()", _template)}
+except OSError:
+    TEMPLATE_TOKENS = set()
 
 for i, ln in enumerate(lines, 1):
     for pat, label in LEAKS:
@@ -65,7 +72,7 @@ for i, ln in enumerate(lines, 1):
         if re.search(pat, ln):
             warn.append(f"{label} L{i}: {ln.strip()[:80]}")
     for m in TOKEN.finditer(ln):
-        if TOKEN_WORDS.search(m.group(0)):
+        if TOKEN_WORDS.search(m.group(0)) or m.group(0).lower() in TEMPLATE_TOKENS:
             fail.append(f"unfilled template token L{i}: {m.group(0)}")
 
 # --- ladder lint: '**Probability:** ~NN%' lines in order of appearance ---

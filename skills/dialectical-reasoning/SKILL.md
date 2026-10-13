@@ -1,6 +1,6 @@
 ---
 name: dialectical-reasoning
-description: Resolves a genuine conceptual or design tension, where two opposing positions are both valid and a binary choice is a false one, by steel-manning each side and building a synthesis that keeps the value of both. Use when the user asks "monolith or microservices", "consistency or availability", "move fast or don't break things", "centralize or decentralize", or is stuck between two approaches that each have a real case. Not for picking a winner among options (use tree-of-thoughts), exploring unknown options (use breadth-of-thought), or questions with an objective answer. When the decision needs several people's buy-in, use negotiated-decision-framework instead.
+description: Resolves a genuine conceptual or design tension, where two opposing positions are both valid and a binary choice is a false one, by steel-manning each side and building a synthesis that keeps the value of both. Use when the user asks "monolith or microservices", "consistency or availability", "move fast or don't break things", "centralize or decentralize", or is stuck between two approaches that each have a real case. Not for picking a winner among options (use tree-of-thoughts), exploring unknown options (use breadth-of-thought), or questions with an objective answer. When stakeholders hold legitimate but conflicting interests it synthesizes their positions; when the real problem is getting several people to sign off, negotiated-decision-framework goes further.
 metadata:
   version: "2.2.1"
 ---

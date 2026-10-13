@@ -1,6 +1,6 @@
 ---
 name: adversarial-reasoning
-description: Stress-tests a design, decision or piece of code by attacking it the way an intelligent adversary would, then proposes countermeasures. Use when the user says "red-team this", "attack this design", "find the holes", "what could go wrong with this system", "security review" or "what are the edge cases", before something ships. Works through eight threat categories (spoofing through privilege escalation, supply chain, social engineering) plus eight edge-case categories. Not for plans about to launch (use premortem-evolved), for exploring options (use breadth-of-thought), for choosing between options (use tree-of-thoughts), or for diagnosing a failure that already happened (use hypothesis-elimination).
+description: Stress-tests a design, decision or piece of code by attacking it the way an intelligent adversary would, then proposes countermeasures. Use when the user says "red-team this", "attack this design", "find the holes", "what could go wrong with this system", "security review" or "what are the edge cases", before something ships. Works through eight threat categories (spoofing through privilege escalation, supply chain, social engineering) plus eight edge-case categories. For a full premortem of a plan about to launch, premortem-evolved goes deeper. Not for exploring options (use breadth-of-thought), for choosing between options (use tree-of-thoughts), or for diagnosing a failure that already happened (use hypothesis-elimination).
 metadata:
   version: "2.2.1"
 ---

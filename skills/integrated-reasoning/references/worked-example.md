@@ -38,7 +38,7 @@ Time Pressure is 2, so there is no fast-path. Several dimensions score 4 or more
 
 - AT (4.45) is above 4.0, but DR (4.30) is only 0.15 behind, so the top 2 are within 0.5: orchestrate.
 - The top 3 (4.45, 4.30, 3.65) are not within 0.3 of each other, so no uncertainty propagation is needed.
-- DR builds on the analogies AT produces, so run them in sequence rather than in parallel.
+- The top 2 are within 0.3, which would normally mean running both in parallel, but DR builds on the analogies AT produces, so this dependent pair runs in sequence.
 
 ## Recommendation
 

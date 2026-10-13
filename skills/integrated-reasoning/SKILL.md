@@ -96,7 +96,7 @@ NDF  = (StakeholderComplexity × 0.45) + (OpposingViews × 0.25) + ((6-Criteria)
 - AR returns 0 if SolutionExists < 3 (nothing to attack)
 - RTR auto-triggers when TimePressure = 5 (emergency mode)
 - NDF returns 0 if StakeholderComplexity < 3 (single decision-maker)
-- If multiple patterns score within 0.3 of each other, use uncertainty propagation (Step 2.5)
+- If the top three patterns score within 0.3 of each other, use uncertainty propagation (Step 2.5); see the decision table below for the top-two rules
 
 ### Step 2.5: Uncertainty Propagation
 
@@ -359,7 +359,7 @@ When a pattern hands work to the next one and the state is too large to carry in
 
 ## Parallel Pattern Execution
 
-When top 2 patterns score within 0.3:
+When the top 2 patterns score within 0.3 and neither needs the other's output (if one builds on the other, run them in sequence instead):
 - Use parallel subagents (multiple calls to the Agent tool)
 - Each pattern runs in its own subagent
 - Merge results using agreement analysis
@@ -370,7 +370,7 @@ Parallel execution is appropriate when independent reasoning paths can run concu
 
 | Condition | Parallelization Strategy |
 |-----------|-------------------------|
-| **Top 2 patterns within 0.3 of each other** | Run both patterns in parallel, compare results |
+| **Top 2 patterns within 0.3 of each other, and independent** | Run both patterns in parallel, compare results (dependent pairs run in sequence) |
 | **BoT natural parallelism** | 8-10 branches can explore simultaneously |
 | **Hypothesis testing (HE)** | Parallel evidence gathering for multiple hypotheses |
 | **Multi-perspective needs (mixture of agents)** | Different "expert personas" analyze in parallel |

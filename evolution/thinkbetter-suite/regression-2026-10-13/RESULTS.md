@@ -11,7 +11,7 @@ The round used 88 agents:
 - **Executors:** 56 agents, one per fixture × model × arm, all reading the skill body directly.
 - **Judges:** 28 blind Sonnet judges, one per fixture × model. The A/B order alternated by index.
 
-Judge rows are in [rows.json](rows.json). The scorer is [score.py](score.py), and its full output is in [scorecard.txt](scorecard.txt).
+Judge rows are in [rows.json](rows.json). The executor replies and triggering picks are in [raw/](raw/), so [score.py](score.py) can regenerate the scorecard. The hashes in fixtures.sha256 were written before the run but committed together with the results, so git history alone can't prove their timing. One raw reply used a made-up address on a real domain as an example; it was changed to a reserved `.example` domain before publishing, and no other text was edited. The scorer is [score.py](score.py), and its full output is in [scorecard.txt](scorecard.txt).
 
 ## Gate result: NO ADOPTION
 
@@ -51,6 +51,11 @@ The four skills that lost on both models were all rewritten by the same implemen
 This is the failure the skills' own backstage rule exists to prevent. The lesson for future edits is that a format pass must not grow the output template.
 
 ## Owner decisions, made after the results were known
+
+The pre-registered remedy ("revert the skill responsible for a failed condition") does not say which skills are responsible for an aggregate leg, so the selection below was made by the owner after the results, not by the gate.
+- **Reverted:** the four skills the old version beat on both models, and the two whose judged leaks rose without a preference win (hypothesis-elimination, negotiated-decision-framework).
+- **Kept new by owner decision, despite losing cells:** integrated-reasoning (judged leaks 0 to 2, and the old version won the urgent fixture on Sonnet, but new was preferred 4 to 1 overall), breadth-of-thought (tie, old), self-reflecting-chain (new, old), parallel-execution (old, new; quality 16 to 15). None of these raised the mechanical leak count.
+- **After the round:** two descriptions (adversarial-reasoning, dialectical-reasoning) were reworded so they don't contradict their restored 1.0.0 bodies. That wording was not itself tested.
 
 1. **Remedy for the six losing or leakier skills.** Their bodies return to v1.0.0 (the champion that won). The only change is the reworded `ultrathink` preamble line, one line per skill. They keep the modernized frontmatter and the new descriptions.
    - The descriptions passed G1.

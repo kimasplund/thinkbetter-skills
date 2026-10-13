@@ -96,6 +96,13 @@ class CheckPrivacyTest(unittest.TestCase):
         self.assertEqual(len(hits), 1)
         self.assertIn("bob", hits[0])
 
+    def test_privacy_email_allows_reserved_documentation_domains(self):
+        text = " ".join(["alice" + "@" + "example.com", "bob" + "@" + "x.example", "c" + "@" + "mail.test",
+                         "d" + "@" + "host.invalid", "eve" + "@" + "corp.io"])
+        hits = self.scan(text + "\n")
+        self.assertEqual(len(hits), 1)
+        self.assertIn("eve", hits[0])
+
     def test_privacy_denylist_case_insensitive(self):
         self.assertEqual(len(self.scan("about secretco plans\n", ["SecretCo"])), 1)
 
