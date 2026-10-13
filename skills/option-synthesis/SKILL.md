@@ -1,8 +1,9 @@
 ---
 name: option-synthesis
-description: "Find and build the best option for a decision instead of grading the first idea. Pre-registers what the choice must satisfy, generates a wide field of genuinely different options (the status quo and the competent default included), kills weak ones with short premortems, compares finalists against the frozen incumbent (blind when the stakes warrant it), and synthesizes the winner with grafts that close its failure modes. Delivers the recommendation, the runner-up, the cheapest decisive experiment, a decision rule and tripwires. Use when choosing between approaches, routes, materials, formulations, designs, equipment, test plans or strategies, e.g. 'what are our options', 'which should we pick', 'best way to', 'compare these approaches', 'is there something better than the current plan', 'design the best X'. Composes premortem-evolved and skill-gauntlet. Not for stress-testing one finished plan (use premortem-evolved) or a candidate skill revision (use skill-gauntlet)."
+description: "Finds and builds the best option for a decision instead of grading the first idea. Use when choosing between approaches, routes, materials, formulations, designs, equipment, test plans or strategies, e.g. 'what are our options', 'which should we pick', 'best way to', 'compare these approaches', 'is there something better than the current plan', 'design the best X'. Pre-registers what the choice must satisfy, generates a wide field of genuinely different options (the status quo and the competent default included), kills weak ones with short premortems, compares finalists against the frozen incumbent (blind when the stakes warrant it), and synthesizes the winner with grafts that close its failure modes. Delivers the recommendation, the runner-up, the cheapest decisive experiment, a decision rule and tripwires. Builds on premortem-evolved and skill-gauntlet. Not for stress-testing one finished plan (use premortem-evolved) or a candidate skill revision (use skill-gauntlet)."
+license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Option Synthesis
@@ -40,7 +41,7 @@ A user may choose the level; honour it and state in one line what the lower leve
 
 If two or more are missing, ask once, in one batch. If told to just run it, proceed and open the report with **Assumptions I'm working from**.
 
-**Domain packs.** If `references/<project>.md` exists for the project, load it now. It supplies standing hard constraints, guard dimensions, evidence rules, reference classes, judge personas and the domain form of each option slot. The project's own current files override the pack; flag any disagreement on the page.
+**Domain packs (optional).** No pack ships with this skill; skip this step unless the user or project supplies one. If `references/<project>.md` exists for the project, load it now. It supplies standing hard constraints, guard dimensions, evidence rules, reference classes, judge personas and the domain form of each option slot. The project's own current files override the pack; flag any disagreement on the page.
 
 ## Pre-register the choice
 
@@ -154,6 +155,4 @@ Close with one ask, as premortem-evolved does: which decision or experiment will
 
 ## Helpers
 
-Loaded with this skill (`kernel.py`): `ladder_check(ranked, complete=True)`, `leak_scan(text, extra=None, blind=False)`, `blind_copies(src_paths, out_dir, judges, seed=None)`, `read_scores(paths)`, `compare_to_incumbent(rows, incumbent, challengers, dims)`, `sign_test_p(wins, losses)`.
-
-*Adapted from premortem-evolved v2.1 and skill-gauntlet (MIT, © 2026 kimasplund; see LICENSE). Version 0.1 (2026-09-29): smoke-tested on one desk decision and one trivial fixture, with the fixes from that test applied but not re-run; not yet run through skill-gauntlet.*
+[kernel.py](kernel.py) holds the mechanical checks. Python 3 standard library; import from this skill's directory (`sys.path.insert(0, "<skill dir>"); import kernel`), or read the functions as specifications if you cannot run code. Functions: `ladder_check(ranked, complete=True)`, `leak_scan(text, extra=None, blind=False)`, `blind_copies(src_paths, out_dir, judges, seed=None)`, `read_scores(paths)`, `compare_to_incumbent(rows, incumbent, challengers, dims)`, `sign_test_p(wins, losses)`.
