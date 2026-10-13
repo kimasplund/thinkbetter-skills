@@ -1,0 +1,39 @@
+--- "Kimi_Agent_Premortem A_B Test_v3/premortem-evolved-v5/references/failure-class-checklist.md"	2026-08-17 14:51:54.000000000 +0300
++++ arms/m2/references/failure-class-checklist.md	2026-08-18 11:17:14.020677805 +0300
+@@ -1,6 +1,6 @@
+ # Failure classes and pre-delivery checklist
+ 
+-Load this when generating failure modes (Step 2) and again before delivering. The generation pass and this checklist stay backstage — only the one-line cut log appears in the report.
++Load this when generating failure modes and again before delivering. The generation pass and this checklist stay backstage — only the one-line cut log appears in the report.
+ 
+ ## Part 1 — Failure classes (generation checklist)
+ 
+@@ -49,7 +49,7 @@
+ 
+ **Existing-guard check.** Before a candidate earns a rung, name the guard the plan already has against it — or "none." An adequate guard demotes the mode to the paper-tiger register with the guard cited. An inadequate guard joins the failure narrative: why it fails. Never rank a risk the plan has already closed.
+ 
+-**Evidence tags (backstage).** Tag each surviving candidate: context-backed (the plan's own details confirm it), needs-verification (probable, but needs domain data), or pattern-assumption (built from the reference class alone). Every surviving mode tagged needs-verification must appear as a Stage 3 pre-launch checklist item. Don't drop pattern-assumption modes preferentially — they are often the most valuable. The tags never appear in the report.
++**Evidence tags (backstage).** Tag each surviving candidate: context-backed (the plan's own details confirm it), needs-verification (probable, but needs domain data), or pattern-assumption (built from the reference class alone). Every surviving mode tagged needs-verification must appear as a pre-launch checklist item. Don't drop pattern-assumption modes preferentially — they are often the most valuable. The tags never appear in the report.
+ 
+ **Cut-log format (the only visible trace):** one line under the autopsy, duplicates only —
+ `**Considered and cut:** X (folded into #3), Y (<2%, recoverable).`
+@@ -78,7 +78,7 @@
+ 2. Steelman present; a genuine advocate would recognize their own case in it.
+ 3. All entries past tense from the future; each month caused by the prior month.
+ 4. No causal chain shipped with a known weak link (~60% plausibility floor per link).
+-5. Percentages on the coarse ladder (~5/~10/~15/~20/~30/~40), each with a justification clause; shares-of-failure note present; sums to ~100; top mode ≤ ~40%; the ranking is strictly the probability order; every tie has a written break covering all tied pairs; out-of-order placement fails; every quoted statistic carries source × year × failure definition or an inline "weakly sourced" mark.
++5. Percentages on the coarse ladder (~5/~10/~15/~20/~30/~40), each with a justification clause; shares-of-failure note present; sums to ~100; top mode ≤ ~40%; the ranking is strictly the probability order; every tie has a written break covering all tied pairs — verified by enumeration, never recall: list every adjacent pair in the ranking; each pair is either strictly descending or is the single allowed tie with its written break naming both modes; a second tie anywhere means merge or re-ladder before shipping; out-of-order placement fails; every quoted statistic carries source × year × failure definition or an inline "weakly sourced" mark.
+ 6. Top two modes carry a reference-class anchor plus a disanalogy line; the user's Step-1 reference class anchors when offered.
+ 7. At least 1 omission mode, 1 success-kills mode, 1 frame-blind slot, 1 compound mode, and ≥2 mundane base-rate survivors — or a stated N/A with reason; genuine overlaps count once.
+ 8. Diversity test passed (Part 2); cut log present (duplicates only); existing-guard check run — every survivor named its guard or "none"; paper-tiger table ≤3 rows, each with guard + re-upgrade signal.
+@@ -88,7 +88,8 @@
+ 12. Pre-launch checklist: every item has what/how/walk-away; items gating the top 2–3 assumptions carry falsifiers; every needs-verification mode appears as a checklist item.
+ 13. Adversary profiled (motivation / resources / constraints / best alternative); kill chain dated and sequenced; each move has a detection opportunity.
+ 14. Every tripwire: metric + threshold + check date anchored to their timeline + if-tripped action; adversary rows present; most-dangerous mode has an early-chain tripwire; kill condition is a combination, not a single signal; paper-tiger re-upgrade signals wired as Track-tier rows; calibration-review line present with the horizon date.
+-15. No reassurance paragraph anywhere; stages 1 and 2 stay forensic; rewrite-test run on the most diplomatic mode (harsher rewrite shipped, wording-only); requested brutality treated as tone pressure, not evidence; reverse autopsy present only on a negative decision-rule landing, ≤4 lines, resolving into an ELSE branch or "the caution stands."
++15. No reassurance paragraph anywhere; the autopsy and the verdict stay forensic; rewrite-test run on the most diplomatic mode (harsher rewrite shipped, wording-only); requested brutality treated as tone pressure, not evidence; reverse autopsy present only on a negative decision-rule landing, ≤4 lines, resolving into an ELSE branch or "the caution stands."
+ 16. Gap check names one underexplored category and why this frame under-weights it — a reason, not a label.
+ 17. Length discipline: no backstage machinery visible (tags, class names, generation counts); conditional blocks fired only on their triggers; paper-tiger cap and reverse-autopsy cap respected; budgets respected (modes/tables/rows within caps); length within the stated band for the plan's complexity; report length proportional to the plan's complexity.
+-18. Proportionality screen applied: a trivial, reversible, low-stakes plan got the short deflated answer, not the ceremony — or the report states in one line why the ceremony was warranted.
++18. Proportionality applied: a trivial, reversible, low-stakes plan got the short deflated answer, not the ceremony. When the full report ran, the screen left no trace on the page — at most one plan-framing sentence about the stakes; any line naming the screen, its outcome, or why the full treatment ran fails this item.
++19. Mechanical leak scan — a literal text search over the finished report, never from memory. Search (case-insensitive) for: "stage", "step", "section", or "phase" adjacent to a number or used to cross-reference a part of the report; and "screen", "gate", or "checklist" used as the name of this method's machinery rather than as ordinary content words. Every hit is rewritten to name the content ("the autopsy", "the rebuild", "the tripwires table") or deleted; ship only at zero unrewritten hits. The urgency tier labels (Launch-Blocking / Fast-Follow / Track) are content, not machinery — they stay.
