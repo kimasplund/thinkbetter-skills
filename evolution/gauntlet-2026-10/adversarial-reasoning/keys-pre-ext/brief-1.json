@@ -1,0 +1,38 @@
+{
+  "L6K": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "a stolen link also lets someone overwrite a legitimate vote. The member would see nothing",
+      "k2": "no link between non-voter visibility and targeted hijacking; only 'conflict of interest'",
+      "k3": "Anyone who can see the log can see how each unit voted",
+      "k4": "lock the ballot once the grantor votes (never says original link stays active)"
+    }
+  },
+  "R0X": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "an attacker can also overwrite a vote that was already cast. The real member may never notice",
+      "k2": "mentions phoning in for non-voting units generally, not insiders using non-voter visibility",
+      "k3": "Token ID maps to a unit, so the log is a list of who voted how",
+      "k4": "does the grantor's own link stay active? If the grantor votes after the proxy, who wins?"
+    }
+  },
+  "A3Z": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "lets a last-minute stolen link overwrite a legitimate vote on day 10",
+      "k2": "see live results and who hasn't voted (she can target reminders to supporters)",
+      "k3": "Each token maps to a unit... can see how unit 7C voted",
+      "k4": "a unit with a proxy and its own link... Can both vote? Which wins?"
+    }
+  },
+  "K8O": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "if the real owner already voted, the thief's submission replaces it",
+      "k2": "no connection of non-voter list to targeted hijacking or quorum manufacture",
+      "k3": "Varrow can map token to unit to person... see how every unit voted",
+      "k4": "what happens when the grantor also votes themselves, or if a proxy and a direct vote both arrive"
+    }
+  }
+}

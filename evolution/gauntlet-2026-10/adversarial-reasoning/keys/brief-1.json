@@ -1,0 +1,74 @@
+{
+  "Z9S": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "an attacker can also overwrite a vote the member already cast. Notify the original address",
+      "k2": "One person can issue a link to an address they control, vote it",
+      "k3": "Anyone with the log can see how each unit voted",
+      "k4": "Nothing says whether a member who gave a proxy can still vote themselves"
+    }
+  },
+  "J0I": {
+    "k1": "~", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "A bad actor could also vote for a unit that they know won't vote",
+      "k2": "insiders can see how the roof vote is going and target reminder calls",
+      "k3": "anyone with log access can see how each unit voted",
+      "k4": "the grantor can still vote themselves after granting a proxy. The rules for who wins"
+    }
+  },
+  "C6O": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "an attacker can also overwrite a vote that was cast legitimately",
+      "k2": "The dashboard even tells them which units haven't voted.",
+      "k3": "So anyone with log access can see how every unit voted.",
+      "k4": "A member can sign a proxy, then vote themselves, and nobody has defined which wins."
+    }
+  },
+  "A3Z": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a last-minute stolen link overwrite a legitimate vote on day 10",
+      "k2": "she can target reminders to supporters), approve proxies, reset links",
+      "k3": "Each token maps to a unit... can see how unit 7C voted",
+      "k4": "Does the unit lose its own link? Can the unit still vote itself? Can both vote? Which wins?"
+    }
+  },
+  "R0X": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "an attacker can also overwrite a vote that was already cast.",
+      "k2": "phone in for units that haven't voted, such as absent owners or elderly members",
+      "k3": "Token ID maps to a unit, so the log is a list of who voted how.",
+      "k4": "does the grantor's own link stay active? If the grantor votes after the proxy, who wins?"
+    }
+  },
+  "D5I": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "if the real member already voted, the impersonator can vote again",
+      "k2": "Reissue a link for a non-voting unit to an address they control, then vote.",
+      "k3": "anyone with log access can see how each unit voted",
+      "k4": "Can the owner still vote, and who wins, the owner or the holder?"
+    }
+  },
+  "L6K": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "a stolen link also lets someone overwrite a legitimate vote. The member would see nothing",
+      "k2": "request links for units they know won't vote, or for a neighbour they dislike",
+      "k3": "Anyone who can see the log can see how each unit voted.",
+      "k4": "Let the grantor revoke it, and lock the ballot once the grantor votes."
+    }
+  },
+  "K8O": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "if the real owner already voted, the thief's submission replaces it",
+      "k2": "holding back proxies or reissued links until the margin is known",
+      "k3": "Varrow can map token to unit to person.",
+      "k4": "what happens when the grantor also votes themselves, or if a proxy and a direct vote both arrive"
+    }
+  }
+}

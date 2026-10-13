@@ -1,0 +1,38 @@
+{
+  "G2T": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "the charity pays something back: salary, \"expenses\", a grant, tuition",
+      "k2": "ask for a minimum total from a minimum number of distinct donors",
+      "k3": "real donations that are later refunded or charged back, after the match is approved",
+      "k4": "a friend, a relative, a second email address the employee controls"
+    }
+  },
+  "M3L": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The charity then pays a salary, \"expenses\" or a consultancy fee to the insider",
+      "k2": "can each give a small amount to a favoured charity",
+      "k3": "refunded, charged back, or recalled after the match is approved",
+      "k4": "the \"confirmation\" can go to the employee's own second address"
+    }
+  },
+  "B5F": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "pays themselves salary, rent or \"consulting\" from it. Every match funds that",
+      "k2": "a single person can recruit four colluding or fake accounts",
+      "k3": "refunded donations, recurring gifts later cancelled, and chargebacks all leave a paid match",
+      "k4": "enter a friend's, a second address of their own, or a spoofed domain"
+    }
+  },
+  "L7F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the charity pays the employee's salary, rent or \"expenses\"",
+      "k2": "Tiny donations ($5 each) count the same as $500 ones",
+      "k3": "Donate, claim the match, then reverse the card payment or request a platform refund",
+      "k4": "a friend, a relative, a personal alias, or the employee's own second email account"
+    }
+  }
+}

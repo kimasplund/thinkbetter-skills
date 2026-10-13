@@ -1,0 +1,28 @@
+{
+  "reports": {
+    "L6K": {"ceremony": [], "leaks": []},
+    "R0X": {"ceremony": [], "leaks": []},
+    "A3Z": {"ceremony": [], "leaks": []},
+    "K8O": {"ceremony": [], "leaks": []},
+    "P5Z": {"ceremony": [], "leaks": []},
+    "O8B": {"ceremony": [], "leaks": []},
+    "K8N": {"ceremony": [], "leaks": []},
+    "E8H": {"ceremony": [], "leaks": []},
+    "G2T": {"ceremony": [], "leaks": []},
+    "M3L": {"ceremony": [], "leaks": []},
+    "B5F": {"ceremony": ["One sentence for finance"], "leaks": []},
+    "L7F": {"ceremony": [], "leaks": []},
+    "V7I": {"ceremony": [], "leaks": []},
+    "V6B": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {
+      "invariant": true,
+      "why": "Both A9J and S4S say not to launch Monday as designed, rank the non-secret ballot first and the lost-link process second, and advise a one-week delay or paper for the roof vote if the first fixes are not done."
+    }
+  },
+  "negative": {
+    "V7I": {"ceremony": false},
+    "V6B": {"ceremony": false}
+  }
+}

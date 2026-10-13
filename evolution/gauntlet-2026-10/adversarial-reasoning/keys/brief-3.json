@@ -1,0 +1,74 @@
+{
+  "M3L": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The charity then pays a salary, \"expenses\" or a consultancy fee to the insider.",
+      "k2": "can each give a small amount to a favoured charity",
+      "k3": "made and then refunded, charged back, or recalled after the match is approved",
+      "k4": "the \"confirmation\" can go to the employee's own second address, a friend"
+    }
+  },
+  "V4R": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Charities can pay salaries, rent or \"consulting fees\" to their own trustees.",
+      "k2": "Five people can agree in a chat to give to the same charity",
+      "k3": "Have the charity confirm receipt at payment.",
+      "k4": "They can enter their own second address, a friend or a relative."
+    }
+  },
+  "F6O": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "It can then pay salaries, rent or \"expenses\" to them.",
+      "k2": "each give $10 to the same charity in the same month",
+      "k3": "get the match approved, then reclaim the gift (platforms and banks allow chargebacks)",
+      "k4": "They can supply their own second address or a friend's."
+    }
+  },
+  "W1L": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "If the charity pays a salary, rent or consulting fees to the family",
+      "k2": "If the rule is \"five donors,\" the size of those donations is irrelevant",
+      "k3": "refunded or charged back, or a gift to a charity that was then returned",
+      "k4": "the employee can supply their own, a friend's, a throwaway address"
+    }
+  },
+  "E5F": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The charity then pays a salary, consulting fees, rent or a \"program\" contract",
+      "k2": "gets four colleagues to each give $50 for a month",
+      "k3": "Your match is paid, the donor's money returns, and the charity keeps both.",
+      "k4": "Nothing stops it being their own second address, a spouse, or a friend"
+    }
+  },
+  "L7F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the charity pays the employee's salary, rent or \"expenses\"",
+      "k2": "Tiny donations ($5 each) count the same as $500 ones",
+      "k3": "Donate, claim the match, then reverse the card payment or request a platform refund.",
+      "k4": "a personal alias, or the employee's own second email account"
+    }
+  },
+  "G2T": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the charity pays something back: salary, \"expenses\", a grant, tuition",
+      "k2": "ask for a minimum total from a minimum number of distinct donors",
+      "k3": "real donations that are later refunded or charged back, after the match is approved",
+      "k4": "a second email address the employee controls, or a lookalike domain"
+    }
+  },
+  "B5F": {
+    "k1": "✓", "k2": "✗", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "pays themselves salary, rent or \"consulting\" from it. Every match funds that.",
+      "k2": "Five people agree to hit one charity in a month; the multiplier rises",
+      "k3": "chargebacks all leave a paid match with no real donation behind it",
+      "k4": "a friend's, a second address of their own, or a spoofed domain"
+    }
+  }
+}

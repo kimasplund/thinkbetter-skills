@@ -1,0 +1,38 @@
+{
+  "P5Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A tenant who knows this can avoid syncing, for example by staying out of signal",
+      "k2": "A thief or dishonest tenant can stop the app from uploading, or can use a modified app",
+      "k3": "One manager opens the unit alone and photographs the contents. This is a classic insider risk",
+      "k4": "an attacker is not trying to hit one tenant, any tenant will do"
+    }
+  },
+  "O8B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The revoked person can block their own revocation.",
+      "k2": "Someone who wants no trace can simply never upload.",
+      "k3": "If the tenant later says items are missing, your only record is the manager's.",
+      "k4": "roughly 1 guess in 900 hits a real tenant"
+    }
+  },
+  "K8N": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "An attacker who knows they are being removed can simply stay out of sync.",
+      "k2": "The record comes from the phone, which the tenant controls.",
+      "k3": "Any manager can generate a code for any unit... That is an insider-theft path",
+      "k4": "about 1 in 900 random guesses hits a valid PIN"
+    }
+  },
+  "E8H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The attacker is often the one holding the app.",
+      "k2": "The history is therefore produced and delivered by the person being logged.",
+      "k3": "One person with sole access can remove items before taking the photos.",
+      "k4": "1,100 of the 1,000,000 possible 6-digit PINs are valid."
+    }
+  }
+}

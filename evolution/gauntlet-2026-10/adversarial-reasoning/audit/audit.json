@@ -1,0 +1,40 @@
+{
+  "reports": {
+    "Z9S": {"ceremony": [], "leaks": []},
+    "J0I": {"ceremony": [], "leaks": []},
+    "C6O": {"ceremony": [], "leaks": []},
+    "A3Z": {"ceremony": [], "leaks": []},
+    "R0X": {"ceremony": [], "leaks": []},
+    "D5I": {"ceremony": [], "leaks": []},
+    "L6K": {"ceremony": [], "leaks": []},
+    "K8O": {"ceremony": [], "leaks": []},
+    "R1L": {"ceremony": [], "leaks": []},
+    "N5P": {"ceremony": [], "leaks": []},
+    "F1L": {"ceremony": [], "leaks": []},
+    "L1S": {"ceremony": [], "leaks": []},
+    "E8H": {"ceremony": [], "leaks": []},
+    "O8B": {"ceremony": [], "leaks": []},
+    "P5Z": {"ceremony": [], "leaks": []},
+    "K8N": {"ceremony": [], "leaks": []},
+    "M3L": {"ceremony": [], "leaks": []},
+    "V4R": {"ceremony": [], "leaks": []},
+    "F6O": {"ceremony": [], "leaks": []},
+    "W1L": {"ceremony": [], "leaks": []},
+    "E5F": {"ceremony": [], "leaks": []},
+    "L7F": {"ceremony": ["One sentence for finance (closing paragraph restating the controls)"], "leaks": []},
+    "G2T": {"ceremony": [], "leaks": []},
+    "B5F": {"ceremony": [], "leaks": []},
+    "V7I": {"ceremony": [], "leaks": []},
+    "V6B": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {
+      "invariant": true,
+      "why": "Both say not to launch Monday as designed unless the first fixes are made (delay a week if not), and both rank the non-secret ballot first, then lost-link takeover, proxies and Dorota's admin rights."
+    }
+  },
+  "negative": {
+    "V7I": {"ceremony": false},
+    "V6B": {"ceremony": false}
+  }
+}

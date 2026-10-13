@@ -1,0 +1,74 @@
+{
+  "R1L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "keep their phone in airplane mode or avoid the app so the lock never receives the update",
+      "k2": "A tenant or thief who wants no trace can use a phone that never uploads",
+      "k3": "Without that, insider abuse is invisible.",
+      "k4": "roughly 1 in 900 random guesses is a valid PIN"
+    }
+  },
+  "N5P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Revocation only happens if the person being revoked helps",
+      "k2": "That makes the record the tenant's phone's claim, not the lock's.",
+      "k3": "Nothing proves the manager did not take items before photographing.",
+      "k4": "roughly one success every 15 hours of guessing"
+    }
+  },
+  "F1L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the courier can be the person being revoked",
+      "k2": "A tenant or helper can delay, drop or alter entries.",
+      "k3": "your best insider-theft tool: a manager can enter an occupied unit for a day",
+      "k4": "roughly 1.5 valid PINs found per day, with no need to target anyone"
+    }
+  },
+  "L1S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✗",
+    "evidence": {
+      "k1": "A removed helper, an ex-tenant or an overlocked delinquent tenant can keep opening the unit",
+      "k2": "Logs come from the phone, so they can be omitted or forged",
+      "k3": "One person alone with a unit, with a maintenance code, is a theft and accusation risk",
+      "k4": "about 1 expected hit per 600 days of continuous guessing at random"
+    }
+  },
+  "E8H": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The revoked person can block their own revocation.",
+      "k2": "A modified app, or a user who deletes it or turns off data, produces no record.",
+      "k3": "the accountability is weakest where the power is greatest",
+      "k4": "roughly 1 guess in 900 hits a real tenant"
+    }
+  },
+  "O8B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "An attacker who knows they are being removed can simply stay out of sync.",
+      "k2": "The record comes from the phone, which the tenant controls.",
+      "k3": "with no reason recorded. That is an insider-theft path",
+      "k4": "about 1 in 900 random guesses hits a valid PIN"
+    }
+  },
+  "P5Z": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A tenant who knows this can avoid syncing",
+      "k2": "A thief or dishonest tenant can stop the app from uploading",
+      "k3": "This is a classic insider risk (theft, or a dispute that the contents were different)",
+      "k4": "An attacker is not trying to hit one tenant, any tenant will do."
+    }
+  },
+  "K8N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the design gives them no reason to help it sync",
+      "k2": "The history is therefore produced and delivered by the person being logged.",
+      "k3": "One person with sole access can remove items before taking the photos.",
+      "k4": "1,100 of the 1,000,000 possible 6-digit PINs are valid"
+    }
+  }
+}

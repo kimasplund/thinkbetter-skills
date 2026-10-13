@@ -1,0 +1,68 @@
+{
+  "brief-1": [
+    {
+      "id": "k1",
+      "text": "Phone reissue can overwrite votes already cast. The unit number and leaseholder name are not secrets (mailboxes, directories, neighbours), so anyone can get a unit's link redirected to an email they control. Reissue kills the old link and the last submission counts, so this silently replaces a vote the member already cast, and nothing tells the member at the address on file. To earn credit, the reply must catch both the overwrite of an already-cast vote and the missing notice to the original address. Saying only that 'phone verification is weak' does not count.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Insiders can choose safe victims and manufacture quorum. Dorota is a candidate with full admin rights, and she and the office manager can see which units have not voted (the token-to-unit log behind the turnout figures) as well as the running totals. Near close they can claim exactly those non-voting units through phone reissue or self-approved proxies. Non-voters won't notice or complain, and the extra votes also push turnout over the 50% quorum. The reply must connect non-voter visibility to targeted hijacking. Flagging a conflict of interest alone is not enough.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "The secret ballot is broken by design. The log stores each submission's choices next to its token ID, and tokens map to units (the system must hold that mapping to deactivate and reissue a unit's link). Anyone with log or admin access, including a sitting candidate, can therefore see how each unit voted, and the emailed CSV export spreads this further. The reply must identify the token-to-unit linkage of recorded choices as the break. Generic 'privacy concerns' do not count.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "There is a proxy double-count and precedence gap. Approving a proxy puts the unit's ballot on the holder's page, but nothing deactivates the member's own link, so one unit can be voted twice or hold two conflicting votes with no rule for which wins. A forged scanned proxy is also approved with no confirmation sent to the member's address on file. The reply must catch that the original link stays active alongside the proxy, which creates the double-vote or precedence problem.",
+      "split": "held-out"
+    }
+  ],
+  "brief-2": [
+    {
+      "id": "k1",
+      "text": "Revocation may never reach offline locks. A lock only gets changes when a phone connects to it over Bluetooth while that phone has signal, which may never happen at basement units with no signal. The revoked person can also keep their own phone offline at the lock. So removed helpers (for example an ex-partner), overlocked tenants and former tenants keep working credentials, including into the unit's next tenant's space. The reply must say that revocation depends on a sync that may never happen or that the revoked party can avoid. Noting only that 'there is a sync delay' does not count.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "The access log is client-side and can be suppressed. Unlocks are recorded by the phone app and uploaded at the next sync, so whoever does the unlocking controls whether a record ever arrives. An offline phone, a deleted app or a modified app leaves no trace, so the 'full access history' is missing exactly the entries that matter in a theft dispute or insurance claim. The reply must identify that the person unlocking controls the record and recommend that the lock itself keep the log.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Insiders have unsupervised access and create their own inventory. A site manager can issue a 24-hour code for any unit to their own phone, with no second approval and no notice to the tenant. For delinquent units, the same manager goes in first and creates the only record of the contents, so anything taken before the photos is invisible. Their unlocks are also logged only through their own app (see k2). The reply must catch this insider-theft path, specifically that the auction photos are not an independent inventory or that maintenance codes lack dual control and tenant notice.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Valid gate PINs are dense, so brute force is cheap. About 1,100 of the 1,000,000 possible 6-digit PINs are valid, so each random guess has roughly a 1-in-900 chance of matching some tenant. The keypad lockout only slows an attacker to about 50-60 guesses an hour and alerts no one, so a hit is expected within roughly 15-20 hours of guessing, or a couple of nights. The reply must reason about the many valid targets. Accepting 'six digits with lockout' as fine, or saying only 'use longer PINs', does not count.",
+      "split": "held-out"
+    }
+  ],
+  "brief-3": [
+    {
+      "id": "k1",
+      "text": "Employees can self-deal through a charity they control. Any registered charity is eligible and there is no conflict-of-interest check. An employee (or a relative) who runs, sits on the board of, or is paid by a small registered charity can turn company match money into personal benefit through salary, fees or reimbursed expenses. The reply must reject the 'money never goes to the employee' reassurance and name this controlled-charity path.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Token gifts can game the team 3:1 threshold. The threshold counts donors, not amounts, so four colleagues each giving $1 to the same charity in the same month lift a large donor's match from 2:1 to 3:1, and a ring can rotate the favour month to month. The reply must catch that the five-donor threshold has no minimum gift and can be met with token donations.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Donations can be reversed after the match is approved. Approval rests only on a receipt or bank-transfer confirmation, and the match is paid the following quarter without checking with the charity that the money arrived and stayed. A refunded platform gift, a cancelled or recalled transfer, or a card chargeback still gets matched, so the employee steers company money at no cost to themselves (and, combined with k1, takes cash out). The reply must identify this reversal-after-approval path and the missing charity-side confirmation. Generic 'fake receipts' does not count.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Volunteer hours are self-certified. The 'charity contact' who confirms hours is whatever email the employee types in, so employees can confirm their own hours through an alias or swap confirmations with a colleague. That is worth up to $2,500 a year per employee on no evidence. The reply must catch that the employee controls who confirms the hours.",
+      "split": "held-out"
+    }
+  ]
+}

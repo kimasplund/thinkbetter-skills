@@ -1,0 +1,47 @@
+{
+ "main": {
+  "brief-1": [
+   "Z9S",
+   "J0I",
+   "C6O",
+   "A3Z",
+   "R0X",
+   "D5I",
+   "L6K",
+   "K8O"
+  ],
+  "brief-2": [
+   "R1L",
+   "N5P",
+   "F1L",
+   "L1S",
+   "E8H",
+   "O8B",
+   "P5Z",
+   "K8N"
+  ],
+  "brief-3": [
+   "M3L",
+   "V4R",
+   "F6O",
+   "W1L",
+   "E5F",
+   "L7F",
+   "G2T",
+   "B5F"
+  ]
+ },
+ "framing_pairs": [
+  {
+   "pair": "P1",
+   "codes": [
+    "A9J",
+    "S4S"
+   ]
+  }
+ ],
+ "negative": [
+  "V7I",
+  "V6B"
+ ]
+}

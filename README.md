@@ -36,7 +36,7 @@ npx skills add kimasplund/thinkbetter-skills -a codex -g           # all skills,
 | [breadth-of-thought](skills/breadth-of-thought/) | 2.3.0 | Wide sweep with conservative pruning: don't miss options | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/breadth-of-thought/scorecard.md)) |
 | [self-reflecting-chain](skills/self-reflecting-chain/) | 2.3.0 | Stepwise reasoning with per-step validation and backtracking | Gauntlet 2026-10: not validated; rewrite reverted ([scorecard](evolution/gauntlet-2026-10/self-reflecting-chain/scorecard.md)) |
 | [hypothesis-elimination](skills/hypothesis-elimination/) | 2.2.1 | Discriminating-evidence elimination: find THE cause | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/hypothesis-elimination/scorecard.md)) |
-| [adversarial-reasoning](skills/adversarial-reasoning/) | 2.2.1 | Systematic attack on a candidate solution before committing | Documented methodology |
+| [adversarial-reasoning](skills/adversarial-reasoning/) | 2.2.1 | Systematic attack on a candidate solution before committing | Gauntlet 2026-10: not validated ([scorecard](evolution/gauntlet-2026-10/adversarial-reasoning/scorecard.md)) |
 | [dialectical-reasoning](skills/dialectical-reasoning/) | 2.2.1 | Thesis, antithesis, synthesis, for trade-offs where both sides are right | Documented methodology |
 | [analogical-transfer](skills/analogical-transfer/) | 2.2.1 | Structured cross-domain borrowing for novel problems | Documented methodology |
 | [rapid-triage-reasoning](skills/rapid-triage-reasoning/) | 2.2.1 | Time-boxed, good-enough decisions for incidents | Documented methodology |

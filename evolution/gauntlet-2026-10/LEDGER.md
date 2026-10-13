@@ -11,8 +11,8 @@ States: pending → designed → frozen → ran → blinded → judged → score
 | 5 | breadth-of-thought | applied | NOT VALIDATED | REVERT |  | 1.07M |
 | 6 | self-reflecting-chain | applied | NOT VALIDATED | REVERT |  | 1.66M (extended) |
 | 7 | parallel-execution | applied | NOT VALIDATED | REVERT |  | ~2.1M (extended) |
-| 8 | premortem-evolved | pending | | | | |
-| 9 | adversarial-reasoning | pending | | | | |
+| 8 | premortem-evolved | blinded |  |  |  |  |
+| 9 | adversarial-reasoning | applied | NOT VALIDATED | - |  | ~1.53M (extended) |
 | 10 | dialectical-reasoning | pending | | | | |
 | 11 | analogical-transfer | pending | | | | |
 | 12 | rapid-triage-reasoning | pending | | | | |
