@@ -1,0 +1,7 @@
+I'm VP Engineering at Brackwater, a fleet-telematics software company of about 300 people. Five months ago we acquired Lanternway, a 40-person route-optimization startup. Their product runs on a different cloud provider from ours, with an Elixir backend; we're Go and TypeScript on Kubernetes.
+
+Our CTO, Odalys, wants Lanternway fully moved onto our platform by the end of next year. Her case is about $900k a year in duplicated infrastructure and tooling, plus one codebase so sales can bundle the two products. My platform team agrees and wants to rewrite the routing services in Go. Lanternway's engineers say a rewrite is the riskiest thing we could do this year.
+
+Some background. Ilse, Lanternway's co-founder, now runs route planning as a GM; part of the purchase price depends on her product's revenue through next December, which is standard for deals like this. Lanternway's engineers received retention grants that vest in a single tranche next April, and two of them wrote most of the routing engine. Pellworth Grocers is 31% of Lanternway's revenue and renewed for three years in May; their security team made us list every subprocessor and agree to 120 days' notice before adding one. Separately, finance mentioned we're running about $1.2M a year under our multi-year committed spend with our cloud provider.
+
+Odalys wants a recommendation at the leadership offsite in three weeks, and she wants Ilse and both engineering teams genuinely behind it, not just tolerating it. What should I propose, and how do I get everyone to actually commit?

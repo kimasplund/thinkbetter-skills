@@ -1,0 +1,38 @@
+{
+  "L9V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Anaesthesia isn't settled. The June renewal fixed the contract, but check whether it covers elective evening",
+      "k2": "Sterile Processing closes at 6pm on weekdays... They report to Support Services, not to you",
+      "k3": "A Thursday-evening or Saturday patient can't be walked safely by physio on the weekend",
+      "k4": "If the specialty premium can be restored, even only for the project, it would do more to rebuild trust"
+    }
+  },
+  "T5P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Their contract was renewed in June and probably doesn't cover extra sessions",
+      "k2": "a different budget and a different manager, which makes this a negotiation in its own right",
+      "k3": "physio works Monday to Friday, so those patients may not be walking safely until Monday",
+      "k4": "They may see this as a chance to get the premium back"
+    }
+  },
+  "S4P": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the contract probably doesn't oblige Corvane to staff extra lists",
+      "k2": "SPD reports to Support Services... you need its manager and VP on board",
+      "k3": "a Saturday patient may not be mobilised until Monday. That stretches the stay",
+      "k4": "Consider restoring the specialty premium for the project period only"
+    }
+  },
+  "K0B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Don't treat \"contract renewed in June for three years\" as settled.",
+      "k2": "needs the Support Services director, and probably the CEO, to agree",
+      "k3": "Physiotherapy (Monday to Friday)... Ward and bed management. At 95% you need a deliberate answer",
+      "k4": "Consider whether restoring the specialty premium, even temporarily, is on the table."
+    }
+  }
+}

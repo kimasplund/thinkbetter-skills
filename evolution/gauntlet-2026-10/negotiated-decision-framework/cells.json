@@ -1,0 +1,198 @@
+[
+ {
+  "cell": "brief-1--f8--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "f8",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--f8--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "f8",
+  "run": 2
+ },
+ {
+  "cell": "brief-1--i0--r1",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "i0",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--i0--r2",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "i0",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--f8--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "f8",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--f8--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "f8",
+  "run": 2
+ },
+ {
+  "cell": "brief-2--i0--r1",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "i0",
+  "run": 1
+ },
+ {
+  "cell": "brief-2--i0--r2",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "i0",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--f8--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "f8",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--f8--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "f8",
+  "run": 2
+ },
+ {
+  "cell": "brief-3--i0--r1",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "i0",
+  "run": 1
+ },
+ {
+  "cell": "brief-3--i0--r2",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "i0",
+  "run": 2
+ },
+ {
+  "cell": "framing-hype--f8--r1",
+  "kind": "framing",
+  "input": "pack/framing-hype.md",
+  "arm": "f8",
+  "run": 1
+ },
+ {
+  "cell": "framing-skeptical--f8--r1",
+  "kind": "framing",
+  "input": "pack/framing-skeptical.md",
+  "arm": "f8",
+  "run": 1
+ },
+ {
+  "cell": "negative--f8--r1",
+  "kind": "negative",
+  "input": "pack/negative.md",
+  "arm": "f8",
+  "run": 1
+ },
+ {
+  "cell": "negative--i0--r1",
+  "kind": "negative",
+  "input": "pack/negative.md",
+  "arm": "i0",
+  "run": 1
+ },
+ {
+  "cell": "brief-1--f8--r3",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "f8",
+  "run": 3
+ },
+ {
+  "cell": "brief-1--f8--r4",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "f8",
+  "run": 4
+ },
+ {
+  "cell": "brief-1--i0--r3",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "i0",
+  "run": 3
+ },
+ {
+  "cell": "brief-1--i0--r4",
+  "kind": "main",
+  "input": "pack/brief-1.md",
+  "arm": "i0",
+  "run": 4
+ },
+ {
+  "cell": "brief-2--f8--r3",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "f8",
+  "run": 3
+ },
+ {
+  "cell": "brief-2--f8--r4",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "f8",
+  "run": 4
+ },
+ {
+  "cell": "brief-2--i0--r3",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "i0",
+  "run": 3
+ },
+ {
+  "cell": "brief-2--i0--r4",
+  "kind": "main",
+  "input": "pack/brief-2.md",
+  "arm": "i0",
+  "run": 4
+ },
+ {
+  "cell": "brief-3--f8--r3",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "f8",
+  "run": 3
+ },
+ {
+  "cell": "brief-3--f8--r4",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "f8",
+  "run": 4
+ },
+ {
+  "cell": "brief-3--i0--r3",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "i0",
+  "run": 3
+ },
+ {
+  "cell": "brief-3--i0--r4",
+  "kind": "main",
+  "input": "pack/brief-3.md",
+  "arm": "i0",
+  "run": 4
+ }
+]

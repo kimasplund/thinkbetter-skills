@@ -1,0 +1,7 @@
+I run surgical services at Marrowfield General, a 340-bed regional hospital. Our wait for hip and knee replacements is now 14 months. The health region has offered us $2.1M in one-time funding if we complete 450 extra joint replacements before the fiscal year ends on March 31. The CEO wants my plan by Friday.
+
+My proposal: from November, extend two of our eight ORs to 7:30pm Monday to Thursday and add Saturday lists in both rooms. That gets us to roughly 450 if we don't lose many days.
+
+Where people stand: our five orthopaedic surgeons are keen, since they're paid per case. The OR nurses' union local has said it will "consider" voluntary extra shifts at time-and-a-half; they're bargaining a new contract in April, and last year, during the budget freeze, we suspended the OR specialty premium. Anaesthesia is provided by the Corvane group, whose eight anaesthetists also cover labour and delivery and overnight call; we renewed their contract in June for three years, so at least that's settled. Instrument reprocessing is done by Sterile Processing, which reports to Support Services and runs 7am to 6pm on weekdays. Joint patients usually go home after two nights, once physio has them walking safely; our physiotherapists work Monday to Friday. The orthopaedic ward has been running around 95% occupied.
+
+I need to walk into the CEO's office with something everyone has signed up to. How do I get the surgeons, nurses and everyone else aligned behind this, and what should the plan look like?

@@ -1,0 +1,42 @@
+{
+"Y8N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "she has a conflict of interest that no one should ask her to ignore",
+"k2": "a rewrite plan is exactly the kind of thing that makes them go",
+"k3": "Send that notice early and treat it as a gating item",
+"k4": "You can remove that without rewriting any code"}},
+"A5V": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "Anything that disrupts routing in 2027 costs her money directly",
+"k2": "The routing engineers may leave in April whatever you do",
+"k3": "put the notice date on the critical path and send it early",
+"k4": "Running Lanternway's workloads on your provider uses up that commitment"}},
+"F8T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "Asking Ilse to endorse something that could cut her own payout is unrealistic",
+"k2": "After that, nothing holds them, and a rewrite would have them reimplementing",
+"k3": "Start the Pellworth process in the first week, not the last",
+"k4": "Lanternway's workloads would use spend you're already paying for"}},
+"M2C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "puts her payout at risk from decisions she doesn't control",
+"k2": "This turns a cliff into a reason to stay and teach",
+"k3": "Treat this as the critical path for the whole infrastructure move",
+"k4": "it supports moving infrastructure, not rewriting code"}},
+"C1A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "excluding migration-caused disruption from the revenue calculation or adjusting the measurement",
+"k2": "a rewrite plan gives them a reason to leave on that date",
+"k3": "you owe 120 days' notice before cutover. Work backward from that date",
+"k4": "Most of the money and the bundling comes from consolidating infrastructure"}},
+"H0C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "you will get compliance at best",
+"k2": "a second retention mechanism that runs past April",
+"k3": "the notice clock is on the critical path",
+"k4": "Moving Lanternway's workloads onto your provider uses commitment you are already paying for"}},
+"J8F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "The earn-out creates a conflict of interest that you should state openly",
+"k2": "put in place a second retention mechanism ... before April, not after",
+"k3": "treat the migration date as no earlier than notice plus 120 days",
+"k4": "move the runtime and operations onto your platform without changing the language"}},
+"G8J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+"k1": "migration risk lands on her revenue while the savings land on yours",
+"k2": "you give them reason to cash out and leave in April",
+"k3": "send it early enough that the cutover date is at least 120 days out",
+"k4": "it works for the infrastructure move and says nothing in favor of a rewrite"}}
+}

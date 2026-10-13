@@ -1,0 +1,42 @@
+{
+  "L9V": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Anaesthesia isn't settled. The June renewal fixed the contract",
+    "k2": "Sterile Processing closes at 6pm on weekdays and doesn't run Saturdays.",
+    "k3": "so they stay until Monday. That's a longer stay",
+    "k4": "If the specialty premium can be restored... it would do more to rebuild trust"}},
+  "S4P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "the contract probably doesn't oblige Corvane to staff extra lists",
+    "k2": "SPD reports to Support Services, which is a different chain from yours",
+    "k3": "a Saturday patient may not be mobilised until Monday",
+    "k4": "Consider restoring the specialty premium for the project period only."}},
+  "N3E": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "Whether the contract obliges them to staff extended lists... is something you need to check",
+    "k2": "Support Services is a different executive reporting line",
+    "k3": "Saturday patients can't be mobilised until Monday",
+    "k4": "Time-and-a-half on voluntary shifts will not settle it by itself."}},
+  "T7C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "probably doesn't oblige extra lists, so this is a new negotiation",
+    "k2": "Get the Support Services head to agree, not just the SPD lead.",
+    "k3": "Without weekend physio they stay an extra night or two.",
+    "k4": "Without something on the premium they have little reason to say yes."}},
+  "T5P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "probably doesn't cover extra sessions, so you'd be negotiating an add-on",
+    "k2": "Support Services extends SPD hours (a different budget and a different manager)",
+    "k3": "those patients may not be walking safely until Monday",
+    "k4": "They may see this as a chance to get the premium back"}},
+  "T0A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✗", "evidence": {
+    "k1": "Expect to need a separate sessional agreement.",
+    "k2": "extending hours (which needs Support Services to agree and fund it)",
+    "k3": "Physio. Monday to Friday only.",
+    "k4": "Do not make promises about the premium or any contract term"}},
+  "L6A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "post-evening-list fatigue affects overnight cover",
+    "k2": "SP sits under Support Services, not under you.",
+    "k3": "Discharge slips from two nights to three or four",
+    "k4": "Consider whether to restore a premium for this project only"}},
+  "K0B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "That contract covers the current scope.",
+    "k2": "this needs the Support Services director, and probably the CEO, to agree",
+    "k3": "A Saturday joint patient who can't be walked safely until Monday stays",
+    "k4": "Consider whether restoring the specialty premium, even temporarily, is on the table."}}
+}

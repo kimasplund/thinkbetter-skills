@@ -1,0 +1,74 @@
+{
+  "V7E": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "an operator's arrival is the moment they may reasonably want to renegotiate",
+      "k2": "it's a third of the electorate",
+      "k3": "Check whether the volunteers are members with votes. Many probably are.",
+      "k4": "Disclose it openly, in the member package, before anyone else raises it."
+    }
+  },
+  "H7A": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Get the Vantongerens' written consent before the vote, and make it a condition",
+      "k2": "Your 140 debenture holders could do that alone",
+      "k3": "Their consent matters more than their vote count suggests.",
+      "k4": "The $600k line should be repaid or refinanced as part of closing, or the guarantees released"
+    }
+  },
+  "I8Y": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Talk to the Vantongerens now, before the AGM, and get written consent",
+      "k2": "so the debenture holders alone can block the deal",
+      "k3": "ask Alderline to commit in writing to a patrol and ski school plan",
+      "k4": "have the guarantors disclose it openly in the member materials"
+    }
+  },
+  "P8A": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "the family can refuse consent or reopen the rent",
+      "k2": "Count where the votes are likely to come from, starting with the 140 debenture holders.",
+      "k3": "Ask Alderline to confirm in writing that the volunteer program continues",
+      "k4": "the board should decide whether they abstain or at least say so at the AGM"
+    }
+  },
+  "N0D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "it hands them leverage they've never used, at a $11k rent they've never raised",
+      "k2": "The 140 debenture holders are 34% of the membership... can block the deal on their own.",
+      "k3": "They aren't in the offer at all, yet the hill can't open without certified patrollers.",
+      "k4": "Put the release of the $600k personal guarantees into the Alderline term sheet explicitly"
+    }
+  },
+  "Z0Y": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "The Vantongeren family holds a hard veto.",
+      "k2": "About 140 of 410 members is roughly 34%... more than the one-third needed",
+      "k3": "The volunteers are your operational veto.",
+      "k4": "Have the directors state the guarantee openly at the AGM"
+    }
+  },
+  "H7T": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "Ask Alderline to make the deal conditional on that consent",
+      "k2": "This group is about a third of your votes",
+      "k3": "Alderline's promise to keep the nine employees doesn't cover them.",
+      "k4": "Disclose it openly in the member package."
+    }
+  },
+  "V5F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A corporate operator replacing the co-op could change how they feel",
+      "k2": "The 140 debenture holders are a blocking bloc on their own.",
+      "k3": "Many are probably also members and voters.",
+      "k4": "That is a conflict of interest... Disclose it up front."
+    }
+  }
+}

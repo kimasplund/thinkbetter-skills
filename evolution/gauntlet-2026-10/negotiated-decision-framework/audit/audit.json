@@ -1,0 +1,40 @@
+{
+  "reports": {
+    "V7E": {"ceremony": [], "leaks": []},
+    "H7A": {"ceremony": [], "leaks": []},
+    "I8Y": {"ceremony": [], "leaks": []},
+    "P8A": {"ceremony": [], "leaks": []},
+    "N0D": {"ceremony": ["the core approach holds: get the legal facts straight, get the three"], "leaks": []},
+    "Z0Y": {"ceremony": [], "leaks": []},
+    "H7T": {"ceremony": [], "leaks": []},
+    "V5F": {"ceremony": [], "leaks": []},
+    "L9V": {"ceremony": ["You will have a costed, staffed plan, with each group's commitment recorded"], "leaks": []},
+    "S4P": {"ceremony": [], "leaks": []},
+    "N3E": {"ceremony": [], "leaks": []},
+    "T7C": {"ceremony": [], "leaks": []},
+    "T5P": {"ceremony": [], "leaks": []},
+    "T0A": {"ceremony": [], "leaks": []},
+    "L6A": {"ceremony": ["Where the plan breaks (the pathway view)"], "leaks": []},
+    "K0B": {"ceremony": ["here are the five conditions, here is who has agreed to what"], "leaks": []},
+    "Y8N": {"ceremony": [], "leaks": []},
+    "A5V": {"ceremony": [], "leaks": []},
+    "F8T": {"ceremony": [], "leaks": []},
+    "M2C": {"ceremony": [], "leaks": []},
+    "C1A": {"ceremony": ["The one-line pitch for the offsite: We capture the savings and the bundle"], "leaks": []},
+    "H0C": {"ceremony": [], "leaks": []},
+    "J8F": {"ceremony": [], "leaks": []},
+    "G8J": {"ceremony": [], "leaks": []},
+    "A2I": {"ceremony": [], "leaks": []},
+    "V3I": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {
+      "invariant": true,
+      "why": "Both replies recommend fixing the deal terms (debenture passes, volunteers, Vantongeren lease, guarantees, exit rights) with Alderline before March rather than selling the current draft, and both give the same verdict: not passable as drafted, viable if Alderline agrees to the key changes."
+    }
+  },
+  "negative": {
+    "A2I": {"ceremony": false},
+    "V3I": {"ceremony": false}
+  }
+}

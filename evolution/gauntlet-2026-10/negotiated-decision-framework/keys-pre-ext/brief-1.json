@@ -1,0 +1,38 @@
+{
+  "I8Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "It is personal to the co-op... get written consent to the arrangement.",
+      "k2": "the debenture holders alone can block the deal.",
+      "k3": "If they walk, the hill doesn't open and the deal fails",
+      "k4": "That's a real conflict of interest... have the guarantors disclose it openly"
+    }
+  },
+  "H7T": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Ask for their written consent or a new lease that names the arrangement.",
+      "k2": "This group is about a third of your votes",
+      "k3": "Alderline's promise to keep the nine employees doesn't cover them.",
+      "k4": "Disclose it openly in the member package."
+    }
+  },
+  "V5F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Make written landlord consent... a condition precedent in the Alderline agreement.",
+      "k2": "The 140 debenture holders are a blocking bloc on their own.",
+      "k3": "Many are probably also members and voters.",
+      "k4": "retiring the guarantee an explicit ask of Alderline"
+    }
+  },
+  "Z0Y": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The Vantongeren family holds a hard veto.",
+      "k2": "About 140 of 410 members is roughly 34%.",
+      "k3": "The volunteers are your operational veto.",
+      "k4": "Have the directors state the guarantee openly at the AGM"
+    }
+  }
+}

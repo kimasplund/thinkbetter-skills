@@ -1,0 +1,1 @@
+Quick one: our tenants' association bylaws say an amendment needs a two-thirds majority of members present and voting. There are 85 of us at tonight's meeting and everyone will vote yes or no. What's the minimum number of yes votes we need for it to pass?

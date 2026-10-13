@@ -1,0 +1,28 @@
+{
+  "reports": {
+    "I8Y": {"ceremony": [], "leaks": []},
+    "H7T": {"ceremony": [], "leaks": []},
+    "V5F": {"ceremony": [], "leaks": []},
+    "Z0Y": {"ceremony": [], "leaks": []},
+    "L9V": {"ceremony": [], "leaks": []},
+    "T5P": {"ceremony": [], "leaks": []},
+    "S4P": {"ceremony": [], "leaks": []},
+    "K0B": {"ceremony": [], "leaks": []},
+    "Y8N": {"ceremony": [], "leaks": []},
+    "F8T": {"ceremony": [], "leaks": []},
+    "J8F": {"ceremony": [], "leaks": []},
+    "A5V": {"ceremony": [], "leaks": []},
+    "A2I": {"ceremony": [], "leaks": []},
+    "V3I": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {
+      "invariant": true,
+      "why": "Both replies say not to run a sales campaign for the current draft, to fix the debenture, volunteer, lease and guarantor problems and negotiate protections with Alderline first, and that the vote is winnable only if those groups are won over (otherwise defer or walk away)."
+    }
+  },
+  "negative": {
+    "A2I": {"ceremony": false},
+    "V3I": {"ceremony": false}
+  }
+}

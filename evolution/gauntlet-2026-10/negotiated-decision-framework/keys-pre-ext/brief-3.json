@@ -1,0 +1,38 @@
+{
+  "Y8N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Either sequence the risky cutovers after the earnout window, or have legal and finance agree in writing",
+      "k2": "a rewrite plan is exactly the kind of thing that makes them go",
+      "k3": "A new cloud provider is probably a new subprocessor for their data, which triggers the 120-day notice",
+      "k4": "Moving Lanternway's workloads onto that commitment is worth more than the $900k suggests"
+    }
+  },
+  "F8T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Asking Ilse to endorse something that could cut her own payout is unrealistic.",
+      "k2": "After that, nothing holds them, and a rewrite would have them reimplementing their own work",
+      "k3": "Start the Pellworth process in the first week, not the last.",
+      "k4": "Lanternway's workloads would use spend you're already paying for"
+    }
+  },
+  "J8F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Ilse's payout depends on her product's revenue through next December.",
+      "k2": "A rewrite plan that depends on them is a plan that depends on people who may leave.",
+      "k3": "treat the migration date as no earlier than notice plus 120 days",
+      "k4": "Moving Lanternway's workloads onto your provider could absorb part of that shortfall"
+    }
+  },
+  "A5V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Anything that disrupts routing in 2027 costs her money directly",
+      "k2": "after April you have little hold on the people you can least afford to lose",
+      "k3": "put the notice date on the critical path and send it early",
+      "k4": "Running Lanternway's workloads on your provider uses up that commitment"
+    }
+  }
+}
