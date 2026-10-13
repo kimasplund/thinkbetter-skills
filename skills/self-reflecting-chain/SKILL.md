@@ -1,27 +1,21 @@
 ---
 name: self-reflecting-chain
-description: Sequential reasoning with deep self-reflection and backtracking. Use when problems have step-by-step dependencies, need careful logical reasoning, or require error correction. Each step includes self-reflection, and incorrect steps trigger backtracking. Ideal for debugging, mathematical proofs, sequential planning, or causal analysis where order matters.
-model: opus
-context: fork
-agent: general-purpose
-user-invocable: true
+description: Works through a problem one dependent step at a time, reflecting on each step's validity and backtracking when a step fails. Use when order matters and each step builds on the last - tracing a known execution path, a proof or derivation, a causal chain, a plan where phase B needs phase A - or when the user says "walk me through it step by step", "check each step", "trace this through". Not for finding an unknown root cause among many candidates (use hypothesis-elimination), for choosing among options (use tree-of-thoughts or breadth-of-thought), or for steps that can run in any order.
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
 ---
-
-## Effort & Thinking Budget
-- **Recommended effort**: medium/high — step-by-step reasoning doesn't always need max depth per step
-- Include "ultrathink" only for steps with confidence below 70% that require deeper analysis
-- For time-constrained scenarios, use effort: medium with fewer backtracking iterations
-
-## Model Recommendation
-Best with Opus for maximum reasoning depth. Sonnet handles straightforward sequential chains well; reserve Opus for chains with complex dependencies or high-stakes backtracking decisions.
 
 # Self-Reflecting Chain Reasoning Methodology
 
-**Purpose**: Sequential step-by-step reasoning with deep self-reflection at each step. Unlike parallel exploration (ToT/BoT), this follows a single logical chain, reflects on each step's validity, and backtracks when errors detected.
+Works best with extended thinking for the hardest phases.
 
-## When to Use Self-Reflecting Chain
+## Backstage rule: the method never appears in the answer
+
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Self-Reflecting Chain", "SRC", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
+
+**Purpose**: Sequential step-by-step reasoning with deep self-reflection at each step. Unlike parallel exploration (tree-of-thoughts, breadth-of-thought), this follows a single logical chain, reflects on each step's validity, and backtracks when errors are detected.
+
+## When to Use This Method
 
 **✅ Use when:**
 - Steps have dependencies (Step N depends on Step N-1)
@@ -29,18 +23,18 @@ Best with Opus for maximum reasoning depth. Sonnet handles straightforward seque
 - Need to trace exact reasoning path
 - Error detection and correction critical
 - Sequential planning (Step A must complete before Step B)
-- Debugging (trace bug through execution flow)
+- Tracing a known execution path (follow one code path or data flow step by step). To find an unknown root cause among several candidates, use hypothesis-elimination instead
 
 **❌ Don't use when:**
-- Multiple independent solution paths exist → Use ToT or BoT
-- Need to explore many options in parallel → Use BoT
+- Multiple independent solution paths exist → Use tree-of-thoughts or breadth-of-thought
+- Need to explore many options in parallel → Use breadth-of-thought
 - Steps can execute in any order → Don't need sequential reasoning
 
 **Examples**:
-- "Debug this race condition by tracing execution step-by-step" ✅
+- "Trace this request through the handler, queue and worker step-by-step" ✅
 - "Prove this mathematical theorem" ✅
 - "Plan project where each phase depends on previous" ✅
-- "Choose between 5 architectures" (parallel problem - use BoT) ❌
+- "Choose between 5 architectures" (parallel problem - use breadth-of-thought) ❌
 
 ---
 
@@ -57,10 +51,10 @@ Best with Opus for maximum reasoning depth. Sonnet handles straightforward seque
 4. Number steps clearly (Step 1, 2, 3...)
 5. Identify dependencies between steps
 
-**Example** (Debugging):
+**Example** (tracing a known path):
 ```
 Start: System crashes when user clicks "Submit"
-Goal: Identify root cause
+Goal: Find where the traced path diverges from the expected one
 
 Steps:
 1. Trace user action to event handler
@@ -68,7 +62,7 @@ Steps:
 3. Trace data flow to backend
 4. Check backend validation logic
 5. Inspect database query execution
-6. Identify exact failure point
+6. Pin down the exact point of divergence
 ```
 
 ---
@@ -81,20 +75,17 @@ Steps:
 2. **State Result**: What did you learn/discover?
 3. **Self-Reflect**: Is this step correct?
 4. **Check Validity**: Does logic hold? Any assumptions?
-5. **Empirical Verification**: If this step involves code, did you compile/run it?
+5. **Verify if you can**: If the step can be executed or checked (run the code, evaluate the arithmetic, read the file, query the config), do that before trusting it.
 6. **Confidence**: How confident in this step (0-100%)?
 
-**CRITICAL: Empirical Verification Requirement**
+**Verify before you trust.** A step you reasoned out but could have checked is a guess. Models are fluent at producing plausible code, math and claims that are wrong, and a wrong step silently poisons every step after it. So when a check is available, run it and record the command and its output. Rate an unchecked step lower than a checked one, and rate it lower still when it is the kind that often fails in practice (code behaviour, off-by-one counts, library semantics). When a check is impossible, say so in the step's assumptions and let that lower the confidence honestly; the threshold below then tells you whether to proceed.
 
-For any step involving code, PoCs, or technical claims:
-- [ ] Code compiles/builds successfully
-- [ ] Code executes without errors (or crashes as expected)
-- [ ] Output demonstrates the claimed behavior
-- [ ] Commands and output documented
+**Confidence thresholds** (one rule, used everywhere below):
+- **70% or more**: proceed.
+- **60-69%**: do not proceed yet. Firm the step up first (run the check, test the assumption, re-derive it another way) and re-rate. Proceed only if it now reaches 70%; otherwise backtrack.
+- **Below 60%**: backtrack.
 
-**Without empirical verification, confidence for this step: MAXIMUM 50%**
-
-**Step Template**:
+**Step Template** (internal working, not for the answer):
 ```markdown
 ## Step [N]: [Action]
 
@@ -113,8 +104,8 @@ For any step involving code, PoCs, or technical claims:
 
 ### Decision
 - ✅ **Proceed** to Step [N+1] (confidence ≥70%)
-- ⚠️ **Low Confidence** but proceeding (60-69%)
-- ❌ **Backtrack** to Step [N-X] (confidence <60%)
+- ⚠️ **Firm up, then re-rate** (60-69%): proceed only if it reaches ≥70%
+- ❌ **Backtrack** to Step [N-X] (confidence <60%, or still <70% after firming up)
 ```
 
 ---
@@ -122,7 +113,7 @@ For any step involving code, PoCs, or technical claims:
 ### Step 3: Backtracking Protocol
 
 **Trigger backtracking when:**
-- Step confidence <60%
+- Step confidence <60%, or still <70% after you tried to firm it up
 - Logic error detected
 - Assumption proven false
 - Result contradicts known facts
@@ -179,9 +170,9 @@ For any step involving code, PoCs, or technical claims:
 4. **Alternative paths explored**: Document backtracks and why
 5. **Final answer**: Clear conclusion with reasoning trace
 
-**Synthesis Template**:
+**Synthesis Template** (internal working, not for the answer; the answer states the conclusion, the steps that carry it, and the weakest step in plain words, with numbers only if the user asked for them):
 ```markdown
-## Reasoning Chain Complete
+## Chain complete
 
 ### Complete Path
 1. [Step 1] → Result: [X] (Confidence: 85%)
@@ -190,18 +181,15 @@ For any step involving code, PoCs, or technical claims:
 4. [Step 4] → Result: [A] (Confidence: 88%)
 5. [Step 5] → Result: [B] (Confidence: 82%)
 
-### Overall Confidence
-**Minimum**: 75% (Step 3 was lowest)
-**Chain Confidence**: 75% (limited by weakest link)
+### Chain confidence
+75%, set by Step 3, the weakest link
 
 ### Backtracks
 - Backtracked from Step 4 to Step 2 (logic error)
 - Alternative path tried at Step 3 (failed, original was correct)
 
-### Final Conclusion
+### Conclusion
 [Answer based on complete reasoning chain]
-
-**Reasoning Trace**: Step 1 → Step 2 → Step 3 → Step 4 → Step 5 → Conclusion
 ```
 
 ---
@@ -221,7 +209,7 @@ For any step involving code, PoCs, or technical claims:
 ## Common Mistakes
 
 1. **Skipping Reflection**: Moving to next step without genuine self-reflection
-2. **Ignoring Low Confidence**: Proceeding when confidence <60%
+2. **Ignoring Low Confidence**: Proceeding when confidence is below 70%
 3. **Missing Dependencies**: Not checking if later steps depend on earlier ones
 4. **No Backtracking**: Never questioning previous steps when contradictions arise
 5. **False Confidence**: High confidence without justification
@@ -231,7 +219,7 @@ For any step involving code, PoCs, or technical claims:
 
 ## Sequential vs Parallel Decision Guide
 
-| Problem Type | Use Self-Reflecting Chain | Use ToT/BoT |
+| Problem Type | Use self-reflecting-chain | Use tree-of-thoughts / breadth-of-thought |
 |--------------|---------------------------|-------------|
 | Dependencies | Sequential steps | Independent paths |
 | Goal | Single logical conclusion | Explore options |
@@ -243,7 +231,7 @@ For any step involving code, PoCs, or technical claims:
 
 ## Summary
 
-Self-Reflecting Chain is systematic methodology for:
+This methodology gives you:
 1. **Sequential reasoning** (step-by-step)
 2. **Deep self-reflection** (confidence at each step)
 3. **Error detection** (validate logic continuously)
@@ -253,7 +241,3 @@ Self-Reflecting Chain is systematic methodology for:
 Use it when order matters, dependencies exist, and you need one correct answer with full reasoning trace.
 
 **Remember**: Chain confidence = minimum step confidence. A 95% confident chain with one 60% step has 60% overall confidence. Strengthen the weakest link.
-
-## Backstage rule — the method never appears in the answer
-
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Self-Reflecting Chain", "SRC", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.

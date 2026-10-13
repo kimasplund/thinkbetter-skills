@@ -1,50 +1,44 @@
 ---
 name: hypothesis-elimination
-description: "Systematic elimination reasoning for diagnosis and debugging. Use when you need to identify THE cause among many possibilities through evidence-based elimination. Ideal for production incidents, bug diagnosis, root cause analysis, and differential diagnosis. Unlike BoT (which explores), HE eliminates. Example: \"Server is slow\" → Generate 10 hypotheses, design discriminating tests, eliminate 9, confirm 1."
-model: opus
-context: fork
-agent: general-purpose
-user-invocable: true
+description: Finds the single cause of a problem by listing candidate explanations, gathering evidence that rules them out, and confirming the survivor. Use for "why is this happening", "what caused this", "find the root cause", production incidents, intermittent bugs, performance regressions, and differential diagnosis, where one answer is correct and evidence can discriminate between candidates. Not for generating or comparing solution options (use breadth-of-thought or tree-of-thoughts), for tracing a path you already know (use self-reflecting-chain), or when no evidence can be gathered.
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
 ---
 
-## Effort & Thinking Budget
-- **Recommended effort**: high/max — thorough diagnosis requires deep analysis of evidence chains
-- Include "ultrathink" in complex analysis phases to enable extended thinking
-- For time-constrained scenarios, use effort: medium with accelerated triage mode (5-Minute Triage section)
+# Hypothesis-Elimination Reasoning
 
-## Model Recommendation
-Best with Opus for maximum reasoning depth. Sonnet can handle straightforward diagnostic scenarios but may miss subtle evidence correlations.
+Works best with extended thinking for the hardest phases.
 
-# Hypothesis-Elimination Reasoning (HE)
+## Backstage rule: the method never appears in the answer
 
-**Purpose**: Systematic identification of root causes through evidence-based elimination. Unlike exploration methodologies (BoT, ToT), HE is designed to NARROW possibilities, not expand them.
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Hypothesis-Elimination", "HE", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
 
-## When to Use Hypothesis-Elimination
+**Purpose**: Systematic identification of root causes through evidence-based elimination. Unlike exploration methodologies (breadth-of-thought, tree-of-thoughts), this narrows possibilities rather than expanding them.
 
-**✅ Use HE when:**
+## When to Use This Method
+
+**✅ Use when:**
 - Problem has ONE correct answer among many possibilities
 - Evidence can discriminate between hypotheses
 - Time-critical diagnosis (production incidents, debugging)
 - "What caused X?" questions
 - Differential diagnosis scenarios
 
-**❌ Don't use HE when:**
-- Multiple solutions are equally valid (use BoT)
-- Need to optimize among options (use ToT)
+**❌ Don't use when:**
+- Multiple solutions are equally valid (use breadth-of-thought)
+- Need to optimize among options (use tree-of-thoughts)
 - No discriminating evidence available
 - Creative/generative problems
 
 **Examples:**
 - "Why is the API returning 500 errors?" ✅
 - "What's causing memory leaks in production?" ✅
-- "Which database should we use?" ❌ (use ToT)
-- "What features should we build?" ❌ (use BoT)
+- "Which database should we use?" ❌ (use tree-of-thoughts)
+- "What features should we build?" ❌ (use breadth-of-thought)
 
 ---
 
-## Core Methodology: 5-Phase HEDAM Process
+## Core Methodology: 5 Phases
 
 ### Phase 1: Hypothesis Generation (Diverge)
 
@@ -212,7 +206,7 @@ For each evidence source (in priority order):
 
 ## Time-Critical Mode (Incident Response)
 
-When time is critical, use accelerated HE:
+When time is critical, use this accelerated version:
 
 **5-Minute Triage:**
 1. Check last 3 deployments (30 sec)
@@ -222,10 +216,11 @@ When time is critical, use accelerated HE:
 5. Check for similar recent incidents (1 min)
 6. Form top-2 hypotheses (1 min)
 
-**Parallel Elimination:**
-- Assign different team members to different evidence sources
-- Use chat/war room for real-time hypothesis updates
-- Timebox each investigation track (10 min max)
+**Parallel Evidence Tracks:**
+- Split the evidence sources into independent tracks (for example deploy history, logs, metrics, external dependencies) and run them side by side, as separate subagents through the Agent tool when available, otherwise one after another
+- Give each track the symptom, the hypotheses it can affect, and a single question to answer, and have it report what it found against each hypothesis
+- Merge the reports into one hypothesis table, then update every hypothesis against all of it
+- Cap each track at a handful of queries so one slow track cannot stall the rest
 
 ---
 
@@ -250,11 +245,11 @@ When time is critical, use accelerated HE:
 
 ## Integration with Other Patterns
 
-**HE → SRC**: After identifying root cause, use Self-Reflecting Chain to trace the exact failure path
+**Then self-reflecting-chain**: After identifying root cause, use self-reflecting-chain to trace the exact failure path
 
-**BoT → HE**: If problem is "what could go wrong?", use BoT first to generate failure modes, then HE when a failure occurs
+**breadth-of-thought first**: If the problem is "what could go wrong?", use breadth-of-thought to generate failure modes, then this method when a failure occurs
 
-**HE → ToT**: After finding root cause, use ToT to evaluate fix options
+**Then tree-of-thoughts**: After finding root cause, use tree-of-thoughts to evaluate fix options
 
 ---
 
@@ -272,14 +267,9 @@ When time is critical, use accelerated HE:
 ## Quick Reference
 
 ```
-HEDAM Process:
-H - Hypothesis Generation (8-15 possibilities)
-E - Evidence Hierarchy (prioritize discriminating evidence)
-D - Discrimination/Elimination (update all hypotheses per evidence)
-A - Assertion/Confirmation (test leading hypothesis)
-M - Memorialize (document for future)
+1. Hypothesis Generation (8-15 possibilities)
+2. Evidence Hierarchy (prioritize discriminating evidence)
+3. Systematic Elimination (update all hypotheses per evidence)
+4. Confirmation Testing (test the leading hypothesis)
+5. Root Cause Documentation (record it for the future)
 ```
-
-## Backstage rule — the method never appears in the answer
-
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Hypothesis-Elimination", "HE", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.

@@ -2,6 +2,17 @@
 
 Deep-dive reference for parallel execution patterns, including detailed algorithms, integration examples, and advanced configuration.
 
+## Contents
+
+- [Part 1: DPTS Algorithm Details](#part-1-dpts-algorithm-details)
+- [Part 2: MCTS for ToT - Detailed Implementation](#part-2-mcts-for-tot---detailed-implementation)
+- [Part 3: MoA Advanced Configuration](#part-3-moa-advanced-configuration)
+- [Part 4: GoT Implementation Patterns](#part-4-got-implementation-patterns)
+- [Part 5: RASC Clustering Algorithm](#part-5-rasc-clustering-algorithm)
+- [Part 6: Handover Protocol Integration](#part-6-handover-protocol-integration)
+- [Part 7: Expected Speedup and Overhead](#part-7-expected-speedup-and-overhead)
+- [Part 8: Advanced Configuration Examples](#part-8-advanced-configuration-examples)
+
 ## Part 1: DPTS Algorithm Details
 
 ### Dynamic Pruning Threshold Algorithm
@@ -503,6 +514,8 @@ Alternative: Go or JavaScript for performance or full-stack needs
 
 ### Parallel Session State
 
+Illustrative shape for a checkpoint. Use it only if you actually persist state; the field names and timeout values are examples, not a required schema.
+
 ```json
 {
   "$schema": "parallel-session-v1",
@@ -551,8 +564,9 @@ Alternative: Go or JavaScript for performance or full-stack needs
 ## Recovery from Parallel Execution Failure
 
 ### Step 1: Load Checkpoint
-Load parallel session state from:
-.reasoning/session-{id}/parallel/worker-status.json
+Load the parallel session state saved earlier (the JSON above). If the session
+uses the optional `.reasoning/` folder from reasoning-handover-protocol, that
+is where it lives; otherwise it is wherever you chose to write it.
 
 ### Step 2: Analyze Worker States
 - Completed: Results available, no action needed
@@ -587,31 +601,31 @@ When completed_count >= minimum_required:
 
 ---
 
-## Part 7: Performance Benchmarks
+## Part 7: Expected Speedup and Overhead
 
-### Expected Speedup by Pattern
+No speedup was measured for these patterns, so none is claimed. Qualitatively:
 
-| Pattern | Sequential Time | Parallel Time | Speedup | Notes |
-|---------|-----------------|---------------|---------|-------|
-| BoT L0 (8 approaches) | 40 min | 10 min | 4x | Embarrassingly parallel |
-| ToT L0-L1 (5 branches each) | 50 min | 20 min | 2.5x | Some sync needed |
-| HE (10 hypotheses) | 30 min | 12 min | 2.5x | Evidence sync points |
-| DPTS + ToT | 60 min | 18 min | 3.3x | Dynamic reallocation |
-| MoA (4 proposers) | 45 min | 15 min | 3x | Aggregation overhead |
-| RASC (10 paths) | 50 min | 8 min | 6x | Clustering reduces work |
+| Pattern | Parallelism available | Limits |
+|---------|-----------------------|--------|
+| BoT Level 0 | High: approaches are independent | Pruning waits for all to finish |
+| ToT Levels 0-1 | Moderate | Some synchronization between levels |
+| HE evidence gathering | Moderate | Hypothesis updates need all evidence in |
+| DPTS + ToT | Moderate | Reallocation adds coordination |
+| MoA | Moderate | Aggregation is a serial step |
+| RASC | High for path generation | Clustering is a serial step |
 
 ### Overhead Considerations
 
-| Overhead Type | Cost | Mitigation |
-|---------------|------|------------|
-| Task spawning | ~5 sec per task | Batch spawn |
-| State serialization | ~2 sec per checkpoint | Checkpoint less frequently |
-| Fan-in merge | ~10 sec per 5 results | Streaming merge |
-| Worker communication | ~1 sec per message | Batch updates |
+| Overhead Type | Mitigation |
+|---------------|------------|
+| Spawning subagents | Spawn in one batch |
+| State serialization | Checkpoint less frequently |
+| Fan-in merge | Merge results as they arrive |
+| Worker communication | Batch updates |
 
 ### When Parallel is NOT Faster
 
-- Very small tasks (< 1 min): Overhead exceeds benefit
+- Very small tasks: spawning and merging cost more than the work
 - Highly sequential problems: No parallelism available
 - Resource-constrained environment: Context switching costs
 - Single-threaded evidence: When evidence must be gathered serially
@@ -619,6 +633,8 @@ When completed_count >= minimum_required:
 ---
 
 ## Part 8: Advanced Configuration Examples
+
+These profiles are illustrative starting points for reasoning about parallelization, not settings that any tool reads.
 
 ### High-Confidence Configuration (Critical Decisions)
 
