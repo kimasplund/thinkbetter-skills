@@ -1,29 +1,25 @@
 ---
 name: tree-of-thoughts
-description: "Advanced recursive reasoning methodology for systematic problem-solving. Use when you need to explore multiple solution approaches in parallel, evaluate them rigorously, and recursively deepen the best path. Ideal for complex decisions with trade-offs, optimization problems, or strategic planning. Example: \"Should we use microservices or monolith?\" → Apply ToT to spawn 5+ architectural approaches, evaluate each systematically, recurse on the winner."
-model: opus
-context: fork
-agent: general-purpose
-user-invocable: true
+description: "Finds the single best option among several fundamentally different approaches by exploring 5 or more branches, scoring each against explicit criteria, and recursively deepening the winner for at least four levels. Use for questions like which architecture to pick, REST vs GraphQL vs gRPC, what the best strategy is, or any optimization or strategic-planning decision with real trade-offs. Not for obvious single-path problems, time-critical calls (use rapid-triage-reasoning), mapping every possible option (use breadth-of-thought), or reconciling two valid opposites (use dialectical-reasoning)."
 metadata:
-  version: "2.2.0"
+  version: "2.3.0"
 ---
 
-## Effort & Thinking Budget
-- **Recommended effort**: high/max — deep recursive exploration benefits from maximum reasoning depth
-- Include "ultrathink" in complex analysis phases to enable extended thinking
-- For time-constrained scenarios, use effort: medium with reduced branch count (3 branches instead of 5+)
-
-## Model Recommendation
-Best with Opus for maximum reasoning depth. Sonnet can be used with reduced branch counts (3 branches per level, 3 levels max).
+Works best with extended thinking for the hardest phases.
 
 # Tree of Thoughts Reasoning Methodology
 
-**Purpose**: Systematic parallel exploration of solution spaces through recursive branching, self-reflection, and rigorous evaluation. Use this methodology when facing complex problems with multiple viable solution paths.
+## Backstage rule — the method never appears in the answer
+
+This methodology is scaffolding, not content. In the user-facing answer: no method names ("Tree of Thoughts", "tree-of-thoughts", or any other reasoning-method name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
+
+## Purpose
+
+Systematic parallel exploration of solution spaces through recursive branching, self-reflection, and rigorous evaluation. Use this methodology when facing complex problems with multiple viable solution paths.
 
 ## When to Use Tree of Thoughts
 
-**✅ Use ToT when:**
+**✅ Use it when:**
 - Problem has multiple viable solution approaches (3+ fundamentally different paths)
 - Need to find optimal solution, not just any solution
 - Can define clear evaluation criteria
@@ -31,21 +27,24 @@ Best with Opus for maximum reasoning depth. Sonnet can be used with reduced bran
 - Trade-offs exist between competing approaches
 - Strategic or architectural decisions with long-term impact
 
-**❌ Don't use ToT when:**
+**❌ Don't use it when:**
 - Problem has obvious single solution path
-- Time-critical decisions with simple trade-offs
+- Time-critical decisions with simple trade-offs (use rapid-triage-reasoning)
 - Problem is well-defined with standard solution
-- Exploratory work where breadth matters more than depth
+- Exploratory work where breadth matters more than depth (use breadth-of-thought)
+- Two valid opposites to reconcile rather than a winner to pick (use dialectical-reasoning)
 
 **Examples**:
 - "Should we use REST, GraphQL, or gRPC?" (3 paths, clear trade-offs) ✅
 - "Design distributed caching system balancing latency, consistency, cost" (multi-dimensional) ✅
 - "Fix this syntax error" (single path) ❌
-- "Research all available databases" (breadth-of-thought better) ❌
+- "Research all available databases" (use breadth-of-thought) ❌
 
 ---
 
 ## Core Methodology: 5-Step Process
+
+The branch write-ups, scores and confidence figures below are internal working. None of it goes in the answer unless the user asks to see it.
 
 ### Step 1: Problem Decomposition (5+ Branches)
 
@@ -80,7 +79,7 @@ Branch E: Cost-optimized minimal (single region, no replication)
 3. Identify assumptions and constraints
 4. End with self-reflection (see template below)
 
-**Self-Reflection Template** (REQUIRED for each branch):
+**Self-Reflection Template** (REQUIRED for each branch; internal working, not for the answer):
 ```markdown
 ## Branch [X]: [Approach Name]
 
@@ -95,9 +94,9 @@ Branch E: Cost-optimized minimal (single region, no replication)
 ```
 
 **Execution Options**:
-- **With Task tool**: Spawn 5+ parallel tasks for independent exploration
-- **Without Task tool**: Explore branches sequentially using TodoWrite to track progress
-- **Hybrid**: Use Task for complex branches, sequential for simple ones
+- **With the Agent tool (subagents)**: Issue 5+ Agent calls in a single message so the branches are explored concurrently
+- **Without it**: Explore branches one after another, tracking progress in a written checklist
+- **Hybrid**: Use subagents for complex branches, sequential for simple ones
 
 **Deliverable**: 5+ explored branches with self-reflections
 
@@ -200,13 +199,13 @@ Level 3: "OR-Set optimizations" (5 variants)
 1. **Trace winning path**: Document Level 0 → Level 1 → Level 2 → Level 3+
 2. **Extract key insights**: What was learned at each level?
 3. **Document pruned branches**: Why were alternatives discarded?
-4. **Calculate confidence**: Final confidence score (see Bayesian formula below)
+4. **Calculate confidence**: Final confidence score (see the confidence scoring below)
 5. **State assumptions**: What assumptions underpin the recommendation?
 6. **Provide recommendation**: Clear, actionable guidance
 
-**Synthesis Template**:
+**Synthesis Template** (internal working, not for the answer). Write the answer itself as a recommendation, why it beat the alternatives, and the remaining uncertainties in plain language, without scores or method names unless the user asked for them:
 ```markdown
-## Tree of Thoughts Analysis Complete
+## Synthesis
 
 ### Winning Path
 - **Level 0**: [Chosen approach] (Score: X/100)
@@ -269,18 +268,20 @@ Final Confidence = Posterior Odds / (1 + Posterior Odds)
 ```
 
 **Practical Calculation**:
-1. Start with prior confidence: 50% (neutral)
+1. Start with prior confidence: 50% (neutral, odds = 1)
 2. For each evaluation criterion score (0-20):
-   - Convert to likelihood ratio: `LR = 0.25 + (score/20) * 3.75`
+   - Convert to likelihood ratio: `LR = 2^((score - 10) / 10)`. A score of 10/20 is neutral (LR = 1), lower scores reduce confidence, higher scores raise it. LR runs from 0.5 (score 0) to 2 (score 20).
    - Update odds: `Odds = Odds × LR`
 3. Convert back to probability: `Conf = Odds / (1 + Odds)`
 4. Cap at 95% (Bayesian humility for unknown unknowns)
 
+Shortcut: the five likelihood ratios multiply to `2^((total - 50) / 10)`, where total is the 0-100 score. A total of 50 gives 50%, 70 gives 80%, 80 gives 89%, and 100 gives 97% (capped at 95%).
+
 **Example**:
-- Branch scores: Novelty 18/20, Feasibility 19/20, Completeness 17/20, Confidence 18/20, Alignment 19/20
-- Likelihood ratios: 3.62, 3.81, 3.44, 3.62, 3.81
-- Final odds: 1.0 × 3.62 × 3.81 × 3.44 × 3.62 × 3.81 = 1,782
-- Confidence: 1782 / 1783 = 99.9% → **Capped at 95%**
+- Branch scores: Novelty 18/20, Feasibility 19/20, Completeness 17/20, Confidence 18/20, Alignment 19/20 (total 91)
+- Likelihood ratios: 1.74, 1.87, 1.62, 1.74, 1.87
+- Final odds: 1.0 × 1.74 × 1.87 × 1.62 × 1.74 × 1.87 = 2^4.1 = 17.1
+- Confidence: 17.1 / 18.1 = 94.5%, which is under the 95% cap
 
 **Confidence Interpretation**:
 - **90-95%**: Exceptional evidence, suitable for critical decisions
@@ -293,7 +294,7 @@ Final Confidence = Posterior Odds / (1 + Posterior Odds)
 
 ## Self-Critique Checklist
 
-After applying ToT methodology, verify:
+After applying this methodology, verify:
 
 - [ ] **Branch Diversity**: Are all 5+ branches fundamentally different (not variations)?
 - [ ] **Self-Reflection Quality**: Does each branch have genuine self-reflection (not boilerplate)?
@@ -322,27 +323,24 @@ After applying ToT methodology, verify:
 
 ## Reference Documentation
 
-**Detailed Templates**: [references/tree-of-thoughts-patterns.md](references/tree-of-thoughts-patterns.md)
-
-Includes:
-- Branch exploration template (detailed prompts)
-- Self-reflection rubric (confidence scoring guide)
-- Evaluation matrix (scoring examples per criterion)
-- Level transition logic (when/how to deepen)
-- Edge case handling (convergence, insufficient diversity)
+Read [references/tree-of-thoughts-patterns.md](references/tree-of-thoughts-patterns.md) when you need the detailed templates: the full branch exploration template, the evaluation matrix, level transition, parallel exploration with the Agent tool, confidence scoring examples, and edge cases (converging branches, low diversity, no clear winner, low-confidence winner).
 
 ---
 
 ## Quick Start Examples
 
-### Example 1: Simple Decision (3 levels)
+Both examples are internal working, shown in outline.
 
-**Problem**: Choose between Redis, Memcached, or Hazelcast for caching
+### Example 1: Simple Decision (4 levels)
 
-**Level 0** (3 branches):
+**Problem**: Choose a caching technology for a read-heavy web service
+
+**Level 0** (5 branches):
 - Branch A: Redis (rich data structures)
 - Branch B: Memcached (pure speed)
 - Branch C: Hazelcast (distributed computing)
+- Branch D: In-process cache (no network hop)
+- Branch E: CDN/edge cache (geography-aware)
 → Winner: Branch A (Redis) - 85/100
 
 **Level 1** (Redis deployment options):
@@ -361,9 +359,17 @@ Includes:
 - A.3.5: Hybrid (critical data replicated)
 → Winner: Branch A.3.2 (3+3) - 91/100
 
-**Confidence**: 88% (3 levels, clear winner at each level)
+**Level 3** (Eviction policy for the 3+3 cluster):
+- A.3.2.1: allkeys-lru
+- A.3.2.2: allkeys-lfu
+- A.3.2.3: volatile-ttl
+- A.3.2.4: volatile-lru
+- A.3.2.5: noeviction
+→ Winner: Branch A.3.2.2 (allkeys-lfu) - 92/100
 
-### Example 2: Complex Architecture (5 levels)
+**Stop**: 4 levels reached with a clear winner at each level.
+
+### Example 2: Complex Architecture (5 levels, abbreviated)
 
 **Problem**: Design microservices communication strategy
 
@@ -373,13 +379,13 @@ Includes:
 **Level 3**: [Winner] expanded into 5 technology choices
 **Level 4**: [Winner] expanded into 5 deployment patterns
 
-**Confidence**: 93% (5 levels, 25+ branches explored total)
+**Stop**: 5 levels, 25 branches explored in total.
 
 ---
 
 ## Summary
 
-Tree of Thoughts is a **systematic methodology** for exploring complex problem spaces through:
+This is a **systematic methodology** for exploring complex problem spaces through:
 1. **Parallel branching** (5+ approaches per level)
 2. **Self-reflection** (confidence scoring for each branch)
 3. **Rigorous evaluation** (5 criteria, 0-100 scoring)
@@ -388,8 +394,4 @@ Tree of Thoughts is a **systematic methodology** for exploring complex problem s
 
 Use it for strategic decisions, architectural choices, and optimization problems where systematic exploration yields better outcomes than intuition alone.
 
-**Remember**: Quality over speed. ToT trades time for rigor. The goal is high-confidence optimal solutions, not quick answers.
-
-## Backstage rule — the method never appears in the answer
-
-This methodology is scaffolding, not content. In the user-facing answer: no method names ("Tree of Thoughts", "ToT", or any other pattern name), no method narration ("applying the method", "scoring the dimensions", "this branch scores 7/10"), no internal scores or affinity arithmetic, no confidence-aggregation or checkpoint talk. Structure earns its place only as content built from the problem's own facts — a hypothesis table in a diagnosis, an options-vs-criteria matrix in a selection — never as a display of process. Before delivering, run a literal text search over the answer for the names above and for "pattern", "branch", "affinity", "dimension score", "confidence aggregation", "checkpoint"; rewrite every hit as content or delete it. The reader sees findings, not the apparatus that produced them.
+**Remember**: Quality over speed. This method trades effort for rigor. The goal is high-confidence optimal solutions, not quick answers.
