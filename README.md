@@ -31,21 +31,21 @@ npx skills add kimasplund/thinkbetter-skills -a codex -g           # all skills,
 
 | Skill | Version | The move | Validation |
 |---|---|---|---|
-| [integrated-reasoning](skills/integrated-reasoning/) | 2.2.0 | Scores the problem and routes it to the right pattern, or to a plain answer when no framework is warranted | Gauntleted ×2 (see below) |
-| [tree-of-thoughts](skills/tree-of-thoughts/) | 2.2.0 | Deep branching exploration with pruning: find THE best option | Documented methodology |
-| [breadth-of-thought](skills/breadth-of-thought/) | 2.2.0 | Wide sweep with conservative pruning: don't miss options | Documented methodology |
-| [self-reflecting-chain](skills/self-reflecting-chain/) | 2.2.0 | Stepwise reasoning with per-step validation and backtracking | Documented methodology |
-| [hypothesis-elimination](skills/hypothesis-elimination/) | 2.2.0 | Discriminating-evidence elimination: find THE cause | Documented methodology |
-| [adversarial-reasoning](skills/adversarial-reasoning/) | 2.2.0 | Systematic attack on a candidate solution before committing | Documented methodology |
-| [dialectical-reasoning](skills/dialectical-reasoning/) | 2.2.0 | Thesis, antithesis, synthesis, for trade-offs where both sides are right | Documented methodology |
-| [analogical-transfer](skills/analogical-transfer/) | 2.2.0 | Structured cross-domain borrowing for novel problems | Documented methodology |
-| [rapid-triage-reasoning](skills/rapid-triage-reasoning/) | 2.2.0 | Time-boxed, good-enough decisions for incidents | Documented methodology |
-| [negotiated-decision-framework](skills/negotiated-decision-framework/) | 2.2.0 | Multi-stakeholder alignment that needs real buy-in | Documented methodology |
-| [parallel-execution](skills/parallel-execution/) | 2.2.0 | Fan-out/fan-in for running patterns concurrently, with merge strategies | Infrastructure |
-| [reasoning-handover-protocol](skills/reasoning-handover-protocol/) | 2.2.0 | The `.reasoning/` directory protocol for chaining patterns | Infrastructure |
-| [premortem-evolved](skills/premortem-evolved/) | 2.2.0 | Assumes the plan already failed, reasons back to why, then rebuilds it | 3 blind rounds + an owner decision (see below) |
-| [option-synthesis](skills/option-synthesis/) | 1.0.0 | Pre-registers what a choice must satisfy, generates a wide field, kills finalists with premortems, synthesizes the winner | Not yet gauntleted |
-| [skill-gauntlet](skills/skill-gauntlet/) | 1.1.0 | Pre-registered, blind, regression-guarded A/B evaluation of skills, prompts and agent configs | 1.1 deltas adopted by their own gate |
+| [integrated-reasoning](skills/integrated-reasoning/) | 2.3.0 | Scores the problem and routes it to the right pattern, or to a plain answer when no framework is warranted | Gauntleted ×2 (see below) |
+| [tree-of-thoughts](skills/tree-of-thoughts/) | 2.3.0 | Deep branching exploration with pruning: find THE best option | Documented methodology |
+| [breadth-of-thought](skills/breadth-of-thought/) | 2.3.0 | Wide sweep with conservative pruning: don't miss options | Documented methodology |
+| [self-reflecting-chain](skills/self-reflecting-chain/) | 2.3.0 | Stepwise reasoning with per-step validation and backtracking | Documented methodology |
+| [hypothesis-elimination](skills/hypothesis-elimination/) | 2.2.1 | Discriminating-evidence elimination: find THE cause | Documented methodology |
+| [adversarial-reasoning](skills/adversarial-reasoning/) | 2.2.1 | Systematic attack on a candidate solution before committing | Documented methodology |
+| [dialectical-reasoning](skills/dialectical-reasoning/) | 2.2.1 | Thesis, antithesis, synthesis, for trade-offs where both sides are right | Documented methodology |
+| [analogical-transfer](skills/analogical-transfer/) | 2.2.1 | Structured cross-domain borrowing for novel problems | Documented methodology |
+| [rapid-triage-reasoning](skills/rapid-triage-reasoning/) | 2.2.1 | Time-boxed, good-enough decisions for incidents | Documented methodology |
+| [negotiated-decision-framework](skills/negotiated-decision-framework/) | 2.2.1 | Multi-stakeholder alignment that needs real buy-in | Documented methodology |
+| [parallel-execution](skills/parallel-execution/) | 2.3.0 | Fan-out/fan-in for running patterns concurrently, with merge strategies | Infrastructure |
+| [reasoning-handover-protocol](skills/reasoning-handover-protocol/) | 2.3.0 | The `.reasoning/` directory protocol for chaining patterns | Infrastructure |
+| [premortem-evolved](skills/premortem-evolved/) | 2.2.1 | Assumes the plan already failed, reasons back to why, then rebuilds it | 3 blind rounds + an owner decision (see below) |
+| [option-synthesis](skills/option-synthesis/) | 1.0.1 | Pre-registers what a choice must satisfy, generates a wide field, kills finalists with premortems, synthesizes the winner | Not yet gauntleted |
+| [skill-gauntlet](skills/skill-gauntlet/) | 1.1.1 | Pre-registered, blind, regression-guarded A/B evaluation of skills, prompts and agent configs | 1.1 deltas adopted by their own gate |
 
 ## Validation status: read this before relying on a skill
 
@@ -59,6 +59,8 @@ The suite is validated with [skill-gauntlet](skills/skill-gauntlet/): blind, pre
 On strong models, treat the router as reasoning hygiene and restraint rather than a quality lift. Records are in [evolution/integrated-reasoning/](evolution/integrated-reasoning/).
 
 **The nine patterns and two infrastructure skills** have not been individually gauntleted. Treat each as a documented methodology, not a validated one.
+
+**The 1.1.0 format and bug pass was regression-tested** blind against 1.0.0 with Haiku and Sonnet. The gate returned NO ADOPTION: four rewritten skill bodies lost the blind comparison on both models. Those bodies, plus two that leaked more method machinery, stayed at their 1.0.0 text. The reasoning-handover-protocol rewrite ships by owner decision, over a name-count check that penalises a hand-off for naming the next pattern. Record: [evolution/thinkbetter-suite/regression-2026-10-13/](evolution/thinkbetter-suite/regression-2026-10-13/RESULTS.md).
 
 **premortem-evolved 2.2.0.** Each of these rounds beat the champion on totals and blind preference, and each was blocked by a regression guard:
 

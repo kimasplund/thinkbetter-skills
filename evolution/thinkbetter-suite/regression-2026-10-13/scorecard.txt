@@ -1,0 +1,47 @@
+== G1 triggering (correct / 40)
+  haiku  old 40  new 39  PASS   new misses: ['t26']   old misses: []
+  sonnet old 39  new 39  PASS   new misses: ['t19']   old misses: ['t19']
+
+== Behavior (28/28 judged)
+  fixture        model   qual o/n  prop o/n  leak o/n  words o/n   pref   note
+  b-ir-trivial   haiku    9/9       8/9       0/0       188/158    new    Both correct, no leaks. A is slightly more direct and adds the one-ite
+  b-ir-trivial   sonnet   8/9       8/7       0/0       226/266    new    Both correct, no leaks. B's table, dict-key example and shallow-immuta
+  b-ir-urgent    haiku    8/8       8/8       0/0       328/270    tie    Both lead with revert, give an ordered plan, and have no method leaks.
+  b-ir-urgent    sonnet   9/8       7/6       0/2       631/656    old    A leads with action, has good support and refund guidance, no framewor
+  b-ir-hard      haiku    8/8       7/8       0/0       614/581    new    Both give sound advice with no method leaks. A is more direct with con
+  b-ir-hard      sonnet   8/9       7/7       0/0       785/851    new    Both reach the same recommendation. B gives a diagnostic table, a conc
+  b-tot          haiku    7/8       7/8       1/1       515/488    new    A fits the team's Postgres skills and SQL need, keeps ClickHouse as th
+  b-tot          sonnet   8/8       8/8       1/0       827/798    tie    Both pick TimescaleDB with sound reasoning. A has sharper sizing, a co
+  b-bot          haiku    8/8       7/8       0/0       922/781    tie    Both give a full, specific range with no method leaks. A is tighter an
+  b-bot          sonnet   8/8       8/7       0/0      1171/1316   old    Both broad, no leaks. A quantifies each lever and stays exploratory as
+  b-src          haiku    8/8       7/9       0/0       478/336    new    Both find the paging-implies-ownership weak link and the overreaching 
+  b-src          sonnet   9/9       9/7       0/0       537/652    old    Both find the missing third case and the paged-not-owned leap. A is ti
+  b-he           haiku    8/8       8/6       0/1       553/749    old    Both give sound, actionable diagnoses. A is longer, with an eight-row 
+  b-he           sonnet   8/8       6/8       0/1       886/690    tie    Same diagnosis. A is longer, adds fixes, and has no leaks. B is tighte
+  b-ar           haiku    9/7       8/5       0/1      1056/1564   old    B gives a verdict first, severity-ranked findings with correct brute-f
+  b-ar           sonnet   9/8       8/5       0/6      1182/1397   old    A is a verdict-first, prioritized review with concrete fixes and no me
+  b-dr           haiku    9/7       8/6       0/0       695/871    old    B is more actionable: three tiers, owned post-merge queue, feature fla
+  b-dr           sonnet   9/8       8/7       0/0       884/1062   old    Both propose risk-tiered review. A is tighter, with a backlog cap and 
+  b-at           haiku    8/7       8/5       0/1       563/936    old    B is tighter and more actionable (condition photos, double-blind revie
+  b-at           sonnet   8/8       7/8       0/0      1149/1210   old    A gives a more concrete design, launch metrics and risk-sharing, thoug
+  b-rtr          haiku    8/7       7/6       0/2       274/238    old    Both choose rollback with correct cost math. B adds a fallback trigger
+  b-rtr          sonnet   9/8       8/5       0/2       327/405    old    A leads with the action and gives a tight comparison with no method sc
+  b-ndf          haiku    7/8       8/7       0/1       748/953    new    A gives a concrete split, triggers, milestones and escalation rules. B
+  b-ndf          sonnet   8/8       8/6       0/3      1038/1406   old    A is a tighter, concrete plan with a clear signing path and no method 
+  b-pe           haiku    8/7       8/8       1/2       486/467    old    B adds scoring anchors, isolated outputs and a sensitivity check. A na
+  b-pe           sonnet   8/8       6/8       2/0       737/573    new    Both give sound plans. A adds a fact-check stage but is longer and nam
+  b-rhp          haiku    4/7       4/7       7/5       435/367    new    A is readable prose with sound open questions and attack areas. B inve
+  b-rhp          sonnet   6/8       4/8       9/5       724/502    new    B is a compact, pasteable hand-off with sensible angles. A bloats into
+
+  preference: new 10, old 14, tie 4
+  mean quality old 8.00  new 7.93
+  mean proportion old 7.32  new 7.04
+
+== Gate
+  G1 triggering            PASS
+  G2 preference            FAIL  (old preferred 14/28; both-model losses: ['b-ar', 'b-dr', 'b-at', 'b-rtr'])
+  G3 leakage               FAIL  (mechanical old 19 / new 23; judged old 21 / new 33)
+  G4 restraint             PASS  (trivial words haiku 188/158, sonnet 226/266)
+  G5 no 3-pt quality drop  PASS  []
+
+  VERDICT: NO ADOPTION
