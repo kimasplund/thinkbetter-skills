@@ -1,0 +1,62 @@
+{
+"K1F": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+ "k1": "Closing that canal on August 1 may breach the 1997 agreement... talk to the town early",
+ "k2": "Orrin is chair, farms 3,400 acres, and plans to fallow half. Open trading would let him sell",
+ "k3": "Quillon owns the Benning acreage, so Quillon's vote may count there, not Neil's",
+ "k4": "Let each farm bank part of its allocation for a post-harvest window"}},
+"P1A": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "the 'saving' may cost you $40,000 and a lawsuit... Also ask whether Dunmere would accept",
+ "k2": "he stands to profit from selling water in a short year",
+ "k3": "Quillon, not Neil, may hold the vote on 2,900 acres",
+ "k4": "The August 1 east lateral closure lands exactly on the orchards' critical water"}},
+"H7N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "The unlined canal that loses water is also what recharges the town's wells",
+ "k2": "he is the likely seller in a short year, and he chairs the board",
+ "k3": "Quillon holds those votes, not Neil... Talk to them directly",
+ "k4": "closing the lateral on that date takes the orchardists' key water away"}},
+"G0Z": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "seepage from that lateral that recharges the town's wells... check whether an early closure triggers",
+ "k2": "That is a personal financial interest in how trading is priced",
+ "k3": "Quillon may hold the entitlement and the acreage-weighted vote",
+ "k4": "Let each member schedule their allocation... A cherry grower can then hold back water for August"}},
+"F5W": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Also ask Dunmere early. They are a stakeholder with a financial and water-supply interest",
+ "k2": "Orrin... is likely a net seller of water under your plan",
+ "k3": "may now carry Quillon's vote, not his... talk to them directly",
+ "k4": "Add a delivery-timing guarantee. Instead of priority, offer a reserved post-harvest block"}},
+"O3B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "It may breach the 1997 Dunmere agreement... talk to Dunmere early",
+ "k2": "he could have a lot of water to sell under the rule he's promoting",
+ "k3": "Quillon's vote, not Neil's, counts for that land. So find out what Quillon wants",
+ "k4": "Each farm splits its allocation into in-season and post-harvest portions"}},
+"A7U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "gives the town a financial stake... Tell them what you plan before it is public",
+ "k2": "the orchards would be paying a scarcity premium to the board chair",
+ "k3": "talk to Quillon before March 18 rather than after",
+ "k4": "Orchards could hold part of their 55% for August to October by taking less in spring"}},
+"O8T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "an August 1 shutdown could put the payment and the town's well recharge at risk",
+ "k2": "Open trading would let him sell the water he doesn't use, so he benefits directly",
+ "k3": "Quillon may be the voter on any ratification... Find out what Quillon wants",
+ "k4": "bank part of their share for post-harvest use, with the water scheduled accordingly"}},
+"A2J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "If a closure cuts that seepage, you could breach the 1997 agreement or lose the payment",
+ "k2": "the board chair would collect the money",
+ "k3": "Quillon, not Neil, holds those votes",
+ "k4": "Any member may schedule when they use their 55%, including holding part back for August to October"}},
+"X4R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Find out whether it requires the lateral to carry water... whether an early shutdown is a breach",
+ "k2": "open pricing could make him the biggest beneficiary of a shortage",
+ "k3": "Quillon, not Neil, may hold that vote",
+ "k4": "Timing, not volume, as the orchard accommodation"}},
+"V8F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Closing the canal early may cut that seepage... breach of the 1997 agreement",
+ "k2": "Orrin should recuse himself from the trading rules, or at least disclose",
+ "k3": "Call Quillon before the meeting",
+ "k4": "Let any member schedule part of their allocation for late season"}},
+"O5Q": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+ "k1": "Closing the canal early may cut that seepage, and it could be read as a breach",
+ "k2": "the board chair sell them their own survival water at whatever the market bears",
+ "k3": "those acres appear to count for Quillon, not Neil... talk to Quillon before March 18",
+ "k4": "Let each farm schedule its volume across the season... reserving a block for September"}}
+}

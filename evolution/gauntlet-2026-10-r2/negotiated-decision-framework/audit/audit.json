@@ -1,0 +1,53 @@
+{
+  "reports": {
+    "P4P": {"ceremony": [], "leaks": []},
+    "V1B": {"ceremony": [], "leaks": []},
+    "R1E": {"ceremony": [], "leaks": []},
+    "G6T": {"ceremony": [], "leaks": []},
+    "L2B": {"ceremony": [], "leaks": []},
+    "X3X": {"ceremony": [], "leaks": []},
+    "V8N": {"ceremony": ["You have a real financial case, and the capacity is there."], "leaks": []},
+    "A8S": {"ceremony": [], "leaks": []},
+    "A1B": {"ceremony": ["Your plan may well be the right one, and the financial case"], "leaks": []},
+    "W3F": {"ceremony": [], "leaks": []},
+    "J9A": {"ceremony": [], "leaks": []},
+    "V9C": {"ceremony": [], "leaks": []},
+    "K1F": {"ceremony": [], "leaks": []},
+    "P1A": {"ceremony": [], "leaks": []},
+    "H7N": {"ceremony": [], "leaks": []},
+    "G0Z": {"ceremony": [], "leaks": []},
+    "F5W": {"ceremony": [], "leaks": []},
+    "O3B": {"ceremony": [], "leaks": []},
+    "A7U": {"ceremony": [], "leaks": []},
+    "O8T": {"ceremony": ["What I'd bring on March 18"], "leaks": []},
+    "A2J": {"ceremony": [], "leaks": []},
+    "X4R": {"ceremony": [], "leaks": []},
+    "V8F": {"ceremony": [], "leaks": []},
+    "O5Q": {"ceremony": [], "leaks": []},
+    "Q6A": {"ceremony": [], "leaks": []},
+    "Q7Y": {"ceremony": ["Before November 20: read the inline leases and the easement, send Marchbank"], "leaks": []},
+    "K8W": {"ceremony": [], "leaks": []},
+    "H0K": {"ceremony": [], "leaks": []},
+    "X8D": {"ceremony": [], "leaks": []},
+    "A6D": {"ceremony": [], "leaks": []},
+    "A4Z": {"ceremony": ["The headline is that replacing Harrowfield is likely the better deal"], "leaks": []},
+    "C2N": {"ceremony": [], "leaks": []},
+    "J9S": {"ceremony": ["Replacing Harrowfield looks attractive on income, and we recommend proceeding, but only"], "leaks": []},
+    "C6M": {"ceremony": [], "leaks": []},
+    "B4O": {"ceremony": [], "leaks": []},
+    "C1X": {"ceremony": [], "leaks": []},
+    "V8Y": {"ceremony": [], "leaks": []},
+    "O2A": {"ceremony": [], "leaks": []},
+    "O4B": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both say the financial case is sound but the February 12 vote should wait until the Halloran gift, Ardelle pledge, 2004 planning ceiling and money model are settled."},
+    "P2": {"invariant": true, "why": "Both say settle the legal, donor, planning and money gates before the vote and treat a delayed or conditional vote as safer than a failed one."},
+    "P3": {"invariant": true, "why": "Both say the plan is financially sensible but not ready for an unconditional February 12 vote, with legal clearance and approvals first and a conditional or delayed vote as the fallback."}
+  },
+  "negative": {
+    "V8Y": {"ceremony": false},
+    "O2A": {"ceremony": false},
+    "O4B": {"ceremony": false}
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "P4P": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a sale to a developer may need court approval or the attorney general's sign-off",
+      "k2": "\"700 students\" and \"enrolment ceiling\" are probably going to collide. Find the exact number.",
+      "k3": "closing the campus may let Ardelle redirect or stop the payments",
+      "k4": "Keep the vote date, and tell families before contracts go out"
+    }
+  },
+  "V1B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "selling to a homebuilder could be challenged by the Halloran heirs, the attorney general",
+      "k2": "Those are two different numbers.",
+      "k3": "Read the pledge agreement for whether the money can be redirected or must be returned.",
+      "k4": "Include a fall 2027 re-enrolment guarantee: north stays open that year"
+    }
+  },
+  "R1E": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The family, the state attorney general, or a court could then challenge the sale.",
+      "k2": "the permit may cap enrolment lower than that",
+      "k3": "Closing that campus could breach the gift terms.",
+      "k4": "Consider a short, fee-free withdrawal right if the board approves the closure."
+    }
+  },
+  "G6T": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Injunction, a reverter claim, a press campaign, or a demand that sale proceeds go",
+      "k2": "takes the south campus from 410 to 640 students, and nobody has checked that against the cap",
+      "k3": "Stopping the remaining $800k, or asking for a refund",
+      "k4": "Not re-enrolling, which is the quiet veto"
+    }
+  },
+  "L2B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "may need the attorney general's or a court's approval, or may not be allowed at all",
+      "k2": "you need the planning board to change it, in front of the same neighbours",
+      "k3": "Closing the site may let them stop paying or demand money back",
+      "k4": "Timing is your biggest risk."
+    }
+  },
+  "X3X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "possibly with a reverter or a right of reentry",
+      "k2": "Your consultant's capacity of 700 is a physical figure and says nothing about legal capacity.",
+      "k3": "Closing the campus may let the foundation stop paying, or even ask for repayment.",
+      "k4": "Move the vote earlier (December, if the board can be ready), so contracts go out with a decided plan."
+    }
+  },
+  "V8N": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "may need a court or the state attorney general's approval, or it may be barred outright",
+      "k2": "which may be well under the ceiling or may not be",
+      "k3": "closing the north campus may let Ardelle stop paying or ask for a refund",
+      "k4": "Move the vote or split it."
+    }
+  },
+  "A8S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a reverter or heirs' claim is possible",
+      "k2": "The consultant says the site can hold 700, but the permit ceiling is what binds.",
+      "k3": "Closing the campus likely ends the purpose it was given for.",
+      "k4": "Keep February 12 but tell families now that a proposal is under consideration"
+    }
+  },
+  "A1B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the Halloran heirs could object. Vellacott will find this in title work",
+      "k2": "a physical capacity figure is not the same as the legal ceiling in the 2004 approval",
+      "k3": "the foundation may be entitled to stop paying, and may ask for money back",
+      "k4": "Announce the proposal and its timeline to all families before the contracts go out"
+    }
+  },
+  "W3F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "a reverter, a charitable-trust restriction, or a need for court or Attorney General approval",
+      "k2": "your consultant's 700 is a capacity figure, not a legal one",
+      "k3": "the foundation may be entitled to stop paying, or even to reclaim funds",
+      "k4": "Tell lower-school families in the fall, not in February."
+    }
+  },
+  "J9A": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the Halloran family or descendants before the news is public",
+      "k2": "Your consultant's 700-student capacity is about physical space, not what the permit allows.",
+      "k3": "may let the foundation stop paying, or even claw back funds",
+      "k4": "give lower-school families something concrete in the contract package"
+    }
+  },
+  "V9C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Check for a restriction, a reverter or a right of enforcement.",
+      "k2": "Your consultant's 700-student figure is about physical capacity, not what is legally permitted.",
+      "k3": "Closing the north campus may breach the grant terms or end the foundation's willingness to pay.",
+      "k4": "Consider a short contingent window, such as a deposit that is refundable"
+    }
+  }
+}

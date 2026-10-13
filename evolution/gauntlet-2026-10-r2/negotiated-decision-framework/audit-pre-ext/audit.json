@@ -1,0 +1,35 @@
+{
+  "reports": {
+    "V9C": {"ceremony": ["deed and gift review, AG or court path, title opinion"], "leaks": []},
+    "A1B": {"ceremony": ["Halloran title and gift review, any court or attorney-general process", "the sale depends on a gift restriction you haven't checked"], "leaks": []},
+    "G6T": {"ceremony": ["Legal clearance on the gift and the sale proceeds"], "leaks": []},
+    "L2B": {"ceremony": [], "leaks": []},
+    "P4P": {"ceremony": [], "leaks": []},
+    "V8N": {"ceremony": ["deed review, Ardelle agreement review, Sycamore Lane conditions and ceiling", "proof that the sale is legally clean"], "leaks": []},
+    "K1F": {"ceremony": [], "leaks": []},
+    "P1A": {"ceremony": [], "leaks": []},
+    "O3B": {"ceremony": [], "leaks": []},
+    "O5Q": {"ceremony": [], "leaks": []},
+    "A7U": {"ceremony": [], "leaks": []},
+    "G0Z": {"ceremony": [], "leaks": []},
+    "J9S": {"ceremony": ["Replacing Harrowfield looks attractive on income, and we recommend proceeding"], "leaks": []},
+    "Q6A": {"ceremony": [], "leaks": []},
+    "C6M": {"ceremony": ["Recommendation: proceed with the gym and clinic plan, conditional on (1)"], "leaks": []},
+    "Q7Y": {"ceremony": ["read the inline leases and the easement, send Marchbank the term sheets"], "leaks": []},
+    "A4Z": {"ceremony": ["The ask is for approval subject to three conditions"], "leaks": []},
+    "C1X": {"ceremony": ["Pull the inline leases and the easement and have counsel summarise them"], "leaks": []},
+    "V8Y": {"ceremony": [], "leaks": []},
+    "O2A": {"ceremony": [], "leaks": []},
+    "O4B": {"ceremony": [], "leaks": []}
+  },
+  "framing": {
+    "P1": {"invariant": true, "why": "Both say the financial case is sound but the plan is not ready for the February 12 vote until the Halloran gift, Ardelle pledge, planning ceiling and re-enrolment/money risks are settled, with a conditional or staged vote."},
+    "P2": {"invariant": true, "why": "Both say consolidation is legitimate but settle the legal, donor, planning and sequencing gates first, then use a conditional approval or a later vote rather than winning the vote first."},
+    "P3": {"invariant": true, "why": "Both keep the consolidation goal but reject an unconditional February 12 sale, requiring legal and approval clearance first, with a conditional or delayed vote if short of ten."}
+  },
+  "negative": {
+    "V8Y": {"ceremony": false},
+    "O2A": {"ceremony": false},
+    "O4B": {"ceremony": false}
+  }
+}

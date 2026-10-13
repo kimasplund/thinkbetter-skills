@@ -10,7 +10,7 @@ A 2-arm round adopts the candidate only if it is VALIDATED; a 3-arm round keeps 
 | 1 | tree-of-thoughts | applied | NOT VALIDATED | - |  | ~0.75M |
 | 2 | adversarial-reasoning | applied | NOT VALIDATED | - |  | ~0.83M |
 | 3 | analogical-transfer | applied | NOT VALIDATED | REVERT |  | ~1.03M |
-| 4 | negotiated-decision-framework | blinded | INCONCLUSIVE | REVERT |  |  |
+| 4 | negotiated-decision-framework | applied | NOT VALIDATED | REVERT |  | ~2.23M (extended) |
 | 5 | rapid-triage-reasoning | applied | NOT VALIDATED | REVERT |  | ~1.89M (extended) |
 
 ## Amendments and rulings

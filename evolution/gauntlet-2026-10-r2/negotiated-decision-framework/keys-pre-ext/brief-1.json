@@ -1,0 +1,56 @@
+{
+  "V9C": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Check for a restriction, a reverter or a right of enforcement.",
+      "k2": "Your consultant's 700-student figure is about physical capacity, not what is legally permitted.",
+      "k3": "Read the pledge agreement and call the foundation's program officer before the vote.",
+      "k4": "Either announce the intended direction before the January 10 mailing"
+    }
+  },
+  "A1B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the Halloran heirs could object. Vellacott will find this in title work",
+      "k2": "a physical capacity figure is not the same as the legal ceiling in the 2004 approval.",
+      "k3": "the foundation may be entitled to stop paying, and may ask for money back.",
+      "k4": "no-penalty withdrawal option for a few weeks after the vote"
+    }
+  },
+  "G6T": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Injunction, a reverter claim, a press campaign, or a demand that sale proceeds go",
+      "k2": "nobody has checked that against the cap.",
+      "k3": "Stopping the remaining $800k, or asking for a refund",
+      "k4": "Not re-enrolling, which is the quiet veto"
+    }
+  },
+  "L2B": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "may need the attorney general's or a court's approval, or may not be allowed at all.",
+      "k2": "If it sits below 700, or below 640 plus growth, you need the planning board",
+      "k3": "Closing the site may let them stop paying or demand money back",
+      "k4": "Tell them early. Then model the re-enrolment hit explicitly."
+    }
+  },
+  "P4P": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "the family or its heirs may have standing to object.",
+      "k2": "\"700 students\" and \"enrolment ceiling\" are probably going to collide.",
+      "k3": "closing the campus may let Ardelle redirect or stop the payments.",
+      "k4": "a deposit that is refundable if the board decides in a way that changes their circumstances"
+    }
+  },
+  "V8N": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "may need a court or the state attorney general's approval, or it may be barred outright.",
+      "k2": "which may be well under the ceiling or may not be.",
+      "k3": "closing the north campus may let Ardelle stop paying or ask for a refund.",
+      "k4": "if re-enrolment is below a stated threshold on March 1, the board reopens the decision"
+    }
+  }
+}
