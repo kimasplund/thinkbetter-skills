@@ -1,0 +1,82 @@
+{
+  "O2T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "65 x 0.982 = about 63.8 units turning up for 62 spaces",
+    "k2": "This is not a separate headache. It feeds the same problem.",
+    "k3": "That's a revenue-management decision, so this one is yours to fix",
+    "k4": "This explains why every incident is a Friday or Saturday, and why this year is 11 against 3"}},
+  "P0L": {"k1": "✓", "k2": "~", "k3": "~", "k4": "~", "evidence": {
+    "k1": "Selling 65 at 1.8% gives about 63.8 expected arrivals, which is above 62.",
+    "k2": "Campervans booked as \"car\" by default would make this worse.",
+    "k3": "Decide the number, not the engine. This is a business call for you and Odile.",
+    "k4": "worst on Friday and Saturday because the dropped sailings concentrated demand on those days"}},
+  "G0S": {"k1": "✓", "k2": "~", "k3": "~", "k4": "~", "evidence": {
+    "k1": "The engine is doing what it was told. The number it was told is out of date.",
+    "k2": "If they differ, that is a second cause, and it is an engine problem.",
+    "k3": "It costs a few seats of revenue, which is far cheaper than people left on the pier.",
+    "k4": "push the same demand onto fewer sailings, so full sailings are more common"}},
+  "J0G": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "At 1.8%, a full sailing of 65 units gives about 65 x 0.982 = 63.8 units showing up",
+    "k2": "Every misdeclared vehicle means the engine thinks it has sold less deck space than it has.",
+    "k3": "Tell Odile the factor is a business parameter, not a code setting",
+    "k4": "a sold-out sailing is where overbooking bites. This fits all 11 incidents being Fridays or Saturdays."}},
+  "U2Q": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+    "k1": "neither of them is right, because this probably isn't a software bug",
+    "k2": "This isn't a separate headache. It makes the overflow worse",
+    "k3": "The parameter is a business decision, and it has gone stale.",
+    "k4": "Those sailings fill completely, which is the only situation where overbooking can hurt you."}},
+  "L5L": {"k1": "✓", "k2": "✓", "k3": "✗", "k4": "~", "evidence": {
+    "k1": "So the engine is doing what it was configured to do.",
+    "k2": "it adds to the overflow regardless of the factor",
+    "k3": "Odile should set the value, since she owns the forecast.",
+    "k4": "each remaining weekend sailing sells out and reaches the limit far more often"}},
+  "I8J": {"k1": "✓", "k2": "~", "k3": "~", "k4": "~", "evidence": {
+    "k1": "So the engine is doing what it was told.",
+    "k2": "Your deckhands' complaint may be pointing at the same fault, so I would not treat it as separate.",
+    "k3": "The benefit is no stranded passengers, which the council and reviews are already punishing.",
+    "k4": "The dropped sailings will have pushed demand onto the remaining ones, so more of them sell out."}},
+  "D9R": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "I don't think the engine has a bug.",
+    "k2": "A handful of misclassified vehicles per sailing is enough to push an exactly-full deck over.",
+    "k3": "It costs a little revenue and removes most of the stranded-customer risk.",
+    "k4": "Dropping one Friday and one Saturday sailing pushed the same demand into fewer sailings."}},
+  "G5D": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "Overflow is the normal outcome on a full sailing, not an exception.",
+    "k2": "Either way, the default should be fixed.",
+    "k3": "You lose a little revenue, but you stop leaving people on the pier.",
+    "k4": "Dropping one Friday and one Saturday sailing concentrated the demand on the sailings that remain."}},
+  "M3V": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "it probably isn't a software bug. The engine is doing what it was told.",
+    "k2": "A few of those per sailing, on top of an overbooking margin that is already too high",
+    "k3": "the cost of leaving someone on the pier (four hours' wait, a review, a complaint to the council) is much higher",
+    "k4": "why it jumped from 3 to 11 after 1 June"}},
+  "X9C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "So the engine is working as configured, but the 0.06 was calibrated on winter data",
+    "k2": "lowering the factor fixes the overbooking part but not the mix part",
+    "k3": "the question is \"what should the number be?\", not \"who broke it?\"",
+    "k4": "overbooking only bites on a sold-out sailing. That fits 11 incidents since 1 June"}},
+  "K4K": {"k1": "✓", "k2": "✓", "k3": "✗", "k4": "~", "evidence": {
+    "k1": "the engine's arithmetic is doing what it was set up to do",
+    "k2": "it can hit on any sailing, not only in the high-no-show season",
+    "k3": "Set the weekend factor to 0 or 0.01 for now.",
+    "k4": "Dropping a Friday and a Saturday sailing pushed weekend demand onto fewer sailings"}},
+  "B2I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "the engine is probably doing exactly what it was told, and the fault is the overbooking factor",
+    "k2": "Every misdeclared campervan quietly oversells the sailing by one unit, on top of the overbooking.",
+    "k3": "since she owns the setting, this is a revenue-management decision",
+    "k4": "Dropping a Friday and a Saturday sailing pushed demand onto the remaining weekend sailings"}},
+  "U2U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "the engine is doing exactly what it was told, and what it was told is out of date",
+    "k2": "Lowering the factor handles the average problem. Fixing the form handles the variance",
+    "k3": "The setting is stale, and it's a business parameter, not code.",
+    "k4": "which pushes the same demand onto fewer sailings and makes sell-outs more common"}},
+  "A3P": {"k1": "✓", "k2": "~", "k3": "✗", "k4": "~", "evidence": {
+    "k1": "the bug is the overbooking setting, not the code",
+    "k2": "It doesn't cause the overbooking, but it adds load the sale never counted",
+    "k3": "Lower the factor now.",
+    "k4": "I can't confirm that without the booking data, so treat it as a question to check, not a cause."}},
+  "M6C": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+    "k1": "IT is right that the engine isn't mis-computing",
+    "k2": "The engine then believes it has space it doesn't have, regardless of no-shows.",
+    "k3": "cap it at a figure you can defend to the council",
+    "k4": "Concentrated demand can push the sold-to-capacity ratio up and is a plausible second contributor."}}
+}

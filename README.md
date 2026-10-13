@@ -58,6 +58,7 @@ npx skills add kimasplund/thinkbetter-skills -a codex -g           # all skills,
 
   premortem-evolved and option-synthesis deliver structured reports, which the rubric's machinery guard penalises by design.
 - **Follow-up:** five skills got a targeted edit and a fresh round under amended gates. None was adopted, so all five ship unchanged.
+- **Smaller models:** Haiku with a skill does not reach Sonnet without one, for any of the 15 skills (about a point lower on value). The skills lift Sonnet more than they lift Haiku. See the [Haiku uplift summary](evolution/haiku-uplift-2026-10/SUMMARY.md).
 - **Owner decisions:** some versions ship over a NO ADOPTION verdict or with fixes made outside a round. 1.2.1 re-applies three arithmetic fixes that a revert had undone. Each owner decision is disclosed in the [CHANGELOG](CHANGELOG.md).
 
 The full record, with design, per-round findings, the instrument's limits and earlier rounds, is in [docs/VALIDATION.md](docs/VALIDATION.md). Per-skill scorecards are in the [October ledger](evolution/gauntlet-2026-10/LEDGER.md) and the [follow-up ledger](evolution/gauntlet-2026-10-r2/LEDGER.md).

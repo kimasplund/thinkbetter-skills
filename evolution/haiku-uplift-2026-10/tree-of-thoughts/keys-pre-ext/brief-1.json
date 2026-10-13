@@ -1,0 +1,74 @@
+{
+  "N4I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "this needs a contract schedule amendment, which is likely slower than 3 weeks",
+      "k2": "you have to submit by about week 3. That rules out anything longer",
+      "k3": "the server applies the decrement when the form uploads",
+      "k4": "queued uploads that wait until re-authentication on reconnect"
+    }
+  },
+  "D3X": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you'd need Harrowgate's agreement to amend the schedule",
+      "k2": "a build has to be submitted by about week 3",
+      "k3": "Don't sync absolute counts. Log each part use as an event",
+      "k4": "require a normal sign-in on reconnect before uploading ... with the original timestamps"
+    }
+  },
+  "P5L": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "You would need a contract amendment from Harrowgate before you could ship it",
+      "k2": "Action queue: 5 + 8 = 13 weeks. Misses.",
+      "k3": "Do not upload an absolute count like \"stock = 7\". Record each part as an event",
+      "k4": "prompt for a fresh sign-in, then upload ... attributed to the technician and device"
+    }
+  },
+  "O5F": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "you would need a contract amendment from Harrowgate first",
+      "k2": "You also get one release, not several.",
+      "k3": "Stock counts must merge as changes, not as overwrites.",
+      "k4": "Uploads must happen only after a fresh sign-in on reconnect."
+    }
+  },
+  "J2K": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "it needs a contract amendment and Harrowgate's sign-off before go-live",
+      "k2": "Only the two-week version can be in review by week 2",
+      "k3": "The API should accept every logged use with its real timestamp and flag any stock",
+      "k4": "Test this directly: a outage longer than 12 hours, then reconnect"
+    }
+  },
+  "O2I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Using it breaks the contract until Harrowgate agrees to amend the schedule",
+      "k2": "submitted for review within about 3 weeks",
+      "k3": "send each part use as its own record with an ID generated on the handset",
+      "k4": "server accepts the stored forms only after that fresh sign-in"
+    }
+  },
+  "D5E": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "Driftwell would need Harrowgate's contract schedule amended before any job data goes to it",
+      "k2": "That leaves roughly a three-week build window, and only one option fits it.",
+      "k3": "I'd keep parts logging online-only",
+      "k4": "Queued uploads wait and sync after the technician signs in again on reconnect."
+    }
+  },
+  "R0S": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "~",
+    "evidence": {
+      "k1": "Adding Driftwell needs a contract amendment with Harrowgate",
+      "k2": "Submitting at week 5 leaves about 6 weeks of review. That is tight but possibly survivable.",
+      "k3": "record each part as a pending line item on the form. The server applies the decrement",
+      "k4": "a device-bound credential that the server accepts for uploads made during the offline window"
+    }
+  }
+}

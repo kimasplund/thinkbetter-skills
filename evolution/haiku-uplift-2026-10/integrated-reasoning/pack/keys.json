@@ -1,0 +1,68 @@
+{
+  "brief-1": [
+    {
+      "id": "k1",
+      "text": "Looks like picking the best of three known options, but it is really a root-cause question that has to be answered first. The two-year-old test kiln crazes at about 8%, close to the main kiln's 9%, so kiln age and condition can't explain the jump. The rise starts in May, just after the April clay body switch, with glazes unchanged. Crazing that appears weeks later after dishwashing points to a clay-glaze fit or moisture-expansion problem, not the firing equipment. A strong reply says no replacement kiln is likely to fix the crazing. It recommends confirming the cause first, for example a trial batch on the old clay body, a glaze-fit or thermal-shock test, or adjusting the glaze to suit the new body.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "Looks like a decision under time pressure because Kiln A's quote expires Friday, but nothing in the facts makes Friday binding. Losing one vendor's quote costs little next to buying an €18,400 kiln that doesn't fix the defect. A strong reply refuses to let the quote deadline drive the purchase and does not recommend buying by Friday for the crazing problem.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Looks like a three-way stakeholder trade-off between the partners, but the three preferences answer three different questions: Ines's is about the defect, the user's is about capacity, and Tomasz's is about a new reduction-glaze product line. They should be separated, not settled as one kiln vote. A strong reply decouples them: fix the crazing on its own evidence, then judge capacity and reduction finishes as separate business cases. It also correctly applies the decision rule, under which Kiln B is below €15,000 and is the production lead's call, while A and C need unanimity.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "The capacity case for the larger Kiln A looks independent, but it depends on the diagnosis. Cutting rejects from 9% back to about 2% frees roughly 7% of output, about 170 pieces a week out of 2,400. That is more once you count the free remakes, which take production slots of their own. A strong reply notes that fixing the crazing recovers part of the capacity shortfall, so the case for a 30% larger kiln should be re-evaluated afterwards rather than assumed.",
+      "split": "held-out"
+    }
+  ],
+  "brief-2": [
+    {
+      "id": "k1",
+      "text": "Looks like a software bug hunt, but the engine is doing exactly what it was configured to do. With a cap of floor(62 x 1.06) = 65 bookings and a 1.8% summer weekend no-show rate, about 63.8 vehicles are expected to show for a 62-space deck, so an oversell is the designed outcome whenever a sailing sells to the cap. The factor was calibrated on a 7.5% winter no-show rate, which suits winter but not summer weekends. A strong reply says there is no IT bug and the root problem is a miscalibrated overbooking factor, ideally showing the arithmetic.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "The campervan complaint is presented as a separate loading gripe, but it is a second, independent cause of the oversells. The form defaults to 'car' (1 car-equivalent) while campervans take 2, so the engine undercounts deck use and can oversell even with an overbooking factor of zero. It only becomes visible once the overbooking explanation is worked through and turns out not to account for everything. A strong reply identifies the vehicle-type default as a contributing cause and says that fixing the factor alone won't fully solve the problem (for example, require an explicit vehicle choice, or check declarations at check-in).",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "Looks like a blame dispute between IT and the revenue manager that needs mediating, and the user asks 'who's right'. But the factual question is settled by arithmetic, and the real open question is a policy trade-off: overbooking revenue against the cost of stranding customers on an island route where the next sailing can be four hours later, with council complaints already in. A strong reply frames the fix as a management decision about acceptable denied-boarding risk, for example a season- or day-specific factor or no overbooking on peak weekend sailings, rather than a bug to patch or a winner to declare.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "The jump from 3 incidents last summer to 11 this summer looks like evidence that something in the system changed. But the factor is unchanged and summer no-show rates were presumably low last year too. The change is the 1 June timetable: dropping a Friday and a Saturday sailing concentrates demand, so more weekend sailings sell to the overbooked cap, and overbooking only bites on sailings that sell out. A strong reply explains the year-on-year increase through the timetable cut rather than an engine or IT change.",
+      "split": "held-out"
+    }
+  ],
+  "brief-3": [
+    {
+      "id": "k1",
+      "text": "Looks like a brainstorm-and-negotiate problem, but it is a sequential timeline problem with a hidden dependency. The label application needs the final measured ABV, which exists only after fermentation. Even brewed today, the saison has no final ABV until about day 11; 25 business days (about 35 days) of approval and 5 days of printing push canned saison to about day 51, past the day-49 festival. A strong reply traces this chain and concludes that a canned saison cannot be ready for the festival.",
+      "split": "held-out"
+    },
+    {
+      "id": "k2",
+      "text": "The registry only covers packaged product, and festival pours are on draft, so the label bottleneck does not apply to the saison on tap. Once the canned route is ruled out it is easy to drop the saison entirely. A strong reply notes that the saison can still debut on draft without registry approval.",
+      "split": "held-out"
+    },
+    {
+      "id": "k3",
+      "text": "The obvious fermenter, FV2, is free in 23 days. That gives 23 + 28 = 51 days, which misses the festival and makes the saison look impossible. FV4 is free now and holds 10 hl, about double the roughly 5 hl poured last year, so it is large enough even though it is normally dismissed as a pilot vessel. Brewed in FV4, the saison is ready in about 28 days and can start as late as about day 21. A strong reply spots that FV4 makes the draft saison feasible and gives the start-by window.",
+      "split": "held-out"
+    },
+    {
+      "id": "k4",
+      "text": "Looks like a genuine conflict needing negotiation or compromise between Marguerite and Dov, but the timeline dissolves it: both can happen. The new saison goes on draft for the pours, and the renamed Harvest Amber goes into cans for the merch tent, since its ABV is known and the label only needs submitting within about the first 9 days (49 - 5 printing - 35 approval). A strong reply recommends doing both with concrete deadlines (submit the amber label within about a week, brew the saison in FV4 within about three weeks), rather than offering mediation tactics or a long option list.",
+      "split": "held-out"
+    }
+  ]
+}

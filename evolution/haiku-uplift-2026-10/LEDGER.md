@@ -7,8 +7,8 @@ Each skill reuses the sealed pack, and the Sonnet replies where the skill text i
 |---|---|---|---|---|---|---|
 | 1 | hypothesis-elimination | applied | DOES NOT REACH | INCONCLUSIVE |  |  |
 | 2 | reasoning-handover-protocol | applied | DOES NOT REACH | NOT VALIDATED |  |  |
-| 3 | integrated-reasoning | frozen | INCONCLUSIVE | INCONCLUSIVE |  |  |
-| 4 | tree-of-thoughts | frozen | INCONCLUSIVE | INCONCLUSIVE |  |  |
+| 3 | integrated-reasoning | applied | DOES NOT REACH | NOT VALIDATED |  |  |
+| 4 | tree-of-thoughts | applied | DOES NOT REACH | NOT VALIDATED |  |  |
 | 5 | breadth-of-thought | applied | DOES NOT REACH | NOT VALIDATED |  |  |
 | 6 | self-reflecting-chain | applied | DOES NOT REACH | INCONCLUSIVE |  |  |
 | 7 | parallel-execution | applied | DOES NOT REACH | NOT VALIDATED |  |  |

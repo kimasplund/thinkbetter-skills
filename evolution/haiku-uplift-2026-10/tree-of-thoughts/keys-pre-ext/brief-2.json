@@ -1,0 +1,74 @@
+{
+  "B3J": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "about 40,500 m³ a season, which is already above your 40,000 m³ licence",
+      "k2": "a summer bike park falls outside it",
+      "k3": "lease is also below the 15-year threshold for regional funding",
+      "k4": "Selling before 2029 means repaying the €1.2M buyout grant"
+    }
+  },
+  "O0Z": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "9 ha x 4,500 m³ = 40,500 m³ a season. Your licence allows 40,000",
+      "k2": "A summer bike park breaches that as written.",
+      "k3": "about 9 years remain. The fund needs at least 15 years",
+      "k4": "must be repaid if the land is sold within ten years of 2019"
+    }
+  },
+  "T6G": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Existing use plus the new system would be about 71,500 m³",
+      "k2": "A summer bike park on those slopes breaches it unless the Grazing Commons Trust agrees",
+      "k3": "no 50% funding for the bike park, the chairlift refit, or other upper-slope capital",
+      "k4": "any sale before 2029 triggers repayment"
+    }
+  },
+  "O0S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "The proposal alone is already over the limit.",
+      "k2": "A summer bike park appears to be outside the lease as written.",
+      "k3": "You renewed for ten years in 2025, so the bike park and the Summit refit are both excluded.",
+      "k4": "Any sale in that window triggers repayment."
+    }
+  },
+  "O4J": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That leaves about 9,000 m³ of headroom, which covers about 2 ha, not 9.",
+      "k2": "A summer bike park is outside what you are currently allowed to do.",
+      "k3": "the €850k would get no grant and would be paid in full",
+      "k4": "any sale before 2029 starts roughly €1.2M in the hole"
+    }
+  },
+  "U1V": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "already over the 40,000 m³ licence before anything else is counted",
+      "k2": "breaches that clause as it stands",
+      "k3": "A €600k chairlift refit on land with nine years left ... gets no 50% grant",
+      "k4": "A sale agreed in the next couple of years would trigger that repayment"
+    }
+  },
+  "Q5S": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Even if those guns were retired, the plan sits at or over the cap.",
+      "k2": "would break that clause unless the Grazing Commons Trust agrees in writing",
+      "k3": "refit is not grant-eligible and the community pays the full €600k",
+      "k4": "a sale before 2029 would trigger repayment"
+    }
+  },
+  "B7T": {
+    "k1": "~", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "That leaves about 9,000 m³ of headroom, which covers roughly 2 ha",
+      "k2": "A summer bike park breaches that clause as it stands.",
+      "k3": "under the 15 years the tourism fund requires ... 50% grant would not apply",
+      "k4": "A sale now would trigger that repayment"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "G5D": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "you expect about 63.8 units to turn up against 62 spaces",
+      "k2": "Possible second fault: vehicle weights",
+      "k3": "You lose a little revenue, but you stop leaving people on the pier",
+      "k4": "Dropping one Friday and one Saturday sailing concentrated the demand"
+    }
+  },
+  "I8J": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "So the engine is doing what it was told.",
+      "k2": "If the sold total is well below 65 but the boarded total is still over 62",
+      "k3": "The cost is about one or two empty places per sailing",
+      "k4": "The dropped sailings will have pushed demand onto the remaining ones"
+    }
+  },
+  "O2T": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "IT is correct that there's no software bug.",
+      "k2": "This is not a separate headache. It feeds the same problem",
+      "k3": "That's a revenue-management decision, so this one is yours to fix",
+      "k4": "This explains why every incident is a Friday or Saturday, and why this year is 11 against 3"
+    }
+  },
+  "A3P": {
+    "k1": "✓", "k2": "~", "k3": "✗", "k4": "~",
+    "evidence": {
+      "k1": "the bug is the overbooking setting, not the code",
+      "k2": "It doesn't cause the overbooking, but it adds load the sale never counted",
+      "k3": "No policy or risk trade-off framing; only technical fixes",
+      "k4": "I can't confirm that without the booking data, so treat it as a question to check"
+    }
+  },
+  "U2Q": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "this probably isn't a software bug. The engine is doing what it was told.",
+      "k2": "This isn't a separate headache. It makes the overflow worse",
+      "k3": "The parameter is a business decision, and it has gone stale.",
+      "k4": "Last summer you had three overflows all season. Now you have 11"
+    }
+  },
+  "B2I": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "the engine is probably doing exactly what it was told",
+      "k2": "A second, smaller contributor",
+      "k3": "Last, a business choice: if you want overbooking to stay on, set a policy",
+      "k4": "It was last summer's low-demand weekends that hid the problem"
+    }
+  },
+  "U2U": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "I don't think there is a bug to find.",
+      "k2": "The campervan issue is not separate",
+      "k3": "a few empty spaces cost far less than leaving cars on the pier",
+      "k4": "You also removed one Friday and one Saturday sailing, which pushes the same demand onto fewer sailings"
+    }
+  },
+  "K4K": {
+    "k1": "✓", "k2": "✓", "k3": "✗", "k4": "~",
+    "evidence": {
+      "k1": "The engine's arithmetic is doing what it was set up to do.",
+      "k2": "it can hit on any sailing, not only in the high-no-show season",
+      "k3": "No policy trade-off framing; treats it as stale parameter plus form default",
+      "k4": "Dropping a Friday and a Saturday sailing pushed weekend demand onto fewer sailings"
+    }
+  }
+}

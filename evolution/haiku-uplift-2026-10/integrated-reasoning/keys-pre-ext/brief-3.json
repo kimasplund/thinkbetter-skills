@@ -1,0 +1,74 @@
+{
+  "P2I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Submitting on day 11 gets approval on day 46, and printing takes 5 more days.",
+      "k2": "The registry only deals with packaged product, so please confirm with them that a draft debut needs nothing",
+      "k3": "you can rebrew in FV4 up to about day 19-20 and still make it",
+      "k4": "the amber label goes to the registry and the saison goes into FV4"
+    }
+  },
+  "T7A": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "earliest application is around day 27. Twenty-five business days later is about day 62",
+      "k2": "I have assumed draft sales don't need registry approval.",
+      "k3": "A 10 hl batch is about double last year's draft volume, so it should cover the weekend",
+      "k4": "Ask them to agree on the split by 16 October, so the paperwork can start."
+    }
+  },
+  "G0W": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "✓",
+    "evidence": {
+      "k1": "You can't have final lab ABV until the beer is finished",
+      "k2": "I'm assuming kegs and draft are fine, but I can't confirm that.",
+      "k3": "On FV4 (free now) it is ready around day 27, with about 3 weeks of slack.",
+      "k4": "The latest you could apply and still make it is about day 9."
+    }
+  },
+  "I8W": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "Submit about 9 Nov (needs final lab ABV) ... Too late.",
+      "k2": "Kegs should not need a registry approval, since the registry only handles packaged product",
+      "k3": "Brew by 14 Oct ... Fits. About three weeks of slack.",
+      "k4": "Both deadlines fall today, so waiting another round costs one of the two ideas."
+    }
+  },
+  "X3I": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "you can't apply until the beer is finished (about day 27). Then 25 business days",
+      "k2": "I'm reading \"the registry only deals with packaged product\" as meaning draft kegs don't need label approval.",
+      "k3": "The latest safe brew day is around day 14 to 18",
+      "k4": "Brew the saison in FV4 now and pour it on draft only."
+    }
+  },
+  "Y8W": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "Cans of the saison won't make the festival. The registry needs the final lab ABV",
+      "k2": "so a draft-only saison shouldn't need approval. Confirm that with the registry",
+      "k3": "FV2 ... puts packaging on day 49 or 50. Don't plan on FV2 for this.",
+      "k4": "Marguerite gets the saison on tap at the festival. Dov gets the new name"
+    }
+  },
+  "U5D": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "Smoked plum saison in cans | Cans | Mid-December or later, after registry approval | No",
+      "k2": "A draft-only saison should not need approval, but confirm this with the registry",
+      "k3": "To keg by Nov 30, the brew has to start by about Nov 3.",
+      "k4": "brew by about Nov 3, submit the label by about Oct 14"
+    }
+  },
+  "V1C": {
+    "k1": "✓", "k2": "✓", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "which you only have after conditioning (about day 27). Then 25 business days",
+      "k2": "Draft kegs don't need registry approval. You said the registry only deals with packaged product",
+      "k3": "In FV4 (free now), it would be ready around day 28-29, which leaves about three weeks of slack.",
+      "k4": "Approval lands around day 35, printing finishes around day 40, and you have about 9 days of buffer."
+    }
+  }
+}

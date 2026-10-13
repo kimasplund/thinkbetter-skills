@@ -1,0 +1,82 @@
+{
+  "Y0L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "Your two-year-old test kiln... shows about 8%... the common factor is the clay body",
+    "k2": "a missed quote costs you at most a re-quote, perhaps a few percent",
+    "k3": "Capacity is a genuine, separate decision... C is a separate strategic bet.",
+    "k4": "you stop remaking about 7% of pieces. Revisit then whether you need A's extra space"}},
+  "O1J": {"k1": "✓", "k2": "~", "k3": "~", "k4": "~", "evidence": {
+    "k1": "none of the three kilns is likely to bring crazing back to 2%",
+    "k2": "get all three partners to sign off on it before Friday",
+    "k3": "Take A to Ines and Tomasz as the capacity decision.",
+    "k4": "roughly 168 pieces a week out of 2,400... capacity you already own"}},
+  "D9Q": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "none of the three kilns is likely to fix the crazing",
+    "k2": "don't let Friday's deadline decide this... If they refuse, let the quote lapse.",
+    "k3": "C deserves a separate business case, not a rushed choice this week.",
+    "k4": "it changes how big a kiln you need"}},
+  "R7B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "A new kiln would not fix this.",
+    "k2": "Its six-week lead time and Friday expiry are a sales deadline.",
+    "k3": "A may be right for space, B for control, and C if reduction demand grows.",
+    "k4": "Fix the rejects first and you may find you already have more room"}},
+  "I7B": {"k1": "~", "k2": "✗", "k3": "~", "k4": "✗", "evidence": {
+    "k1": "don't buy any kiln expecting it to fix the crazing. The evidence points to the clay body",
+    "k2": "Buy Kiln A if all three partners can sign off by Friday.",
+    "k3": "Kiln B is the fallback if you can't get three-way agreement in time.",
+    "k4": "No mention of reject-rate recovery freeing capacity"}},
+  "V7X": {"k1": "✓", "k2": "~", "k3": "~", "k4": "✗", "evidence": {
+    "k1": "Do not sign for any kiln before the body test is done",
+    "k2": "ask for a short extension, or make the decision on capacity grounds alone",
+    "k3": "Take it to all three partners as a capacity decision, not a crazing fix.",
+    "k4": "No link between fixing crazing and recovered capacity"}},
+  "K0J": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✗", "evidence": {
+    "k1": "A quote deadline is a seller's pressure tactic, not a reason to decide.",
+    "k2": "Agree to hold off on buying under Friday's deadline.",
+    "k3": "Park C until you have a firm order from reduction-glaze customers",
+    "k4": "Capacity framed as separate; no recovered-capacity point"}},
+  "G9H": {"k1": "~", "k2": "~", "k3": "✓", "k4": "✗", "evidence": {
+    "k1": "controlled cooling is the only feature that touches the mechanism",
+    "k2": "If you must decide by Friday, the least risky choice is Kiln B.",
+    "k3": "it is a separate decision from fixing crazing and should be judged on its own",
+    "k4": "No mention of crazing fix freeing capacity"}},
+  "C5D": {"k1": "✓", "k2": "~", "k3": "✓", "k4": "✗", "evidence": {
+    "k1": "Buying any of these kilns may not fix it.",
+    "k2": "If you must decide by Friday, I'd pick Kiln B.",
+    "k3": "That is a product decision about two restaurant requests, not a fix for crazing.",
+    "k4": "No link between rejects and capacity freed"}},
+  "S3N": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✗", "evidence": {
+    "k1": "Buying a kiln now would be an expensive way to test that theory.",
+    "k2": "the quote's expiry is a reason to be careful, not a reason to rush",
+    "k3": "with the capacity case (Kiln A) assessed separately",
+    "k4": "No mention of recovered capacity from fixing crazing"}},
+  "A6T": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✗", "evidence": {
+    "k1": "Don't commit €15,000 to €22,000 of kiln to a problem that probably sits in the clay",
+    "k2": "Don't sign for any kiln by Friday on the strength of this problem.",
+    "k3": "Tomasz's reduction glaze interest is a real market question, but it's separate",
+    "k4": "No mention of capacity regained from fewer rejects"}},
+  "X3B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "none of the quotes addresses it.",
+    "k2": "a quote that expires on Friday is a sales tactic",
+    "k3": "If Tomasz thinks reduction glazes are a real market, ask how many orders",
+    "k4": "Fixing crazing could free up roughly 7% of output on its own"}},
+  "R7U": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "So none of the three kilns fixes crazing.",
+    "k2": "a hard deadline is a reason for caution, not for speed.",
+    "k3": "Who wants it | You | Ines | Tomasz",
+    "k4": "part of your capacity squeeze is the crazing itself. Fixing it gives back some capacity"}},
+  "N1E": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+    "k1": "A kiln would not lower the 9%.",
+    "k2": "Let the quote lapse, or ask the supplier for a two to three week extension.",
+    "k3": "this week's decision shouldn't be framed as a choice among kilns.",
+    "k4": "That is about 7% of your output... Fixing the crazing may free up more capacity"}},
+  "D9K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+    "k1": "A new kiln will probably not fix a body-glaze mismatch.",
+    "k2": "Missing the Friday deadline costs you the quote's price and lead-time position",
+    "k3": "Treat capacity as a separate question.",
+    "k4": "roughly 170 extra pieces weekly, which may wipe out the saving on the clay"}},
+  "V7Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✗", "evidence": {
+    "k1": "buying equipment won't fix the crazing if that's the cause.",
+    "k2": "Don't commit to any kiln by Friday.",
+    "k3": "You have two separate problems: capacity... and crazing... Only one is a kiln question.",
+    "k4": "capacity problem can be decided separately; no recovered-capacity point"}}
+}

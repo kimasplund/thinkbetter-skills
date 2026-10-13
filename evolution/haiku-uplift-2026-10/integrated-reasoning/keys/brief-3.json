@@ -1,0 +1,82 @@
+{
+"P3V": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "approval would land around day 46 and printing would take it past day 49",
+  "k2": "Saison on draft only has no can label, so the registry should not be involved.",
+  "k3": "In FV4 (free now) it would be ready around day 28",
+  "k4": "Rebrand the amber, file the label this week, and sell it in cans"}},
+"X3I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "you can't apply until the beer is finished (about day 27)",
+  "k2": "meaning draft kegs don't need label approval",
+  "k3": "The latest safe brew day is around day 14 to 18",
+  "k4": "Submit the Harvest Amber rename and new label to the registry this week."}},
+"H6Z": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Even if you could apply at the end of primary fermentation (about day 11)",
+  "k2": "On draft, the saison can work if the registry's label rule applies only to cans.",
+  "k3": "Keep the saison brew date early enough (before about day 17)",
+  "k4": "Get Dov's label finalized and filed immediately."}},
+"J3Q": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+  "k1": "approval would land around day 62, after the festival",
+  "k2": "draft is the only way the saison can pour at the festival",
+  "k3": "which leaves about three weeks of slack",
+  "k4": "If any of those slip, drop one of the two projects."}},
+"V1C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "approval lands around day 62, plus 5 days of printing. That's well past the festival.",
+  "k2": "Draft kegs don't need registry approval.",
+  "k3": "In FV4 (free now), it would be ready around day 28-29",
+  "k4": "Brew the saison in FV4 now and serve it on draft only."}},
+"Y8W": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+  "k1": "Cans of the saison won't make the festival.",
+  "k2": "so a draft-only saison shouldn't need approval",
+  "k3": "That's ready around day 27-28, well before the festival.",
+  "k4": "Neither has to lose for the other to win."}},
+"K5E": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "✓", "evidence": {
+  "k1": "a label application (lab ABV, then 25 business days) would finish in early-to-mid January",
+  "k2": "Confirm with the registry that draft/keg needs no can-label approval.",
+  "k3": "she must brew by Friday at the latest",
+  "k4": "Plum saison on tap, renamed amber in cans."}},
+"C4X": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "which lands near day 46, and can printing takes 5 more days, so day 51",
+  "k2": "Saison on draft: this works. The registry only deals with packaged product",
+  "k3": "That leaves about three weeks of slack.",
+  "k4": "If you wait much more than a week to file, that buffer is gone."}},
+"U5D": {"k1": "~", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Mid-December or later, after registry approval",
+  "k2": "A draft-only saison should not need approval, but confirm this",
+  "k3": "To keg by Nov 30, the brew has to start by about Nov 3.",
+  "k4": "Both ideas fit if they are decided this week."}},
+"T7A": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+  "k1": "the earliest application is around day 27. Twenty-five business days later is about day 62",
+  "k2": "Draft is the only realistic saison format for this event",
+  "k3": "That fits comfortably for draft.",
+  "k4": "Ask them to agree on the split by 16 October"}},
+"I8W": {"k1": "✓", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+  "k1": "Approval about mid-December | Too late.",
+  "k2": "Kegs should not need a registry approval",
+  "k3": "Brew by 14 Oct | Kegged about 9 Nov | Fits. About three weeks of slack.",
+  "k4": "Both deadlines fall today, so waiting another round costs one of the two ideas."}},
+"H7U": {"k1": "~", "k2": "✓", "k3": "~", "k4": "~", "evidence": {
+  "k1": "Even if it were ready, the registry needs packaged product and a lab-measured ABV",
+  "k2": "I'm assuming draft doesn't need registry approval, since the rule you described covers can labels.",
+  "k3": "Brewed today, the beer would be ready to keg around day 27",
+  "k4": "Set a same-day deadline for the amber application."}},
+"K3P": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Registry approval then takes 25 business days (into mid-December)",
+  "k2": "Draft-only sales don't go through the Provincial Beverage Registry",
+  "k3": "That leaves about three weeks of margin.",
+  "k4": "Marguerite gets the tap with the saison. Dov gets the cans with the amber refresh."}},
+"P2I": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Submitting on day 11 gets approval on day 46, and printing takes 5 more days.",
+  "k2": "please confirm with them that a draft debut needs nothing",
+  "k3": "you can rebrew in FV4 up to about day 19-20",
+  "k4": "the amber label goes to the registry and the saison goes into FV4"}},
+"G0W": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Add 25 business days (about 35 calendar days) and you reach roughly day 62",
+  "k2": "I'm assuming kegs and draft are fine, but I can't confirm that.",
+  "k3": "ready around day 27, with about 3 weeks of slack",
+  "k4": "The latest you could apply and still make it is about day 9."}},
+"V8K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "That lands on day ~51 at best and day ~67 more realistically.",
+  "k2": "as far as I can tell kegs don't go through it",
+  "k3": "That leaves two to three weeks of slack.",
+  "k4": "The latest sensible application date is around day 7-9."}}
+}

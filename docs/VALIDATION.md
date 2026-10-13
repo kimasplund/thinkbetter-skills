@@ -10,6 +10,17 @@ The 1.2.0 reverts restored the v1.0.0 bodies of integrated-reasoning, tree-of-th
 - **tree-of-thoughts 2.3.2:** the confidence likelihood ratio no longer saturates at the 95% cap.
 - **breadth-of-thought 2.3.2:** the confidence formula reaches its full range, and every branch count agrees with the others.
 
+## Haiku uplift, October 2026
+
+Does Haiku with a skill reach Sonnet without one? For each skill, four arms were judged together in one blind panel on that skill's sealed briefs: Haiku with the skill, Haiku alone, Sonnet with the skill and Sonnet alone. Sonnet replies were reused from the earlier rounds where the skill text was unchanged. **The answer is no, for all 15 skills.**
+
+- **Mean value (1–7):** Sonnet with the skill 6.18, Sonnet alone 5.86, Haiku with the skill 4.85, Haiku alone 4.79.
+- **Keys caught:** 95%, 93%, 81% and 81%.
+- **The skills lift Sonnet (+0.31, positive for 14 of 15) far more than Haiku (+0.05, positive for 9 of 15).** They amplify a capable model rather than standing in for one.
+- **Ruling:** only the two skills with the main question open were extended. Inconclusive uplift comparisons elsewhere stay inconclusive.
+
+Record: [summary](../evolution/haiku-uplift-2026-10/SUMMARY.md), [ledger](../evolution/haiku-uplift-2026-10/LEDGER.md), [design](superpowers/specs/2026-10-13-haiku-uplift-design.md).
+
 ### Suite gauntlet, October 2026
 
 - **Design.** Each round had three fictional briefs with planted keys sealed from the coordinator, a hype/skeptical framing pair of the same facts, and a task too small for the skill. Sonnet answered each brief twice per arm, or four times after the one allowed extension. Two Opus judges per brief scored the blinded replies on four value and three guard dimensions and ranked them. A Sonnet auditor counted visible method machinery, and Sonnet verifiers checked the planted keys. A skill validates only if every condition passes: value above the paired noise band, no guard regression, no extra method ceremony, and the same recommendation under both framings. Each round's gate was frozen before it ran. Design: [spec](superpowers/specs/2026-10-13-suite-gauntlet-design.md).

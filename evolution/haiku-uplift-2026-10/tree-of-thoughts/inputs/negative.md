@@ -1,0 +1,1 @@
+Quick question about our field-service app. The job completion form has a Submit button, and now and then a technician taps it twice and we get duplicate completions. Should we disable the button while the upload is in progress? Just a yes or no and a line on why.

@@ -1,0 +1,74 @@
+{
+  "O1J": {
+    "k1": "✓", "k2": "~", "k3": "~", "k4": "~",
+    "evidence": {
+      "k1": "So none of the three kilns is likely to bring crazing back to 2%.",
+      "k2": "get all three partners to sign off on it before Friday",
+      "k3": "Make it clear that it doesn't fix crazing, so nobody expects it to.",
+      "k4": "roughly 168 pieces a week out of 2,400 (7 points of the output), which is capacity you already own"
+    }
+  },
+  "V7X": {
+    "k1": "✓", "k2": "~", "k3": "✓", "k4": "✗",
+    "evidence": {
+      "k1": "Do not sign for any kiln before the body test is done",
+      "k2": "unless the capacity case is the deciding factor",
+      "k3": "Ask Tomasz to hold the reduction-glaze idea until the crazing is resolved.",
+      "k4": "No mention of crazing fixes freeing capacity; A recommended on capacity alone."
+    }
+  },
+  "I7B": {
+    "k1": "~", "k2": "✗", "k3": "~", "k4": "✗",
+    "evidence": {
+      "k1": "don't buy any kiln expecting it to fix the crazing",
+      "k2": "Buy Kiln A if all three partners can sign off by Friday.",
+      "k3": "Kiln B is the fallback if you can't get three-way agreement in time.",
+      "k4": "Whether +30% is enough ... extra weekly output you need for the two declined accounts"
+    }
+  },
+  "S3N": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✗",
+    "evidence": {
+      "k1": "Decide the kiln after that test.",
+      "k2": "the quote's expiry is a reason to be careful, not a reason to rush.",
+      "k3": "Tomasz's reduction glaze request is a real opportunity, but it's a separate project",
+      "k4": "capacity case (Kiln A) assessed separately; no reject-recovery capacity figure given"
+    }
+  },
+  "N1E": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "none of the three kilns is the right fix for it.",
+      "k2": "a quote lapsing is cheaper than buying €18,400 of equipment",
+      "k3": "I'd treat it as a later decision, tested by asking those restaurants",
+      "k4": "roughly 170 extra pieces a week ... Fixing the crazing may free up more capacity"
+    }
+  },
+  "R7B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "A new kiln would not fix this.",
+      "k2": "Its six-week lead time and Friday expiry are a sales deadline.",
+      "k3": "A may be right for space, B for control, and C if reduction demand grows.",
+      "k4": "Fix the rejects first and you may find you already have more room"
+    }
+  },
+  "R7U": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "none of the three kilns fixes crazing.",
+      "k2": "a hard deadline is a reason for caution, not for speed.",
+      "k3": "Kiln C solves a sales question, not a production one.",
+      "k4": "roughly 7% of output, about 170 pieces a week ... Then decide whether you still need to grow."
+    }
+  },
+  "X3B": {
+    "k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓",
+    "evidence": {
+      "k1": "it does not replace fixing the clay and glaze match.",
+      "k2": "not to let Friday's deadline force the decision.",
+      "k3": "The three kilns, for the capacity question only",
+      "k4": "Fixing crazing could free up roughly 7% of output on its own"
+    }
+  }
+}

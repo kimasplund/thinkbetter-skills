@@ -1,0 +1,82 @@
+{
+"N6L": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "about 3,060 machine-hours. The lease allows ... about 2,500 hours a year at most",
+  "k2": "You already use about 24.7 t. ... fixes capacity but not the cap",
+  "k3": "Signing would breach those agreements ... This is the hardest blocker",
+  "k4": "your certificate covers only your unit. Check this before you rely on it"}},
+"K0H": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "about 32 t roasted a year at 100% utilisation ... delivery around May",
+  "k2": "about 46 t of green against a 26 t cap. A bigger roaster does not fix this",
+  "k3": "The café promise probably rules it out ... six stores in your county",
+  "k4": "your certificate covers your unit, so beans roasted elsewhere would need that roaster to be certified"}},
+"Q8K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "about 30 batches a day, which is roughly 127 kg roasted per day ... past 30",
+  "k2": "which leaves about 1.3 tonnes of room ... around 46 tonnes against a 26-tonne cap",
+  "k3": "As written, that clause is breached on day one",
+  "k4": "that roaster needs its own organic certification"}},
+"J1F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "roughly 32 t a year on 250 weekdays with no downtime ... can't do",
+  "k2": "Alto Merida is effectively capped at about 22 t roasted a year",
+  "k3": "a private-label Alto Merida blend is very likely the thing those agreements exclude",
+  "k4": "A contract roaster ... would need its own certification ... doesn't fix the importer cap"}},
+"V4T": {"k1": "~", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "39 t doesn't fit even in theory ... (compares green ceiling to mixed units)",
+  "k2": "about 39 t of Alto Merida green, 13 t over the cap ... about 5 t above your current 21 t",
+  "k3": "signing as offered would breach those agreements",
+  "k4": "your organic certificate covers your unit only. Any other roaster would need its own"}},
+"D6D": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "a ceiling of roughly 30 batches a day, or about 37 tonnes of green a year",
+  "k2": "A bigger roaster or a contract roaster doesn't help, because neither one creates more Alto Merida",
+  "k3": "Six of Hollis's 30 stores are in your county",
+  "k4": "your certificate covers only your own unit"}},
+"Q9F": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "over 3,000 hours ... about 2,500 hours at best ... arrive around May, not February",
+  "k2": "Headroom today is only about 1.3 tonnes of green, or about 1.1 tonnes roasted",
+  "k3": "Selling the blend to Hollis for those stores breaches those agreements",
+  "k4": "would also need its own organic certification, because your certificate covers only your unit"}},
+"Q0F": {"k1": "~", "k2": "✓", "k3": "✓", "k4": "✗", "evidence": {
+  "k1": "Running 20 batches across a 10-hour weekday window ... about 21 tonnes (wrong ceiling)",
+  "k2": "roughly 1.3 tonnes of headroom ... Contract roasting doesn't avoid this",
+  "k3": "signing would likely put you in breach with some of your 40 wholesale accounts",
+  "k4": "check whether it also needs to cover the new blend (no contract-roaster certification point)"}},
+"W1W": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "roughly 7,200 to 7,500 a year. Hollis adds around 4,200 ... about 20% over the ceiling",
+  "k2": "you have about 1 t of headroom ... Any Alto Merida growth ... draws on the same 26 t",
+  "k3": "would very likely breach that promise, and a solicitor should confirm it",
+  "k4": "A contract roaster would need its own organic certification"}},
+"Y1O": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "about 37 t of green a year if you never stop ... 46 t of green is out of reach",
+  "k2": "roughly 1.3 t of green headroom ... a bigger machine doesn't remove the green coffee cap",
+  "k3": "Signing would breach those agreements and put your core wholesale customers at risk",
+  "k4": "A contract roaster must itself be certified organic. Your certificate covers only your unit"}},
+"B7B": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "That is not possible on one machine under your lease hours ... would land around May",
+  "k2": "about 46 t of green against a cap of 26 t ... It only fixes capacity",
+  "k3": "Signing as offered would likely breach those agreements",
+  "k4": "A contract roaster would need to be certified organic itself"}},
+"X1Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Hollis alone would add ... 4,200 batches ... arrives around May, after the February start",
+  "k2": "you would have to drop most of your existing customers to serve Hollis",
+  "k3": "A private-label version of the same blend would very likely be read as a breach",
+  "k4": "Your certificate covers your unit and not anyone else's"}},
+"W6E": {"k1": "~", "k2": "~", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "about 2,600 hours, which does not fit in 2,400 (assumes 21 t is green)",
+  "k2": "The green cap is the binding constraint ... headroom under the cap about 5 t",
+  "k3": "Selling the same coffee under a different name may not get you out of it",
+  "k4": "A contract roaster would need its own organic certification and traceability"}},
+"F7K": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "~", "evidence": {
+  "k1": "the absolute ceiling is about 32 t a year ... earliest about May",
+  "k2": "Two of the constraints rule it out whatever machine you have",
+  "k3": "Hollis's six county stores fall squarely inside that",
+  "k4": "Bridge only; check organic certification and fees"}},
+"H9C": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "Together that's about 37 a day, which is over the ceiling",
+  "k2": "Signing means your 40 cafés and web shop would shrink from about 21 t to about 4 t",
+  "k3": "Signing as offered puts you in breach with the customers who make up most of your business",
+  "k4": "Your certificate covers your unit only. A contract roaster would need its own organic certification"}},
+"Y0Y": {"k1": "✓", "k2": "✓", "k3": "✓", "k4": "✓", "evidence": {
+  "k1": "theoretical maximum is about 37 t of green a year ... would land around May",
+  "k2": "A contract roaster does not fix this. The limit is on the green coffee",
+  "k3": "Signing as offered would put you in breach with 40 wholesale customers",
+  "k4": "A contract roaster would have to be certified organic themselves"}}
+}
